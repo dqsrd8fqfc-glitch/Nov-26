@@ -287,7 +287,7 @@
     *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   }
 
-  /* ================= Compact density (Nick: fill the page, smaller text, narrow rail) ================= */
+  /* ================= Compact density: fill the page, smaller text, narrow rail ================= */
   body { font-size: 15px; }
   .large-title { font-size: 28px; line-height: 34px; }
   .title2 { font-size: 19px; line-height: 24px; }
@@ -356,6 +356,85 @@
     .pane > .view { max-width: 1100px; margin: 0; }
   }
   .grid2 > .card, .grid4 > .card, .grid2 > *, .grid4 > * { margin-top: 0 !important; }
+
+  /* ================= v4: functional agents ================= */
+  .rail-item .sn { display: none; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .rail-item .nm { display: none; }
+    .rail-item .sn { display: block; font: 600 11px/14px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rail-item { padding: 6px 2px 5px; }
+    .rail-item .av { --s: 34px; }
+    .rail li + li { margin-top: 1px; }
+    .rail h2 { margin-bottom: 4px; }
+  }
+  .rail ul { -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - 18px), transparent); mask-image: linear-gradient(180deg, #000 calc(100% - 18px), transparent); padding-bottom: 12px; }
+
+  /* Today's 3 */
+  .today { list-style: none; margin: 10px 0 0; padding: 0; }
+  .today li + li { border-top: .5px solid var(--sep); }
+  .today button, .today .static { display: flex; gap: 11px; align-items: flex-start; width: 100%; padding: 7px 0; border: none; background: none; text-align: left; cursor: pointer; transition: opacity .2s; }
+  .today button:active { opacity: .55; }
+  .today .tick { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 1px; border-radius: 50%; border: 1.5px solid var(--c, var(--label-3)); display: grid; place-items: center; }
+  .today .tick::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--label-3)); opacity: .85; }
+  .today .tt { font: 600 15px/20px var(--font); }
+  .today .why { font-size: 13px; line-height: 18px; color: var(--label-2); margin-top: 1px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  @media (min-width: 600px) and (max-height: 920px) { .today .why { -webkit-line-clamp: 1; } }
+  .today .who { font: 600 12px/16px var(--font); color: var(--c); }
+  .today .tt .who { display: inline-block; margin-left: 8px; white-space: nowrap; }
+  .today .chev { align-self: center; }
+
+  /* Team lines */
+  .lines .row { align-items: center; }
+  .lines .tag { flex: 0 0 auto; width: 74px; font: 600 12px/16px var(--font); color: var(--c); }
+  .lines .row { padding-top: 7px; padding-bottom: 7px; }
+  .lines .h { font-size: 14px; line-height: 19px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* Write-ups */
+  .stale-tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; background: rgba(255,159,10,.16); color: var(--orange); font: 600 12px/16px var(--font); margin-bottom: 8px; }
+  .topic { display: inline-block; font: 600 12px/16px var(--font); color: var(--c); margin-bottom: 4px; }
+  .doc h2 { font: 700 20px/25px var(--font-d); margin: 0 0 8px; letter-spacing: -0.01em; }
+  .doc p { margin: 0 0 10px; font-size: 15px; line-height: 22px; max-width: 68ch; }
+  .doc p:last-child { margin-bottom: 0; }
+  .callout { margin-top: 10px; padding: 11px 13px; border-radius: 16px; background: color-mix(in srgb, var(--c) 14%, transparent); box-shadow: inset 0 0 0 .5px color-mix(in srgb, var(--c) 40%, transparent); }
+  .callout .k { font: 600 12px/16px var(--font); color: var(--c); margin-bottom: 3px; }
+  .callout .v { font-size: 15px; line-height: 21px; }
+  .src { display: inline-flex; margin-top: 10px; font: 600 13px/18px var(--font); color: var(--c); text-decoration: none; }
+  .src:active { opacity: .6; }
+  .steps { margin: 6px 0 0; padding-left: 22px; }
+  .steps li { font-size: 15px; line-height: 21px; margin: 0 0 6px; padding-left: 2px; }
+  .steps li::marker { color: var(--c); font-weight: 600; }
+  .bullets { margin: 4px 0 0; padding-left: 18px; }
+  .bullets li { font-size: 15px; line-height: 21px; margin-bottom: 6px; }
+  .bullets li::marker { color: var(--c); }
+  .doc .term { font: 700 24px/29px var(--font-d); letter-spacing: -0.015em; margin: 0 0 6px; }
+  .figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+  .fig { border-radius: var(--r-md); padding: 10px 12px; text-decoration: none; display: block; }
+  .fig .n { font-size: 12px; line-height: 16px; color: var(--label-2); }
+  .fig .p { font: 600 20px/25px var(--font-d); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .fig .m { font-size: 11.5px; line-height: 15px; color: var(--label-3); margin-top: 3px; }
+  .ver { flex: 0 0 auto; font: 600 12px/16px var(--font); color: var(--c); padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--c) 16%, transparent); align-self: flex-start; margin-top: 1px; }
+
+  /* Segmented control (Newsroom) */
+  .seg { display: flex; gap: 2px; padding: 3px; border-radius: 999px; overflow-x: auto; scrollbar-width: none; margin-bottom: 10px; }
+  .seg::-webkit-scrollbar { display: none; }
+  .seg button { flex: 1 0 auto; position: relative; min-height: 34px; padding: 0 13px; border: none; border-radius: 999px; background: none; color: var(--label-2); font: 600 13px/1 var(--font); cursor: pointer; transition: background .25s, color .25s; }
+  .seg button.on { background: rgba(255,255,255,.18); color: var(--label); box-shadow: inset 0 1px 0 rgba(255,255,255,.16); }
+  .seg .badge { display: inline-block; min-width: 16px; height: 16px; font-size: 10.5px; line-height: 16px; padding: 0 4px; margin-left: 5px; vertical-align: 1px; }
+
+  /* Trends */
+  .tr-list { list-style: none; margin: 0; padding: 0; }
+  .tr-list button { display: grid; grid-template-columns: 1fr auto; gap: 3px 10px; width: 100%; padding: 7px 14px; border: none; background: none; text-align: left; cursor: pointer; position: relative; }
+  .tr-list li + li button::before { content: ""; position: absolute; top: 0; left: 14px; right: 0; border-top: .5px solid var(--sep); }
+  .tr-list button.on { background: rgba(255,255,255,.07); }
+  .tr-list .w { font: 600 15px/20px var(--font); }
+  .tr-list .c { font: 600 13px/20px var(--font); color: var(--label-2); font-variant-numeric: tabular-nums; }
+  .tr-list .bar { grid-column: 1 / -1; height: 4px; border-radius: 3px; background: rgba(255,255,255,.07); overflow: hidden; }
+  .tr-list .bar i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, color-mix(in srgb, var(--c) 60%, transparent), var(--c)); }
+  .tr-list .rise { font-size: 11.5px; color: var(--c); font-weight: 600; margin-left: 6px; }
+  .split2 { display: grid; gap: 10px; }
+  @media (min-width: 900px) { .split2 { grid-template-columns: 1fr 1fr; align-items: start; } .split2 > .section { margin-top: 0; } }
+  .sun { display: flex; gap: 8px; margin-top: 10px; }
+  .sun .fig { flex: 1; }
 </style>
 </head>
 <body>
@@ -396,27 +475,41 @@
 
 <script>
 (() => {
-  /* ================= The team (edit roles here) ================= */
+  /* ================= The team (edit roles here) =================
+     kind decides what the desk shows. feed = id in data/feeds.json. short = label for the slim rail. */
   const ICON = {
     compass: '<circle cx="12" cy="12" r="8.5"/><path d="M15.2 8.8l-1.9 4.5-4.5 1.9 1.9-4.5z"/>',
     chart: '<path d="M4 17l5-5 3.2 3.2L19 8.4"/><path d="M14.8 8.2H19v4.2"/>',
     cloud: '<circle cx="9" cy="8.6" r="3"/><path d="M7.5 19h9.3a3.7 3.7 0 0 0 .4-7.38A5 5 0 0 0 7.6 13.1 3 3 0 0 0 7.5 19z"/>',
+    book: '<path d="M12 6.5C10.3 5.2 7.9 4.6 4.5 4.7v13.1c3.4-.1 5.8.5 7.5 1.8 1.7-1.3 4.1-1.9 7.5-1.8V4.7c-3.4-.1-5.8.5-7.5 1.8z"/><path d="M12 6.5v13.1"/>',
     windows: '<rect x="4.5" y="4.5" width="6.4" height="6.4" rx="1.4"/><rect x="13.1" y="4.5" width="6.4" height="6.4" rx="1.4"/><rect x="4.5" y="13.1" width="6.4" height="6.4" rx="1.4"/><rect x="13.1" y="13.1" width="6.4" height="6.4" rx="1.4"/>',
-    globe: '<circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.8" ry="8.5"/><path d="M3.5 12h17"/>',
-    case: '<rect x="3.5" y="7.5" width="17" height="12" rx="2.6"/><path d="M9 7.5V6a1.6 1.6 0 0 1 1.6-1.6h2.8A1.6 1.6 0 0 1 15 6v1.5M3.5 12.6h17"/>',
-    chip: '<rect x="7" y="7" width="10" height="10" rx="2.2"/><path d="M10 3.5v3M14 3.5v3M10 17.5v3M14 17.5v3M3.5 10h3M3.5 14h3M17.5 10h3M17.5 14h3"/>',
-    phone: '<rect x="7" y="2.8" width="10" height="18.4" rx="2.6"/><path d="M11 18h2"/>',
+    sparkle: '<path d="M11 3.5l1.7 4.8 4.8 1.7-4.8 1.7L11 16.5l-1.7-4.8L4.5 10l4.8-1.7z"/><path d="M17.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/>',
+    bulb: '<path d="M9 17.5h6M10 20.5h4"/><path d="M12 3.5a5.8 5.8 0 0 0-3.4 10.5c.6.5 1 1.2 1 2v.5h4.8V16c0-.8.4-1.5 1-2A5.8 5.8 0 0 0 12 3.5z"/>',
+    pound: '<path d="M15.8 6.6A3.6 3.6 0 0 0 9 8.3V12c0 2.8-.9 5-2.5 6.5h11"/><path d="M6.8 12.2h7"/>',
+    radar: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><path d="M12 12l5.6-5.6"/><circle cx="12" cy="12" r="1.2"/>',
+    trend: '<path d="M5 19.5V14M10 19.5V10M15 19.5v-4M20 19.5V6"/>',
+    paper: '<rect x="4" y="4.5" width="13" height="15" rx="2"/><path d="M17 8.5h2.5v9a2 2 0 0 1-4 0v-13M7.5 8.5h6M7.5 12h6M7.5 15.5h4"/>',
+    calendar: '<rect x="4" y="5.5" width="16" height="14" rx="2.6"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M8 14h3"/>',
   };
   const TEAM = [
-    { id: 'atlas', name: 'Atlas', role: 'Chief of staff', icon: 'compass', c: '#FF9F0A', kind: 'brief' },
-    { id: 'mara',  name: 'Mara',  role: 'Markets',        icon: 'chart',   c: '#30D158', kind: 'markets' },
-    { id: 'skye',  name: 'Skye',  role: 'Weather',        icon: 'cloud',   c: '#64D2FF', kind: 'weather' },
-    { id: 'rex',   name: 'Rex',   role: 'Microsoft watch', icon: 'windows', c: '#0A84FF', kind: 'news', feed: 'msft' },
-    { id: 'nova',  name: 'Nova',  role: 'World news',     icon: 'globe',   c: '#5E5CE6', kind: 'news', feed: 'top' },
-    { id: 'penny', name: 'Penny', role: 'Business',       icon: 'case',    c: '#E8B10A', kind: 'news', feed: 'markets' },
-    { id: 'tess',  name: 'Tess',  role: 'Tech',           icon: 'chip',    c: '#BF5AF2', kind: 'news', feed: 'tech' },
-    { id: 'pip',   name: 'Pip',   role: 'iPhone scout',   icon: 'phone',   c: '#FF375F', kind: 'news', feed: 'apple' },
+    { id: 'briefing',  name: 'Briefing',       short: 'Briefing', role: 'Your day at a glance',        icon: 'compass',  c: '#FF9F0A', kind: 'brief' },
+    { id: 'markets',   name: 'Markets',        short: 'Markets',  role: 'Microsoft and the indices',   icon: 'chart',    c: '#30D158', kind: 'markets' },
+    { id: 'weather',   name: 'Weather',        short: 'Weather',  role: 'Forecast and daylight',       icon: 'cloud',    c: '#64D2FF', kind: 'weather' },
+    { id: 'lesson',    name: 'Daily Lesson',   short: 'Lesson',   role: 'Two minutes of learning',     icon: 'book',     c: '#5E5CE6', kind: 'lesson' },
+    { id: 'm365',      name: 'M365 Coach',     short: 'M365',     role: 'SharePoint, Power Automate, Copilot', icon: 'windows', c: '#0A84FF', kind: 'm365', feed: 'm365' },
+    { id: 'ai',        name: 'AI Tools',       short: 'AI Tools', role: 'What’s new in AI',            icon: 'sparkle',  c: '#BF5AF2', kind: 'ai', feed: 'ai' },
+    { id: 'explainer', name: 'Explainer',      short: 'Explainer', role: 'The story behind the story', icon: 'bulb',     c: '#E8B10A', kind: 'explainer' },
+    { id: 'money',     name: 'Money Watch',    short: 'Money',    role: 'Rates, inflation and bills',  icon: 'pound',    c: '#63E6BE', kind: 'money', feed: 'money' },
+    { id: 'releases',  name: 'Release Radar',  short: 'Releases', role: 'Software updates',            icon: 'radar',    c: '#FF375F', kind: 'releases', feed: 'releases' },
+    { id: 'trends',    name: 'Trends',         short: 'Trends',   role: 'What’s rising in the news',   icon: 'trend',    c: '#FF6B3D', kind: 'trends' },
+    { id: 'news',      name: 'Newsroom',       short: 'News',     role: 'World, business, tech',       icon: 'paper',    c: '#AC8E68', kind: 'news' },
+    { id: 'review',    name: 'Week in Review', short: 'Review',   role: 'Every Sunday morning',        icon: 'calendar', c: '#40C8E0', kind: 'review' },
   ];
+  const NEWS_TABS = [
+    { id: 'top', name: 'World' }, { id: 'markets', name: 'Business' }, { id: 'tech', name: 'Tech' },
+    { id: 'msft', name: 'Microsoft' }, { id: 'apple', name: 'iPhone' },
+  ];
+  const HOME = 'briefing';
   const BY = Object.fromEntries(TEAM.map(a => [a.id, a]));
   const QUOTE_KEYS = ['MSFT', 'SPX', 'NDX', 'FTSE', 'GBPUSD'];
 
@@ -445,7 +538,10 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const wide = matchMedia('(min-width: 600px)');
   const safeHref = u => /^https?:\/\//i.test(u || '') ? u : null;
+  const str = v => typeof v === 'string' ? v : (v == null ? '' : String(v));
+  const arr = v => Array.isArray(v) ? v : [];
   const hhmm = d => d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+  const ukDate = (d = new Date()) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London' }).format(d);
   const ago = iso => {
     if (!iso) return '';
     const s = (Date.now() - new Date(iso)) / 1000;
@@ -459,6 +555,7 @@
   const signPct = p => (p > 0 ? '+' : p < 0 ? '−' : '') + Math.abs(p).toFixed(2) + '%';
   const dir = p => p > 0 ? 'up' : p < 0 ? 'down' : '';
   const toast = msg => { const t = $('toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 2400); };
+  const link = (l, cls = 'src') => { const href = safeHref(l && (l.url || l)); return href ? el('a', { class: cls, href, target: '_blank', rel: 'noopener noreferrer', text: str(l.title) || 'Read more' }) : null; };
 
   function avatar(a, dot) {
     const s = svg('svg', { viewBox: '0 0 24 24', 'aria-hidden': 'true' });
@@ -468,6 +565,7 @@
 
   /* ================= State ================= */
   let data = { feeds: [], quotes: {}, updated: null };
+  let daily = null;
   let wx = null;
   let loc = store.get('loc', { lat: 51.51, lon: -0.13, name: 'London' });
   const lastVisit = store.get('lastVisit', null);
@@ -475,9 +573,13 @@
   addEventListener('pagehide', markVisit);
   setTimeout(markVisit, 20000);
   let sweeping = false;
-  let selected = BY[location.hash.slice(1)] ? location.hash.slice(1) : 'atlas';
-  const feed = id => ((data.feeds || []).find(f => f.id === id) || { items: [] }).items;
+  let selected = BY[location.hash.slice(1)] ? location.hash.slice(1) : HOME;
+  let newsTab = store.get('newsTab', 'top');
+  let trendSel = null;
+  const feed = id => ((data.feeds || []).find(f => f.id === id) || { items: [] }).items || [];
   const isFresh = it => !!(lastVisit && it.date && it.date > lastVisit);
+  const dailyToday = () => !!(daily && daily.date === ukDate());
+  const dailyNew = () => !!(daily && lastVisit && daily.generated && daily.generated > lastVisit);
 
   /* ================= Market clock (NASDAQ 09:30–16:00 New York; holidays not included) ================= */
   const nyParts = t => {
@@ -518,12 +620,69 @@
     return out;
   }
 
-  /* ================= Agent reports ================= */
+  /* ================= Trends (computed from every headline) ================= */
+  const STOP = new Set(('a about above after again against all also am an and any are aren as at be because been before being below between both but by can could did do does doing down during each few for from further had has have having he her here hers him his how i if in into is it its itself just me more most my new no nor not now of off on once only or other our out over own same says said she should so some such than that the their them then there these they this those through to too under until up very was we were what when where which while who whom why will with would you your yours after amid via vs year years day days week weeks get gets got make makes made one two three first last next back still could how what why best top here more less big biggest latest today report reports news update updates live watch video says say set sets take takes need now way ways look looks use using used help helps want know time times people plan plans move moves deal deals sale sales off free like don’t it’s that’s what’s here’s you’re we’re can’t won’t isn’t doesn’t new’s tech data pro max ultra mini plus series stock stocks shares share company companies users user app apps world price prices deal deals sale sales black-friday amp first-ever former early late long short high low full major key launch launches launched announces announced reveals revealed ahead behind against amid despite across around nearly every power work beta claims claim things thing start starts end ends going goes keep real right part parts home save saves gets lets better good great find found best-ever coming').split(' '));
+  const LABEL = { ios: 'iOS', ipados: 'iPadOS', macos: 'macOS', ai: 'AI', iphone: 'iPhone', ipad: 'iPad', uk: 'UK', us: 'US', eu: 'EU', openai: 'OpenAI', chatgpt: 'ChatGPT', xbox: 'Xbox', ftse: 'FTSE', cop31: 'COP31', gta: 'GTA', airpods: 'AirPods', macbook: 'MacBook', imac: 'iMac', nhs: 'NHS', bbc: 'BBC', fbi: 'FBI', nasa: 'NASA', ceo: 'CEO', cpi: 'CPI' };
+  const label = k => k.split(' ').map(w => LABEL[w] || (w[0].toUpperCase() + w.slice(1))).join(' ');
+  function tokens(title) {
+    return str(title).toLowerCase().replace(/[‘’]/g, "'").replace(/[^a-z0-9£$%'\- ]+/g, ' ').split(/\s+/)
+      .map(w => w.replace(/^['\-]+|['\-]+$/g, '').replace(/'s$/, ''))
+      .filter(w => w.length >= 3 && !/^\d+$/.test(w));
+  }
+  function trends() {
+    const seen = new Set(), items = [];
+    (data.feeds || []).forEach(f => {
+      const fi = (f.items || []).filter(it => it && it.title && !seen.has(it.link) && seen.add(it.link));
+      // a feed's own subject (e.g. "microsoft" in the Microsoft feed) appears in most of its items: ignore it there
+      const df = {}; fi.forEach(it => new Set(tokens(it.title)).forEach(w => df[w] = (df[w] || 0) + 1));
+      const own = new Set(Object.keys(df).filter(w => fi.length >= 5 && df[w] / fi.length > 0.45));
+      fi.forEach(it => items.push({ it, feed: f.id, own }));
+    });
+    const now = Date.now(), recent = {}, older = {}, hits = {};
+    let nRecent = 0, nOlder = 0;
+    items.forEach(({ it, own }) => {
+      const toks = tokens(it.title).filter(w => !own.has(w));
+      const keys = new Set();
+      toks.forEach((w, i) => {
+        if (!STOP.has(w)) keys.add(w);
+        const n = toks[i + 1];
+        if (n && !STOP.has(w) && !STOP.has(n)) keys.add(w + ' ' + n);
+      });
+      const isRecent = it.date && now - new Date(it.date) < 24 * 3600e3;
+      isRecent ? nRecent++ : nOlder++;
+      keys.forEach(k => { (isRecent ? recent : older)[k] = ((isRecent ? recent : older)[k] || 0) + 1; (hits[k] = hits[k] || []).push(it); });
+    });
+    let list = Object.keys(hits).map(k => {
+      const total = hits[k].length, r = recent[k] || 0, o = older[k] || 0;
+      const rising = nOlder > 0 && r >= 2 && (r / Math.max(nRecent, 1)) > 1.5 * (o / nOlder);
+      return { k, total, r, rising, bigram: k.includes(' '), items: hits[k] };
+    }).filter(t => t.bigram ? t.total >= 2 : t.total >= 3);
+    list.sort((a, b) => (b.total + (b.bigram ? 0.5 : 0) + (b.rising ? 0.6 : 0)) - (a.total + (a.bigram ? 0.5 : 0) + (a.rising ? 0.6 : 0)));
+    const out = [];
+    for (const t of list) {
+      if (out.length >= 12) break;
+      if (!t.bigram && out.some(o => o.bigram && o.k.split(' ').includes(t.k) && o.total >= t.total - 1)) continue;
+      if (t.bigram && out.some(o => !o.bigram && t.k.split(' ').includes(o.k) && o.total <= t.total + 1)) {
+        const i = out.findIndex(o => !o.bigram && t.k.split(' ').includes(o.k)); out.splice(i, 1);
+      }
+      out.push(t);
+    }
+    return out;
+  }
+
+  /* ================= Agent reports =================
+     Each returns: line (one-liner for the briefing), dispatch (desk summary), status, dot, fresh (badge count) */
+  function dailyStatus(section) {
+    if (!daily || !daily[section]) return { status: 'Next update around 06:00', dot: '' };
+    return { status: dailyToday() ? `Updated ${ago(daily.generated) || 'this morning'}` : 'From yesterday. Next update around 06:00', dot: dailyToday() ? 'on' : 'warn' };
+  }
+  const feedFresh = id => feed(id).filter(isFresh).length;
+
   function reportMarkets() {
     const q = data.quotes || {}, m = market(), msft = q.MSFT;
     const status = m.open ? 'Watching the open market' : m.pre ? 'Pre-market, standing by' : m.post ? 'After hours, standing by' : `Standing by until ${m.next}`;
     const dot = m.open ? 'live' : 'on';
-    if (!msft || msft.pct == null) return { line: m.open ? 'Market is open. Live chart on my desk.' : 'Waiting on my quote feed.', dispatch: ['My quote feed hasn’t come through yet. The live chart on my desk still works.'], status, dot };
+    if (!msft || msft.pct == null) return { line: m.open ? 'Market is open. Live chart on the desk.' : 'Waiting on the quote feed.', dispatch: ['The quote feed hasn’t come through yet. The live chart below still works.'], status, dot };
     const mv = msft.pct >= 0 ? 'up' : 'down', size = Math.abs(msft.pct).toFixed(1) + '%';
     const day = msft.time ? new Date(msft.time).toLocaleDateString('en-GB', { weekday: 'long' }) : '';
     const d = [];
@@ -532,7 +691,7 @@
       if (msft.time) d.push(el('span', { class: 'soft', text: ` That price is from ${hhmm(new Date(msft.time))}; the chart below is live.` }));
     } else {
       d.push(`Markets are closed. Microsoft finished ${day ? day + ' ' : ''}at `, el('b', { text: fmtPrice('MSFT', msft.price) }), ', ', el('span', { class: dir(msft.pct), text: `${mv} ${size}` }), '.');
-      if (m.next) d.push(el('span', { class: 'soft', text: ` I’m back on watch ${m.next}.` }));
+      if (m.next) d.push(el('span', { class: 'soft', text: ` Back on watch ${m.next}.` }));
     }
     const others = ['SPX', 'FTSE'].filter(k => q[k] && q[k].pct != null);
     if (others.length) {
@@ -551,25 +710,81 @@
     if (wx.daily && wx.daily.time[1]) d.push(el('span', { class: 'soft', text: ` Tomorrow ${Math.round(wx.daily.temperature_2m_max[1])}° and ${Math.round(wx.daily.temperature_2m_min[1])}°, ${W(wx.daily.weather_code[1])[1]}.` }));
     return { line: `${Math.round(c.temperature_2m)}° and ${desc}. ${rain}`, rain, desc, dispatch: d, status: `Watching ${loc.name}`, dot: 'on' };
   }
-  function reportNews(a) {
-    const items = feed(a.feed);
-    if (!items.length) return { line: 'On patrol. First report due shortly.', dispatch: ['I’m out on patrol. My first report is due shortly.'], status: 'Heading out', dot: '', fresh: 0 };
-    const fresh = items.filter(isFresh).length, lead = items[0];
+  function reportLesson() {
+    const L = daily && daily.lesson, s = dailyStatus('lesson');
+    if (!L) return { line: '', dispatch: ['Your first lesson arrives around 06:00.'], ...s, fresh: 0 };
+    return { line: str(L.title), dispatch: [`Today’s lesson${L.topic ? ' on ' + str(L.topic).toLowerCase() : ''}: `, el('b', { text: str(L.title) }), '.'], ...s, fresh: dailyNew() ? 1 : 0 };
+  }
+  function reportM365() {
+    const M = daily && daily.m365, s = dailyStatus('m365'), f = feed('m365'), fr = feedFresh('m365');
+    const d = M ? ['Today’s tip: ', el('b', { text: str(M.title) }), '.'] : [f.length ? `No tip yet today. ${f.length} posts from the Microsoft blogs below.` : 'Your first tip arrives around 06:00.'];
+    return { line: M ? str(M.title) : '', dispatch: d, ...s, dot: s.dot || (f.length ? 'on' : ''), status: M ? s.status : (f.length ? `${f.length} posts from Microsoft` : s.status), fresh: fr + (M && dailyNew() ? 1 : 0) };
+  }
+  function reportAI() {
+    const A = daily && daily.ai, s = dailyStatus('ai'), f = feed('ai'), fr = feedFresh('ai');
+    const d = A && A.summary ? [str(A.summary)] : [f.length ? `${f.length} AI stories filed. Today’s write-up arrives around 06:00.` : 'Your first AI briefing arrives around 06:00.'];
+    return { line: A && A.summary ? str(A.summary) : (f[0] ? f[0].title : ''), dispatch: d, ...s, dot: s.dot || (f.length ? 'on' : ''), status: A ? s.status : (f.length ? `${f.length} stories filed` : s.status), fresh: fr + (A && dailyNew() ? 1 : 0) };
+  }
+  function reportExplainer() {
+    const E = daily && daily.explainer, T = daily && daily.term, s = dailyStatus(E ? 'explainer' : 'term');
+    if (!E && !T) return { line: '', dispatch: ['Your first explainer arrives around 06:00.'], ...s, fresh: 0 };
     const d = [];
-    if (fresh) d.push(`${fresh} new ${fresh === 1 ? 'story' : 'stories'} since you last looked. `);
+    if (E) d.push('Explaining ', el('b', { text: str(E.story) }), '.');
+    if (T) d.push(` Term of the day: `, el('b', { text: str(T.term) }), '.');
+    return { line: E ? str(E.story) : `Term of the day: ${str(T.term)}`, dispatch: d, ...s, fresh: dailyNew() ? 1 : 0 };
+  }
+  function reportMoney() {
+    const M = daily && daily.money, s = dailyStatus('money'), f = feed('money'), fr = feedFresh('money');
+    const d = M && M.summary ? [str(M.summary)] : [f.length ? `${f.length} money stories filed. Today’s figures arrive around 06:00.` : 'Your first money check arrives around 06:00.'];
+    return { line: M && M.summary ? str(M.summary) : '', dispatch: d, ...s, dot: s.dot || (f.length ? 'on' : ''), status: M ? s.status : (f.length ? `${f.length} stories filed` : s.status), fresh: fr + (M && dailyNew() ? 1 : 0) };
+  }
+  function reportReleases() {
+    const Rl = daily && daily.releases, s = dailyStatus('releases'), f = feed('releases'), fr = feedFresh('releases');
+    const d = Rl && Rl.summary ? [str(Rl.summary)] : [f.length ? `Latest: ` : 'Watching for software updates.', f.length ? el('b', { text: f[0].title }) : null, f.length ? '.' : null];
+    return { line: Rl && Rl.summary ? str(Rl.summary) : (f[0] ? f[0].title : ''), dispatch: d, ...s, dot: s.dot || (f.length ? 'on' : ''), status: Rl ? s.status : (f.length ? `${f.length} releases tracked` : s.status), fresh: fr + (Rl && dailyNew() ? 1 : 0) };
+  }
+  function reportTrends(T) {
+    if (!T.length) return { line: '', dispatch: ['Not enough headlines yet to spot a trend.'], status: 'Waiting for headlines', dot: '' };
+    const rising = T.filter(t => t.rising);
+    const top = (rising.length ? rising : T).slice(0, 3).map(t => t.k);
+    const d = [rising.length ? 'Rising in the last 24 hours: ' : 'Most mentioned right now: '];
+    top.forEach((k, i) => { d.push(el('b', { text: label(k) })); if (i < top.length - 2) d.push(', '); else if (i === top.length - 2) d.push(' and '); });
+    d.push('.');
+    if (daily && daily.trends && daily.trends.note) d.push(el('span', { class: 'soft', text: ' ' + str(daily.trends.note) }));
+    return { line: `${rising.length ? 'Rising' : 'Most mentioned'}: ${top.map(label).join(', ')}`, dispatch: d, status: `${T.length} topics tracked`, dot: 'on' };
+  }
+  function reportNews() {
+    const all = NEWS_TABS.map(t => feed(t.id));
+    const total = all.reduce((s, x) => s + x.length, 0);
+    if (!total) return { line: '', dispatch: ['The desks are out. First stories due shortly.'], status: 'Heading out', dot: '', fresh: 0 };
+    const fresh = all.reduce((s, x) => s + x.filter(isFresh).length, 0), lead = feed('top')[0] || all.find(x => x.length)[0];
+    const d = [];
+    if (fresh) d.push(`${fresh} new ${fresh === 1 ? 'story' : 'stories'} across the desks since you last looked. `);
     else if (lastVisit) d.push('Nothing new since you last looked. ');
     d.push('Leading with ', el('b', { text: lead.title }), el('span', { class: 'soft', text: ` from ${lead.source}${lead.date ? ', ' + ago(lead.date) : ''}.` }));
     const stale = data.updated && (Date.now() - new Date(data.updated)) > 75 * 60e3;
-    return { line: lead.title, dispatch: d, status: `${items.length} stories filed`, dot: stale ? 'warn' : 'on', fresh, lead };
+    return { line: lead.title, lead, dispatch: d, status: `${total} stories across ${NEWS_TABS.length} desks`, dot: stale ? 'warn' : 'on', fresh };
   }
+  function reportReview() {
+    const Rv = daily && daily.review;
+    if (!Rv) return { line: '', dispatch: ['Your first weekly review arrives Sunday morning.'], status: 'Next review on Sunday', dot: '' };
+    return { line: str(Rv.week), dispatch: [`The week of `, el('b', { text: str(Rv.week) }), `: ${arr(Rv.changed).length} things changed, ${arr(Rv.coming).length} coming up.`], status: daily.generated ? `Written ${ago(daily.generated)}` : 'Ready', dot: 'on', fresh: 0 };
+  }
+
+  let T = [];
   function reports() {
-    const r = {};
-    TEAM.forEach(a => { r[a.id] = a.kind === 'markets' ? reportMarkets() : a.kind === 'weather' ? reportWeather() : a.kind === 'news' ? reportNews(a) : null; });
+    T = trends();
+    const r = {
+      markets: reportMarkets(), weather: reportWeather(), lesson: reportLesson(), m365: reportM365(), ai: reportAI(),
+      explainer: reportExplainer(), money: reportMoney(), releases: reportReleases(), trends: reportTrends(T), news: reportNews(), review: reportReview(),
+    };
     const fresh = Object.values(r).reduce((s, x) => s + ((x && x.fresh) || 0), 0);
     const h = new Date().getHours(), greet = h < 5 ? 'Evening' : h < 12 ? 'Morning' : h < 18 ? 'Afternoon' : 'Evening';
-    const lead = `${greet}. ` + (fresh ? `The team has filed ${fresh} new ${fresh === 1 ? 'story' : 'stories'} since you last checked in. Here’s what leads.` : 'All quiet since you last checked in. Here’s what leads.');
-    const lines = ['rex', 'nova', 'pip', 'tess'].filter(id => r[id] && r[id].lead).slice(0, 3).map(id => [id, r[id].lead.title]);
-    r.atlas = { lead, lines, status: data.updated ? `Briefing ready, last sweep ${ago(data.updated)}` : 'Gathering reports', dot: data.updated ? 'on' : '', fresh: 0, total: fresh };
+    const lead = `${greet}. ` + (fresh ? `There ${fresh === 1 ? 'is 1 new item' : `are ${fresh} new items`} across the team since you last checked in.` : 'Nothing new since you last checked in.')
+      + (arr(daily && daily.today3).length ? ' Three suggestions for today:' : '');
+    const lines = ['markets', 'weather', 'lesson', 'explainer', 'news'].filter(id => r[id] && r[id].line).map(id => [id, r[id].line]);
+    const ds = daily ? (dailyToday() ? `Briefing written ${ago(daily.generated) || 'this morning'}` : 'Yesterday’s briefing. Next one around 06:00') : 'Next briefing around 06:00';
+    r.briefing = { lead, lines, status: ds, dot: daily ? (dailyToday() ? 'on' : 'warn') : '', fresh: 0, total: fresh };
     return r;
   }
 
@@ -594,16 +809,19 @@
     el('div', { class: 'n', text: q.name }), el('div', { class: 'p', text: fmtPrice(k, q.price) }),
     el('div', { class: 'd ' + dir(q.pct), text: q.pct != null ? signPct(q.pct) : 'No change data' }), sparkline(q.spark, (q.pct || 0) >= 0, 120, 28)]);
   const sub = t => el('h3', { text: t });
+  const section = (title, ...kids) => el('section', { class: 'section' }, [title ? sub(title) : null, ...kids]);
+  const staleTag = () => daily && !dailyToday() ? el('span', { class: 'stale-tag', text: `From ${daily.date ? new Date(daily.date + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' }) : 'yesterday'}. Next update around 06:00` }) : null;
 
   function storyGroup(items, agent, max = 20) {
     return el('div', { class: 'group glass strong', style: { '--c': agent.c } }, [el('ul', {}, items.slice(0, max).map(it => {
       const href = safeHref(it.link), fresh = isFresh(it);
       return el('li', {}, [el('a', { class: 'row', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
         el('span', { class: 'newdot' + (fresh ? '' : ' off'), 'aria-label': fresh ? 'New' : undefined }),
-        el('div', { class: 'body' }, [el('div', { class: 'h', text: it.title }),
-          el('div', { class: 'm' }, [el('b', { text: it.source }), it.date ? '  ' + agoShort(it.date) : ''])])])]);
+        el('div', { class: 'body' }, [el('div', { class: 'h', text: str(it.title) }),
+          el('div', { class: 'm' }, [el('b', { text: str(it.source) }), it.date ? '  ' + agoShort(it.date) : ''])])])]);
     }))]);
   }
+  const empty = msg => el('div', { class: 'group glass strong' }, [el('p', { class: 'empty', text: msg })]);
 
   function navbar(title, subtitle) {
     return el('div', { class: 'navbar' }, [
@@ -616,50 +834,64 @@
   /* ================= Views ================= */
   let R = {};
   function commandView() {
-    const A = R.atlas, now = new Date();
-    const q = (data.quotes || {}), msft = q.MSFT, m = market(), S = R.skye;
+    const A = R.briefing, now = new Date();
+    const q = (data.quotes || {}), msft = q.MSFT, m = market(), S = R.weather;
     const v = el('div', { class: 'view' });
     v.append(navbar('Mission Control', `${now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}, ${hhmm(now)}`));
 
-    // Atlas briefing
-    v.append(el('section', { class: 'card glass strong', 'aria-label': 'Briefing from Atlas', style: { '--c': BY.atlas.c } }, [
-      el('div', { class: 'agent-line' }, [avatar(BY.atlas, sweeping ? '' : A.dot), el('div', {}, [
-        el('div', { class: 'headline', text: 'Atlas' }), el('div', { class: 'footnote secondary', text: sweeping ? 'Checking in with the team…' : A.status })])]),
+    // Briefing + Today's 3
+    const t3 = arr(daily && daily.today3).slice(0, 3);
+    v.append(el('section', { class: 'card glass strong', 'aria-label': 'Briefing', style: { '--c': BY.briefing.c } }, [
+      el('div', { class: 'agent-line' }, [avatar(BY.briefing, sweeping ? '' : A.dot), el('div', {}, [
+        el('div', { class: 'headline', text: 'Briefing' }), el('div', { class: 'footnote secondary', text: sweeping ? 'Checking in with the team…' : A.status })])]),
       el('p', { class: 'brief-lead', text: A.lead }),
-      el('ul', { class: 'brief-list' }, A.lines.map(([id, txt]) => el('li', {}, [el('button', { type: 'button', style: { '--c': BY[id].c }, onclick: () => select(id), 'aria-label': `${BY[id].name}: ${txt}` }, [
-        el('span', { class: 'dot' }), el('span', { class: 'tx' }, [el('b', { text: BY[id].name }), '  ', txt]), el('span', { class: 'chev', 'aria-hidden': 'true', text: '›' })])])))
+      t3.length ? el('ul', { class: 'today' }, t3.map(t => {
+        const ag = BY[t.agent] && t.agent !== HOME ? BY[t.agent] : null;
+        const inner = [el('span', { class: 'tick', 'aria-hidden': 'true' }), el('span', { style: { flex: 1, minWidth: 0 } }, [
+          el('div', { class: 'tt' }, [str(t.title), ag ? el('span', { class: 'who', text: ag.name }) : null]), t.why ? el('div', { class: 'why', text: str(t.why) }) : null]),
+          ag ? el('span', { class: 'chev', 'aria-hidden': 'true', text: '›' }) : null];
+        return el('li', { style: { '--c': ag ? ag.c : BY.briefing.c } }, [ag ? el('button', { type: 'button', onclick: () => select(ag.id) }, inner) : el('div', { class: 'static' }, inner)]);
+      })) : (daily ? null : el('p', { class: 'footnote secondary', style: { margin: '8px 0 0' }, text: 'Suggestions for your day arrive with the morning briefing around 06:00.' })),
     ]));
 
+    // One line from each agent
+    if (A.lines.length) v.append(el('div', { class: 'group glass strong lines', style: { marginTop: '10px' } }, [el('ul', {}, A.lines.map(([id, txt]) =>
+      el('li', {}, [el('button', { class: 'row', type: 'button', style: { '--c': BY[id].c, width: '100%', border: 'none', background: 'none', textAlign: 'left', cursor: 'pointer' }, onclick: () => select(id), 'aria-label': `${BY[id].name}: ${txt}` }, [
+        el('span', { class: 'tag', text: BY[id].short }), el('div', { class: 'body' }, [el('div', { class: 'h', text: txt })]), el('span', { class: 'chev', 'aria-hidden': 'true', text: '›' })])])))]));
+
     // Key numbers: MSFT + weather
-    const msftTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.mara.c }, onclick: () => select('mara'), 'aria-label': 'Open Mara, markets' }, [
+    const msftTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.markets.c }, onclick: () => select('markets'), 'aria-label': 'Open Markets' }, [
       el('span', { class: 'lbl' }, [el('i'), 'Microsoft']),
       el('span', { class: 'big', text: msft ? fmtPrice('MSFT', msft.price) : '—' }),
       el('span', { class: 'chg ' + (msft ? dir(msft.pct) : ''), text: msft && msft.pct != null ? signPct(msft.pct) + (m.open ? ' today' : ' at close') : 'Waiting for prices' }),
       sparkline(msft && msft.spark, !msft || msft.pct >= 0),
       el('span', { class: 'note', text: m.open ? 'Market open' : `Opens ${m.next}` })]);
-    const wTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.skye.c }, onclick: () => select('skye'), 'aria-label': 'Open Skye, weather' }, [
+    const wTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.weather.c }, onclick: () => select('weather'), 'aria-label': 'Open Weather' }, [
       el('span', { class: 'lbl' }, [el('i'), loc.name]),
       el('span', { class: 'big', text: wx ? `${W(wx.current.weather_code)[0]} ${Math.round(wx.current.temperature_2m)}°` : '—' }),
       el('span', { class: 'chg secondary', text: wx ? S.desc[0].toUpperCase() + S.desc.slice(1) : 'Checking the skies' }),
       el('span', { class: 'note', text: wx ? S.rain : '' })]);
-    v.append(el('div', { class: 'grid2' }, [msftTile, wTile]));
+    const g = el('div', { class: 'grid2' }, [msftTile, wTile]); g.style.marginTop = '10px';
+    v.append(g);
 
     // Other markets
     const keys = ['SPX', 'NDX', 'FTSE', 'GBPUSD'].filter(k => q[k] && q[k].price != null);
-    if (keys.length) v.append(el('section', { class: 'section' }, [sub('Markets'), el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))]));
+    if (keys.length) v.append(section('Markets', el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))));
 
     // Dispatch log
-    const entries = [];
-    TEAM.filter(a => a.kind === 'news').forEach(a => feed(a.feed).slice(0, 6).forEach(it => {
-      if (it.date && Date.now() - new Date(it.date) < 24 * 3600e3) entries.push({ t: it.date, a, msg: it.title, href: safeHref(it.link), fresh: isFresh(it) });
+    const entries = [], seen = new Set();
+    const src = [...NEWS_TABS.map(t => [t.id, BY.news, t.name]), ['m365', BY.m365, null], ['ai', BY.ai, null], ['releases', BY.releases, null], ['money', BY.money, null]];
+    src.forEach(([fid, a, tab]) => feed(fid).slice(0, 6).forEach(it => {
+      if (seen.has(it.link)) return; seen.add(it.link);
+      if (it.date && Date.now() - new Date(it.date) < 24 * 3600e3) entries.push({ t: it.date, a, tab, msg: it.title, href: safeHref(it.link), fresh: isFresh(it) });
     }));
     entries.sort((x, y) => y.t < x.t ? -1 : 1);
-    v.append(el('section', { class: 'section' }, [sub('Dispatches'), entries.length
+    v.append(section('Dispatches', entries.length
       ? el('div', { class: 'group glass strong' }, [el('ul', {}, entries.slice(0, 8).map(e => el('li', {}, [
           el('a', { class: 'row' + (e.fresh ? ' fresh' : ''), href: e.href || undefined, target: e.href ? '_blank' : undefined, rel: e.href ? 'noopener noreferrer' : undefined, style: { '--c': e.a.c } }, [
             el('time', { class: 'time', datetime: e.t, text: hhmm(new Date(e.t)) }),
-            el('div', { class: 'body' }, [el('div', { class: 'h', text: e.msg }), el('div', { class: 'm' }, [el('b', { text: e.a.name }), '  ' + e.a.role])])])])))])
-      : el('div', { class: 'group glass strong' }, [el('p', { class: 'empty', text: 'No dispatches in the last 24 hours. Sweep now to check in with the team.' })])]));
+            el('div', { class: 'body' }, [el('div', { class: 'h', text: str(e.msg) }), el('div', { class: 'm' }, [el('b', { text: e.a.name }), e.tab ? '  ' + e.tab : ''])])])])))])
+      : empty('No dispatches in the last 24 hours. Sweep now to check in with the team.')));
 
     v.append(footer());
     return v;
@@ -668,8 +900,9 @@
   function footer() {
     return el('footer', {}, [
       'Your agents read public sources only: Yahoo Finance and ', el('a', { href: 'https://www.tradingview.com/', target: '_blank', rel: 'noopener', text: 'TradingView' }),
-      ' for markets, ', el('a', { href: 'https://open-meteo.com/', target: '_blank', rel: 'noopener', text: 'Open-Meteo' }), ' for weather, and BBC, Google News, The Verge and 9to5Mac for news.',
-      el('span', { class: 'keys', text: ' Keys: 1 to 8 open an agent, arrow keys move between them, R sweeps, Esc goes back to Atlas.' })]);
+      ' for markets, ', el('a', { href: 'https://open-meteo.com/', target: '_blank', rel: 'noopener', text: 'Open-Meteo' }),
+      ' for weather, and news and blog feeds from the BBC, Google News, The Verge, 9to5Mac, Microsoft and Apple. Lessons, explainers and suggestions are written by Claude each morning.',
+      el('span', { class: 'keys', text: ' Keyboard: keys 1 to 9, 0, minus and equals open the twelve agents in order; arrow keys move between them; R sweeps; Esc returns to the briefing.' })]);
   }
 
   let tvNode = null;
@@ -686,6 +919,155 @@
     return box;
   }
 
+  /* --- desk bodies by kind --- */
+  const DESK = {
+    markets(v) {
+      const q = data.quotes || {}, keys = QUOTE_KEYS.filter(k => q[k] && q[k].price != null);
+      if (keys.length) v.append(section('Prices at last sweep', el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))));
+      if (!tvNode) tvNode = tvChart();
+      v.append(section('Microsoft, live', tvNode));
+      const m = market();
+      v.append(el('p', { class: 'hint', text: m.open ? 'The chart updates live. Written prices refresh with each sweep, roughly every 30 minutes.' : `The US market opens ${m.next} UK time. Prices are from the last close.` }));
+    },
+    weather(v) {
+      if (wx) {
+        v.append(section('Next 12 hours', el('div', { class: 'hours' }, nextHours(12).map((h, i) => el('div', { class: 'hour glass' + (wet(h.c) ? ' wet' : '') }, [
+          el('div', { class: 'secondary', text: i === 0 ? 'Now' : h.tm.slice(11, 16) }), el('div', { class: 'i', text: W(h.c)[0] }), el('div', { class: 'headline num', text: Math.round(h.t) + '°' })])))));
+        const sr = wx.daily && arr(wx.daily.sunrise)[0], ss = wx.daily && arr(wx.daily.sunset)[0];
+        if (sr && ss) {
+          const mins = Math.round((new Date(ss) - new Date(sr)) / 60e3);
+          v.append(el('div', { class: 'sun' }, [
+            el('div', { class: 'fig glass' }, [el('div', { class: 'n', text: 'Sunrise' }), el('div', { class: 'p', text: sr.slice(11, 16) })]),
+            el('div', { class: 'fig glass' }, [el('div', { class: 'n', text: 'Sunset' }), el('div', { class: 'p', text: ss.slice(11, 16) })]),
+            el('div', { class: 'fig glass' }, [el('div', { class: 'n', text: 'Daylight' }), el('div', { class: 'p', text: `${Math.floor(mins / 60)}h ${mins % 60}m` })])]));
+        }
+        v.append(section('Next few days', el('div', { class: 'group glass strong' }, wx.daily.time.map((day, i) => el('div', { class: 'day' }, [
+          el('span', { text: `${W(wx.daily.weather_code[i])[0]}  ${i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' })}` }),
+          el('span', { class: 'secondary num', text: `${Math.round(wx.daily.temperature_2m_max[i])}° / ${Math.round(wx.daily.temperature_2m_min[i])}°` })])))));
+      }
+      const msg = el('p', { class: 'hint', text: 'Saved only in this browser.' });
+      const input = el('input', { type: 'text', placeholder: 'Town or city', maxLength: 60, enterKeyHint: 'search', 'aria-label': 'Town or city' });
+      v.append(section('Change location',
+        el('form', { class: 'field', autocomplete: 'off', onsubmit: async e => {
+          e.preventDefault(); const qq = input.value.trim(); if (!qq) return;
+          msg.textContent = 'Searching…';
+          try {
+            const res = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&name=${encodeURIComponent(qq)}`);
+            const g = ((await res.json()).results || [])[0];
+            if (!g) { msg.textContent = `No place called “${qq}” found. Try a nearby town.`; return; }
+            setLoc({ lat: +g.latitude.toFixed(2), lon: +g.longitude.toFixed(2), name: g.name }); toast(`Weather now set to ${g.name}`);
+          } catch { msg.textContent = 'Search didn’t go through. Check your connection and try again.'; }
+        } }, [input, el('button', { class: 'pill-btn', type: 'submit', text: 'Set' })]),
+        el('button', { class: 'pill-btn gray', type: 'button', text: 'Use my current location', onclick: () => {
+          if (!navigator.geolocation) { msg.textContent = 'Location isn’t available in this browser.'; return; }
+          msg.textContent = 'Finding you…';
+          navigator.geolocation.getCurrentPosition(
+            p => { setLoc({ lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'your area' }); toast('Weather now set to your area'); },
+            () => { msg.textContent = 'Location permission was declined. Type a town instead.'; }, { timeout: 10000, maximumAge: 600000 });
+        } }), msg));
+    },
+    lesson(v, a) {
+      const L = daily && daily.lesson;
+      if (!L) return v.append(section('Today’s lesson', empty('Your first lesson arrives with the morning update around 06:00.')));
+      v.append(section('Today’s lesson', el('article', { class: 'card glass strong doc', style: { '--c': a.c } }, [
+        staleTag(), L.topic ? el('div', { class: 'topic', text: str(L.topic) }) : null, el('h2', { text: str(L.title) }),
+        ...arr(L.body).map(p => el('p', { text: str(p) })),
+        L.takeaway ? el('div', { class: 'callout' }, [el('div', { class: 'k', text: 'Remember this' }), el('div', { class: 'v', text: str(L.takeaway) })]) : null,
+        link(L.link)])));
+    },
+    m365(v, a) {
+      const M = daily && daily.m365;
+      if (M) v.append(section('Today’s tip', el('article', { class: 'card glass strong doc', style: { '--c': a.c } }, [
+        staleTag(), el('h2', { text: str(M.title) }), M.what ? el('p', { text: str(M.what) }) : null,
+        arr(M.try).length ? el('div', { class: 'callout' }, [el('div', { class: 'k', text: 'Try it' }), el('ol', { class: 'steps' }, arr(M.try).map(s => el('li', { text: str(s) })))]) : null,
+        link(M.link)])));
+      else v.append(section('Today’s tip', empty('Your first tip arrives with the morning update around 06:00.')));
+      const f = feed('m365');
+      v.append(section('From the Microsoft blogs', f.length ? storyGroup(f, a) : empty('No posts yet. The next sweep will check the Microsoft 365 and Power Platform blogs.')));
+    },
+    ai(v, a) {
+      const A = daily && daily.ai;
+      if (A && (A.summary || arr(A.items).length)) {
+        v.append(section('Today’s picks', el('div', { class: 'group glass strong', style: { '--c': a.c } }, [staleTag() ? el('div', { style: { padding: '10px 14px 0' } }, [staleTag()]) : null,
+          el('ul', {}, arr(A.items).map(it => { const href = safeHref(it.url); return el('li', {}, [el(href ? 'a' : 'div', { class: 'row', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
+            el('div', { class: 'body' }, [el('div', { class: 'h', text: str(it.title) }), it.why ? el('div', { class: 'm', text: str(it.why) }) : null])])]); }))])));
+      } else v.append(section('Today’s picks', empty('Your first AI briefing arrives with the morning update around 06:00.')));
+      const f = feed('ai');
+      if (f.length) v.append(section('Latest AI stories', storyGroup(f, a)));
+    },
+    explainer(v, a) {
+      const E = daily && daily.explainer, Tm = daily && daily.term;
+      if (!E && !Tm) return v.append(section('Today’s explainer', empty('Your first explainer arrives with the morning update around 06:00.')));
+      const wrap = el('div', { class: 'split2' });
+      if (E) wrap.append(section('The story', el('article', { class: 'card glass strong doc', style: { '--c': a.c } }, [
+        staleTag(), el('h2', { text: str(E.story) }),
+        arr(E.bullets).length ? el('ul', { class: 'bullets' }, arr(E.bullets).map(b => el('li', { text: str(b) }))) : null,
+        E.why ? el('div', { class: 'callout' }, [el('div', { class: 'k', text: 'Why it matters' }), el('div', { class: 'v', text: str(E.why) })]) : null,
+        link(E.url ? { url: E.url, title: 'Read the original story' } : null)])));
+      if (Tm) wrap.append(section('Term of the day', el('article', { class: 'card glass strong doc', style: { '--c': a.c } }, [
+        el('p', { class: 'term', text: str(Tm.term) }), el('p', { text: str(Tm.meaning) }),
+        Tm.example ? el('div', { class: 'callout' }, [el('div', { class: 'k', text: 'In today’s news' }), el('div', { class: 'v', text: str(Tm.example) })]) : null])));
+      v.append(wrap);
+    },
+    money(v, a) {
+      const M = daily && daily.money;
+      if (M && arr(M.figures).length) v.append(section('The numbers', el('div', { class: 'figs' }, arr(M.figures).map(f => {
+        const href = safeHref(f.url);
+        return el(href ? 'a' : 'div', { class: 'fig glass', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
+          el('div', { class: 'n', text: str(f.label) }), el('div', { class: 'p', text: str(f.value) }),
+          el('div', { class: 'm', text: [f.asOf ? `As of ${str(f.asOf)}` : '', f.source ? str(f.source) : ''].filter(Boolean).join(', ') })]);
+      }))));
+      if (M && M.tip) v.append(el('div', { style: { '--c': a.c, marginTop: '10px' } }, [staleTag(), el('div', { class: 'callout glass', style: { marginTop: 0 } }, [el('div', { class: 'k', text: 'Worth knowing' }), el('div', { class: 'v', text: str(M.tip) })])]));
+      if (!M) v.append(section('The numbers', empty('Interest rate, inflation and energy figures arrive with the morning update around 06:00.')));
+      const f = feed('money');
+      if (f.length) v.append(section('Money news', storyGroup(f, a)));
+    },
+    releases(v, a) {
+      const Rl = daily && daily.releases;
+      if (Rl && arr(Rl.items).length) v.append(section('Worth updating', el('div', { class: 'group glass strong', style: { '--c': a.c } }, [el('ul', {}, arr(Rl.items).map(it => {
+        const href = safeHref(it.url);
+        return el('li', {}, [el(href ? 'a' : 'div', { class: 'row', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
+          el('div', { class: 'body' }, [el('div', { class: 'h', text: str(it.name) }), it.note ? el('div', { class: 'm', text: str(it.note) }) : null]),
+          it.version ? el('span', { class: 'ver', text: str(it.version) }) : null])]);
+      }))])));
+      const f = feed('releases');
+      v.append(section('Latest releases', f.length ? storyGroup(f, a) : empty('No releases tracked yet. The next sweep will check Apple’s release notes.')));
+    },
+    trends(v, a) {
+      if (!T.length) return v.append(section('What’s rising', empty('Not enough headlines yet. Trends appear once the team has filed a few dozen stories.')));
+      if (!T.some(t => t.k === trendSel)) trendSel = T[0].k;
+      const max = Math.max(...T.map(t => t.total));
+      const list = el('div', { class: 'group glass strong', style: { '--c': a.c } }, [el('ul', { class: 'tr-list' }, T.map(t => el('li', {}, [
+        el('button', { type: 'button', class: t.k === trendSel ? 'on' : '', 'aria-pressed': String(t.k === trendSel), onclick: () => { trendSel = t.k; render(); } }, [
+          el('span', { class: 'w' }, [label(t.k), t.rising ? el('span', { class: 'rise', text: 'Rising' }) : null]),
+          el('span', { class: 'c', text: `${t.total} ${t.total === 1 ? 'story' : 'stories'}` }),
+          el('span', { class: 'bar', 'aria-hidden': 'true' }, [el('i', { style: { width: Math.max(8, t.total / max * 100) + '%' } })])])])))]);
+      const sel = T.find(t => t.k === trendSel);
+      const stories = el('div', {}, [storyGroup(sel.items, a, 12)]);
+      const wrap = el('div', { class: 'split2' }, [section('What’s rising', list), section(`Stories mentioning ${label(sel.k)}`, stories)]);
+      v.append(wrap);
+      v.append(el('p', { class: 'hint', text: 'Counted from every headline the team has filed. Rising means it appears much more in the last 24 hours than before.' }));
+    },
+    news(v, a) {
+      if (!NEWS_TABS.some(t => t.id === newsTab)) newsTab = 'top';
+      const seg = el('div', { class: 'seg glass', role: 'tablist', 'aria-label': 'News desks' }, NEWS_TABS.map(t => {
+        const n = feed(t.id).filter(isFresh).length;
+        return el('button', { type: 'button', role: 'tab', class: t.id === newsTab ? 'on' : '', 'aria-selected': String(t.id === newsTab),
+          onclick: () => { newsTab = t.id; store.set('newsTab', t.id); render(); } }, [t.name, n ? el('span', { class: 'badge', text: n > 9 ? '9+' : String(n) }) : null]);
+      }));
+      const items = feed(newsTab);
+      v.append(el('section', { class: 'section' }, [seg, items.length ? storyGroup(items, a) : empty('This desk hasn’t filed yet. Sweep now to check in.')]));
+    },
+    review(v, a) {
+      const Rv = daily && daily.review;
+      if (!Rv) return v.append(section('This week', empty('Your first weekly review arrives Sunday morning.')));
+      const wrap = el('div', { class: 'split2' });
+      wrap.append(section('What changed', el('div', { class: 'card glass strong doc', style: { '--c': a.c } }, [el('ul', { class: 'bullets' }, arr(Rv.changed).map(s => el('li', { text: str(s) })))])));
+      wrap.append(section('Coming up', el('div', { class: 'card glass strong doc', style: { '--c': a.c } }, [el('ul', { class: 'bullets' }, arr(Rv.coming).map(s => el('li', { text: str(s) })))])));
+      v.append(wrap);
+    },
+  };
+
   function deskView(id, inSheet) {
     const a = BY[id], rep = R[id] || {};
     const v = el('div', { class: 'view', style: { '--c': a.c } });
@@ -695,46 +1077,7 @@
       inSheet ? el('div', { class: 'subhead secondary', text: a.role }) : null,
       el('span', { class: 'capsule-status glass' }, [el('i', { class: sweeping ? '' : rep.dot || '' }), sweeping ? 'Checking in…' : rep.status || ''])])]));
     v.append(el('div', { class: 'card glass strong' }, [el('p', { class: 'dispatch', style: { margin: 0 } }, rep.dispatch || [])]));
-
-    if (a.kind === 'markets') {
-      const q = data.quotes || {}, keys = QUOTE_KEYS.filter(k => q[k] && q[k].price != null);
-      if (keys.length) v.append(el('section', { class: 'section' }, [sub('Prices at last sweep'), el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))]));
-      if (!tvNode) tvNode = tvChart();
-      v.append(el('section', { class: 'section' }, [sub('Microsoft, live'), tvNode]));
-      const m = market();
-      v.append(el('p', { class: 'hint', text: m.open ? 'The chart updates live. Written prices refresh with each sweep, roughly every 30 minutes.' : `The US market opens ${m.next} UK time. Prices are from the last close.` }));
-    } else if (a.kind === 'weather') {
-      if (wx) {
-        v.append(el('section', { class: 'section' }, [sub('Next 12 hours'), el('div', { class: 'hours' }, nextHours(12).map((h, i) => el('div', { class: 'hour glass' + (wet(h.c) ? ' wet' : '') }, [
-          el('div', { class: 'secondary', text: i === 0 ? 'Now' : h.tm.slice(11, 16) }), el('div', { class: 'i', text: W(h.c)[0] }), el('div', { class: 'headline num', text: Math.round(h.t) + '°' })])))]));
-        v.append(el('section', { class: 'section' }, [sub('Next few days'), el('div', { class: 'group glass strong' }, wx.daily.time.map((day, i) => el('div', { class: 'day' }, [
-          el('span', { text: `${W(wx.daily.weather_code[i])[0]}  ${i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' })}` }),
-          el('span', { class: 'secondary num', text: `${Math.round(wx.daily.temperature_2m_max[i])}° / ${Math.round(wx.daily.temperature_2m_min[i])}°` })])))]));
-      }
-      const msg = el('p', { class: 'hint', text: 'Saved only in this browser.' });
-      const input = el('input', { type: 'text', placeholder: 'Town or city', maxLength: 60, enterKeyHint: 'search', 'aria-label': 'Town or city' });
-      v.append(el('section', { class: 'section' }, [sub('Where Skye watches'),
-        el('form', { class: 'field', autocomplete: 'off', onsubmit: async e => {
-          e.preventDefault(); const qq = input.value.trim(); if (!qq) return;
-          msg.textContent = 'Searching…';
-          try {
-            const res = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&name=${encodeURIComponent(qq)}`);
-            const g = ((await res.json()).results || [])[0];
-            if (!g) { msg.textContent = `No place called “${qq}” found. Try a nearby town.`; return; }
-            setLoc({ lat: +g.latitude.toFixed(2), lon: +g.longitude.toFixed(2), name: g.name }); toast(`Skye is now watching ${g.name}`);
-          } catch { msg.textContent = 'Search didn’t go through. Check your connection and try again.'; }
-        } }, [input, el('button', { class: 'pill-btn', type: 'submit', text: 'Set' })]),
-        el('button', { class: 'pill-btn gray', type: 'button', text: 'Use my current location', onclick: () => {
-          if (!navigator.geolocation) { msg.textContent = 'Location isn’t available in this browser.'; return; }
-          msg.textContent = 'Finding you…';
-          navigator.geolocation.getCurrentPosition(
-            p => { setLoc({ lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'your area' }); toast('Skye is now watching your area'); },
-            () => { msg.textContent = 'Location permission was declined. Type a town instead.'; }, { timeout: 10000, maximumAge: 600000 });
-        } }), msg]));
-    } else if (a.kind === 'news') {
-      const items = feed(a.feed);
-      if (items.length) v.append(el('section', { class: 'section' }, [sub(`All ${items.length} stories`), storyGroup(items, a)]));
-    }
+    if (DESK[a.kind]) DESK[a.kind](v, a);
     if (!inSheet) v.append(footer());
     return v;
   }
@@ -743,8 +1086,8 @@
   function renderNav() {
     const prevBadges = new Map([...document.querySelectorAll('[data-badge]')].map(b => [b.dataset.badge, b.textContent]));
     const badge = (id, cls) => {
-      const n = (R[id] && R[id].fresh) || (id === 'atlas' ? 0 : 0);
-      if (!n) return null;
+      const n = (R[id] && R[id].fresh) || 0;
+      if (!n || id === HOME) return null;
       const txt = n > 9 ? '9+' : String(n);
       const b = el('span', { class: 'badge ' + (cls || ''), text: txt, 'aria-label': `${n} new` });
       b.dataset.badge = id + (cls || '');
@@ -753,16 +1096,17 @@
     };
     $('railList').replaceChildren(...TEAM.map(a => {
       const rep = R[a.id] || {};
-      return el('li', {}, [el('button', { class: 'rail-item' + (a.id === selected ? ' sel' : ''), type: 'button', 'aria-current': a.id === selected ? 'page' : undefined, onclick: () => select(a.id) }, [
+      return el('li', {}, [el('button', { class: 'rail-item' + (a.id === selected ? ' sel' : ''), type: 'button', 'aria-current': a.id === selected ? 'page' : undefined, 'aria-label': `${a.name}, ${a.role}`, onclick: () => select(a.id) }, [
         avatar(a, sweeping ? '' : rep.dot),
-        el('span', { class: 't' }, [el('div', { class: 'nm', text: a.name }), el('div', { class: 'rl', text: sweeping ? 'Checking in…' : a.role })]),
+        el('span', { class: 't' }, [el('div', { class: 'nm', text: a.name }), el('div', { class: 'sn', text: a.short }), el('div', { class: 'rl', text: sweeping ? 'Checking in…' : a.role })]),
         badge(a.id)])]);
     }));
-    const openSheetId = sheetOpen ? selected : 'atlas';
+    const openSheetId = sheetOpen ? selected : HOME;
     $('capsule').replaceChildren(...TEAM.map(a => el('button', { class: 'cap-btn' + (a.id === openSheetId ? ' sel' : ''), type: 'button', 'aria-label': `${a.name}, ${a.role}`, onclick: () => select(a.id) }, [
       avatar(a, sweeping ? '' : (R[a.id] || {}).dot), badge(a.id, 'cap')])));
     document.querySelectorAll('.sweep-label').forEach(s => s.textContent = sweeping ? 'Sweeping…' : 'Sweep now');
-    $('railFoot').textContent = sweeping ? 'Every agent is checking in.' : data.updated ? `Last sweep ${ago(data.updated)}. The team checks in every 30 minutes.` : 'Waiting for the first sweep.';
+    $('railFoot').textContent = sweeping ? 'Every agent is checking in.' : data.updated ? `Last sweep ${ago(data.updated)}.` : 'Waiting for the first sweep.';
+    const sel = document.querySelector('.rail-item.sel'); if (sel && sel.scrollIntoView) sel.scrollIntoView({ block: 'nearest' });
   }
 
   /* ================= Rendering & selection ================= */
@@ -770,8 +1114,8 @@
   function render() {
     R = reports();
     const pane = $('pane'), keep = scrollY;
-    const id = wide.matches ? selected : 'atlas';
-    pane.replaceChildren(id === 'atlas' ? commandView() : deskView(id));
+    const id = wide.matches ? selected : HOME;
+    pane.replaceChildren(id === HOME ? commandView() : deskView(id));
     pane.querySelectorAll('.view').forEach(v => v.style.animation = 'none');
     scrollTo(0, keep);
     if (sheetOpen && !wide.matches) { const sc = $('sheetScroll'), k = sc.scrollTop; sc.replaceChildren(deskView(selected, true)); sc.querySelectorAll('.view').forEach(v => v.style.animation = 'none'); sc.scrollTop = k; }
@@ -781,13 +1125,13 @@
     if (!BY[id]) return;
     const changed = id !== selected;
     selected = id;
-    try { history.replaceState(null, '', id === 'atlas' ? location.pathname + location.search : '#' + id); } catch {}
+    try { history.replaceState(null, '', id === HOME ? location.pathname + location.search : '#' + id); } catch {}
     R = reports();
     if (wide.matches) {
-      $('pane').replaceChildren(id === 'atlas' ? commandView() : deskView(id));
+      $('pane').replaceChildren(id === HOME ? commandView() : deskView(id));
       if (changed) scrollTo(0, 0);
       renderNav();
-    } else if (id === 'atlas') { closeSheet(); scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }); }
+    } else if (id === HOME) { closeSheet(); scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }); }
     else openSheet(id);
   }
 
@@ -805,7 +1149,7 @@
   }
   function closeSheet() {
     if (!sheetOpen) return;
-    sheetOpen = false; selected = 'atlas';
+    sheetOpen = false; selected = HOME;
     try { history.replaceState(null, '', location.pathname + location.search); } catch {}
     $('sheet').classList.remove('open'); $('scrim').classList.remove('open'); $('sheet').style.transform = '';
     document.documentElement.style.overflow = '';
@@ -833,7 +1177,7 @@
     });
     $('sheetScroll').addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now(); }, { passive: true });
     $('sheetScroll').addEventListener('touchend', e => {
-      if (e.target.closest('.hours, .chart, input')) return;
+      if (e.target.closest('.hours, .chart, input, .seg')) return;
       const t = e.changedTouches[0], dx = t.clientX - x0, ddy = t.clientY - y0;
       if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(ddy) * 1.6 && Date.now() - t0 < 600) step(dx < 0 ? 1 : -1);
     }, { passive: true });
@@ -841,13 +1185,14 @@
 
   wide.addEventListener('change', () => { if (wide.matches && sheetOpen) { sheetOpen = false; $('sheet').classList.remove('open'); $('scrim').classList.remove('open'); document.documentElement.style.overflow = ''; } render(); });
 
-  // Keyboard
+  // Keyboard: 1–9, 0, -, = open the 12 agents in order
+  const KEYS = '1234567890-=';
   document.addEventListener('keydown', e => {
     if (e.target.matches('input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === 'Escape') { e.preventDefault(); select('atlas'); }
+    if (e.key === 'Escape') { e.preventDefault(); select(HOME); }
     else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { if (wide.matches || sheetOpen) { e.preventDefault(); step(1); } }
     else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { if (wide.matches || sheetOpen) { e.preventDefault(); step(-1); } }
-    else if (/^[1-8]$/.test(e.key) && TEAM[+e.key - 1]) { e.preventDefault(); select(TEAM[+e.key - 1].id); }
+    else if (KEYS.includes(e.key) && TEAM[KEYS.indexOf(e.key)]) { e.preventDefault(); select(TEAM[KEYS.indexOf(e.key)].id); }
     else if (e.key.toLowerCase() === 'r') { e.preventDefault(); sweep(); }
   });
 
@@ -855,11 +1200,14 @@
   async function loadData() {
     try { const r = await fetch('data/feeds.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) data = await r.json(); } catch {}
   }
+  async function loadDaily() {
+    try { const r = await fetch('data/daily.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) { const d = await r.json(); daily = d && typeof d === 'object' ? d : null; } } catch {}
+  }
   async function loadWeather() {
     try {
       const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}` +
         `&current=temperature_2m,weather_code,apparent_temperature,wind_speed_10m` +
-        `&hourly=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=4`;
+        `&hourly=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&timezone=auto&forecast_days=4`;
       const r = await fetch(url); if (!r.ok) throw 0;
       wx = await r.json(); wx.fetched = new Date().toISOString();
     } catch {}
@@ -870,17 +1218,18 @@
     if (sweeping) return;
     sweeping = true;
     if (!silent) { document.body.classList.add('sweeping'); render(); }
-    const before = data.updated;
-    await Promise.all([loadData(), loadWeather(), new Promise(r => setTimeout(r, silent ? 0 : 1500))]);
+    const before = (data.updated || '') + (daily && daily.generated || '');
+    await Promise.all([loadData(), loadDaily(), loadWeather(), new Promise(r => setTimeout(r, silent ? 0 : 1500))]);
     sweeping = false; document.body.classList.remove('sweeping');
     render();
-    if (!silent) toast(data.updated && data.updated !== before ? 'New reports filed' : 'Team checked in. Nothing new yet');
+    const after = (data.updated || '') + (daily && daily.generated || '');
+    if (!silent) toast(after !== before ? 'New reports filed' : 'Team checked in. Nothing new yet');
   }
   $('sweepWide').onclick = () => sweep();
 
   /* ================= Boot ================= */
   render();
-  sweep(true).then(() => { if (!wide.matches && selected !== 'atlas') openSheet(selected); });
+  sweep(true).then(() => { if (!wide.matches && selected !== HOME) openSheet(selected); });
   setInterval(() => sweep(true), 5 * 60e3);
   setInterval(() => { if (!document.hidden) render(); }, 60e3);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) sweep(true); });
