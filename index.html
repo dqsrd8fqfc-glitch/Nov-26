@@ -8,204 +8,133 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Dashboard">
 <meta name="theme-color" content="#0b1120">
+<meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Dashboard</title>
 <style>
   :root {
-    --bg: #0b1120;
-    --bg2: #111a2e;
-    --card: rgba(255,255,255,0.06);
-    --card-border: rgba(255,255,255,0.08);
-    --text: #f1f5f9;
-    --muted: #94a3b8;
-    --accent: #38bdf8;
-    --accent2: #a78bfa;
-    --good: #34d399;
-    --warn: #fbbf24;
-    --danger: #f87171;
-    --radius: 22px;
-    --gap: 14px;
-  }
-  @media (prefers-color-scheme: light) {
-    :root {
-      --bg: #eef2f7;
-      --bg2: #dfe7f1;
-      --card: rgba(255,255,255,0.75);
-      --card-border: rgba(15,23,42,0.06);
-      --text: #0f172a;
-      --muted: #64748b;
-      --accent: #0284c7;
-      --accent2: #7c3aed;
-    }
+    --bg: #0b1120; --bg2: #0f172a;
+    --card: rgba(255,255,255,0.055); --card-border: rgba(255,255,255,0.08);
+    --text: #f1f5f9; --muted: #94a3b8; --faint: #64748b;
+    --accent: #38bdf8; --up: #34d399; --down: #f87171;
+    --radius: 22px; --gap: 14px;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body { margin: 0; height: 100%; }
+  html, body { margin: 0; }
   body {
-    min-height: 100dvh;
+    min-height: 100dvh; color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
-    color: var(--text);
     background:
-      radial-gradient(1200px 600px at 10% -10%, rgba(56,189,248,0.18), transparent 60%),
-      radial-gradient(900px 500px at 110% 10%, rgba(167,139,250,0.16), transparent 60%),
+      radial-gradient(1200px 600px at 10% -10%, rgba(56,189,248,0.16), transparent 60%),
+      radial-gradient(900px 500px at 110% 10%, rgba(167,139,250,0.14), transparent 60%),
       linear-gradient(180deg, var(--bg), var(--bg2));
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
-    overscroll-behavior-y: none;
   }
   .wrap {
-    min-height: 100dvh;
+    max-width: 1400px; margin: 0 auto;
     padding:
-      calc(env(safe-area-inset-top) + 18px)
-      calc(env(safe-area-inset-right) + 16px)
+      calc(env(safe-area-inset-top) + 16px)
+      calc(env(safe-area-inset-right) + 14px)
       calc(env(safe-area-inset-bottom) + 24px)
-      calc(env(safe-area-inset-left) + 16px);
-    max-width: 1400px;
-    margin: 0 auto;
+      calc(env(safe-area-inset-left) + 14px);
   }
 
   /* Header */
-  header {
-    display: flex; align-items: flex-start; justify-content: space-between;
-    gap: 12px; margin-bottom: 18px;
-  }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-bottom: 14px; }
   .greeting { font-size: 15px; color: var(--muted); margin: 0 0 2px; font-weight: 500; }
-  .clock {
-    font-size: clamp(56px, 16vw, 96px); font-weight: 200; letter-spacing: -0.04em;
-    line-height: 1; margin: 0; font-variant-numeric: tabular-nums;
-  }
-  .date { font-size: 17px; color: var(--muted); margin-top: 6px; }
-  .icon-btns { display: flex; gap: 8px; padding-top: 4px; }
-  .icon-btn {
-    width: 42px; height: 42px; border-radius: 50%;
-    border: 1px solid var(--card-border); background: var(--card);
-    color: var(--text); font-size: 18px; cursor: pointer;
-    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-    display: grid; place-items: center; transition: transform .15s;
-  }
-  .icon-btn:active { transform: scale(0.92); }
+  .clock { font-size: clamp(52px, 15vw, 88px); font-weight: 200; letter-spacing: -0.04em; line-height: 1; margin: 0; font-variant-numeric: tabular-nums; }
+  .date { font-size: 16px; color: var(--muted); margin-top: 6px; }
+  .wx-mini { text-align: right; cursor: pointer; background: none; border: none; color: inherit; font: inherit; padding: 0; }
+  .wx-mini .t { font-size: 34px; font-weight: 300; letter-spacing: -0.02em; }
+  .wx-mini .p { font-size: 13px; color: var(--muted); }
+
+  /* Ticker tape */
+  .tape { border-radius: 16px; overflow: hidden; margin-bottom: var(--gap); background: var(--card); border: 1px solid var(--card-border); min-height: 46px; }
 
   /* Grid */
   .grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
-  @media (min-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } .span2 { grid-column: span 2; } }
-  @media (min-width: 1000px) { .grid { grid-template-columns: repeat(3, 1fr); } .span2 { grid-column: span 2; } }
+  @media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } .wide { grid-column: span 2; } }
+  @media (min-width: 1050px) { .grid { grid-template-columns: repeat(3, 1fr); } .span2 { grid-column: span 2; } .wide { grid-column: span 3; } }
 
   .card {
-    background: var(--card); border: 1px solid var(--card-border);
-    border-radius: var(--radius); padding: 18px;
+    background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+    padding: 16px; min-width: 0;
     backdrop-filter: blur(24px) saturate(140%); -webkit-backdrop-filter: blur(24px) saturate(140%);
     animation: rise .5s ease both;
-    min-width: 0;
   }
-  .card:nth-child(2) { animation-delay: .05s; } .card:nth-child(3) { animation-delay: .1s; }
-  .card:nth-child(4) { animation-delay: .15s; } .card:nth-child(5) { animation-delay: .2s; }
+  .card:nth-child(2) { animation-delay: .06s; } .card:nth-child(3) { animation-delay: .12s; }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   .card h2 {
-    margin: 0 0 12px; font-size: 13px; font-weight: 600; text-transform: uppercase;
-    letter-spacing: .08em; color: var(--muted); display: flex; justify-content: space-between; align-items: center;
+    margin: 0 0 12px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); display: flex; justify-content: space-between; align-items: center; gap: 8px;
   }
-  .card h2 small { text-transform: none; letter-spacing: 0; font-weight: 500; }
-  .empty { color: var(--muted); font-size: 15px; margin: 4px 0; }
+  .card h2 small { text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--faint); text-align: right; }
+  .empty { color: var(--muted); font-size: 15px; margin: 6px 0; }
 
-  /* Privacy blur */
-  body.private .card .blurable { filter: blur(9px); user-select: none; pointer-events: none; }
-  body.private .greeting { filter: blur(6px); }
-  .blurable { transition: filter .25s; }
+  /* MSFT */
+  .msft { height: 380px; margin: 0 -6px -6px; }
+  @media (min-width: 700px) { .msft { height: 420px; } }
+  .live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--faint); margin-right: 6px; vertical-align: 1px; }
+  .live-dot.on { background: var(--up); animation: pulse 2s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(52,211,153,.6); } 70% { box-shadow: 0 0 0 7px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
 
   /* Weather */
   .wx-now { display: flex; align-items: center; gap: 14px; }
-  .wx-icon { font-size: 54px; line-height: 1; }
-  .wx-temp { font-size: 48px; font-weight: 300; letter-spacing: -0.03em; }
-  .wx-desc { color: var(--muted); font-size: 15px; }
-  .wx-hours { display: flex; gap: 8px; overflow-x: auto; margin-top: 14px; padding-bottom: 4px; scrollbar-width: none; }
+  .wx-icon { font-size: 52px; line-height: 1; }
+  .wx-temp { font-size: 46px; font-weight: 300; letter-spacing: -0.03em; }
+  .wx-desc { color: var(--muted); font-size: 14px; }
+  .wx-hours { display: flex; gap: 8px; overflow-x: auto; margin-top: 14px; padding-bottom: 2px; scrollbar-width: none; }
   .wx-hours::-webkit-scrollbar { display: none; }
-  .wx-hour {
-    flex: 0 0 auto; text-align: center; padding: 8px 10px; border-radius: 14px;
-    background: rgba(127,127,127,0.08); min-width: 56px; font-size: 13px;
-  }
+  .wx-hour { flex: 0 0 auto; text-align: center; padding: 8px 10px; border-radius: 14px; background: rgba(255,255,255,0.05); min-width: 54px; font-size: 13px; }
   .wx-hour div:nth-child(2) { font-size: 20px; margin: 2px 0; }
+  .wx-days { margin-top: 12px; }
+  .wx-day { display: flex; justify-content: space-between; padding: 7px 2px; border-top: 1px solid var(--card-border); font-size: 15px; }
+  .wx-day span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; }
 
-  /* Buttons & inputs */
-  .btn {
-    border: none; border-radius: 12px; padding: 10px 14px; font-size: 15px; font-weight: 600;
-    background: var(--accent); color: #04121c; cursor: pointer; transition: transform .15s, opacity .15s;
+  /* News */
+  .tabs { display: flex; gap: 8px; overflow-x: auto; margin: 0 -16px 10px; padding: 0 16px 2px; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: 0 0 auto; border: 1px solid var(--card-border); background: rgba(255,255,255,0.04); color: var(--muted);
+    border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all .15s;
   }
-  .btn:active { transform: scale(0.96); }
-  .btn.ghost { background: rgba(127,127,127,0.14); color: var(--text); }
-  .btn.danger { background: var(--danger); color: #1b0606; }
-  input[type=text], input[type=url], input[type=date], textarea {
-    width: 100%; font: inherit; font-size: 16px; color: var(--text);
-    background: rgba(127,127,127,0.10); border: 1px solid var(--card-border);
-    border-radius: 12px; padding: 10px 12px; outline: none;
-  }
-  input:focus, textarea:focus { border-color: var(--accent); }
-  .row { display: flex; gap: 8px; }
-  .row > input { flex: 1; min-width: 0; }
+  .tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .news { list-style: none; margin: 0; padding: 0; }
+  @media (min-width: 1050px) { .news { columns: 2; column-gap: 28px; } .news li { break-inside: avoid; } }
+  .news li { border-bottom: 1px solid var(--card-border); }
+  .news li:last-child { border-bottom: none; }
+  .news a { display: block; padding: 12px 2px; color: var(--text); text-decoration: none; }
+  .news a:active { opacity: .6; }
+  .news .h { font-size: 16px; line-height: 1.35; font-weight: 500; }
+  .news .m { font-size: 12.5px; color: var(--faint); margin-top: 4px; }
+  .news .m b { color: var(--accent); font-weight: 600; }
 
-  /* To-do */
-  .todo-list { list-style: none; margin: 10px 0 0; padding: 0; }
-  .todo-list li {
-    display: flex; align-items: center; gap: 12px; padding: 10px 2px;
-    border-bottom: 1px solid var(--card-border); font-size: 16px;
-  }
-  .todo-list li:last-child { border-bottom: none; }
-  .check {
-    width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--muted);
-    flex: 0 0 auto; cursor: pointer; display: grid; place-items: center; background: none; padding: 0; color: transparent;
-  }
-  .done .check { background: var(--good); border-color: var(--good); color: #04121c; }
-  .done .todo-text { text-decoration: line-through; color: var(--muted); }
-  .todo-text { flex: 1; word-break: break-word; }
-  .del { background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; padding: 4px 6px; }
-
-  /* Links */
-  .links { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 12px; }
-  .link {
-    display: flex; flex-direction: column; align-items: center; gap: 6px;
-    text-decoration: none; color: var(--text); font-size: 12px; text-align: center;
-  }
-  .link .tile {
-    width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center;
-    font-size: 24px; font-weight: 700; color: #fff; transition: transform .15s;
-  }
-  .link:active .tile { transform: scale(0.9); }
-  .link span { max-width: 76px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
-  /* Countdown */
-  .cd-num { font-size: 52px; font-weight: 300; letter-spacing: -0.03em; line-height: 1; }
-  .cd-label { color: var(--muted); margin-top: 6px; font-size: 15px; }
-
-  /* Notes */
-  textarea.notes { min-height: 140px; resize: vertical; line-height: 1.45; background: transparent; border: none; padding: 0; }
-  .saved { font-size: 12px; color: var(--good); opacity: 0; transition: opacity .3s; }
-  .saved.show { opacity: 1; }
-
-  /* Sheet */
-  .sheet-bg {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.45); opacity: 0; pointer-events: none;
-    transition: opacity .25s; z-index: 10;
-  }
+  /* Location sheet */
+  .sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.5); opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 10; }
   .sheet {
-    position: fixed; left: 0; right: 0; bottom: 0; z-index: 11;
-    max-height: 88dvh; overflow-y: auto;
-    background: var(--bg2); border-radius: 26px 26px 0 0;
-    padding: 10px 20px calc(env(safe-area-inset-bottom) + 24px);
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 11; max-width: 560px; margin: 0 auto;
+    background: #131c31; border: 1px solid var(--card-border); border-radius: 26px 26px 0 0;
+    padding: 10px 20px calc(env(safe-area-inset-bottom) + 22px);
     transform: translateY(105%); transition: transform .32s cubic-bezier(.2,.8,.2,1);
-    max-width: 640px; margin: 0 auto; border: 1px solid var(--card-border);
   }
-  .sheet.open { transform: none; }
-  .sheet-bg.open { opacity: 1; pointer-events: auto; }
-  .grabber { width: 40px; height: 5px; border-radius: 3px; background: var(--muted); opacity: .5; margin: 4px auto 14px; }
-  .sheet h3 { margin: 22px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-  .sheet h3:first-of-type { margin-top: 0; }
-  .sheet p.hint { color: var(--muted); font-size: 13px; margin: 6px 0 0; line-height: 1.4; }
-  .stack > * + * { margin-top: 8px; }
-  .link-edit { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--card-border); font-size: 15px; }
-  .link-edit span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .privacy-note {
-    margin-top: 18px; font-size: 13px; color: var(--muted); text-align: center; line-height: 1.4;
+  .sheet.open { transform: none; } .sheet-bg.open { opacity: 1; pointer-events: auto; }
+  .grabber { width: 40px; height: 5px; border-radius: 3px; background: var(--faint); margin: 4px auto 16px; }
+  .sheet h3 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .row { display: flex; gap: 8px; }
+  .row input { flex: 1; min-width: 0; }
+  input[type=text] {
+    font: inherit; font-size: 16px; color: var(--text); background: rgba(255,255,255,.07);
+    border: 1px solid var(--card-border); border-radius: 12px; padding: 11px 12px; outline: none;
   }
+  input:focus { border-color: var(--accent); }
+  .btn { border: none; border-radius: 12px; padding: 11px 16px; font-size: 15px; font-weight: 600; background: var(--accent); color: #04121c; cursor: pointer; }
+  .btn.ghost { background: rgba(255,255,255,.08); color: var(--text); width: 100%; margin-top: 8px; }
+  .hint { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+  footer { text-align: center; color: var(--faint); font-size: 12px; margin-top: 18px; line-height: 1.5; }
+  footer a { color: var(--faint); }
 </style>
 </head>
 <body>
@@ -216,341 +145,285 @@
       <h1 class="clock" id="clock">--:--</h1>
       <div class="date" id="date"></div>
     </div>
-    <div class="icon-btns">
-      <button class="icon-btn" id="privBtn" aria-label="Hide personal content" title="Hide content">👁</button>
-      <button class="icon-btn" id="setBtn" aria-label="Settings" title="Settings">⚙︎</button>
-    </div>
+    <button class="wx-mini" id="wxMini" aria-label="Change weather location">
+      <div class="t" id="wxMiniT">–</div>
+      <div class="p" id="wxMiniP">Weather</div>
+    </button>
   </header>
 
+  <!-- Live market ticker tape (TradingView) -->
+  <div class="tape">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {"proName": "NASDAQ:MSFT", "title": "Microsoft"},
+          {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+          {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"},
+          {"proName": "FOREXCOM:UKXGBP", "title": "FTSE 100"},
+          {"proName": "NASDAQ:AAPL", "title": "Apple"},
+          {"proName": "NASDAQ:NVDA", "title": "Nvidia"},
+          {"proName": "FX_IDC:GBPUSD", "title": "GBP/USD"},
+          {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"}
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": true,
+        "displayMode": "adaptive",
+        "colorTheme": "dark",
+        "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+
   <main class="grid">
-    <section class="card" id="wxCard">
+    <section class="card span2">
+      <h2><span><span class="live-dot" id="mktDot"></span>Microsoft · MSFT</span><small id="mktStatus"></small></h2>
+      <div class="msft">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+          <script src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+          {
+            "symbols": [["Microsoft", "NASDAQ:MSFT|1D"]],
+            "chartOnly": false,
+            "width": "100%",
+            "height": "100%",
+            "autosize": true,
+            "locale": "en",
+            "colorTheme": "dark",
+            "isTransparent": true,
+            "showVolume": false,
+            "showMA": false,
+            "hideDateRanges": false,
+            "hideMarketStatus": false,
+            "hideSymbolLogo": false,
+            "scalePosition": "right",
+            "scaleMode": "Normal",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+            "fontSize": "10",
+            "noTimeScale": false,
+            "valuesTracking": "1",
+            "changeMode": "price-and-percent",
+            "chartType": "area",
+            "lineWidth": 2,
+            "lineType": 0,
+            "lineColor": "rgba(56, 189, 248, 1)",
+            "topColor": "rgba(56, 189, 248, 0.35)",
+            "bottomColor": "rgba(56, 189, 248, 0)",
+            "dateRanges": ["1d|1", "5d|5", "1m|30", "12m|1D", "60m|1W", "all|1M"]
+          }
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>Weather <small id="wxPlace"></small></h2>
       <div id="wxBody"><p class="empty">Loading…</p></div>
     </section>
 
-    <section class="card">
-      <h2>Countdown</h2>
-      <div class="blurable" id="cdBody"></div>
-    </section>
-
-    <section class="card">
-      <h2>Quick links</h2>
-      <div class="links blurable" id="links"></div>
-    </section>
-
-    <section class="card span2">
-      <h2>To-do <small id="todoCount"></small></h2>
-      <form class="row" id="todoForm" autocomplete="off">
-        <input type="text" id="todoInput" placeholder="Add a task…" maxlength="200" enterkeyhint="done">
-        <button class="btn" type="submit">Add</button>
-      </form>
-      <ul class="todo-list blurable" id="todoList"></ul>
-    </section>
-
-    <section class="card">
-      <h2>Notes <span class="saved" id="saved">Saved</span></h2>
-      <textarea class="notes blurable" id="notes" placeholder="Jot something down…"></textarea>
+    <section class="card wide">
+      <h2>Headlines <small id="newsUpdated"></small></h2>
+      <div class="tabs" id="tabs"></div>
+      <ul class="news" id="news"><li><p class="empty">Loading…</p></li></ul>
     </section>
   </main>
 
-  <p class="privacy-note">🔒 Everything you add is stored only in this browser on this device. Nothing is sent anywhere.</p>
+  <footer>
+    Market data by <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView</a> ·
+    Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> ·
+    Headlines from BBC, Google News, The Verge &amp; 9to5Mac
+  </footer>
 </div>
 
 <div class="sheet-bg" id="sheetBg"></div>
-<div class="sheet" id="sheet" role="dialog" aria-label="Settings">
+<div class="sheet" id="sheet" role="dialog" aria-label="Weather location">
   <div class="grabber"></div>
-
-  <h3>Your name</h3>
-  <input type="text" id="nameInput" placeholder="Optional" maxlength="40">
-
   <h3>Weather location</h3>
-  <div class="stack">
-    <form class="row" id="cityForm" autocomplete="off">
-      <input type="text" id="cityInput" placeholder="Town or city" maxlength="60">
-      <button class="btn" type="submit">Set</button>
-    </form>
-    <button class="btn ghost" id="geoBtn" type="button">📍 Use my current location</button>
-    <p class="hint" id="cityMsg">Weather comes from Open-Meteo. Only the coordinates are sent, to get the forecast.</p>
-  </div>
-
-  <h3>Countdown</h3>
-  <div class="stack">
-    <input type="text" id="cdName" placeholder="Event, e.g. Holiday" maxlength="40">
-    <input type="date" id="cdDate">
-  </div>
-
-  <h3>Quick links</h3>
-  <div id="linkEditList"></div>
-  <form class="stack" id="linkForm" autocomplete="off" style="margin-top:10px">
-    <input type="text" id="linkName" placeholder="Name" maxlength="24">
-    <input type="url" id="linkUrl" placeholder="https://…" inputmode="url">
-    <button class="btn" type="submit">Add link</button>
-    <p class="hint" id="linkMsg"></p>
+  <form class="row" id="cityForm" autocomplete="off">
+    <input type="text" id="cityInput" placeholder="Town or city" maxlength="60" enterkeyhint="search">
+    <button class="btn" type="submit">Set</button>
   </form>
-
-  <h3>Privacy</h3>
-  <div class="stack">
-    <button class="btn danger" id="clearBtn" type="button">Clear everything on this device</button>
-    <p class="hint">This page is public, but your data never leaves this browser. Anyone else who opens the link sees a blank dashboard.</p>
-  </div>
-
-  <div style="margin-top:22px"><button class="btn ghost" id="doneBtn" type="button" style="width:100%">Done</button></div>
+  <button class="btn ghost" id="geoBtn" type="button">📍 Use my current location</button>
+  <p class="hint" id="cityMsg">Saved only in this browser.</p>
 </div>
 
 <script>
 (() => {
-  const KEY = 'dash.v1';
-  const defaults = { name: '', todos: [], notes: '', links: [], cd: { name: '', date: '' }, loc: null, priv: false };
-
-  // ---- Storage (stays on this device only) ----
-  function load() {
-    try { return Object.assign({}, defaults, JSON.parse(localStorage.getItem(KEY) || '{}')); }
-    catch { return Object.assign({}, defaults); }
-  }
-  let state = load();
-  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {} }
-
   const $ = id => document.getElementById(id);
-  const el = (tag, props = {}, kids = []) => {
-    const n = document.createElement(tag);
-    Object.assign(n, props);
-    kids.forEach(k => n.append(k));
-    return n;
+  const el = (tag, props = {}, kids = []) => { const n = document.createElement(tag); Object.assign(n, props); kids.forEach(k => n.append(k)); return n; };
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem('dash.' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem('dash.' + k, JSON.stringify(v)); } catch {} }
   };
 
-  // ---- Clock & greeting ----
+  // ---------- Clock ----------
   function tick() {
     const now = new Date();
     $('clock').textContent = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
     $('date').textContent = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
     const h = now.getHours();
-    const part = h < 5 ? 'Good night' : h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening';
-    $('greeting').textContent = state.name ? `${part}, ${state.name}` : part;
+    $('greeting').textContent = h < 5 ? 'Good night' : h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening';
+    if (now.getSeconds() === 0 || !$('mktStatus').textContent) marketStatus(now);
   }
-  tick();
-  setInterval(tick, 1000);
 
-  // ---- Privacy blur ----
-  function applyPriv() {
-    document.body.classList.toggle('private', state.priv);
-    $('privBtn').textContent = state.priv ? '🙈' : '👁';
-  }
-  $('privBtn').onclick = () => { state.priv = !state.priv; save(); applyPriv(); };
-  applyPriv();
-
-  // ---- Weather (Open-Meteo, no key) ----
-  const WX = {
-    0:['☀️','Clear'],1:['🌤️','Mostly clear'],2:['⛅','Partly cloudy'],3:['☁️','Overcast'],
-    45:['🌫️','Fog'],48:['🌫️','Freezing fog'],51:['🌦️','Light drizzle'],53:['🌦️','Drizzle'],55:['🌧️','Heavy drizzle'],
-    56:['🌧️','Freezing drizzle'],57:['🌧️','Freezing drizzle'],61:['🌦️','Light rain'],63:['🌧️','Rain'],65:['🌧️','Heavy rain'],
-    66:['🌧️','Freezing rain'],67:['🌧️','Freezing rain'],71:['🌨️','Light snow'],73:['🌨️','Snow'],75:['❄️','Heavy snow'],
-    77:['🌨️','Snow grains'],80:['🌦️','Showers'],81:['🌧️','Showers'],82:['⛈️','Heavy showers'],
-    85:['🌨️','Snow showers'],86:['🌨️','Snow showers'],95:['⛈️','Thunderstorm'],96:['⛈️','Thunderstorm'],99:['⛈️','Thunderstorm']
+  // ---------- US market status (NASDAQ 9:30–16:00 New York; holidays not included) ----------
+  const nyParts = t => {
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+      .formatToParts(t).map(x => [x.type, x.value]));
+    return { day: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday), mins: +p.hour * 60 + +p.minute };
   };
+  function marketStatus(now) {
+    const { day, mins } = nyParts(now);
+    const wk = day >= 1 && day <= 5;
+    const open = wk && mins >= 570 && mins < 960;
+    $('mktDot').classList.toggle('on', open);
+    let label = open ? 'Market open · live'
+      : wk && mins >= 240 && mins < 570 ? 'Pre-market'
+      : wk && mins >= 960 && mins < 1200 ? 'After hours' : 'Market closed';
+    if (!open) {
+      // find next weekday 09:30 New York, shown in local time
+      const start = Math.ceil(now.getTime() / 60e3) * 60e3;
+      for (let m = 0; m < 8 * 1440; m += 1) {
+        const t = new Date(start + m * 60e3), p = nyParts(t);
+        if (p.day >= 1 && p.day <= 5 && p.mins === 570) {
+          const sameDay = t.toDateString() === now.toDateString();
+          const time = t.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+          label += ' · opens ' + (sameDay ? time : t.toLocaleDateString('en-GB', { weekday: 'short' }) + ' ' + time);
+          break;
+        }
+        // jump ahead faster when far from 09:30
+        if (Math.abs(p.mins - 570) > 30) m += 29;
+      }
+    }
+    $('mktStatus').textContent = label;
+  }
+  tick(); setInterval(tick, 1000);
+
+  // ---------- Weather (Open-Meteo, no key) ----------
+  const WX = {0:['☀️','Clear'],1:['🌤️','Mostly clear'],2:['⛅','Partly cloudy'],3:['☁️','Overcast'],45:['🌫️','Fog'],48:['🌫️','Fog'],
+    51:['🌦️','Light drizzle'],53:['🌦️','Drizzle'],55:['🌧️','Drizzle'],56:['🌧️','Freezing drizzle'],57:['🌧️','Freezing drizzle'],
+    61:['🌦️','Light rain'],63:['🌧️','Rain'],65:['🌧️','Heavy rain'],66:['🌧️','Freezing rain'],67:['🌧️','Freezing rain'],
+    71:['🌨️','Light snow'],73:['🌨️','Snow'],75:['❄️','Heavy snow'],77:['🌨️','Snow grains'],80:['🌦️','Showers'],81:['🌧️','Showers'],
+    82:['⛈️','Heavy showers'],85:['🌨️','Snow showers'],86:['🌨️','Snow showers'],95:['⛈️','Thunderstorm'],96:['⛈️','Thunderstorm'],99:['⛈️','Thunderstorm']};
   const wx = c => WX[c] || ['🌡️', '—'];
+  let loc = store.get('loc', { lat: 51.51, lon: -0.13, name: 'London' });
 
   async function loadWeather() {
-    const body = $('wxBody');
-    if (!state.loc) {
-      $('wxPlace').textContent = '';
-      body.replaceChildren(
-        el('p', { className: 'empty', textContent: 'Set a location to see the weather.' }),
-        el('button', { className: 'btn ghost', textContent: 'Set location', onclick: openSheet, style: 'margin-top:8px' })
-      );
-      return;
-    }
-    $('wxPlace').textContent = state.loc.name || '';
+    $('wxPlace').textContent = loc.name;
+    $('wxMiniP').textContent = loc.name;
     try {
-      const { lat, lon } = state.loc;
-      const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}` +
         `&current=temperature_2m,weather_code,apparent_temperature,wind_speed_10m` +
-        `&hourly=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min` +
-        `&timezone=auto&forecast_days=2&wind_speed_unit=mph`;
-      const r = await fetch(url);
-      if (!r.ok) throw new Error();
+        `&hourly=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min` +
+        `&timezone=auto&forecast_days=4&wind_speed_unit=mph`;
+      const r = await fetch(url); if (!r.ok) throw 0;
       const d = await r.json();
       const [ico, desc] = wx(d.current.weather_code);
+      const t = Math.round(d.current.temperature_2m);
+      $('wxMiniT').textContent = `${ico} ${t}°`;
       const now = el('div', { className: 'wx-now' }, [
         el('div', { className: 'wx-icon', textContent: ico }),
         el('div', {}, [
-          el('div', { className: 'wx-temp', textContent: Math.round(d.current.temperature_2m) + '°' }),
-          el('div', { className: 'wx-desc', textContent:
-            `${desc} · H ${Math.round(d.daily.temperature_2m_max[0])}° L ${Math.round(d.daily.temperature_2m_min[0])}° · ${Math.round(d.current.wind_speed_10m)} mph` })
+          el('div', { className: 'wx-temp', textContent: t + '°' }),
+          el('div', { className: 'wx-desc', textContent: `${desc} · feels ${Math.round(d.current.apparent_temperature)}° · ${Math.round(d.current.wind_speed_10m)} mph` })
         ])
       ]);
       const hours = el('div', { className: 'wx-hours' });
-      const nowMs = Date.now() - 3600e3;
-      let n = 0;
-      d.hourly.time.forEach((t, i) => {
-        if (n >= 12 || new Date(t).getTime() < nowMs) return;
-        n++;
+      const from = Date.now() - 3600e3; let n = 0;
+      d.hourly.time.forEach((tm, i) => {
+        if (n >= 12 || new Date(tm).getTime() < from) return; n++;
         hours.append(el('div', { className: 'wx-hour' }, [
-          el('div', { textContent: n === 1 ? 'Now' : t.slice(11, 13) }),
+          el('div', { textContent: n === 1 ? 'Now' : tm.slice(11, 13) }),
           el('div', { textContent: wx(d.hourly.weather_code[i])[0] }),
           el('div', { textContent: Math.round(d.hourly.temperature_2m[i]) + '°' })
         ]));
       });
-      body.replaceChildren(now, hours);
+      const days = el('div', { className: 'wx-days' });
+      d.daily.time.forEach((day, i) => {
+        const name = i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' });
+        days.append(el('div', { className: 'wx-day' }, [
+          el('span', { textContent: `${wx(d.daily.weather_code[i])[0]}  ${name}` }),
+          el('span', { textContent: `${Math.round(d.daily.temperature_2m_max[i])}° / ${Math.round(d.daily.temperature_2m_min[i])}°` })
+        ]));
+      });
+      $('wxBody').replaceChildren(now, hours, days);
     } catch {
-      body.replaceChildren(el('p', { className: 'empty', textContent: 'Couldn’t load the weather right now.' }));
+      $('wxBody').replaceChildren(el('p', { className: 'empty', textContent: 'Couldn’t load the weather right now.' }));
     }
   }
+  loadWeather(); setInterval(loadWeather, 15 * 60e3);
 
-  $('geoBtn').onclick = () => {
-    if (!navigator.geolocation) { $('cityMsg').textContent = 'Location isn’t available in this browser.'; return; }
-    $('cityMsg').textContent = 'Finding you…';
-    navigator.geolocation.getCurrentPosition(p => {
-      state.loc = { lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'Here' };
-      save(); $('cityMsg').textContent = 'Location set.'; loadWeather();
-    }, () => { $('cityMsg').textContent = 'Location permission was declined. Try typing a town instead.'; },
-    { timeout: 10000, maximumAge: 600000 });
-  };
-
+  // Location sheet
+  const openSheet = () => { $('sheet').classList.add('open'); $('sheetBg').classList.add('open'); };
+  const closeSheet = () => { $('sheet').classList.remove('open'); $('sheetBg').classList.remove('open'); };
+  $('wxMini').onclick = openSheet; $('wxPlace').onclick = openSheet; $('sheetBg').onclick = closeSheet;
+  function setLoc(l) { loc = l; store.set('loc', l); loadWeather(); setTimeout(closeSheet, 500); }
   $('cityForm').onsubmit = async e => {
     e.preventDefault();
-    const q = $('cityInput').value.trim();
-    if (!q) return;
+    const q = $('cityInput').value.trim(); if (!q) return;
     $('cityMsg').textContent = 'Searching…';
     try {
       const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&name=${encodeURIComponent(q)}`);
-      const d = await r.json();
-      const g = d.results && d.results[0];
+      const g = ((await r.json()).results || [])[0];
       if (!g) { $('cityMsg').textContent = 'Couldn’t find that place.'; return; }
-      state.loc = { lat: g.latitude, lon: g.longitude, name: g.name };
-      save(); $('cityInput').value = '';
       $('cityMsg').textContent = `Set to ${g.name}${g.country ? ', ' + g.country : ''}.`;
-      loadWeather();
-    } catch { $('cityMsg').textContent = 'Search failed, try again.'; }
+      $('cityInput').value = '';
+      setLoc({ lat: +g.latitude.toFixed(2), lon: +g.longitude.toFixed(2), name: g.name });
+    } catch { $('cityMsg').textContent = 'Search failed — try again.'; }
+  };
+  $('geoBtn').onclick = () => {
+    if (!navigator.geolocation) return;
+    $('cityMsg').textContent = 'Finding you…';
+    navigator.geolocation.getCurrentPosition(
+      p => { $('cityMsg').textContent = 'Location set.'; setLoc({ lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'Here' }); },
+      () => { $('cityMsg').textContent = 'Permission declined — type a town instead.'; },
+      { timeout: 10000, maximumAge: 600000 });
   };
 
-  // ---- Countdown ----
-  function renderCd() {
-    const { name, date } = state.cd;
-    const body = $('cdBody');
-    if (!date) {
-      body.replaceChildren(el('p', { className: 'empty', textContent: 'Add an event in settings ⚙︎' }));
+  // ---------- Headlines (data/feeds.json, refreshed by GitHub Actions) ----------
+  let feeds = [], active = store.get('tab', 'top'), updated = null;
+  function ago(iso) {
+    if (!iso) return '';
+    const s = (Date.now() - new Date(iso)) / 1000;
+    if (s < 60) return 'just now';
+    if (s < 3600) return Math.floor(s / 60) + 'm ago';
+    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
+    return Math.floor(s / 86400) + 'd ago';
+  }
+  function renderTabs() {
+    $('tabs').replaceChildren(...feeds.map(f => el('button', {
+      className: 'tab' + (f.id === active ? ' active' : ''), textContent: f.title, type: 'button',
+      onclick: () => { active = f.id; store.set('tab', active); renderTabs(); renderNews(); }
+    })));
+  }
+  function renderNews() {
+    $('newsUpdated').textContent = updated ? 'Updated ' + ago(updated) : '';
+    const f = feeds.find(x => x.id === active) || feeds[0];
+    if (!f || !f.items.length) {
+      $('news').replaceChildren(el('li', {}, [el('p', { className: 'empty', textContent: 'Headlines are on their way — the first update runs shortly.' })]));
       return;
     }
-    const target = new Date(date + 'T00:00:00');
-    const today = new Date(); today.setHours(0, 0, 0, 0);
-    const days = Math.round((target - today) / 86400e3);
-    const label = days > 0 ? `day${days === 1 ? '' : 's'} until ${name || 'the day'}`
-      : days === 0 ? `${name || 'It'}’s today! 🎉` : `days since ${name || 'the day'}`;
-    body.replaceChildren(
-      el('div', { className: 'cd-num', textContent: days === 0 ? '🎉' : Math.abs(days) }),
-      el('div', { className: 'cd-label', textContent: label })
-    );
+    $('news').replaceChildren(...f.items.map(it => {
+      const safe = /^https?:\/\//.test(it.link) ? it.link : '#';
+      const meta = el('div', { className: 'm' }, [el('b', { textContent: it.source }), document.createTextNode(it.date ? ' · ' + ago(it.date) : '')]);
+      return el('li', {}, [el('a', { href: safe, target: '_blank', rel: 'noopener noreferrer' }, [el('div', { className: 'h', textContent: it.title }), meta])]);
+    }));
   }
-  $('cdName').oninput = e => { state.cd.name = e.target.value; save(); renderCd(); };
-  $('cdDate').onchange = e => { state.cd.date = e.target.value; save(); renderCd(); };
-
-  // ---- Quick links ----
-  const COLORS = ['#38bdf8','#a78bfa','#34d399','#fbbf24','#f472b6','#fb923c','#60a5fa','#2dd4bf'];
-  function safeUrl(u) {
+  async function loadNews() {
     try {
-      const x = new URL(u.includes('://') ? u : 'https://' + u);
-      return (x.protocol === 'https:' || x.protocol === 'http:') ? x.href : null;
-    } catch { return null; }
-  }
-  function renderLinks() {
-    const box = $('links'); box.replaceChildren();
-    if (!state.links.length) {
-      box.append(el('p', { className: 'empty', textContent: 'Add your favourite sites in settings ⚙︎' }));
-      box.style.display = 'block';
-    } else {
-      box.style.display = '';
-      state.links.forEach((l, i) => {
-        const tile = el('div', { className: 'tile', textContent: (l.name[0] || '?').toUpperCase() });
-        tile.style.background = COLORS[i % COLORS.length];
-        box.append(el('a', { className: 'link', href: l.url, target: '_blank', rel: 'noopener noreferrer' },
-          [tile, el('span', { textContent: l.name })]));
-      });
+      const r = await fetch('data/feeds.json?t=' + Date.now(), { cache: 'no-store' });
+      const d = await r.json();
+      feeds = d.feeds || []; updated = d.updated;
+      if (feeds.length && !feeds.some(f => f.id === active)) active = feeds[0].id;
+      renderTabs(); renderNews();
+    } catch {
+      $('news').replaceChildren(el('li', {}, [el('p', { className: 'empty', textContent: 'Couldn’t load headlines right now.' })]));
     }
-    const edit = $('linkEditList'); edit.replaceChildren();
-    state.links.forEach((l, i) => {
-      edit.append(el('div', { className: 'link-edit' }, [
-        el('span', { textContent: l.name }),
-        el('button', { className: 'del', textContent: '✕', type: 'button', ariaLabel: 'Remove',
-          onclick: () => { state.links.splice(i, 1); save(); renderLinks(); } })
-      ]));
-    });
   }
-  $('linkForm').onsubmit = e => {
-    e.preventDefault();
-    const name = $('linkName').value.trim();
-    const url = safeUrl($('linkUrl').value.trim());
-    if (!name || !url) { $('linkMsg').textContent = 'Add a name and a valid web address.'; return; }
-    state.links.push({ name, url }); save();
-    $('linkName').value = ''; $('linkUrl').value = ''; $('linkMsg').textContent = '';
-    renderLinks();
-  };
-
-  // ---- To-do ----
-  function renderTodos() {
-    const list = $('todoList'); list.replaceChildren();
-    state.todos.forEach((t, i) => {
-      const li = el('li', { className: t.done ? 'done' : '' }, [
-        el('button', { className: 'check', type: 'button', textContent: '✓', ariaLabel: 'Toggle',
-          onclick: () => { t.done = !t.done; save(); renderTodos(); } }),
-        el('span', { className: 'todo-text', textContent: t.text }),
-        el('button', { className: 'del', type: 'button', textContent: '✕', ariaLabel: 'Delete',
-          onclick: () => { state.todos.splice(i, 1); save(); renderTodos(); } })
-      ]);
-      list.append(li);
-    });
-    const left = state.todos.filter(t => !t.done).length;
-    $('todoCount').textContent = state.todos.length ? `${left} left` : '';
-  }
-  $('todoForm').onsubmit = e => {
-    e.preventDefault();
-    const v = $('todoInput').value.trim();
-    if (!v) return;
-    state.todos.push({ text: v, done: false }); save();
-    $('todoInput').value = ''; renderTodos();
-  };
-
-  // ---- Notes ----
-  let noteTimer;
-  $('notes').value = state.notes;
-  $('notes').oninput = e => {
-    state.notes = e.target.value;
-    clearTimeout(noteTimer);
-    noteTimer = setTimeout(() => {
-      save(); $('saved').classList.add('show');
-      setTimeout(() => $('saved').classList.remove('show'), 1200);
-    }, 400);
-  };
-
-  // ---- Settings sheet ----
-  function openSheet() {
-    $('nameInput').value = state.name;
-    $('cdName').value = state.cd.name;
-    $('cdDate').value = state.cd.date;
-    $('sheet').classList.add('open'); $('sheetBg').classList.add('open');
-  }
-  function closeSheet() { $('sheet').classList.remove('open'); $('sheetBg').classList.remove('open'); }
-  $('setBtn').onclick = openSheet;
-  $('sheetBg').onclick = closeSheet;
-  $('doneBtn').onclick = closeSheet;
-  $('nameInput').oninput = e => { state.name = e.target.value.trim(); save(); tick(); };
-
-  $('clearBtn').onclick = function () {
-    if (this.dataset.armed) {
-      try { localStorage.removeItem(KEY); } catch {}
-      state = load(); $('notes').value = '';
-      this.textContent = 'Cleared ✓'; delete this.dataset.armed;
-      renderAll(); openSheet();
-      setTimeout(() => { this.textContent = 'Clear everything on this device'; }, 1500);
-    } else {
-      this.dataset.armed = '1'; this.textContent = 'Tap again to confirm';
-      setTimeout(() => { if (this.dataset.armed) { delete this.dataset.armed; this.textContent = 'Clear everything on this device'; } }, 3000);
-    }
-  };
-
-  function renderAll() { tick(); applyPriv(); renderCd(); renderLinks(); renderTodos(); loadWeather(); }
-  renderAll();
-  setInterval(loadWeather, 15 * 60 * 1000);
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) { renderCd(); } });
+  loadNews(); setInterval(loadNews, 5 * 60e3); setInterval(renderNews, 60e3);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) { loadNews(); loadWeather(); } });
 })();
 </script>
 </body>
