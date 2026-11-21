@@ -1,33 +1,105 @@
 {
- "updated": "2026-11-21T19:31:49.146737Z",
+ "updated": "2026-11-21T22:27:43.518853Z",
  "feeds": [
   {
    "id": "top",
    "title": "Top",
    "items": [
     {
-     "title": "'The world got to see today' - who is new Spurs star Williams-Barnett?",
-     "link": "https://www.bbc.co.uk/sport/football/articles/cm9d7jg50e12o?at_medium=RSS&at_campaign=rss",
+     "title": "Match of the Day",
+     "link": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
-     "date": "2026-11-21T19:21:01Z"
+     "date": "2026-11-22T09:00:00Z"
+    },
+    {
+     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+     "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T22:19:43Z"
+    },
+    {
+     "title": "Spitting Image co-creator Peter Fluck dies aged 85",
+     "link": "https://www.bbc.co.uk/news/articles/cm3vg9dqr6zyo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T21:39:22Z"
+    },
+    {
+     "title": "Raya set to have scan on injury - how much would Arsenal miss him?",
+     "link": "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T21:14:08Z"
+    },
+    {
+     "title": "Ireland remind themselves that the best are beatable",
+     "link": "https://www.bbc.co.uk/sport/rugby-union/articles/c820qxx2k7y2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T20:39:51Z"
+    },
+    {
+     "title": "Arsenal go six points clear after lively draw at Newcastle",
+     "link": "https://www.bbc.co.uk/sport/football/videos/cm702zzl66l6o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:59:35Z"
+    },
+    {
+     "title": "Evanilson strikes again as Bournemouth beat Forest",
+     "link": "https://www.bbc.co.uk/sport/football/videos/cm4gn997yry2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:59:17Z"
+    },
+    {
+     "title": "Leeds dominate Chelsea for first Stamford Bridge win since 1999",
+     "link": "https://www.bbc.co.uk/sport/football/videos/c3ewvkk4qgxjo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:59:13Z"
+    },
+    {
+     "title": "Man City drop points to Fulham despite superb Anderson volley",
+     "link": "https://www.bbc.co.uk/sport/football/videos/c30rkq9xyk8eo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:59:08Z"
+    },
+    {
+     "title": "Teenager Williams-Barnett shines as Spurs beat Ipswich",
+     "link": "https://www.bbc.co.uk/sport/football/videos/c3174qq2j82zo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:59:02Z"
+    },
+    {
+     "title": "Villa's home woes continue as Sunderland earn point",
+     "link": "https://www.bbc.co.uk/sport/football/videos/c5j9m227l42do?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:58:56Z"
+    },
+    {
+     "title": "Coventry beat Palace in Frank's first game after late own goal",
+     "link": "https://www.bbc.co.uk/sport/football/videos/c8wy5ddky5n9o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:58:52Z"
+    },
+    {
+     "title": "Village votes to 'leave UK' over migrant plan",
+     "link": "https://www.bbc.co.uk/news/articles/cvze71y6g85yo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:51:08Z"
+    },
+    {
+     "title": "Can win over All Blacks finally break England's boom-bust cycle?",
+     "link": "https://www.bbc.co.uk/sport/rugby-union/articles/c6gregx71gjro?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:49:02Z"
+    },
+    {
+     "title": "UK should only rejoin EU if it innovates on technology, Blair warns",
+     "link": "https://www.bbc.co.uk/news/articles/c893r4923wngo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T19:33:49Z"
     },
     {
      "title": "Russia-bound ship attacked in Gulf of Finland",
      "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T19:20:22Z"
-    },
-    {
-     "title": "'Fragile' and 'miles off it' - Alonso's Chelsea honeymoon is over",
-     "link": "https://www.bbc.co.uk/sport/football/articles/cwe8944d004yo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T19:04:09Z"
-    },
-    {
-     "title": "Ireland beat world champions South Africa in thriller",
-     "link": "https://www.bbc.co.uk/sport/rugby-union/articles/cqe9k2v4xjeko?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T18:46:29Z"
     },
     {
      "title": "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
@@ -42,18 +114,6 @@
      "date": "2026-11-21T16:12:31Z"
     },
     {
-     "title": "England run up record win over New Zealand in rugby union's Nations Championship",
-     "link": "https://www.bbc.co.uk/sport/rugby-union/articles/cwm2jxd8k15mo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T16:08:59Z"
-    },
-    {
-     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-     "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T14:54:24Z"
-    },
-    {
      "title": "Scouts say they face £1m tourist tax cost for overnight trips",
      "link": "https://www.bbc.co.uk/news/articles/cxdd1e9yvlzjo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
@@ -64,66 +124,6 @@
      "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T13:17:38Z"
-    },
-    {
-     "title": "'We're not meant to carry life's challenges alone', Catherine says in first clip",
-     "link": "https://www.bbc.co.uk/news/videos/cwe85gyedjp5o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T12:17:45Z"
-    },
-    {
-     "title": "Catherine talks openly about how cancer changed her in documentary on BBC",
-     "link": "https://www.bbc.co.uk/news/articles/c85y14zvexz9o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T12:00:03Z"
-    },
-    {
-     "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
-     "link": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T09:40:55Z"
-    },
-    {
-     "title": "Man convicted of starting Palisades fire in Los Angeles",
-     "link": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T04:34:00Z"
-    },
-    {
-     "title": "'I was exhausted': Two days in the shoes of a tradwife",
-     "link": "https://www.bbc.co.uk/news/articles/cr0jxwd93y09o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T00:29:00Z"
-    },
-    {
-     "title": "How Phoebe Bridgers banning phones at concerts sparked a wave of fan artwork",
-     "link": "https://www.bbc.co.uk/news/articles/cq7821d0pv49o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T00:08:19Z"
-    },
-    {
-     "title": "Can AI really help spot Black Friday deals? We put it to the test",
-     "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T00:06:11Z"
-    },
-    {
-     "title": "Who will be Robert Pattinson's 'Bond girl' - and does the role need to change?",
-     "link": "https://www.bbc.co.uk/news/articles/cr4g1l7x52jno?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T00:03:16Z"
-    },
-    {
-     "title": "These dead pets were meant to be cremated - then their bodies appeared on a livestream",
-     "link": "https://www.bbc.co.uk/news/articles/cmn502ek17yvo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-20T23:20:33Z"
-    },
-    {
-     "title": "What is the EU-UK youth experience scheme and when will it start?",
-     "link": "https://www.bbc.co.uk/news/articles/c6jeqv9nv5eqo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-20T16:07:55Z"
     }
    ]
   },
@@ -132,16 +132,46 @@
    "title": "Microsoft",
    "items": [
     {
+     "title": "“Really, really nervous”: Microsoft’s AI CEO says AI improving AI is a dangerous capability, but Microsoft hasn’t hit the brakes as it puts AI agents on your Windows 11 PC",
+     "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNTTkxd01aZ0JmRENIWlI3WmF4S0VXY2lQcXJsZHhYYnNNcFlGRFVOOFpyTVdSSzA0OG1BbnNoRnFXaUVuTFR0NnRucGhScVozRFdfRjQ5bHNuQXpXdVdqeFFndzFfWmJtQzlpOTBFNnVvUFBxUEtxYlVvMlh5cW9IVmFfdnRWYi0zc3FTVXZSMVdLTGVTLWltaFRGWjVvSUV5WmpMY2NJaUwzekZxYmtVSkdsdV9PNFFidmdDeG8yRHlpaGdINFBxc0ZUU2t0NFJ0Tm9na3g4cFF2VWVzUW5xYkp5TTFZZHhRd1FtV1RUTExvSVRwUllLLUtqRVlmYmRpMm1kR0szeGY3ZnlvbVh6MWd3cjlfX1U2eVFWUmlEZTVwVUdfLUJCNzMwTQ?oc=5",
+     "source": "Windows Latest",
+     "date": "2026-11-21T22:02:04Z"
+    },
+    {
+     "title": "Microsoft outage: Does Microsoft owe you money? What to know.",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKOUVfMTNXLTFIX21qMU05N3ZzdDV5bi05bnBvc190ZUpiR0RhWWEwSUtaZVpiMEhDVzVfUXFGTDl3NVpNTHNTM3dvYzI3QWJOS2RYNzljLWdJZzI3SnBtamFqUW40b21qdE1kN1RKUFhidw?oc=5",
+     "source": "Mashable",
+     "date": "2026-11-21T20:46:07Z"
+    },
+    {
+     "title": "After a bad security update blue-screened millions of PCs, Microsoft now lets antivirus run outside the Windows kernel, and Windows 11 can recover if one breaks startup",
+     "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPSnVsQV9vekRQanB5a09UWjYxTDRwT09pRDBHclRJeHlyZU54Rzl5ZUJWUUFYOHEtZkJKTFZIalJFTmJhSDRsUUplWVR5M1hHWUREb1M1bzE2VUw2LUQ3T2JpWEVOcXlHd29YcUhmNkJCWWcxVDVFczNCU090cmdJc05za25MUlQtcHkwMl9Xd2pVRmgzSUhnWTFjbmIwZ2hpaXpjaFZsTmo5UG5HWjZvNXotNENIdFRTTV9zMUNGS1ptVHhMRVhrbmtBUklXOXExdm1waTgxb1hxSkIzRGZyM0dob1RBMGFac3J5R2ItSEdQV1VjSks0Skc1Y2RQQ05tMFE5cWUxbkZYN2lRS3E1cnFhNTRicnpaRmsyeTdIS3VaZXRSZFFCSTRGdVZrdw?oc=5",
+     "source": "Windows Latest",
+     "date": "2026-11-21T20:37:33Z"
+    },
+    {
+     "title": "Microsoft patches Entra Connect Health flaw. The phishing risk doesn’t get a patch.",
+     "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5rSTF4cm1WOW01cV9JanNUd1RTTHRrTi03cUNQM192bVBKVmJ4V1BOVnZfeHlQWE00OXh2blBIVDNIQkVl?oc=5",
+     "source": "Digg",
+     "date": "2026-11-21T20:31:43Z"
+    },
+    {
+     "title": "Eleanaville – Besplatno preuzmite i igrajte u sustavu Windows",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8wN3JkaElHMUs2MFRuSV9GLW1LMTRnSXhoVHhaSnJMS0hHbzNmdlhMd29XT1JrVW9rR2pSSl9iTjczQVp6cjlyZ1ZwQzRUSjNTQVF4VkZPdFFRaXlCWkJPLURobVJ3ZG5MUEE?oc=5",
+     "source": "Microsoft",
+     "date": "2026-11-21T20:03:47Z"
+    },
+    {
      "title": "Intel Stock Gets A Foundry Win With Microsoft Backing",
      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTVJnRkFPRkFKeVU1NWRsdDc2blUwRWttMjJGSHc3MXhKMV96M2U3cnNocnJDdm1mQVBtMmZ6SmZ2YS1hSlJOY0d6N2J2Y2Y5OHk1NFk2MVJDUTNCSlUyWVZWNTh0ZzJmbENBR2t3S2hDbmZWZUFNdkZ2QUU2RkJqMi0yc18ybzl3SzVCNUZhNnJBT2cyQ2lITWN5OEw1Q1BLbENFUk13bi1JOFpqQTVSUnh2Q3JvOEJTUzJkRTlmSGvSAcYBQVVfeXFMTlY4Z3A4LXI2VS1KcElOSTA0cmV0QXVqSFVmRjVRR3QtcDJHcGJCWU54ZDhadnMwLXhKamQteDNQalQxWlVOUnpPNTBRWmFpRGFJaF84dWd1NzZSdnQtbjdsWDdFcjkwU253RHNGSjFIb2dQSnJFSnJFVTNqWlI5NHBOYzlXSi1RUGRFOWV0TUcwN3hraXBOTlpTLUpIend3TmFvdGJmbU9FV282VjE1S0FyaWpaaHc5VjdjQ2NhY2dJZVVTUWFn?oc=5",
      "source": "Simply Wall St",
      "date": "2026-11-21T19:08:23Z"
     },
     {
-     "title": "Microsoft’s CFO admits she joined the tech giant without even knowing her salary—and then missed her first day of work",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUZyeEEwS2VjTlFuaURmS1MxeHc1TnExMlA5a2RhZGpyeUw4M3VTazBodm1UMXdFUGE4YmxpZWxXZjgwem1xWjNkRzlMUkhrMWlDWnVzNHVpQlJpV3BPYTA2NlQzaVRhVUNWN3hSV3BObUhmQzRGQVRvRjB6VDlHTWlHSHVNOHJmQnRSUXA5YnF0N09mOHdicndZY3FMbEpkdHVYU2ZhcVkzN0pv?oc=5",
-     "source": "Fortune",
-     "date": "2026-11-21T18:52:51Z"
+     "title": "Study Reveals Microsoft Copilot Offers Lowest AI Costs for Users",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSzBLYWNQTEJKSThqUFZ2R3hMTzM2RXlsaDdxQXRhQ3NZb3dYWnBwYjZsLUFDcUstQ01zMUxHQmRmcHk4N2MyOHVSVWRiZkFMUTg3ZWM4ZU1laEFkeVo3VGdVV04wWW5yenVNMGRMS1EtTHQyUl9aek9WYndPVEw5eXhSWkZGWXg1Q3dBQ2VFQ0VyS0dpZjRj?oc=5",
+     "source": "Small Business Trends",
+     "date": "2026-11-21T19:03:00Z"
     },
     {
      "title": "Microsoft Explores Swappable Controller Thumbstick Modules",
@@ -198,6 +228,18 @@
      "date": "2026-11-21T16:32:13Z"
     },
     {
+     "title": "Microsoft outage cause revealed: It was a perfect storm of problems",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aOXNncW9QdWVtZ3RXTHF5VnFncFJTcXptUWtGX0V6azdmcXZVQjBienJMdzJydEdseXhVZHZRcExPbS0xUXlCcXhyX2RDOUZOd0h3bEhwU1hiNF9hc0FNdTZLSkJGUVpz?oc=5",
+     "source": "Mashable",
+     "date": "2026-11-21T15:09:56Z"
+    },
+    {
+     "title": "Microsoft’s CFO admits she joined the tech giant without even knowing her salary—and then missed her first day of work",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUZyeEEwS2VjTlFuaURmS1MxeHc1TnExMlA5a2RhZGpyeUw4M3VTazBodm1UMXdFUGE4YmxpZWxXZjgwem1xWjNkRzlMUkhrMWlDWnVzNHVpQlJpV3BPYTA2NlQzaVRhVUNWN3hSV3BObUhmQzRGQVRvRjB6VDlHTWlHSHVNOHJmQnRSUXA5YnF0N09mOHdicndZY3FMbEpkdHVYU2ZhcVkzN0pv?oc=5",
+     "source": "Fortune",
+     "date": "2026-11-21T14:52:51Z"
+    },
+    {
      "title": "Microsoft Was The Only Big AI Buyer Paying Down Debt. How Much More Can It Spend?",
      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZjYtaGk1clZsZE55Qmo5eE5GNzdxemVuTGtWVnNKY0RUSHhLYVg4T0dJbER2WUU2cnROc1F4X0FhWFdNZVh4cVNhcS1XWThRSnBMcEowandGcTg4VkFlblB4NlR0eUNVYlZsSG5yc3BLcXloTW5WNWR6QlpUN21MVGZxR0tWWmN3T3VMQVJKejFTeGFLRlFTWGF3al9iQnkydHg5T0x1M0p0T1NnVW1VUjhxWUhNU3JBcjl4YzdiVF9ZX2dBdXByVHJDT3AzOE1md196TzBycw?oc=5",
      "source": "Trefis",
@@ -208,48 +250,6 @@
      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbVVRYWpDelJ6cnNvb3hWZ202bzF1SzNvZjdOY2VLMjVXNVZDLTM3anVVVkoxN2VUdVNiOHJtc1o0RU9WUHVzTlA0YzVlQ2xxVTJzU0lBUGhpVENXNU1FWE5ZaTlzLVZINlA1cWhnNTBvc0tfZG5TeWVPdy1VRHVOd1FjSDhuM3pxSVc0Wl9tYw?oc=5",
      "source": "Yahoo Tech",
      "date": "2026-11-21T14:25:34Z"
-    },
-    {
-     "title": "Microsoft fallout, Nvidia security questions and other must-read stories from PCWorld sister sites",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNEg4UUlLM2NmeGZBRC10WkdDWVZ1aDVpLVd6UEdfNjh2RXkwV1hYMlVWdlM4eGZScmdBTVFGZldQM3FLUXJoZnZiV0RIcHVDeWdOOXpBbWRIWkdNVlVCR2lHeUZCOFVBbUNSN0dYMjV3QWpGS2txUUFOc2kwcGJUdzB2aTE2YXR1MUgtdm5zdEdtS2xPN0h5TGc5cnEyUVk2ZmR2c0dXUFNfT0JjWDNhdW5WamR4c3ZIM0ZNZklEUUQ2aDJ6ZUR3QTI5Vk9BVmJScUljdmZnSFd1QQ?oc=5",
-     "source": "PCWorld",
-     "date": "2026-11-21T14:00:50Z"
-    },
-    {
-     "title": "The AI race to fix security flaws could be making tech outages more common",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNEV1UkZkWUk1UlpPVENabkhza2YzcVJEMmFTNk50anhtdnd3S21EWlJxa1EzYUw4R2NrOUtxdGhHUXF0RHo1S3VSazQ5a2Uwb0JxemF4MV9IdVd2WmVnd2g0ZFBBck5yQ2lNeVFtV2tROHBsU1U5R3hoS3htekhtWmM1LTdlN0tPVVRrYzYtUFJOMHVKRGtWS29BNXIzVzhuWlBHRk1PZndneEVIX29xSzIxTkZHV0lOTmc?oc=5",
-     "source": "NBC News",
-     "date": "2026-11-21T14:00:41Z"
-    },
-    {
-     "title": "Microsoft is making Copilot more useful by helping you manage files and PC problems",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ0ZvRkNtbWxUaWliY3F1cnB6bzhFRHRvLU5zbVB3LVBUTG5IdEtKY3R1Z0lTV0JQanpZN3Q1RHJrWGlMQVVNTUpUdXREWGtGaVNULThYdHRVOFVYazJxeUFBaTFOS0JMM1Z3Z0FqeTJNNVBlMTA1WTBENEo3dUFFXzlnU3NRblJsd09PV1JqNkZpMmZheWJNTnlB?oc=5",
-     "source": "Yahoo Tech",
-     "date": "2026-11-21T13:30:06Z"
-    },
-    {
-     "title": "Microsoft could soon let your use your Android phone as a second display for Windows",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVVdHWWJtYVV1NS1hU3NHY2RqZGJLOVVNSnUwUmxvX0QtZklBOXAzMTdQczFPcW9RZC1YeExXNDV2RDBrTVVNbkFfUy11elM2Qnh5UkhKbXhncEg0alUtSXhVZXZUU19ZRFRQajNMRlBhM1pqYmEzWjdSSkMzV0FvWUJn?oc=5",
-     "source": "BetaNews",
-     "date": "2026-11-21T13:10:17Z"
-    },
-    {
-     "title": "Microsoft outage was largest of 2026, report says",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLWUhCMk96bVJoQUhfcVdmc0k0UTJtTENtM2hiUDM3djdEbnVtRmlyUmtRQkotNnFxQ0xneFBfX204TmFyLUttZ09iU3ZXSC1UMG5JRDd2eE5yVnlxOXF3Y0ZnVVh5Y3JjRWFYU1Zid0xqOUE?oc=5",
-     "source": "Mashable",
-     "date": "2026-11-21T13:06:29Z"
-    },
-    {
-     "title": "The site everyone checks when the internet breaks just had its busiest week",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdk9qOENZcWpiYzlaRVR3QUp6RG9wdzNEY2RUdnVtbjRycXRZenRiN1RoTTE1TEllMmpyWUhFdURESDNXR1JpdnZ6UzAwaWFxeVZEN2hKdnJxZWJ5Rjd0aEJhbVo3VENfOG94TDlZbzNVUWVzc0w4akhpeXBleTB4dE1GYUExSU1Md0NFdTlDTFNZVFRUeldYQ0N6STRpTnQ5WVRkTi1XSmVKdl9mMEUyVw?oc=5",
-     "source": "NBC News",
-     "date": "2026-11-21T13:00:40Z"
-    },
-    {
-     "title": "Hackers Using Email Bombing Before Posing as IT Support on Microsoft Teams",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA4TXBRQjdJdVc4UE5maHM4QVB3NS1wc3hSWmJsTGlrWkU3NlFXOTR3dXEtSlQ5Vl9RX1pGeVppQUM1YU5sV0ZmWko3ODh6b0J1akwxbXhaSW42cGxWMzhLa0NkSnk3VnNxVG1ZX0NOZ0FJTzZYb2RFdjVB?oc=5",
-     "source": "Hackread",
-     "date": "2026-11-21T12:56:06Z"
     }
    ]
   },
@@ -384,6 +384,18 @@
    "title": "Tech",
    "items": [
     {
+     "title": "Amazon is complaining about NYC Council on shipping labels, too",
+     "link": "https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label",
+     "source": "The Verge",
+     "date": "2026-11-21T21:59:31Z"
+    },
+    {
+     "title": "The UN fails to agree on rules regulating ‘killer robots’",
+     "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+     "source": "The Verge",
+     "date": "2026-11-21T20:03:37Z"
+    },
+    {
      "title": "The FBI and USDA were reportedly hacked",
      "link": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
      "source": "The Verge",
@@ -432,12 +444,6 @@
      "date": "2026-11-21T13:00:00Z"
     },
     {
-     "title": "Harbinger is building the unsexy EVs that keep the economy moving",
-     "link": "https://www.theverge.com/transportation/1038448/harbinger-ev-startup-240m-series-d-fedex-army-trucks",
-     "source": "The Verge",
-     "date": "2026-11-21T12:00:00Z"
-    },
-    {
      "title": "Tech Now",
      "link": "https://www.bbc.co.uk/iplayer/episode/m0034tjc?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
@@ -474,12 +480,6 @@
      "date": "2026-11-20T20:54:12Z"
     },
     {
-     "title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
-     "link": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
-     "source": "The Verge",
-     "date": "2026-11-20T20:43:52Z"
-    },
-    {
      "title": "White House removes cyber-security chief after series of tech outages",
      "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
@@ -510,10 +510,22 @@
    "title": "iPhone",
    "items": [
     {
-     "title": "Proton Pass is up to 60% off for Black Friday, and it does way more than just store your passwords",
-     "link": "https://9to5mac.com/2026/11/21/proton-pass-is-up-to-60-off-for-black-friday-and-it-does-way-more-than-just-store-your-passwords-sponsored/",
+     "title": "iOS 27: My favorite new iPhone features (other than AI)",
+     "link": "https://9to5mac.com/2026/11/21/ios-27-my-favorite-new-iphone-features-other-than-ai/",
      "source": "9to5Mac",
-     "date": "2026-11-21T18:00:00Z"
+     "date": "2026-11-21T22:22:26Z"
+    },
+    {
+     "title": "Indie App Spotlight: ‘Salon’ is an Apple TV app that turns your TV into a picture frame",
+     "link": "https://9to5mac.com/2026/11/21/indie-app-spotlight-salon-is-an-apple-tv-app-that-turns-your-tv-into-a-picture-frame/",
+     "source": "9to5Mac",
+     "date": "2026-11-21T20:30:00Z"
+    },
+    {
+     "title": "Not upgrading to iPhone 18 Pro or Duo? Here’s what’s coming in 2027",
+     "link": "https://9to5mac.com/2026/11/21/heres-what-next-years-iphone-lineup-will-look-like/",
+     "source": "9to5Mac",
+     "date": "2026-11-21T19:35:44Z"
     },
     {
      "title": "How Google Workspace with Gemini powers small businesses – get 20% off your first 6 months",
@@ -616,18 +628,6 @@
      "link": "https://9to5mac.com/2026/11/20/beats-black-friday-deals-100-off-new-beats-360-powerbeats-more-up-to-53-off/",
      "source": "9to5Mac",
      "date": "2026-11-20T15:12:00Z"
-    },
-    {
-     "title": "Apple’s ‘just works’ approach is great, but goes a little too far",
-     "link": "https://9to5mac.com/2026/11/20/apples-just-works-approach-is-great-but-goes-a-little-too-far/",
-     "source": "9to5Mac",
-     "date": "2026-11-20T14:45:01Z"
-    },
-    {
-     "title": "Apple TV unveils return of one of its biggest hit series",
-     "link": "https://9to5mac.com/2026/11/20/apple-tv-unveils-return-of-one-of-its-biggest-hit-series/",
-     "source": "9to5Mac",
-     "date": "2026-11-20T14:36:52Z"
     }
    ]
   },
@@ -762,6 +762,108 @@
    "title": "AI Tools",
    "items": [
     {
+     "title": "Lean groups certify Claude-assisted Riemann hypothesis proof from Anthropic",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlA3YmE1SENKMHdqY2MwSEVFRFQ3eW9URjRhTW83QjNCN0U3SUhweC1vTGhfYml6SG9Sc19wVHVhY1VobG9NLVM4V29Ca2QzMnByUjh0clFFOGhFSE9XcVVfNUxlVTdnRTE3ak5oYzd0alQ4QkV3NUYydFIxYXBOWEhtblhQM25NRDY4czBDMHE5VUQxc1B6N3Q3eXNoazk0TE9PbG13?oc=5",
+     "source": "Startup Fortune",
+     "date": "2026-11-21T22:23:08Z"
+    },
+    {
+     "title": "Anthropic mathematician says AI helped solve famous math problem",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOVZLMmVVWDlKV1hlN1c4MGNyRU1lbS1zSm8zUUYxWVdHZnYzTDRRcjBHejIxdld5NnJyVHl0TlVKeDBRQTdsY2c1dU41ekpyX1V4c1dGMjZiVWtZWGU2elNxdU5Nb1J5N2dubk5ZSXVlQ2hyU3JiNGVrb1l1MDl3SDNiN3BPOXlWeEs2dk9SSFAwT1NheGl3MEphYS0wQ0FpZ3FZ?oc=5",
+     "source": "USA Today",
+     "date": "2026-11-21T21:52:00Z"
+    },
+    {
+     "title": "Lean and Mathlib Communities Certify Claude-Assisted Riemann Proof",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNU5CRHE2QW9DakhSUHZMN2EwTllMckgtSy00c014X3ZuSFd4b1NDVDJMeDNsak4xQ3cxN2g5S3BHTmQwRnhsQjI3ekkwNGZSdE9adHBiS2Flb2VhV1J6RHRVOWVEeVN3czF2c0hNVWVJdEZHTDlJOF9HRk9xTTdVRjhmRVNUVWJZNkZsQ0xrczR1dw?oc=5",
+     "source": "Unite.AI",
+     "date": "2026-11-21T21:28:04Z"
+    },
+    {
+     "title": "OpenAI Opens ChatGPT Space to Plus Subscribers at $20 a Month, Free Tiers Still Shut Out",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9ybGFqVFAwQ2VKTjVCRW1hZUN4WFhhamdNUEotTjVHSUNzeHo4cUJLVHJRQVMxel9jLUJmeFY4YW1NYXdrYTdMeXhhMmc3NmRNWmFNc2p1LXhJaDBUNXBaVlgtbFNXN3loNE93OHllTjZ3X1JfZEE?oc=5",
+     "source": "BigGo Finance",
+     "date": "2026-11-21T21:25:00Z"
+    },
+    {
+     "title": "Gemini app rolls out very slick camera redesign on Android",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtS1hqLVBkSE54X0tEeENIOU8wNjU0c0VrU1JqdVZmZ21qRWItTGxzWVZ1NXNJX2dNQmdKUHFfVW5iZ2hoTUc5bEc4YVpTWHNUQmI1Tjd0NW9KdlNTakM4MmRGakJBQktJ?oc=5",
+     "source": "9to5Google",
+     "date": "2026-11-21T20:52:00Z"
+    },
+    {
+     "title": "Gemini Shani Horoscope Today, 22 November 2026: Venus in Chitra, Shani Helps You Settle an Elder Friend’s",
+     "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPOTJQcW80SXlwWWNVZVpkTDlmMHdDTGE2MzhNaDgxQXFiS1ZDZklsbmNVMDM2RlgwVmd0V01OdHZKR1UzbmxxTmRpOVhTcUM3cmdiUzNITTh3SGxfT0F2QXJZeXJuZjBqMVVwXzNNdDNlb2lIcGlVSlROWkllYmxmeGcxSTZhRWdPY0NWU3ZpUW5zUmkxb3hsREhpX2lKYTNwWThyOWYxYjRsaHFxQmhmNEVGSzBQVmNnQjcxRGFuVW5hcHg3TGJaTXhHanprMENTUmEtV3lvM0tZcXdMRGtMZUtaNjZvTGFqSzU4ZzJxQ3F3RkNrcTBoTGt2b1pXc3BhNWdNUkQzYkd1VkE5aGotQ01FaDZDY1poRGfSAZ8CQVVfeXFMTktpTTh3TG05LWZZTnR3S3BRRzB3N0c0OW9uMERNTVVGaXlIbXU2dTFHQWZpZ053Y3lHc3lDZ0V1Yk1xWEdLQ1RnZURkUnM2LTNFcjA0cThtcVNLazcyOGFtd3NMd000Y0E1bHE4VmdIejBpQXhkWTBPYXh6M1FiX3YxYUQ5YlF4MkQ5ekx6ZUgyOUw4QmlJeFZYQ0loZGFmcUZIX1RZUDB5b2U5Vng2a09nREN4R294NHBvSGZzc0RYR2dpNEFTZmJWcFd1eTdHT01DNXZnSTVHX2hqOUROYnZtdXFDdEQ3WFpOUk5LTGFWZlRaZ1BQaXlTS3NhbkNabzA3RzhMMXMtZEtxUjRmdFlUMVhvUHZtR0I1cEpUeFU?oc=5",
+     "source": "The Times of India",
+     "date": "2026-11-21T20:45:00Z"
+    },
+    {
+     "title": "Forget searching for GIFs, Gemini can now make its own",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBzY1pWRGl1T3FlTldfTDdySmg4dFQwRG02bmE1RVNfUllTZkNNd2JOUEhXbFpSQXF2VnJGbC16ZEpGSjJxbC1DdVNxQy1TWEtMemc2ajBTM0VfOG9LX1FGLVdzZFZndHAxYzZjMkYxaVZKR0VWZnlNcDRxRzE?oc=5",
+     "source": "Digital Trends",
+     "date": "2026-11-21T20:35:18Z"
+    },
+    {
+     "title": "SurveyMonkey Launches Gemini for Seamless Customer Feedback Integration",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOC1GUlhrNlBOSG42aWdxS0pjQjdzdll4cDh5cGxIRTJjaG9razNUQ0JaY0FLLUlYMVR4RzRoQktmWGVQaVBmNHoxTi1rOU9HQWxtUTZNdFNpVWRVVE1jSjFqMGR2akpaR2xjZVZTd0tPWm5FbkRldTdQWlNkNU5POFZPWFBweElRNDc5c3pRSm5TbF9fMWc3ZnlTejNiVTQ1?oc=5",
+     "source": "Small Business Trends",
+     "date": "2026-11-21T20:25:00Z"
+    },
+    {
+     "title": "ChatGPT upgrade claim questioned over American miles",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQalMxT1d2OFd2NHhKbjlDYmdXMWpWMXVjNFlsajhXYTZadDlNSXk0dmYwTUpJMWk0cjhQR2ZEWVRiWDlzT3hZaW5sUkpidUlMdmZ4bjc5SUFSMHR1b2toXzQ3SGFLNzl3MHJCSDB4X0c2TzEwaFdUWGlsMXY0cVhRRWxRbG80NDhGV3dJRDlZalk?oc=5",
+     "source": "www.insideflyer.com",
+     "date": "2026-11-21T20:23:56Z"
+    },
+    {
+     "title": "The UN fails to agree on rules regulating ‘killer robots’",
+     "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+     "source": "The Verge",
+     "date": "2026-11-21T20:03:37Z"
+    },
+    {
+     "title": "Gemini Horoscope Today, November 22, 2026: Strengthen friendships and turn useful conversations into acti",
+     "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOdXJvaGdBRHFVTXZ1QVNUOHoxSE9CTTdNeHRLTjR0MElma2VlbldQYWJzOWdiZE9pcmZJN29CbTducUlTRUhZS0daOVpkMGQzWlhVWGdmanduaktBODBMa1prRWFiWnFtWFoycW05X0x0RWhsdjNFRlQwcDRrZEdnQkJVc3RKa08yWkdTZjd6bGhHQVhhdkY5dnB1QkttTm1XZUZReVRZTUw3aTMwdzRETXZ5dmtRZ0JKdVYtUkhUUlZ2SVA2ZGdiUGxZUUlKMlFOLUxtZjVmZ1NycUdlTzBiTFNEdzdKN3RTa1BjSmRGdFo2dFNwNkdyNG5vTnAxWEQwemVEaXlVTE81aUtXbVRaMHI4RUxDbkRUb2g3bks5ejI2dW0tRmZtV21HSVR2OHByQkdKalNHLU9IR3d4d2poYUZnUmhCenhGZEg1TllBM2dHYW5wNzNkV1FMTmxlYWxHZzZlRNIBmgJBVV95cUxQTXNUSm04bzgtenNMZy05VnFBSTVyRVItQmU1eG9GT3l1bmNTSGktLUhtMk9KbUF6b1JXUVhrQmNwMTRGOWNxZ01IRGVvaVlqLWlzVEdjSF84bEUtUDg3cmNibDFacHAxQndRd0pqMmFEQ1p2ckhqaVdoM05DeXJlVXBBVjVUMFRwY2hadjVKRUwwTTVTVHI2STVmRENEazlWdXJZYlpCSWRFNjVMMXNrYWJNNFVjWDljOUZfcEdIcXdLd3lTcU1QbzNJT0pBSmtKdF9HS2w0X3RlQ1Z2ZnVLanVnQ2htUTdLZ0tqeU9qQVZQQl9jRXQ5SDBvR3N4ejd6b1I2UXkzQkFZX01iQVlyUE5JQlRGa21hbWc?oc=5",
+     "source": "The Times of India",
+     "date": "2026-11-21T20:00:00Z"
+    },
+    {
+     "title": "Anthropic's Claude AI Credited With Cracking A 166-Year-Old Mathematical Prize Problem Worth $1 Million",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTDZXVE1hdldnRUl0S0RvWjlCZXdCby1GRlRoZjhLTU9ucDBXSnVTMl9jdVJqRG9kUVoyX3FjaGJFQW9XQ3IwTFUxZUxQSDFJNDNvSXFkN010NHZTU0Y1VjZNbWZ1aWRhWmJiOVo1LUk3aDRGUTFDY2pHVTA5QWV5aE15OTk2ek9Lb3lVbHVJc1U3bGRzUHdiWGJqOHlOLS01aUdwcjcwdG5GYTIzY3hmSzAwOWJEbDNmMC1YRDJrUmctMWFsTlJaajFkamRxY2RNeGg0MkVhLXhKMDR5RmM0OTBhUU4?oc=5",
+     "source": "www.foreignpolicyjournal.com",
+     "date": "2026-11-21T19:50:00Z"
+    },
+    {
+     "title": "Anthropic mathematician says Claude helped solve a 165-year-old mathematical mystery",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBNYVJCOWRkZnRsenJPQmJPQTlnNVNWQ0N5NG9hdzN6NWMyalJmUHVGVzcxajZPWU9McjJ3enVIbjhFTGQ0OFpZY3VBUHlIckIyQnFLWEJzZ2hxT1VHWmotamtoZG1CVDg?oc=5",
+     "source": "CTech",
+     "date": "2026-11-21T19:49:00Z"
+    },
+    {
+     "title": "Anthropic Employee Claims To Have Proven The Most Famous Math Problem Using Claude",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTXFLcEJlYk15RHFGY1dhY041ZlBCdU5nRGhDVzNGdXdRYXQ5amFRa3FBYVNxZ25ETi10MkRWZGFaTVNvaWJuSDluTE14SzhRUUxFZHhjSVliRDdzdTBLWkxzUkRaRkVoVG5HTGZLdVhLYkhpb2ZBUG01Z1J1TnJvc1FEN2tFYzA4WjBOeW1jbjJvT29uTFJhVUsxUTkxVl9kT3pEUDdZYXo1VHE1VFNKQnpzXzdWWEU?oc=5",
+     "source": "Engadget",
+     "date": "2026-11-21T19:45:01Z"
+    },
+    {
+     "title": "Experts confirm Claude-assisted Riemann hypothesis proof",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONXFWeFFScnJZRF8weDkydlhUWGp2Q1EyREZvYk1nSWMxVVB2N1UzR0FQVnhySlJEWVdGWGFseWVEeUptYXNBaTg5X0E4Q3F0Rk5BUVN2YjVYWUppbTJYLVV4cnN0LVY0eVU1Mk9GWUNIRXVEWnlOa3J0ekdnbU90RUpYb0J2X0RwaU9XOU9EQ29NUQ?oc=5",
+     "source": "Nacionale",
+     "date": "2026-11-21T19:34:20Z"
+    },
+    {
+     "title": "How to Delete or Archive ChatGPT Chats—and What It Does to Storage",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1RZ1RsZkczTlVUWWRETEFsVURwSHhVSXRRTHFBbVBwYWltWk9GakVXRFFGcXF1aXZFWk1IdmJuRFR0RUtUWERHTE8yaWtSTlEtUTk1R2l6SVpralM0NTlTcXMtUTVsY2FXOWJnVUtzdXZsRFB6RWdfbG5EbkM?oc=5",
+     "source": "Gizmo Times",
+     "date": "2026-11-21T19:19:45Z"
+    },
+    {
+     "title": "Study Reveals Microsoft Copilot Offers Lowest AI Costs for Users",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSzBLYWNQTEJKSThqUFZ2R3hMTzM2RXlsaDdxQXRhQ3NZb3dYWnBwYjZsLUFDcUstQ01zMUxHQmRmcHk4N2MyOHVSVWRiZkFMUTg3ZWM4ZU1laEFkeVo3VGdVV04wWW5yenVNMGRMS1EtTHQyUl9aek9WYndPVEw5eXhSWkZGWXg1Q3dBQ2VFQ0VyS0dpZjRj?oc=5",
+     "source": "Small Business Trends",
+     "date": "2026-11-21T19:03:00Z"
+    },
+    {
      "title": "Anthropic Mathematician Claims Claude Helped Prove 167-Year-Old Riemann Hypothesis",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJiblV0T3E4akoxeHkySEl6OXZPMXgtRF8wRFotXzMyTldoNHdKekMtaHYxOFA1Rzl4eFJCY3hibnp1VDRIS0xZX1N1eF9OZkx6YjVZU2t1VnVvVTBjUW1lYzFrd29GR0lneEtSLWVCSk5oYXMyQmNOY0RnMkJlQml6b0tLRE9qUlhNc2xWTHlWVmFVZHFuMGtDTVlOVGZxVDBLSHBPd3MtYWtGcUNkcm1HaHBxeWs?oc=5",
      "source": "Dallas Express",
@@ -774,112 +876,10 @@
      "date": "2026-11-21T19:00:20Z"
     },
     {
-     "title": "ChatGPT squeezed onto a 35-year-old SNES, with a Super FX 2 chip doing the heavy lifting",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04WE9ZU0NiUkpkbE1VX3BHZ0wzYVlnWFp3dUtnWVBRLXB4QTRoYVJXdmVzZzVVLVZXdU1MVzlqQjZqaUUxVzl1ZGowQ2xGSUk3OXZNX1BwRU05YW5icE5lZ05CYWNxZVZDT3pYaGl1QzdOQURSc3c?oc=5",
-     "source": "BigGo Finance",
-     "date": "2026-11-21T18:25:00Z"
-    },
-    {
-     "title": "How Gemini Notebook Turns Complex Research Into Clickable, Interactive Websites",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOTlLbEowWjNoSWF1M0ZvcHRfQWNWMFhmZEdPQ3JILUVyeUZqOTNKQlFHdkoyOTNBemlOdlZPRDlUQVpLSXBZZ2pfSnJEdDNNcXIxTHZzTzhKNWFGcWU1MWYxYUllSUdYUW5pY2hKWnVUc3h6bGVkaVlJbXo4Tk91QldsRnNLT3BIbWRkSXdGT2w?oc=5",
-     "source": "The Hype Magazine",
-     "date": "2026-11-21T18:23:55Z"
-    },
-    {
-     "title": "Anthropic PBC (ANT) Claims Claude Solved The 167 Year Old Riemann Hypothesis",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcWF3QXhiS19OdHJOa3AwTHY4akQ5Wks2ZDNSbDV3NW1SRE1EQ2c1QXQteHUwMERhVmlNZDBEV3o4SU1LXzZ5YkRuVjkzMHdqNW1LLWZnSkItM2owNVRMNDRncjFodlhBcVl0d0x0SzJGSElUMzlNaFg0a2NpZFhOdm1meEhCTmlDaGU2RlVkbjFWT2hQQmF1UW55X252ajY4M2lNV2ttRGxjLTRCVEdsWktnN0p5clpMZ1Z3QUhuWV9rMjRPUW9oQWVFWdIB0AFBVV95cUxOeElGQW5fcDRSYXVwUjVodmlValB0a0liN3dNNVFvS1NKdmZoOVdJNEh1Ui12NDlUakx0LUVqeGliNXNPRGs5VVNOeS1DN29PN3kyNjN1cjMzUHNnc1lBZ1JTSmNvTTNwWFV2cWVITDVGOUUyMlpDQW93WXU0VDBHazlqd3dXcFVvM0VFcUZrekt5R1NKa0xjS0Y2Qll0Qm1DUEhQb29CRzVoYjRVbUF5Ry1INVFfNEFqMWRKbGdPQThJb095UmRXNmlEREY4ekVv?oc=5",
-     "source": "Simply Wall St",
-     "date": "2026-11-21T18:11:51Z"
-    },
-    {
-     "title": "ChatGPT for the SNES",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1INlpGLTVTRmJMelhfb3dZTllmVTdFamdERFN0VE4yWENGUFRtd0taa2tSY1dOM05yWXBCOFlabFRuME1ZUmtUeER3ZEh3SmhPd3RhWVcwRjZkR1IyZmgwR3Q1ZjhIMVpVcHc?oc=5",
-     "source": "Adafruit",
-     "date": "2026-11-21T18:07:43Z"
-    },
-    {
-     "title": "Signal Blocks Siri, Gemini and Other AI Agents From Reading Your Messages",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRWc3MkF6MnRNLVpEYWZiMkY1eHdGVmhjb0VuR2RZU0poNkJmWE1ORW13MTNVNm1PNXZyOXM0OEhHWmFCU1dmQU11RG9LOUR6WWJMNjhqUzNlUWVfMzE5MUNPRWtpNXR2enA0cjJoR2pzWWdWUVNjQklfcjVySHBicVFBN3poTy1nNFRQbUhzUVVvZjdKRklRdGJkUGZKX2JFQTRicFpqMjNaM28?oc=5",
-     "source": "gHacks",
-     "date": "2026-11-21T18:01:36Z"
-    },
-    {
-     "title": "Google Assistant ends on speakers in 2027 as Nest app closes",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jcW5Ra0F6MWg2Q2F0MUpnRjNmWHNsV2dSLUdNb0dVdFVtSE5PVXdDckx1Z1VMaklBdWE2Y3c2VHVoZU9vTmMxSVhDNVVJYUg1d2Q2dVJWbllLYnJyOElwWEhmdHF5Mk5VdU9iTE5iODU?oc=5",
-     "source": "DNE Africa",
-     "date": "2026-11-21T17:50:00Z"
-    },
-    {
-     "title": "Indie App Spotlight: telo lets Claude and ChatGPT read Apple Health",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTUy1abWptV1pqZWJRT2U5RW1sWi1tVmRyR3M1VkpqSG9RX3JhSC02a19TcC11TzNITlBUeWRmenR5dnFJZ0IwLXUzSEp5YnJjUlZ3eElYaDF1R0hOTWh4R0pDUy1CSmJuSEhOWWNjZDhMTUNz?oc=5",
-     "source": "the5krunner",
-     "date": "2026-11-21T17:44:54Z"
-    },
-    {
-     "title": "14 ChatGPT prompts every travel adviser should use",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaEtMX2NEXzc5TEc5bHR5S0dRaDFfMVZhcUtHRnFKdE5FS2hFaG1vV0NOVVlzR25FLVVrQlpqNDA0RlA1UnpyWDNTRFZGc3hIVEFBb0xkRWtMbDJtNGlmOE80ZlFCR2pUZnBWbUV5MzZWZHFrT3NPbTJRMEduV3owV1d6d1Jrd1U0eV9XUGpZYTdiU2tKR3RRNzlSVXpxVWJNMXJxZTdSc0NETWc1NWg2c1BxN2M?oc=5",
-     "source": "Travel Weekly Asia",
-     "date": "2026-11-21T17:38:59Z"
-    },
-    {
-     "title": "GPT-6.2 Sol vs. Claude Opus 5.5: Not as accurate, but still might be the better buy",
-     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BUTFOUzJWbzVvbVJfc0o2REJhbWIxSmxrUDRWRnoyWDFSZHo4R2MyX0ZIcGxnQS1HMzlCR3NSMWgxZ3pGVUJEU2o3WXQ2c1pjYjZxTDlQOTFPOS1WZktBaDY1TUI?oc=5",
-     "source": "The New Stack",
-     "date": "2026-11-21T17:11:45Z"
-    },
-    {
-     "title": "Riemann hypothesis breakthrough claimed via AI, 167 years on",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1zZFA4T05qRkxDa0FaMWdYOFQtUmtteVVLR2JCdFBGUHRyanNVeHNiLUwzcjRmVkFZbVNfR3RXVU5JeDM2bkxvRkYwQnAzY201czlYSzlGLVZyQV9EcmlCYUQxejB3aXM4cDhuM2dYUWNzTEll?oc=5",
-     "source": "DNE Africa",
-     "date": "2026-11-21T17:03:00Z"
-    },
-    {
-     "title": "Anthropic Mathematician Says Claude Helped Him Prove the Riemann Hypothesis",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaDg2RE9UUUZqZ3hvYXFpZ3RrZWEyT3cwUTZ3X0ZSMTN3VXA3Mkxha3g4Z0p5OVRmT25fSXdhUUFIQTgtZHhGaXljLXJuMy1lbVhjZzlTQWMtSzRDSUFlY3dfdHJDYmxycm1pSWI4RnRWT1ZNd0h3QnJxWk00QjdkSlc4ZXQ3MUE5YjVhYlBhZGV1Y2JVTFFDTy1MZmpQVGtrVVFLX0VKTUpxR1dLWm53?oc=5",
-     "source": "Around Prague",
-     "date": "2026-11-21T17:01:57Z"
-    },
-    {
-     "title": "How Google Workspace with Gemini powers small businesses – get 20% off your first 6 months",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbkRwaC1FWVdMdkdGcllZMXF0dkZqOHhId194MWVHVTZIMjh5WUx1cDU3SXRHazlvVllHeUdUUnlUN0ltMjc2QXZKSWNieE5leE1lMW95Q0ZqZ3h4eDh4NzY0YlhBbE5lM1dYZ1pDY3A3UVg0M3lHUl94eW5xR25GX1BHX3d5dTNURnRlSkRsX2dXT2NmRl9NcGZjZzB4TmFtdVhfZEV0dm9hOUNyUGpIQ3A1eDRDMVhmVnow?oc=5",
-     "source": "9to5Mac",
-     "date": "2026-11-21T17:00:00Z"
-    },
-    {
-     "title": "Anthropic mathematician claims he used Claude to prove 19th-century Riemann hypothesis",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZjl5ODZTYXRNU2pfRmhEdnR0ckVzdE9iVVhrX3ZmZzZTMl9acTJENHAyUUFJazdRNGw1a2pES2pjWEpuTG1qTmtfNjBCd1NTQkxXb0c0X2pwSzZtNDJpWS1HbUR6aU5PUC1Gc1N0cXNEZEV5cTd2ZnYtWk9oWU95d3lERkRUOHdSQXRFSTY2OUllVktJenpTODQzU2g?oc=5",
-     "source": "The Guardian",
-     "date": "2026-11-21T16:41:00Z"
-    },
-    {
-     "title": "I used Claude to debloat my 6-year-old Android TV, finally fixing what Google broke",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9SRmhmVTdzUFJ2NUNmRnlUTlF1RGJVTi1LMUNjLUROMXNxRkJSYWg3UDBlNU16OGk0cjNOT3FzaVpKbjcyNkM4WUhfQWNuYkJCc2lNSVlZVkhxMnpobDhtRWJ3Z3pVS21oemxGSDFaWDd1aV9lMVFqdEp3VQ?oc=5",
-     "source": "XDA",
-     "date": "2026-11-21T16:30:23Z"
-    },
-    {
-     "title": "ChatGPT AI Predicts XRP’s Price for the End of 2029",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTDRFM1pQbDlXRFlnSVUtcU5CYzBLSld3ZEIxVHhtYW5fUUNqekJMbE9oTkxRUjR3M2NodWNrOW9tM2cydXNVQjJVcVZBbFJSVU1iVW9nVGFhc0Y5VmV0YWJpaTZZdWFXRFNwZ2RpVnZLUjJiUkxEeVk2VktPaURuSklpa3l3b0YzQk8zSVgwcUxVQ3NuRW9vb2R4SmplaTlQd1hJdFJ3alA3RDBuVVE?oc=5",
-     "source": "24/7 Wall St.",
-     "date": "2026-11-21T16:13:00Z"
-    },
-    {
-     "title": "Google unveils Gemini 4 Hydrogen, its new AI model built for speed",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rSnBnR3JraDZDTEZpRUVKcG5uRmk0NFk4b2l6UTJid0VBY0E4NDk5M3h0U2hkbXNtcTVvdVdIeTNBQ29GV2pnSTVYRzRIUXNYTnNjaGRfNG9ETlVTN1NnU1NLdVBkNGZTaEQ4SDBqUjZJcGRr?oc=5",
+     "title": "OpenAI launches ChatGPT Wallet, claiming it's a safe way to have AI shop for you",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHeTFKZ0NySWhLdXF5bXRNLU5MOHJUUU9WcTVwOGFOc2xNaEstLVp6cy1Ia3BKTzJFczNBY2NOTW56SHJIWXRzY2UxY2NhQmJnQUgtZG5MemVpOG5XcWtUdjhWUzRjbjQ?oc=5",
      "source": "Mashable",
-     "date": "2026-11-21T16:05:47Z"
-    },
-    {
-     "title": "Anthropic researcher claims to solve Riemann Problem with Claude",
-     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMEpLbGtDcHRlUjVuQlM1djUyS2x1bXVJekJERTh4V1FRM1JkTUJrcWZuaGtTSU1IdXN0VHpRbExsS0dkRU1XaEJ4elR1TU9zc2lHTlRKUy1BdFhfel9xNm4tU0JwaC1aaVFmS3V5bHE3aG96WGg5aF96eGFQTUdkTXVqbGlXbFBRTE9WTW1teXBfODBOSDlpc3ZjUjlwOFBNTXFIcDdzVzdsTFdTbFlobDNmd29rOEs1aTVXM3M3YjgwNkpTX2g2TWJCRdIB0gFBVV95cUxPNVU1aU1nemN3UEdRNnhqdTVYVlV3TDB3aXQ0b2V5T0Q2WkVtcDdpRG5kSGVtQXd3SjlSNEJhbmpGWDF4azUwQzlnQXBhLXNwR053VVNlaS1kd1hnbXg1YkpHcnc3aFJyV0lFSWxUMzVhMjRIN1IwMkhHM0tNanctQ3VBNTNXQ1lDTTY0UC1wVUJkZ3BaRlp2eWZOdXBuZFJMdVZ2SHRLV0FKb0NPZkpRWXFYZ3NmamRYUWRpQW01Ym9IMUFzVFh0bFZaMVFoQnZtanc?oc=5",
-     "source": "BusinessLine",
-     "date": "2026-11-21T16:05:27Z"
-    },
-    {
-     "title": "I let Gemini build 5 widgets for my Pixel home screen; the results surprised me",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5IZk1QV05rdEx0ZTJyOGg5WnpweHFWejJHWWlsRlZRVTNlclBBWE01SnZMalRrX1B5Rk5oMDA0cEJGb0kyM3BBaEFha1FKcVduSlRGLXRFbE10SU9zUUkyZlgwUVQ2WHFLMWxnMm0ydDRrZTUxMFA4?oc=5",
-     "source": "Android Police",
-     "date": "2026-11-21T16:00:10Z"
+     "date": "2026-11-21T18:33:25Z"
     }
    ]
   },
@@ -888,16 +888,16 @@
    "title": "Money",
    "items": [
     {
-     "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdkZKRW1BZDJ1X2RCT1hOVGN4SFN5NzBneU1VZFc2SEdEdnJJZTBlVGJzTDVoc1ltMWp1T2lCZHJtSGNOVEVnMzl4VlFKU0ZSVXp1M2pUejVlVTh6RHJZSGhodFhSQmNYeDRHZjlyLWNpX0xmcVJSaURYU2g4Y2FqbEg0RFJfakRsX3FWWUdwVmQza25vdTA0LTVmME4yVmEwUThRU0dZY1JOc2x6Z0VjbU1GSmF2OGhmc0FBT0lB?oc=5",
-     "source": "WSJ",
-     "date": "2026-11-21T19:22:22Z"
-    },
-    {
      "title": "Healey Faces Criticism Over £100 Energy Payment",
      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1FbG1CN3JBYlpTelJQMVdSMlJxQTZWOEhmWXh2SUdfRU1xWEpaX0FIRGRNZ0VPMnkzUHpSOEFIeHNhQTdPbWw4NWMteXFLdHEwbEwzbGsxaHpNNmdwY2xLaVpyWjFFMmpVbWxF?oc=5",
      "source": "Demokratis.co.id",
      "date": "2026-11-21T12:05:23Z"
+    },
+    {
+     "title": "Martin Lewis 'not predictable' warning over January increase in energy bills",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRlFNb1hiRXJOMlhoUzJ0OEVkcnI0V0xQXzk0a1pqcnBjZk4xYmhMemRRRHBfSmVtdjBmQV9sSkc5MWFTbWRwWEdRSGJxTGhDSG5uYmctN2VISmZWNGszWmxld2t1SG5Ic0hKcUJKOXZVUG03VkZZcVpQTjlLNU50WUhWeWN4QVczSG41RzVfanFXczlrNEduZUIwVEg0ZjV00gGgAUFVX3lxTFBGUU1vWGJFck4yWGhTMnQ4RWRycjRXTFBfOTRrWmpycGNmTjFiaEx6ZFFEcF9KZW12MGZBX2xKRzkxYVNtZHBYR1FIYnFMaENIbm5iZy03ZUhKZlY0azNabGV3a3VIbkhzSEpxQko5dlVQbTdWRllxWlBOOUs1TnRZSFZ5Y3hBVzNIbjVHNV9qcVdzOWs0R25lQjBUSDRmNXQ?oc=5",
+     "source": "Wales Online",
+     "date": "2026-11-21T09:47:00Z"
     },
     {
      "title": "UK Inflation Acts Like a Stealth Tax on Savings",
@@ -910,6 +910,12 @@
      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONlhDSFlaSlJRSFNqSGhRT3hOQ19GMXRSRERjdzVDT2owVENubGV0QmU2ZGtIckxRcUxramxjc0hhYkkwNFpoLTIxQUM1REx0d2pBclh4a0EzbUlsRWE2dnBVVHpfMGt1M0hkVGlodU9yd0htUTFUTklCNC1rWTV3THIyai1PMU9POThDSzNnOWlCMko1VHhHemRjVzFwdk1jWXVhMUp6NHE4Wkp1bDJr?oc=5",
      "source": "The Guardian",
      "date": "2026-11-21T07:00:00Z"
+    },
+    {
+     "title": "EV charging costs could hit £1 per kWh in 2027 due to ‘flawed’ Ofgem policy",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeXJLdjNUWHljZnQ5U3pyOWtzaU5DVXBhanVUYV9lYVkwY1RKVG9KeUU4ZWRwWElXMXVOREUxN0gtSlNiVERaVlJvNmtXMEUwZnJCYjNaRFVvbk5KZFozM0FOU2Y0ajRnRVV2QkEwXy1UR3hUNl9QY1F0RmRZQ09IYU5UZnNQNmNuMEs3ejVvTUdtWEEwZ2Q2LWtrRUZoUWc?oc=5",
+     "source": "Fleet World",
+     "date": "2026-11-20T23:32:09Z"
     },
     {
      "title": "SSEN seeks £7.4 billion Ofgem approval for electricity network investment plan",
@@ -930,6 +936,24 @@
      "date": "2026-11-20T17:59:16Z"
     },
     {
+     "title": "Bank of England's stance supports BAE Systems downside amid policy-driven pressures on government spending",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZG5iUlFIQjF2V21jd3gtQUM3WURqSmtaWjRjR1Vnd3pIQnpxQldJQXNTdDFuZEM0LVdBRHJwamtIR1dGVjlRQ291WEoyc0l2cFlMRTlRd2M2MGN1T29LczVuZWdxVmh0OEp6ZHo1WklnS3BkbmhNeFFvWDZ4dFIzQzh3?oc=5",
+     "source": "Traders Union",
+     "date": "2026-11-20T17:02:30Z"
+    },
+    {
+     "title": "Bank of England study links lower vacancy posting costs to shifts in UK labour market tightness",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNM2NKRTlKazRLamxLUF9UWEpOZjNJelAzOWdOM0h4RE1WSDh5MUNnVnlseTZiR2RwUXZzTy1GZ05UOUpiQ0kzaFI2RXVmYlRNR2ZpQVhQbVlkb1A4M1c5c1g2WG1NOVFIMUtQLThLOGRmd1l0cW9VbXdIdDYtaEFqYTd2TjRKRXM4bjRoU0k5TlpST3M?oc=5",
+     "source": "Traders Union",
+     "date": "2026-11-20T16:19:41Z"
+    },
+    {
+     "title": "Mortgage Rates Today: 20 November 2026",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RNjQ3M0x3M1JqQ1BhbVFVRFlhWXpMMHhvVnBjWmdNY1RtdkhJeTBXSlpUOTUydnI2ZU5XMnd1d0RaM3FRX2lGaDV6NkxoX2FvMUtDUnFpRkhWNXFvUTkwSENQZnhxYUU2azFn?oc=5",
+     "source": "Forbes",
+     "date": "2026-11-20T15:52:00Z"
+    },
+    {
      "title": "Why the gloomy consensus on UK inflation could be wrong",
      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUmRVQV96Ym81RkxvUVFrd3BxdTVROC1PTEdxblowSkIzVGZhOU9FT0MzMGlxSTdOOUtnZHJJS01rRWpDZXlxbUx5WHJ0Um9sR21tY0diNmlGcndZdUt1dXVNSTdSN3RFdkVyWkpwcVVIR3pLSFJmYzQ1ZW5nS1BwZ0VuTDhTT3hEanR3MXFNZVF1dGV1YUdIS2JZU0dTbzNqSGc0aEdlemFKWHhFcm5BLXlYc0RlNC1p?oc=5",
      "source": "The Times",
@@ -948,6 +972,18 @@
      "date": "2026-11-20T14:28:45Z"
     },
     {
+     "title": "UK Inflation Could Approach 5% in 2027: The Energy Shock Investors Are Watching",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWndTM1R6THJFNTQ0U2dtbjctVmxzNmJBazBFMTBoOG9pOUtqd2NnMUgtblBZZW1wTEh6UlF3WE9Xb240X0VkdlRoa0hUMHVkRzR1TmttREh0TV9KQTgwREtxQjlCSzJucmJSVHQxMHRDZzZyWFRZenpqM2NlOTZmLU5IVkFmLXZ1dVJ1bUgyN1lZU1U5R3hGMDhHOF9hLWRqQXpWRWF0cGN4ZTROTm9jT3BaS0xJZ0x0N2c?oc=5",
+     "source": "kalkine.co.uk",
+     "date": "2026-11-20T14:20:00Z"
+    },
+    {
+     "title": "IMF, BIS and Bank of England warn of an AI correction, but none calls it a bubble",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQUhEY0NGUG9xY0dhYkoyZDkyQXVIYzRaRHExMzRQWjlHdXdpS0I5cHFVaWlQc1pwUlNtTG9UOGJQTGxCaVI4NmdPWEVBcVdVYTFCNE52TC0wMXB2aHhiaEZRQ0p1UUE1aXRhWnRjWUh3Z09VRmtzcXJTU1NGZFpHZDl6NA?oc=5",
+     "source": "CEO Economy",
+     "date": "2026-11-20T13:15:00Z"
+    },
+    {
      "title": "Grid queue chaos continues admits Ofgem",
      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWm1QWDlzNFBkYjl5c1JxdkZsaVdvOU5raFdwWU9HX3JaVEhkMkFBa3pCa0hGb3pWcXdCWUw1OE8yQlJILVFYRHhLUGdxVGFhTDFQSTlNWVBIUHU5WDBOR29SeWo1Z2NKMHoyZnlTN2t0UHpTaUpJa3dzVW5SLUQyOUFSbXEwaE9TRnc?oc=5",
      "source": "Energy Live News",
@@ -960,52 +996,16 @@
      "date": "2026-11-20T11:22:00Z"
     },
     {
+     "title": "FCA picks Bank of England veteran to lead comms",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ01GWW4wR2g4dXl6N0dhb005TE9jRGsxVXhEc21iVmVUUExuQU1SVC03RkRaWWtWajM3NlZyYnBSRkctVUpKMGtZbldNVEh0TEdENXM2WTE4d0R3alNNSlVVZmV6elFPc0N6RDVpZ2h0SW12UjkwOTg0TDRaRm5ERnFoeGF2ck9EdVctUHpWMHAydkRhUXlLMFB0dEhxWGZIbU9uSldrSkZiZw?oc=5",
+     "source": "In.Comms",
+     "date": "2026-11-20T10:49:17Z"
+    },
+    {
      "title": "Five ways to keep your home warm and energy bills low this winter",
      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNamh3UlNldUZUWDFDZml3TlR5NHY3UG1lcm8tRGFhTFhCTVQ1dU9TZGFuU1pHQlgzek13Z2U3Vm9CeC0tOUp5M1oxbUctcENGWEpYd0xETTFlazhQRkMydU9NZno2OE1pQU5kVUlRZ19iaVFZQkc3S1hRaHo1MjlrdlgxZ0diNzB1dEtUYklLbnpkaERXeXYxTQ?oc=5",
      "source": "The Independent",
      "date": "2026-11-20T10:02:00Z"
-    },
-    {
-     "title": "Grid connection delays prompt Ofgem inquiry",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IaGVubEFMYUI0U2ZOb1VJT2VMRXhMUC1PUk5FVHdJUXVHMFQ5ZzZvbGdENWtkRW05WTY4MG1SS3dFSmJGMlF3dnduZFJtUFFzdl9zNXVWRDhWR29Ub0I3TUFBamd5cjdubjRB?oc=5",
-     "source": "Planning Geek",
-     "date": "2026-11-20T09:02:00Z"
-    },
-    {
-     "title": "Ofgem launches ‘urgent inquiry’ into delayed connection dates",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcFZLc2RCcm51VDZQUkFRVEZEd0trSGNYanUwUVg2NE5ULTFqZHY4M2hMLUd6RDdYVDNSZ3RXeFlRVUtqZDdtQWlEbW9hbURadmFkMW5IR05JcnY5bnNyd3RLcy1WWlppNmNQaktYd3hMVzExSWR2WVA2WGdZdEFvM1lJWWd1cVBNT0Z2RXVoNNIBmwFBVV95cUxNZjlOMGFOeU83c3d4T2xPUTNRTjdEdno0SGR3Tkl4S1RjUlBsREc1S2piUTFuVUV0Q0d4eGdYQlA3djhJTEdQakJoN2hfd1AxYkpCQTJtbUtVSm4wSXROV1ZEa05nLWxFblJ2T2kwMk10M3VNQ1c4TkNnOEpENDZUWDFORUYtV3NkQ3pLVEF5cW5qTWpXN19ULVVYRQ?oc=5",
-     "source": "Utility Week",
-     "date": "2026-11-20T00:42:46Z"
-    },
-    {
-     "title": "Bank Of England Urges Firms To Map Quantum Cyber Risks Now",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8takJ0Z3dEc2JLVUxHcDVNS29SOVpjWlhkRnVmZmhMZjVoanpRV0VCdk5YbGFRbjVLUHdVRjFmZEVfNHNzMEQ2ZXA3UlZNS3FSTDdidjhkaUdMejBIVlFicDR0YzA5R2M4XzJHYm5pODl4VXNxR1Zr?oc=5",
-     "source": "Quantum Zeitgeist",
-     "date": "2026-11-19T23:08:15Z"
-    },
-    {
-     "title": "Ofgem launches urgent inquiry into power grid delays",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbmRySnlaamtfRHFraExQSWZQUTZVT2U2YmtUS1c4M2hFbFB0MGRBUWprX3hnT3R3TkpxRmIwRF9ja2VpRi02a3hZVmxfS1hOb1lOWUlnMkJVbF8xSzAtVUViMEJIRkl1MzlXcXZFaFZZVHhCUEo4bG1FTFFVRG1TZ3dKU1ZHUUpEY0k4b2h5S29Ib1VrSGlJQURPZFRoeVdIR2lJ?oc=5",
-     "source": "The Telegraph",
-     "date": "2026-11-19T21:21:00Z"
-    },
-    {
-     "title": "Greene Blames Loose BOE Policy, Not Bad Luck for Inflation Miss",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPREZnYzJQTkR2X3lvY1czb0U5dmxMZlNCaV9aTVhEUEZMWERCWmxMSXRGMGQwUzBacTNlMTdXNEl2ZGdZUFc4eFJMVlVGRDRYbGZiUUdrX2RCb3NhNk5oOWlyem9Bb3JYMnY1MHFvcTRHZ0d3c0xKdWxudjBBTm1sbG5qWmpPamVYRDJoMDdNUFpGeWpiQ096VDF1V3hlM3hGcmZUVWpkVHVWTUdsTTFLdHBsSQ?oc=5",
-     "source": "Bloomberg.com",
-     "date": "2026-11-19T20:18:58Z"
-    },
-    {
-     "title": "Ofgem investigates fast-track grid plan that led to delays",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMzFzSVFGcktReE5SLXRwWm14R09hdGNUcGJ3UUZZVjd0SW56T19uRkZvcjFpemJ2NHZSMy1ZMVFaLXRhLVQyd3pndk1aV2VuZURhaWo5LUtUcFJiX2JKVjgzNWZORmVPdVc0NHNPM3NQaS1WVE9Kd2V0VUdacGR6d2NVN1hZTGNRc1h2VWpwMllZMFpKOUlLbVhxc2tTOWpORmtOcElOcmM2ZXo3Q2c?oc=5",
-     "source": "The Times",
-     "date": "2026-11-19T18:39:16Z"
-    },
-    {
-     "title": "Bank of England Rate Outlook Adds Pressure to UK Equities and Sterling",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZUVpXzBtbFFmd1pfYlU0VDNvbjZienpDdWJEVnNHZHd2dFEwZmxBT1lKdFE4U1ROMzBNZ2R5c2k2dlBmWFFVUEdBOGtGTEFMWGVJNlhrN2ItY2tKN2tGb2lWOG9NMXExQ0IyWmJNMW9zMTU0N2EtYkVBeWw5LV9sbnZwWnJUUllvTEYweEJYbXBVNmpWc1VpbXgwRFNPek1YYUx5RWlua1J1M2s?oc=5",
-     "source": "kalkine.ca",
-     "date": "2026-11-19T17:33:00Z"
     }
    ]
   },
