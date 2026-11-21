@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:39:01.509371Z",
+ "updated": "2026-11-21T17:55:33.907227Z",
  "feeds": [
   {
    "id": "top",
@@ -36,7 +36,7 @@
      "date": "2026-11-21T13:29:55Z"
     },
     {
-     "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+     "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting",
      "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T13:17:38Z"
@@ -234,12 +234,6 @@
      "date": "2026-11-21T12:31:02Z"
     },
     {
-     "title": "Microsoft Breakup Failed, Google Cases Follow: 23-Page Plan",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeDNDT00zTkEtMzg4NkFvZlpCdzNUMWxDdjBmYXItWjJzRlhsM1RTdnA1SzVzQS1xS3JYMmh6M294SVdzbnVyZjg0ZnBLa29xVmJwVDkyaW13a0tHa3JXY2NjYUpnWGlpbnVkcFgzbVU3MHc4VWlXeVZoRnhHTEJ1YWdMeFZDUk5UTGluS1hjOWZwVmM?oc=5",
-     "source": "shattered.io",
-     "date": "2026-11-21T12:09:22Z"
-    },
-    {
      "title": "From Microsoft to Anthropic: This Week's Top Five Stories",
      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWW1Xb3lfcWFUelZvQkJpdmptSkl5WUsxQXdIM203d3dRc092S2VBdXVTZzduTUpvek9HNldWbU5Ca05NTFc0TEdVZ1FNc0NzZHpPZjJycjlnYldwYU1aaEdaSXI5MGtCTVBGaDBpYWZhT2ZvcnZMb2oxV2FTX0NFemlJcTNFYi1vNnI3Skdvcw?oc=5",
      "source": "Business Chief",
@@ -250,6 +244,12 @@
      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONkpuUU1RQ0gyWU5UdDRBYW5iNUE1ZzE1MUhZNElTRWpLM1oyck5kUDJ1TWdTaG1VbjE3TW9DdFA4cDJ4ak9BX2lRT1RJSF9leDNKeFYzUVFlc2xTZ0RWWk5uazd5SnF0bC1nTm04ZE1RaS12NXVOdThGVFc3Rko1dzhtQlhZQ19NWFRldDRLNkpXZVdyczln?oc=5",
      "source": "BetaNews",
      "date": "2026-11-21T12:00:23Z"
+    },
+    {
+     "title": "Microsoft To Do is closing down and personal users are being abandoned",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02OXAxT043Z2otOFdvWEh3Ul84WUJheWI0TXp3QVY0N1ZEcUdCSjltRWl5dk1VN0JSR0VPUzRvRzZSSER1TGdQelV0Z3p4aFFuc2Jtdk5pVTlabFFjeldlUGNQTjQwOVF0ejZKdWxn?oc=5",
+     "source": "BetaNews",
+     "date": "2026-11-21T11:43:09Z"
     }
    ]
   },
@@ -384,6 +384,12 @@
    "title": "Tech",
    "items": [
     {
+     "title": "The FBI and USDA were reportedly hacked",
+     "link": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
+     "source": "The Verge",
+     "date": "2026-11-21T17:42:27Z"
+    },
+    {
      "title": "John Roberts, the voice of Linda Belcher, is just happy to finish a thing",
      "link": "https://www.theverge.com/report/1038463/john-roberts-linda-belcher-bobs-burgers-interview",
      "source": "The Verge",
@@ -472,12 +478,6 @@
      "link": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
      "source": "The Verge",
      "date": "2026-11-20T20:43:52Z"
-    },
-    {
-     "title": "Rockstar says GTA VI made $3.79 billion in its first day",
-     "link": "https://www.theverge.com/games/1036279/gta-vi-sales",
-     "source": "The Verge",
-     "date": "2026-11-20T19:35:06Z"
     },
     {
      "title": "White House removes cyber-security chief after series of tech outages",
@@ -628,6 +628,510 @@
      "link": "https://9to5mac.com/2026/11/20/ios-27-3-new-features-release-date-more/",
      "source": "9to5Mac",
      "date": "2026-11-20T13:44:23Z"
+    }
+   ]
+  },
+  {
+   "id": "m365",
+   "title": "Microsoft 365",
+   "items": [
+    {
+     "title": "Discover and review Power Pages sites with Power Platform inventory (public preview)",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/discover-and-review-power-pages-sites-with-power-platform-inventory-public-preview/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-20T07:08:22Z"
+    },
+    {
+     "title": "Turn AI ambition into real business value with Power Platform",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-18T19:00:00Z"
+    },
+    {
+     "title": "Act faster: hourly alerts for your critical flows, apps, and agents",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-11T17:00:00Z"
+    },
+    {
+     "title": "What’s new in Power Platform: October/November 2026 feature update",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-10T16:00:37Z"
+    },
+    {
+     "title": "New Authentication Governance Controls in Power Pages",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/new-authentication-governance-controls-in-power-pages/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-09T15:54:30Z"
+    },
+    {
+     "title": "Create and edit non-SPA Power Pages sites with Agentic Coding tools",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/create-and-edit-non-spa-power-pages-sites-with-agentic-coding-tools/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-06T17:26:59Z"
+    },
+    {
+     "title": "Dataverse goes where you build: Copilot Cowork, coding agents and n8n",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/02/dataverse-for-coding-agents-n8n-copilot-cowork/",
+     "source": "Power Platform Blog",
+     "date": "2026-11-02T16:00:00Z"
+    },
+    {
+     "title": "Built by makers: Five years of Power Platform Community Conference",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/29/built-by-makers-five-years-of-power-platform-community-conference/",
+     "source": "Power Platform Blog",
+     "date": "2026-10-29T16:30:00Z"
+    },
+    {
+     "title": "From one prompt to a governed Dataverse app: the Dataverse plugin lands in Copilot Cowork",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/2026/10/28/dataverse-plugin-copilot-cowork/",
+     "source": "Power Platform Blog",
+     "date": "2026-10-28T20:50:01Z"
+    },
+    {
+     "title": "Invite agentic coauthors to collaborate with you directly in canvas studio!",
+     "link": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/invite-agentic-coauthors-to-collaborate-with-you-directly-in-canvas-studio/",
+     "source": "Power Platform Blog",
+     "date": "2026-10-27T19:00:00Z"
+    },
+    {
+     "title": "Building the system for AI at work",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/23/building-the-system-for-ai-at-work/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-09-23T15:00:00Z"
+    },
+    {
+     "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+     "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-09-15T15:00:00Z"
+    },
+    {
+     "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-09-10T16:00:00Z"
+    },
+    {
+     "title": "Build apps in Copilot Cowork and Copilot Studio",
+     "link": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-09-10T15:00:00Z"
+    },
+    {
+     "title": "PPCC 2026: Bringing AI and your business processes together",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-09-03T15:00:00Z"
+    },
+    {
+     "title": "The next measure of AI momentum is work transformed",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-07-30T13:00:00Z"
+    },
+    {
+     "title": "Copilot in Excel: Built for the era of Frontier Finance",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-06-25T13:00:00Z"
+    },
+    {
+     "title": "Copilot Cowork is now generally available",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-06-16T15:00:00Z"
+    },
+    {
+     "title": "Introducing Microsoft Scout: Your always-on personal agent",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-06-02T18:00:00Z"
+    },
+    {
+     "title": "Announcing the new Work IQ APIs",
+     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+     "source": "Microsoft 365 Blog",
+     "date": "2026-06-02T17:00:15Z"
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "title": "AI Tools",
+   "items": [
+    {
+     "title": "The 2028 Hyundai Elantra Hybrid Targets 53 MPG and Puts an AI Assistant in the Dash",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcy1HbURicnoyRW9mNlZNOE8taGhob1pHV2xDQlZrTDFkUnV3bnBBMEZhb296NXUxdExuN2tEZ3prdHlPTGhiTEFxVWdsSEQ1aGJaX2t6X01CamxVX2NBVXRUc19yRGd5anJXWVhzeHhLUlZrRmlHWGI2R1BzbkJUSnBtTktrajg?oc=5",
+     "source": "The Gadgeteer",
+     "date": "2026-11-21T16:44:57Z"
+    },
+    {
+     "title": "Where can AI tools be put to use in legal field? MP High Court Chief Justice Alpesh Y Kogje answers",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSTVoSjk2d2gxWFRVX1lYNkZJS1JpMkxrdjRoWjlHVzY5WVJmN1RiT3JnOTM0X2Q4cFVPX3RmajdvMWhJdGJVdGFBV19KM1BuWktQLUxlYWctRXozcmlpVkIwLUpqbk1fVTRKTU5leVRHMTRSQmo2dlo5TnZtZjNYcjhvcW0zbFM1c091TzlSd3BCWXZYRmZrUTRKU1ZSQXJRQ3VxOHdhUXVVRXBzREZOMWgzVEdaWHM5RFZvSm03WEhHRUlXR0V5NjhuMNIB2AFBVV95cUxQc2hLTDFBSjM4WVhMMWNyalhIbTZBMVVPeGFMdlNZdnI4b2QzMDMtZDZNUE9FZzhlamI5MTA2U1BTVHNUS3I2VGwzVXU0SGVpWUswaWlYTzBvS2habi1MdnBMRmZEeWtyelJhUG5Pc1RsS0ZucS16dkJwOWZsVnB3NWJaOVdEbmdfcGh0WlpseEkyQXlGSHVPWUJpN2trcElmaUtrWE1TdFh5MW9qc3JEU0tPWFpMNENBSjJzdHg3LVZ0bG9nQU9rcTI3S2V2MmFGbjhBVjFqRjM?oc=5",
+     "source": "Bar and Bench",
+     "date": "2026-11-21T16:15:53Z"
+    },
+    {
+     "title": "AI Tools Launch Could Be A Big Test For Samsara Stock (IOT)",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbGR3SEdHSVRQaFc4WE96b1BLVGlFQ0RNUjc5THBYemN3UDFKVWg3RTdjUEFrd0RhSHdubl84eTFFSEJGV0E4Z3ZRRi1IU21ZR3V1c1NsNFJ6X2dKSFRXWFU2R0VUaVI1Ry1jOG1LVkdZaUExdVMwTmRmVDBGeTA0Y0ZaTVBfS2hYQnh4Z3p5TURrcXZzWjhLT21ZZHJ1SmhhN004MGt1QlR5Q3ppaTg3TFg3VEIzaGRwOVlYdtIBwgFBVV95cUxPN3ZveWI1T0NOM2E5MXNFS1QzWnU4VWlyTEdudHdxdEpXQ0t4Tkl4anRmYmdZQWRvalZ0NlhRcGdNZS0teU5OZzVzdjBJSVRMekI2MGs2N1FQUFlkRmpTTy1ITkxKVFB0cU5aUGltQXZsV3Jyd0pjUWdfWkNaREFTRTN4NVkwRURkYUU0YUxsOTBzaWNKUGZUazVZYVoxS29OYm5wbTFuaGQzVGw3QUU0QXhTdmNoSnlSalVHSnZCa1owZw?oc=5",
+     "source": "Simply Wall St",
+     "date": "2026-11-21T16:08:08Z"
+    },
+    {
+     "title": "Can Anthropic afford to put safety first?",
+     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+     "source": "The Verge",
+     "date": "2026-11-21T15:00:00Z"
+    },
+    {
+     "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+     "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+     "source": "The Verge",
+     "date": "2026-11-21T14:00:00Z"
+    },
+    {
+     "title": "Hyundai unveils 2028 Elantra Hybrid with 53-mpg target and AI assistant",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd251Qmo4c3VGWWwyWGdCR1dmV01XNmlQLXpCZk9uNEN2N1U2VUNuNnNJd3JBdWM4b2EyUTFxSTNneXFBZGVkdnhUajQ0Tml0NVp1WENtMEpGcDFaZWVwY01SUVdLYVl1clFBN0Z6cXpzQU9jLVgtb3NHYnV2aU9hbkFodnRndw?oc=5",
+     "source": "Mezha.net",
+     "date": "2026-11-21T11:19:20Z"
+    },
+    {
+     "title": "Bhashini Showcases Multilingual AI Tools for Healthcare at Global Summit",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb2s5S2QwX2xJcHhzdnBjdFRxUTREbkpfTHBEdkZBQk5lNVRldTJVVmJfZ1pSYzU1X1V6cEYzS2VEM0ZBSEFFRktoWG1HSUNneG5qc0RBUkdDLTdvNlNQd1A0bEpQd3NzMFJsaDZWTnozM3hGcll6dE5KZ21nVV9kbWd4cXBPNk5nazExUGtZbVZnWHhsSkZjaFNkYmFYQQ?oc=5",
+     "source": "OpenGov Asia",
+     "date": "2026-11-21T10:27:21Z"
+    },
+    {
+     "title": "Apple Intelligence, decoded: How to make sense of Apple’s confusing AI lineup",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZVdSYjg4UUtlaXpqRzNmc3Zfd0Uza0c5dXpBTVQxQUFVMlpITS05WGxnOXd2OWZyX2NJYjN6YzVGT2FreUtTYmdBdTNlX01ueHA1YUZDWW9kMzlsUktiU2hFS2xXUy1VdldmeXQ0ZWVoc3VKT3REb2pfSVZtX3JDa3RpRld5dHdOZFp2RmJOMnB5elZNSks2QmlkSVVXOGVWc0RHNUktQnNGYnNnYzVYeQ?oc=5",
+     "source": "Fast Company",
+     "date": "2026-11-21T10:07:19Z"
+    },
+    {
+     "title": "How to edit photos with AI for free, six tools compared",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdWJ3TzYzR25Jc2RiQ3lEejByX3BsQkd6VUx0eS1idm5qNlM2ZVNZeVc4eVZKdHRaSEtSNVdDUUVwcUhYaXRWWDgtd0JCSmRIaWlvRXdHMjVNU3I2R0ozSFJrOUxSZ1ZvSmVfTlNESXRVOWFkaGlWQktLcHhjWkZOZTQyLThuQ0N0b2k0?oc=5",
+     "source": "Pasquale Pillitteri",
+     "date": "2026-11-21T08:33:20Z"
+    },
+    {
+     "title": "An apartment's AI assistant promised a Black North Carolina woman she had more time to pay rent. Then she got an eviction notice",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT1ZtUmZQVHVwZlpGWkRMa0hBWU9UaWpNajV4QmNlMXpBZWVUQjF2aGRZOFNBS3M3U1VMcDRXSnAxNmlFRVBsR3dfWWQ5T0hickdzVXM4eGdsOGRLOFZTVVBWaE1iSVB3WW1MUFdyNzZRUEk0TmluMGQzdWgyMnVfcVJ0RWFvWnJuMVpBLTVsNUVuaEFFVmFuR1JNek9IQQ?oc=5",
+     "source": "TheGrio",
+     "date": "2026-11-21T02:09:09Z"
+    },
+    {
+     "title": "Google Cloud adds Gemini AI tools to Partner Marketing Studio",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDZyd2t2dzd5QW10VDhIWnNKdnJlV3JDRkxUZF9oNVNhR1FodU8wc29PZDc2NWFFOWppQWlvajJ5QlJNaVR5TDhDRF9DSkpoSmhPRXlaeENJYkZxbGYxRXp6UTY0eUtjTXcxQnFxT2JRaTlCc09xd3NlWVpiV2phZlZfVFRrUWM1d3lzY1dPVWlHZzhNMHVNcXJWbEV2dUVacVVCWHFlb3g?oc=5",
+     "source": "TechGig",
+     "date": "2026-11-21T01:37:29Z"
+    },
+    {
+     "title": "Back in lower court, Amazon wants to continue suit against AI assistant",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOW5QLTJPZmN1LXVMSmw2ckxmUF9EbE41akRvOWZCR1ZKRUItUXVXRS1UTGlNRWJJSDJqRFRvSnkyc2hmajNFQU1EdTMyTXdVbWRRbi1HWEdYS0Q4MFU2VjJFRUtOQndPY2RSRDJyNGZKTlVPMWgyaDJld0taNWk2YjVlcWR4XzFVMDBrTC1WSmVTTEVJQnFxenNWVWNfTkE?oc=5",
+     "source": "Courthouse News",
+     "date": "2026-11-21T00:08:45Z"
+    },
+    {
+     "title": "Black Friday 2026: Can ChatGPT and other AI tools find you the best bargains?",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fUFYwN0E3bjZVUERFVVh4a3lYRFMxSkdWNm5UZ2l2V0xvUUh5dlkxRFEwTjQxLVkzSmJrZGVjRFppT2FrT3BDdm1oSVRlMENYdWRlc0ppSGtPTWxDMlE?oc=5",
+     "source": "BBC",
+     "date": "2026-11-21T00:06:11Z"
+    },
+    {
+     "title": "Jackson’s AI assistant offers answers outside business hours",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNY2dTb0Ixb1BCQmdvb3FZM1pmSjN0cWhod2tRdklpVnVaZVhSdVpDb2tRRVotbWJKeDAyY1JkWV9wZWRRYmc2bE5xVXdVRm1WVl94Z0Z6SUQ1RXBQOUJ0Q3pDcTJkaXRMVW1xVEwwNHp4VG0yRUw4ckx5RTZuakxrVWdHa3RUY2pmSk1qSFdzWXZ1SGd3bnl1YkVn0gGuAUFVX3lxTE1oVF9NaS1iTlRveThjRkN0YjRheG44UXJaSGJMeWdFOG1oNFQtQTVFWjdFZ0JWRXZ6OHlIb1NhQTFuM0pmNzFoOTN1NWhyQVZhQmtlcE9kZE5VR3JpS0pPeHl5MkxnUlVHc1N3bTlqZWNGUW5UeWliY29fLXhhdk4yZGNzTmFmT2pmWlZ1bWplTkNfSEFsYlpxN19TdmZRSmF2Y0FrSVp1X2dXSHJXdw?oc=5",
+     "source": "WBBJ-TV",
+     "date": "2026-11-21T00:00:00Z"
+    },
+    {
+     "title": "Jackson Walker Attorneys and Business Professionals to Present on AI Tools and Patent Inventorship",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDOTRKNnBWejB1VVoxTE83bC1Eekx1cmctTkhaUUpVSlpyY2xTSDVqbl9KQ3ZZT0tnR0RCWElJQTEzV1diZl9yVUxybmRFcUFiTkY3NF9qMjA3Y09NYXgzV0gzemI1SEU?oc=5",
+     "source": "Jackson Walker LLP",
+     "date": "2026-11-20T23:44:56Z"
+    },
+    {
+     "title": "Milemarker launches MCP to plug AI tools into firm data",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZVlSNHdUZEU5SE5NTFR6NDBPT3JSS2prbzJjdXQ2SmQ4aW9vVGs4WmxzaVpaZi1FZGU3VXMtMmd4MjJMQzlKbi1qM01feFRiOEU3UXRBcVRVLW1sb2FFcHRWZUNRdXdtVDdhR2N4dk9TWWpaMU9Xd1Y5MFFfNDVsdnRrMW1JV2RkYXZIQ3A0dllTc1NFN3k4SVctdS1PRmJ5MnFWcUJnMUlYdw?oc=5",
+     "source": "InvestmentNews",
+     "date": "2026-11-20T22:20:58Z"
+    },
+    {
+     "title": "Texas Instruments (TXN) Could Be 50% Overvalued As AI Tools And Earnings Impress",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRENhSlZqVUlLQlZDMHFWQlNzcXM1WDRrRFp1RGhQNmlMSEVpZVc2eko4RGdlai1FZmp4d3FNem9JYXIzaVNrRTA2Z3ZuOW5lRFBZTVFIbXo4R2V5MExDMXF2RTVrRzNfbW1QVndqaHlscGFPTk1BSW1falc5MnJyRUgtMEhQc2ZqSnBzQ2gxOUZ4TENYck5kN0RkNA?oc=5",
+     "source": "Yahoo Finance",
+     "date": "2026-11-20T21:12:49Z"
+    },
+    {
+     "title": "Senators Will Weigh Caregiver Artificial Intelligence Risks",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8yd0lTeVQwTkY0ZjZ6OVdZTTU3UDg4clF2bmwwNFFHaDEyRU1OeVRCR2JKcURSY24zbHBGSnVFTnFWTmk2dDRSTUg2ZDAxMnJkbjBZZGRlY3IyQXkySTNSYVpTUFpJUzBwckNucWlXRTJEUmpCYUE?oc=5",
+     "source": "Legis1",
+     "date": "2026-11-20T21:11:09Z"
+    },
+    {
+     "title": "Senior Living Marketers Prepare for ‘Zero-Click Move-ins’ as Prospects Use AI Tools",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOC1MLXNoUjFiZHZnbFNpeG9TeXJVdmUzd3d6aXdMd3pIRmpsWUtHRS13MVFBSGR4SmhvckhjSVV6b0QxRkNqaGVUckdBQWdEYWl2NGdLbHZpTGk5V2E0VGVNUHhwWWZxZUl1eWNOek1RVFRxLTRmMExlSXNSdC0ycmFxc1pwbS0tcXFsSHJDRVUxcjJLQVEzaDU0cDBuel8zcm5sTUlFdWNuYmZrZGV6d2huTks4OFcwVGlvVkt2SXA?oc=5",
+     "source": "Senior Housing News",
+     "date": "2026-11-20T20:19:13Z"
+    },
+    {
+     "title": "United draws a line on personal AI tools for booking airline tickets",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdENEdTdLNzB1UFZicXNVcGhFUGZtVU5UNnVGX09uY3BtaUNNX1pZLWNEX1dKMGVXc2NFeElNVGh3NXdMU25aa2xONTVOdGd6eTZ5MnZlRURBaEdaaVdLMHpwc2l5akE0SC1hZ0hRMTNtS2tJR1o1cXo4TGttUDM3SDVsQlNPVjNhQnpv?oc=5",
+     "source": "Yahoo",
+     "date": "2026-11-20T19:00:00Z"
+    }
+   ]
+  },
+  {
+   "id": "money",
+   "title": "Money",
+   "items": [
+    {
+     "title": "Inflation Is About Resources — and Power",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE51cjdpTzdkUHZVOXk0MUhvRHhmV2RzbmxMemV4UlJzSGIzeGw0bFJfLXlvbHRmdnpxUUEyRm1YTU4ycmFMQlFxUGVkLTFFYUg2dWM5ZGgxN1FFemo4Z0RBN2dvQjhrTGZ1V0Q0ckVPZTFSdw?oc=5",
+     "source": "Jacobin",
+     "date": "2026-11-21T16:23:44Z"
+    },
+    {
+     "title": "Inflation, economic growth and the mood of US consumers in focus this week",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeFBMLXg4ejQxNTBDTDRDajI3eTNEc0dDcHhyTTJCUmRUa0Nkd2RoTjZBRWlhSHBNbGFfeEVQcEtOc3lyVF9JN1BjQTNueGt2a0RPNmt4cTUtZ3g2NUhfOEZSalI4U1plcW5vMkZlcEFuQ3V1N19iVzFGYzhjbU84REY0VjI4MEVRaFc0dl9tSTkyVWVUc2NyQkI4NTZuU0dxUnA1ZEJfNTFiN1JYLVV6QzZZeVdmR3ZCY1RRc2dRVWhBc1d1eGpicWc0dlpsT0hlN0E?oc=5",
+     "source": "The Washington Post",
+     "date": "2026-11-21T16:16:28Z"
+    },
+    {
+     "title": "5 Investments That Have Been Beating Inflation",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRDE0eEF4YmtMam5SRW1jallHanRXcG1RNUtmNThzWmVjS3JRUndBV1VyYmhGekVUc3NCa1BBYUJDcTFhX1A3ZlRuTlBpX0RvN3FfUGhlUjNWczhyV2p2SktwNGlEMVZWWTdrVFBPbkdPODFTWjBZbGNNaXNSRU96Z3FlZkJwVXFlSWpSbjFZbloxZw?oc=5",
+     "source": "MoneyLion",
+     "date": "2026-11-21T16:10:16Z"
+    },
+    {
+     "title": "Inflation, economic growth and the mood of US consumers in focus this week",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbXpOb25xWWV4QVE3U2hfMk9hdFRaNV9rZ1FIR0ExUVZpeUhOd3EwcmU0NGV0ZDAzcUJOUVJzZ3hvWG84N0pDNUg0WWJzUWRQaUF2eVo5NmJFcDY3V0lETXNoVDlOYmhPakxPcGwtU1FxWEZObmJuY1pIMm41dVNOQlVVR0xzcFlLTXJ0NG5WZm5YakU2aU5mYUt0VEtxNzNKNm5tNjEtXzVkbHZiVTlGdEZB?oc=5",
+     "source": "The Seattle Times",
+     "date": "2026-11-21T16:00:19Z"
+    },
+    {
+     "title": "Robert Wolf: Market downturn highlights inflation, rate hikes, Nvidia slide and restrictions on data centers",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOG03b045MHg0UDFJWEQtUk1DZ1VmNURhUDhKQTBYSlpRSk5SU0htaTczWG43NWJ1eUR2cFhDUHh5X3IwSG9GQXZCTTVSVlBVQ01KR3VvNnZ5NWFtVjJDU3hwVjJQd1FkSGNBY1Y0UWNhZTdfS0dTaHY3ZTBnNkJESE04SUVFM2drM2RiTlpqay1LbUp0R1E?oc=5",
+     "source": "Traders Union",
+     "date": "2026-11-21T14:50:15Z"
+    },
+    {
+     "title": "Bitcoin Price Returns to 2021 Levels, but Inflation Reveals a Hidden 19% Loss",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWmhNUW5mNWpqR3kyaHJzWG5UbngtOHpDMmlIZ3pYc05PN2w4aW1YWVZEek94SVMzNElHQzN3cU5STnJ2YXJFOWtNdzhzQ2NDV3pLdlU0dVZsQzBqYUppT3ZaUXAyVzFQRUxLTlpfNjAySkNITU52X1ZhdGlUVVVSQi1YTnBWMFVCc3JkR0xWcGtXLUZqVWlIVTdJTnBNOGt5dS16a21NMU9YY1VySW9Mek9ZNA?oc=5",
+     "source": "Coinpaper",
+     "date": "2026-11-21T12:17:09Z"
+    },
+    {
+     "title": "Wall Street Slides Deeper Into Turmoil As AI Optimism Fades, Inflation Fears Mount",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbXdYRGpCVVJIZnZXX2hQYWVlRkVXUG1qMm5WbjNTcl9xQXV4RG1VdGoxYjdodm9CaENqWGI2OF9uY3BMY2dMYlhXWWVUUnRNNWlEYXlQN21fcG40c3BQdmNfZmV1eG1TaTVnWnFOd05NbnprOHpBcU5EM091UU5SVmI1R1hTMElsTkpEd2RyUUNUdGRPMVg1RU1wQ05XcDFLVlZkUDgwT01ORGFyMmhlZXVmQVA2Z3huQkhyZ3hhakNiZVlfekNiQnpTSDVzSUXSAdQBQVVfeXFMTUFfcnlNMUowYUoyZUx0SEZ4cFJSMTRXQ2R3VTVNU25lZ0J2UnBfSjVBZHNoZzBpSHRzQVlYcTBWMHIybGc1NzJ5d3JPOTV4TE84RkZPTVRRZ0t0LUlBLWg0bzl3RXFOcTNHX3l4ZjUyMG01QTBaLUZiM2lKYS1SSUtmQ3FzVkRWUGdObTBkXzFIWWx2dHZhc21CZlJfUlZra2lYcGRNNWltX2M0YkY0YXBGRHQ2eHNXYUR1SVpMSTB5NTBfa1FNejNjWUYxYWhxNDZHSEY?oc=5",
+     "source": "تسنیم",
+     "date": "2026-11-21T08:58:35Z"
+    },
+    {
+     "title": "UK savers seek inflation protection as prices and rates reshape cash returns",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOVRlUzV4Z2d5RnA1MEgyTEdUU1JiSjEyT1dfOWZHUVNFYU9rMGR0LXRnSi1yWEtzYnBzbUEwaVN5Y1RFSlRyYWlMYTZ2WjNfN1gtZG1iOWNJNFZ0Mmk1Tkp2ak9INWZ1U2pNRHJua1hxSXJlZnlMV0dDVkNoUUwyRXVkakpyUDZxQXZSZnIwT3laT0lIWlAxRGVjNDY1SmRYY0dLSWNn?oc=5",
+     "source": "Traders Union",
+     "date": "2026-11-21T08:10:34Z"
+    },
+    {
+     "title": "Iran’s Workers Face Deepening Poverty as Regime Links Wage Increases to Inflation",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOenJFU2xrS1VnU0JRaTNtZUp0YVhoRERBUFJGZEZDZzBISm9EMjgwRV9DSEhBdnM3eTJwR3RHM3VacFJwOENDR3VGRWk4VktRcnFlSXMyX0pUSWpmX3lEdG10Y0dQTDJRbHRNTDhaMHlPczdyN2NhQ1FVV0tDS0xlWUNwcmNQTlA3U2pRZy02WmJBdF9MUVg2c1pDS1ZyWENSSVdPUXViR3V4Q0YxQXE5cVpoVG93S193UFJYUUdB0gG-AUFVX3lxTE56ckVTbGtLVWdTQlFpM21lSnRhWGhEREFQUkZkRkNnMEhKb0QyODBFX0NISEF2czd5MnBHdEczdVpwUnA4Q0NHdUZFaThWS1FycWVJczJfSlRJamZfeUR0bXRjR1BMMlFsdE1MOFoweU9zN3I3Y2FDUVVXS0NLTGVZQ3ByY1BOUDdTalFnLTZaYkF0X0xRWDZzWkNLVnJYQ1JJV09RdWJHdXhDRjFBcTlxWmhUb3dLX3dQUlhRR0E?oc=5",
+     "source": "Iran News Update",
+     "date": "2026-11-21T08:00:02Z"
+    },
+    {
+     "title": "‘Like an invisible stealth tax’: ways to shield your cash from UK inflation",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONlhDSFlaSlJRSFNqSGhRT3hOQ19GMXRSRERjdzVDT2owVENubGV0QmU2ZGtIckxRcUxramxjc0hhYkkwNFpoLTIxQUM1REx0d2pBclh4a0EzbUlsRWE2dnBVVHpfMGt1M0hkVGlodU9yd0htUTFUTklCNC1rWTV3THIyai1PMU9POThDSzNnOWlCMko1VHhHemRjVzFwdk1jWXVhMUp6NHE4Wkp1bDJr?oc=5",
+     "source": "The Guardian",
+     "date": "2026-11-21T07:00:00Z"
+    },
+    {
+     "title": "Market strategist says key inflation data next week could impact Fed rate hikes",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4teGZHVUdfQTlNVzR1OVI0V3FuUHNtTU5Lcm1UTmtSSzhaT0NjQWh4eTdERlc3RGxMUmg1REtmYWRvcjRHZE1kbnU5OHVNemdmNXpudG4xUFZnVEk?oc=5",
+     "source": "Fox Business",
+     "date": "2026-11-21T02:36:06Z"
+    },
+    {
+     "title": "Bank of Japan research reveals generational gap in inflation expectations, with those who lived through the oil shock expecting higher prices",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vdnZvWHNLSnBrUDduZzFlSzFjSlJyU2RuV1FGSFNuMTE5cnMtQjhMeXl3ajVKdzk1QjdtWVQzNXRJWTY5bHEwbjg5dE5SaDljRG54cGw5WWxBR2xteGlXc2VQaW9BNFFzV09vd2Y4b0s0eUt5ckE?oc=5",
+     "source": "BigGo Finance",
+     "date": "2026-11-20T23:35:00Z"
+    },
+    {
+     "title": "Dollar-Yen Falls from Upper 158 Range as U.S. Inflation Expectations Ease, Rate Hike Bets Recede",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rdno0ZEJfZmdkUy1hNENNQng3c295WEZLMHZ3S1JfVXFYWVVrSDdEUUFPcW5JQ2RTM0dEVHJyaGVyVWo2SzlncG9Jb1NKS2Z3a3BNbEpCVUhEdmk5NTNPdVFwQlFkUjliY3BJMjcxbnhRaTFiaHc?oc=5",
+     "source": "BigGo Finance",
+     "date": "2026-11-20T23:25:00Z"
+    },
+    {
+     "title": "American inflation takes centre stage as the Euro enters the week with a priced-in rate hike",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWVplaG9TTlE4V0VZWDNkOFA0VTZfRThQQUI0X3A5eU9aTEdseUtFQy11MG1DMnlmQVFReGhBejVtSnpocnFBWFM3NDBndktqeXBFcEpkNE10TTZPeDhCWGZyaE9DOC12WVBEeU1VTVJxYUJVYlVGV0lfQzVvQ0U3NngzQi1pb1Q1SXliNVJOVnE3anlZN1RHUFYzUXBrTEMwX0laeDhiQXo0MlZfcGpxYloycWlNNl8wamFYancyTDR3MVNMaEI2Y2w4UHpvcTVhWlY2V0VHQTd0NjBVUVh6Vw?oc=5",
+     "source": "www.tmgm.com",
+     "date": "2026-11-20T23:18:57Z"
+    },
+    {
+     "title": "Core inflation measures can't escape high energy prices",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQLVpIOUw0OFZHZlhxX2hwNHc3U3JmTk4xT3J5aXBsaFh3aUlFSEJVOVdCeUh5RTUzb2pseDd5VXFOWmhGLUVGbklaQ2FRb3h2Z20yWEhTMXRTeDhQbFV6MzQ2MlFITDBiOXU3SHZ2MEJuYTZ0ajJFY2pRbnNhV202Z0RVeW01OU1mdm9QVUZGSUEyclV3NGZfRXNweGJTS19z?oc=5",
+     "source": "Marketplace.org",
+     "date": "2026-11-20T22:35:00Z"
+    },
+    {
+     "title": "Greek Government Raises Inflation Forecasts in 2027 Budget",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLTViZ3o1TE5fal9Vcy1IZGY3ZHhHWC1ZMUtiQm5tRWlqY3JxYm5hSmpmSFdyR0pyelpfa2VuamRyRHp4T1NDeE9SYnQtYUV0Y1RkcVRmLTh1RS1XVzZ0cm0yM1F1ckkxYmp4VkFKLW12bGw0ZDFYY0toaEdvMWI1d0lZOWY5bTN1enVyZnlDTTROTUM0MWc?oc=5",
+     "source": "tovima.com",
+     "date": "2026-11-20T22:29:30Z"
+    },
+    {
+     "title": "The Euro takes a priced-in hike into a week that belongs to American inflation",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOejhSYllVRXBqR0k2SUNyUzVWNW1tOVJQV2FaR3dVSTF2SDY5N0NXeFlmR2FES3hZSFNOLUY5THUxcVpEM1I1bnY1RzBKdkRnTjdLclJRT29udV84eTdQRWtHYml5S2pYb1ZGc2toZmp0UTdsRlRtcTQtTk56T0JiNnRaeTZIVXl1SlItaHRkRTNCNTNJNkVQenExVi1oOU45YWplTGtvR2p6aDJhQnJYcmFaYWlTOWU3Ymw4TzNn?oc=5",
+     "source": "FXStreet",
+     "date": "2026-11-20T21:58:41Z"
+    },
+    {
+     "title": "The British Pound goes into PMI week paying for softer inflation and slower pay",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUndKX0dVbHhuNGQ5RDMtd2x5dHpuZUNBWjctTndlRHNObTAxWU9LS0tZZTh5Mm9jOGRsQXRNVzFndFMwaVJuTld5aE5kaHV6NVpKR2ZOdFYydEhtdTRMTUowbnNXRkF5TUVEZy15VldrT09WSUpwWmNZWDEteHlONjBFM2JzVDB2UnRoNzdZR3ZvTDVrVDNWaTcwbnJGX3JfZ2VJUnVjVTh1b01xRzVhZ19pMjNKeEx5d2l0WDBEMA?oc=5",
+     "source": "FXStreet",
+     "date": "2026-11-20T21:57:19Z"
+    },
+    {
+     "title": "Peter Schiff Warns Fed’s Inflation Fight Means ‘Greater Financial Crisis' Than 2008",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLS10UHVHZTJZekExR0JhekVHQlYyN2w5RkFnZzNjNVVRVVBYV0gwY0NvSXpCTnpFa1dFVU1vSzRhNUF6UEdhaHpWMjRSa2YxQXJRcGFaNGdqbk9BUW5CSVBEa3NfeHJjcjdGNUpZY0JEYy1aTVVLNGloTGdiSF9xTTJSYnJhQWR3d0tNWFRmRE1PRlpSR2xXTW1ab2hBZw?oc=5",
+     "source": "Yahoo Finance",
+     "date": "2026-11-20T21:30:05Z"
+    },
+    {
+     "title": "Gold and silver could return to mid-2025 levels as inflation-hedge bid evaporates – SIA’s Cieszynski",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3ZMcmk4MjJQRmowMV9QcmJ2SVhYUkh1dkR5dl9wUnRUVHFhSzlMV3czMktCNjM3ck9wTVU4Yzg3Ri1hdjRGVlZTaENhZnM1R3JjZVRtSkVGNE5Ra1lZM3pSb1FpNVdIdVNqVmJTQUU0Z2dqZzU1TlphX0h3eTFVZVJFYjJUb3JfM0VZZ0ZtX2k0NjBWbFd6SWU0ME14ek5HZ0UxdmMyWkp4el9ybU15dDlqRWFObXYyUXIzVHJn?oc=5",
+     "source": "Kitco",
+     "date": "2026-11-20T21:26:44Z"
+    }
+   ]
+  },
+  {
+   "id": "releases",
+   "title": "Releases",
+   "items": [
+    {
+     "title": "iOS 27.3 beta 2 v2 (24C5049f)",
+     "link": "https://developer.apple.com/news/releases/?id=11192026a",
+     "source": "Apple Developer",
+     "date": "2026-11-19T21:00:00Z"
+    },
+    {
+     "title": "iPadOS 27.3 beta 2 v2 (24C5049f)",
+     "link": "https://developer.apple.com/news/releases/?id=11192026b",
+     "source": "Apple Developer",
+     "date": "2026-11-19T21:00:00Z"
+    },
+    {
+     "title": "App Store Connect API 4.6.1",
+     "link": "https://developer.apple.com/news/releases/?id=11182026b",
+     "source": "Apple Developer",
+     "date": "2026-11-19T00:00:00Z"
+    },
+    {
+     "title": "HomeView Software 27.2.1 (24V553)",
+     "link": "https://developer.apple.com/news/releases/?id=11182026a",
+     "source": "Apple Developer",
+     "date": "2026-11-18T18:00:00Z"
+    },
+    {
+     "title": "TestFlight Update",
+     "link": "https://developer.apple.com/news/releases/?id=11162026h",
+     "source": "Apple Developer",
+     "date": "2026-11-16T22:00:00Z"
+    },
+    {
+     "title": "Xcode 27.3 beta 2 (27C5035i)",
+     "link": "https://developer.apple.com/news/releases/?id=11162026g",
+     "source": "Apple Developer",
+     "date": "2026-11-16T18:00:00Z"
+    },
+    {
+     "title": "macOS 27.3 beta 2 (26C5047e)",
+     "link": "https://developer.apple.com/news/releases/?id=11162026c",
+     "source": "Apple Developer",
+     "date": "2026-11-16T18:00:00Z"
+    },
+    {
+     "title": "tvOS 27.3 beta 2 (24K5298d)",
+     "link": "https://developer.apple.com/news/releases/?id=11162026d",
+     "source": "Apple Developer",
+     "date": "2026-11-16T18:00:00Z"
+    },
+    {
+     "title": "visionOS 27.3 beta 2 (24N5298d)",
+     "link": "https://developer.apple.com/news/releases/?id=11162026e",
+     "source": "Apple Developer",
+     "date": "2026-11-16T18:00:00Z"
+    },
+    {
+     "title": "watchOS 27.3 beta 2 (24S5296d)",
+     "link": "https://developer.apple.com/news/releases/?id=11162026f",
+     "source": "Apple Developer",
+     "date": "2026-11-16T18:00:00Z"
+    },
+    {
+     "title": "tvOS 27.2.1 (24K157)",
+     "link": "https://developer.apple.com/news/releases/?id=11132026a",
+     "source": "Apple Developer",
+     "date": "2026-11-13T18:00:00Z"
+    },
+    {
+     "title": "iOS 27.2.1 (24B91034)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026a",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "iOS 27.2.1 (24B156)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026b",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "iPadOS 27.2.1 (24B156)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026c",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "macOS 27.2.1 (26B131)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026d",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "visionOS 27.2.1 (24N124)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026e",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "watchOS 27.2.1 (24S132)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026f",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "iPadOS 26.7.3 (23H131)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026g",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "iOS 18.7.12 (22H390)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026h",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
+    },
+    {
+     "title": "iPadOS 18.7.12 (22H390)",
+     "link": "https://developer.apple.com/news/releases/?id=11092026i",
+     "source": "Apple Developer",
+     "date": "2026-11-09T18:00:00Z"
     }
    ]
   }
