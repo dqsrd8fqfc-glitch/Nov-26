@@ -29,6 +29,20 @@ FEEDS = [
     {"id": "apple", "title": "iPhone", "sources": [
         ("9to5Mac", "https://9to5mac.com/feed/"),
     ]},
+    {"id": "m365", "title": "Microsoft 365", "sources": [
+        ("Microsoft 365 Blog", "https://www.microsoft.com/en-us/microsoft-365/blog/feed/"),
+        ("Power Platform Blog", "https://www.microsoft.com/en-us/power-platform/blog/feed/"),
+    ]},
+    {"id": "ai", "title": "AI Tools", "sources": [
+        ("The Verge", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
+        ("Google News", "https://news.google.com/rss/search?q=%22AI+tools%22+OR+%22AI+assistant%22+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
+    ]},
+    {"id": "money", "title": "Money", "sources": [
+        ("Google News", "https://news.google.com/rss/search?q=%22Bank+of+England%22+OR+inflation+OR+%22energy+price+cap%22+OR+%22mortgage+rates%22+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
+    ]},
+    {"id": "releases", "title": "Releases", "sources": [
+        ("Apple Developer", "https://developer.apple.com/news/releases/rss/releases.rss"),
+    ]},
 ]
 
 MAX_ITEMS = 20
