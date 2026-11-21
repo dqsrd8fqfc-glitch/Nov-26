@@ -80,7 +80,16 @@ def parse(xml_bytes, source):
                 break
         items.append({"title": clean(en.findtext(ATOM + "title")), "link": link, "source": source,
                       "date": parse_date(en.findtext(ATOM + "published") or en.findtext(ATOM + "updated"))})
-    return [i for i in items if i["title"] and i["link"].startswith(("https://", "http://"))]
+    return [i for i in items if i["title"] and i["link"].startswith(("https://", "http://")) and mostly_latin(i["title"])]
+
+
+def mostly_latin(text):
+    """Drop spam/foreign-script headlines (e.g. Cyrillic torrent spam in Google News)."""
+    letters = [c for c in text if c.isalpha()]
+    if not letters:
+        return False
+    latin = sum(1 for c in letters if ord(c) < 0x250)
+    return latin / len(letters) >= 0.8
 
 
 def fetch(url):
@@ -100,10 +109,16 @@ QUOTES = [
 
 def fetch_quote(symbol):
     url = ("https://query1.finance.yahoo.com/v8/finance/chart/"
-           + urllib.request.quote(symbol) + "?range=1d&interval=1d")
-    meta = json.loads(fetch(url))["chart"]["result"][0]["meta"]
+           + urllib.request.quote(symbol) + "?range=1d&interval=15m")
+    result = json.loads(fetch(url))["chart"]["result"][0]
+    meta = result["meta"]
     price = meta["regularMarketPrice"]
-    prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+    prev = meta.get("previousClose") or meta.get("chartPreviousClose")
+    try:  # intraday closes for the sparkline
+        closes = result["indicators"]["quote"][0]["close"]
+        spark = [round(c, 4) for c in closes if c is not None][-40:]
+    except (KeyError, IndexError, TypeError):
+        spark = []
     change = price - prev if prev else None
     t = meta.get("regularMarketTime")
     return {
@@ -111,6 +126,7 @@ def fetch_quote(symbol):
         "change": round(change, 4) if change is not None else None,
         "pct": round(change / prev * 100, 3) if change is not None and prev else None,
         "currency": meta.get("currency"),
+        "spark": spark,
         "time": datetime.fromtimestamp(t, timezone.utc).isoformat().replace("+00:00", "Z") if t else None,
     }
 

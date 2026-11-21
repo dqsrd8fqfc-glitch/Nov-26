@@ -7,272 +7,479 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Mission Control">
-<meta name="theme-color" content="#070b16">
+<meta name="theme-color" content="#0b0d14">
 <meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Mission Control</title>
 <style>
+  /* ================= iOS dark system tokens ================= */
   :root {
-    --bg: #070b16; --bg2: #0c1324;
-    --card: rgba(255,255,255,0.045); --card-hi: rgba(255,255,255,0.07); --line: rgba(255,255,255,0.08);
-    --text: #eef2f8; --muted: #93a1b8; --faint: #5f6d85;
-    --up: #34d399; --down: #f87171; --warn: #fbbf24;
-    --radius: 22px; --gap: 14px;
-    --mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --blue: #0A84FF; --green: #30D158; --red: #FF453A; --orange: #FF9F0A; --yellow: #FFD60A;
+    --cyan: #64D2FF; --indigo: #5E5CE6; --purple: #BF5AF2; --pink: #FF375F;
+    --label: #FFFFFF; --label-2: rgba(235,235,245,.68); --label-3: rgba(235,235,245,.42);
+    --sep: rgba(84,84,88,.55);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", system-ui, "Helvetica Neue", sans-serif;
+    --font-d: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", system-ui, "Helvetica Neue", sans-serif;
+    --spring: cubic-bezier(.34, 1.42, .64, 1);
+    --sheet: cubic-bezier(.32, .72, 0, 1);
+    --r-xl: 34px; --r-lg: 26px; --r-md: 18px;
+    --gut: 16px;
+    /* Liquid Glass */
+    --glass: rgba(44, 46, 58, .50);
+    --glass-strong: rgba(30, 32, 42, .72);      /* where text sits, readability first */
+    --glass-blur: blur(28px) saturate(185%);
+    --edge: inset 0 0 0 .5px rgba(255,255,255,.16), inset 0 1px 0 rgba(255,255,255,.22), inset 0 -1px 0 rgba(255,255,255,.04);
+    --lift: 0 18px 40px -18px rgba(0,0,0,.55), 0 2px 6px rgba(0,0,0,.18);
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  iframe { color-scheme: normal; background: transparent !important; }
-  html { background: #0a0f1d; }
+  iframe { color-scheme: normal; background: transparent !important; } /* stops Safari painting widget frames white */
+  html { background: #0b0d14; }
   html, body { margin: 0; }
-  body {
-    min-height: 100dvh; color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  body { min-height: 100dvh; color: var(--label); font: 17px/1.3 var(--font); -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
+  button { font: inherit; color: inherit; letter-spacing: inherit; }
+  a { color: inherit; }
+  :focus-visible { outline: 2.5px solid var(--blue); outline-offset: 2px; }
+
+  /* Wallpaper: colour for the glass to refract */
+  .wallpaper { position: fixed; inset: 0; z-index: -1; overflow: hidden; background: #0b0d14; }
+  .wallpaper i { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .75; }
+  .wallpaper i:nth-child(1) { width: 70vmax; height: 70vmax; left: -25vmax; top: -30vmax; background: #1d3f8a; }
+  .wallpaper i:nth-child(2) { width: 55vmax; height: 55vmax; right: -22vmax; top: -8vmax; background: #5b2477; }
+  .wallpaper i:nth-child(3) { width: 60vmax; height: 60vmax; left: -10vmax; bottom: -35vmax; background: #0d5a5a; }
+  .wallpaper i:nth-child(4) { width: 45vmax; height: 45vmax; right: -15vmax; bottom: -20vmax; background: #7a3b12; opacity: .55; }
+
+  /* ================= Glass material ================= */
+  .glass {
+    position: relative; isolation: isolate;
+    background: var(--glass); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+    box-shadow: var(--edge), var(--lift);
+  }
+  .glass::before { /* lensing: light gathers on the upper edge and falls off */
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1;
     background:
-      radial-gradient(1000px 500px at 0% -10%, rgba(99,102,241,0.20), transparent 60%),
-      radial-gradient(800px 500px at 100% 0%, rgba(20,184,166,0.12), transparent 60%),
-      linear-gradient(180deg, var(--bg), var(--bg2));
-    background-attachment: fixed;
-    -webkit-font-smoothing: antialiased;
+      radial-gradient(120% 60% at 20% -10%, rgba(255,255,255,.16), transparent 55%),
+      linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 38%);
   }
-  /* faint grid, mission-control feel */
-  body::before {
-    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
-    background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-    background-size: 32px 32px;
-    mask-image: linear-gradient(180deg, #000, transparent 70%); -webkit-mask-image: linear-gradient(180deg, #000, transparent 70%);
-  }
-  .wrap {
-    max-width: 1400px; margin: 0 auto;
-    padding: calc(env(safe-area-inset-top) + 16px) calc(env(safe-area-inset-right) + 14px)
-             calc(env(safe-area-inset-bottom) + 28px) calc(env(safe-area-inset-left) + 14px);
+  .glass.strong { background: var(--glass-strong); }
+  @media (prefers-reduced-transparency: reduce) {
+    .glass, .glass.strong { background: rgba(32,34,44,.97); -webkit-backdrop-filter: none; backdrop-filter: none; }
+    .wallpaper i { opacity: .35; }
   }
 
-  /* ---------- Header ---------- */
-  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
-  .eyebrow { font: 600 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
-  .clock { font-size: clamp(50px, 14vw, 84px); font-weight: 200; letter-spacing: -0.04em; line-height: .95; margin: 0; font-variant-numeric: tabular-nums; }
-  .date { font-size: 15px; color: var(--muted); margin-top: 6px; }
-  .sweep { text-align: right; font: 500 12px/1.5 var(--mono); color: var(--muted); }
-  .sweep b { color: var(--text); font-weight: 600; }
+  /* ================= Type scale (iOS) ================= */
+  .large-title { font: 700 34px/41px var(--font-d); letter-spacing: .01em; margin: 0; }
+  .title2 { font: 700 22px/28px var(--font-d); margin: 0; }
+  .headline { font-weight: 600; font-size: 17px; line-height: 22px; }
+  .subhead { font-size: 15px; line-height: 20px; }
+  .footnote { font-size: 13px; line-height: 18px; }
+  .caption { font-size: 12px; line-height: 16px; }
+  .secondary { color: var(--label-2); }
+  .tertiary { color: var(--label-3); }
+  .up { color: var(--green); } .down { color: var(--red); }
+  .num { font-variant-numeric: tabular-nums; }
 
-  /* ---------- Team roster ---------- */
-  .roster { display: flex; gap: 10px; overflow-x: auto; margin: 18px -14px 16px; padding: 2px 14px 4px; scrollbar-width: none; }
-  .roster::-webkit-scrollbar { display: none; }
-  .member {
-    flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; width: 62px;
-    background: none; border: none; color: var(--muted); font: 500 11px/1.2 -apple-system, system-ui, sans-serif; cursor: pointer; padding: 0;
-  }
-  .member .av { width: 50px; height: 50px; font-size: 22px; }
-  .member.new .av::after {
-    content: attr(data-n); position: absolute; top: -3px; right: -5px; min-width: 18px; height: 18px; padding: 0 5px;
-    border-radius: 9px; background: #ef4444; color: #fff; font: 700 11px/18px -apple-system, system-ui, sans-serif; text-align: center;
-  }
-
-  /* Avatar */
+  /* ================= Agent avatar ================= */
   .av {
-    position: relative; flex: 0 0 auto; border-radius: 50%; display: grid; place-items: center;
-    background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--c) 55%, #fff 0%), color-mix(in srgb, var(--c) 35%, #000));
-    box-shadow: 0 0 0 2px color-mix(in srgb, var(--c) 60%, transparent), 0 6px 18px color-mix(in srgb, var(--c) 30%, transparent);
+    --s: 40px; position: relative; flex: 0 0 auto; width: var(--s); height: var(--s); border-radius: 50%; display: grid; place-items: center;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--c) 70%, #fff 30%), var(--c) 55%, color-mix(in srgb, var(--c) 80%, #000 20%));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 1px rgba(0,0,0,.2), 0 3px 10px color-mix(in srgb, var(--c) 35%, transparent);
   }
-  .av .st { position: absolute; right: 0; bottom: 0; width: 13px; height: 13px; border-radius: 50%; border: 2.5px solid var(--bg); background: var(--faint); }
-  .av .st.on { background: var(--up); }
-  .av .st.live { background: var(--up); animation: pulse 1.8s infinite; }
-  .av .st.warn { background: var(--warn); }
-  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(52,211,153,.7); } 70% { box-shadow: 0 0 0 8px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
-
-  /* ---------- Grid ---------- */
-  .grid { display: grid; gap: var(--gap); grid-template-columns: 1fr; }
-  @media (min-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); } .full { grid-column: 1 / -1; } }
-  @media (min-width: 1080px) { .grid { grid-template-columns: repeat(3, 1fr); } .span2 { grid-column: span 2; } }
-
-  /* ---------- Agent card ---------- */
-  .agent {
-    --c: #818cf8;
-    position: relative; overflow: hidden; min-width: 0;
-    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px;
-    backdrop-filter: blur(24px) saturate(140%); -webkit-backdrop-filter: blur(24px) saturate(140%);
-    animation: rise .55s ease both; scroll-margin-top: 16px;
+  .av svg { width: 56%; height: 56%; fill: none; stroke: #fff; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 1px 1px rgba(0,0,0,.25)); }
+  .av .st { position: absolute; right: -2px; bottom: -2px; width: 13px; height: 13px; border-radius: 50%; background: #8e8e93; box-shadow: 0 0 0 2.5px #1c1d26; transition: background .3s; }
+  .st.on { background: var(--green); }
+  .st.warn { background: var(--orange); }
+  .st.live { background: var(--green); animation: live 2s ease-out infinite; }
+  @keyframes live { 0% { box-shadow: 0 0 0 2.5px #1c1d26, 0 0 0 2.5px rgba(48,209,88,.55); } 80%, 100% { box-shadow: 0 0 0 2.5px #1c1d26, 0 0 0 8px rgba(48,209,88,0); } }
+  .av::after { /* scanning ring during a sweep */
+    content: ""; position: absolute; inset: -4px; border-radius: 50%; opacity: 0; transition: opacity .3s;
+    background: conic-gradient(from 0deg, transparent 0 65%, rgba(255,255,255,.9));
+    -webkit-mask: radial-gradient(circle, transparent calc(50% - 2px), #000 calc(50% - 1.5px)); mask: radial-gradient(circle, transparent calc(50% - 2px), #000 calc(50% - 1.5px));
   }
-  .agent::before { /* accent glow strip */
-    content: ""; position: absolute; left: 0; top: 0; right: 0; height: 2px;
-    background: linear-gradient(90deg, transparent, var(--c), transparent); opacity: .8;
+  body.sweeping .av::after { opacity: 1; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .badge { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--red); color: #fff; font: 600 13px/20px var(--font); text-align: center; font-variant-numeric: tabular-nums; }
+  .badge.pop { animation: pop .5s var(--spring); }
+  @keyframes pop { 0% { transform: scale(.4); } 100% { transform: scale(1); } }
+
+  /* ================= Shell ================= */
+  .shell { min-height: 100dvh; }
+  .pane {
+    padding: calc(env(safe-area-inset-top) + 12px) calc(env(safe-area-inset-right) + var(--gut)) calc(env(safe-area-inset-bottom) + 110px) calc(env(safe-area-inset-left) + var(--gut));
+    max-width: 860px; margin: 0 auto;
   }
-  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-  .a-head { display: flex; align-items: center; gap: 12px; }
-  .a-head .av { width: 44px; height: 44px; font-size: 21px; }
-  .a-who { flex: 1; min-width: 0; }
-  .a-name { font-size: 17px; font-weight: 650; letter-spacing: -0.01em; }
-  .a-name span { color: var(--muted); font-weight: 500; font-size: 14px; margin-left: 4px; }
-  .a-status { font: 500 11.5px/1.4 var(--mono); color: var(--faint); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .badge { flex: 0 0 auto; font: 700 11px/1 -apple-system, system-ui, sans-serif; padding: 5px 8px; border-radius: 999px; background: color-mix(in srgb, var(--c) 22%, transparent); color: color-mix(in srgb, var(--c) 80%, #fff); }
-  .report {
-    margin: 14px 0 0; font-size: 16px; line-height: 1.45; color: var(--text);
-    padding-left: 12px; border-left: 2px solid color-mix(in srgb, var(--c) 70%, transparent);
+  .view { animation: viewIn .45s var(--sheet) both; }
+  @keyframes viewIn { from { opacity: 0; transform: translateY(8px) scale(.995); } to { opacity: 1; transform: none; } }
+
+  /* Sidebar rail: unfolded Duo + desktop */
+  .rail { display: none; }
+  @media (min-width: 600px) {
+    .rail {
+      display: flex; flex-direction: column; position: fixed; z-index: 10;
+      top: calc(env(safe-area-inset-top) + 12px); bottom: calc(env(safe-area-inset-bottom) + 12px); left: calc(env(safe-area-inset-left) + 12px);
+      width: 184px; border-radius: var(--r-xl); padding: 14px 8px 8px;
+    }
+    .pane { margin-left: calc(env(safe-area-inset-left) + 196px); max-width: none; padding-left: 20px; padding-right: calc(env(safe-area-inset-right) + 20px); padding-bottom: calc(env(safe-area-inset-bottom) + 28px); }
+    .pane > .view { max-width: 820px; margin: 0 auto; }
+    .capsule { display: none !important; }
   }
-  .report .q { color: var(--muted); }
-  .up { color: var(--up); } .down { color: var(--down); }
-
-  /* Chief briefing */
-  .chief { --c: #a5b4fc; background: linear-gradient(135deg, rgba(99,102,241,0.16), rgba(20,184,166,0.08)); border-color: rgba(165,180,252,0.18); }
-  .chief .a-head .av { width: 52px; height: 52px; font-size: 25px; }
-  .brief { list-style: none; margin: 14px 0 0; padding: 0; }
-  .brief li { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-top: 1px solid var(--line); font-size: 15.5px; line-height: 1.4; opacity: 0; animation: rise .4s ease forwards; }
-  .brief li:first-child { border-top: none; }
-  .brief .av { width: 24px; height: 24px; font-size: 12px; margin-top: 1px; box-shadow: none; }
-  .typing::after { content: "▍"; color: var(--muted); animation: blink 1s steps(1) infinite; margin-left: 1px; }
-  @keyframes blink { 50% { opacity: 0; } }
-
-  /* Lists */
-  .items { list-style: none; margin: 12px 0 0; padding: 0; }
-  .items li { border-top: 1px solid var(--line); }
-  .items a { display: block; padding: 11px 2px; color: var(--text); text-decoration: none; }
-  .items a:active { opacity: .6; }
-  .items .h { font-size: 15px; line-height: 1.35; }
-  .items .m { font: 500 11.5px/1.4 var(--mono); color: var(--faint); margin-top: 4px; }
-  .items .m b { color: color-mix(in srgb, var(--c) 75%, #fff); font-weight: 600; }
-  .items li.fresh .h::before { content: "●"; color: var(--c); font-size: 9px; vertical-align: 2px; margin-right: 6px; }
-  .more {
-    margin-top: 8px; width: 100%; border: none; background: var(--card-hi); color: var(--muted); border-radius: 12px; padding: 10px;
-    font: 600 13px -apple-system, system-ui, sans-serif; cursor: pointer;
+  @media (min-width: 1000px) { .rail { width: 248px; } .pane { margin-left: calc(env(safe-area-inset-left) + 260px); padding-left: 32px; } }
+  .rail h2 { margin: 2px 12px 10px; font: 700 22px/28px var(--font-d); }
+  .rail ul { list-style: none; margin: 0; padding: 0; flex: 1; overflow-y: auto; scrollbar-width: none; }
+  .rail li + li { margin-top: 2px; }
+  .rail-item {
+    display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 10px 8px 8px; border: none; border-radius: 22px; /* concentric: 34 − 8 − 4 */
+    background: transparent; text-align: left; cursor: pointer; min-height: 56px; position: relative;
+    transition: background .25s, transform .35s var(--spring);
   }
+  .rail-item:active { transform: scale(.97); }
+  .rail-item.sel { background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 .5px rgba(255,255,255,.14), inset 0 1px 0 rgba(255,255,255,.12); }
+  @media (hover: hover) { .rail-item:not(.sel):hover { background: rgba(255,255,255,.06); } }
+  .rail-item .av { --s: 38px; }
+  .rail-item .t { flex: 1; min-width: 0; }
+  .rail-item .t div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .rail-item .nm { font: 600 15px/20px var(--font); }
+  .rail-item .rl { font: 13px/17px var(--font); color: var(--label-2); }
+  .sweep-wide {
+    display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px; min-height: 48px; border-radius: 22px; border: none; cursor: pointer;
+    background: rgba(10,132,255,.92); color: #fff; font-weight: 600; font-size: 15px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 6px 18px -6px rgba(10,132,255,.6); transition: transform .35s var(--spring);
+  }
+  .sweep-wide:active { transform: scale(.96); }
+  .sweep-wide svg, .round svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  body.sweeping .sweep-wide svg, body.sweeping .round.sweep svg { animation: spin .9s linear infinite; }
 
-  /* Markets */
-  .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-top: 14px; }
-  .quote { background: var(--card-hi); border-radius: 14px; padding: 10px 12px; }
-  .quote .n { font: 600 11px/1 var(--mono); color: var(--muted); letter-spacing: .04em; }
-  .quote .p { font-size: 18px; font-weight: 600; margin-top: 6px; font-variant-numeric: tabular-nums; }
-  .quote .d { font: 600 12px/1 var(--mono); margin-top: 4px; }
-  .chart { height: 230px; margin: 12px -8px -8px; }
+  /* Bottom capsule: folded */
+  .capsule {
+    position: fixed; z-index: 10; left: 50%; transform: translateX(-50%); bottom: calc(env(safe-area-inset-bottom) + 12px);
+    display: flex; gap: 2px; padding: 6px; border-radius: 999px; max-width: calc(100vw - 24px); overflow-x: auto; scrollbar-width: none;
+  }
+  .capsule::-webkit-scrollbar { display: none; }
+  .cap-btn { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; border: none; background: none; display: grid; place-items: center; cursor: pointer; position: relative; transition: transform .35s var(--spring), background .2s; }
+  .cap-btn:active { transform: scale(.88); }
+  .cap-btn.sel { background: rgba(255,255,255,.16); }
+  .cap-btn .av { --s: 36px; }
+  .cap-btn .badge { position: absolute; top: -1px; right: -3px; min-width: 18px; height: 18px; font-size: 11.5px; line-height: 18px; padding: 0 5px; }
 
-  /* Weather */
-  .wx-hours { display: flex; gap: 8px; overflow-x: auto; margin-top: 14px; scrollbar-width: none; }
-  .wx-hours::-webkit-scrollbar { display: none; }
-  .wx-hour { flex: 0 0 auto; text-align: center; padding: 8px 10px; border-radius: 14px; background: var(--card-hi); min-width: 52px; font-size: 13px; }
-  .wx-hour div:nth-child(2) { font-size: 19px; margin: 2px 0; }
-  .wx-day { display: flex; justify-content: space-between; padding: 8px 2px; border-top: 1px solid var(--line); font-size: 14.5px; }
-  .wx-day:first-of-type { margin-top: 10px; }
-  .wx-day span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; }
-  .linkish { background: none; border: none; padding: 0; color: inherit; font: inherit; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
+  /* ================= Navigation bar ================= */
+  .navbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 6px 0 14px; }
+  .navbar .sub { margin: 2px 0 0; color: var(--label-2); font-size: 15px; line-height: 20px; }
+  .round {
+    flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%; border: none; display: grid; place-items: center; cursor: pointer;
+    transition: transform .35s var(--spring);
+  }
+  .round:active { transform: scale(.9); }
+  @media (min-width: 600px) { .navbar .round.sweep { display: none; } }
 
-  /* Sheet */
-  .sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 10; }
+  /* ================= Cards & lists ================= */
+  .card { border-radius: var(--r-lg); padding: 16px; }
+  .card + .card, .grid2 + .card, .card + .grid2, .grid2 + .grid2, .card + .section, .grid2 + .section, .section + .card { margin-top: 12px; }
+  .section { margin-top: 22px; }
+  .section > h3 { margin: 0 4px 8px; font: 600 20px/25px var(--font-d); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid2 > .card { margin: 0; }
+  .grid4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  @media (min-width: 900px) { .grid4 { grid-template-columns: repeat(4, 1fr); } }
+
+  .agent-line { display: flex; align-items: center; gap: 12px; }
+  .agent-line .av { --s: 44px; }
+
+  .brief-lead { margin: 14px 0 4px; font-size: 17px; line-height: 23px; }
+  .brief-list { list-style: none; margin: 6px 0 0; padding: 0; }
+  .brief-list button {
+    display: flex; gap: 12px; align-items: flex-start; width: 100%; padding: 11px 0; border: none; background: none; text-align: left; cursor: pointer;
+    border-top: .5px solid var(--sep); min-height: 44px; transition: opacity .2s;
+  }
+  .brief-list button:active { opacity: .55; }
+  .brief-list .dot { flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%; background: var(--c); margin-top: 7px; box-shadow: 0 0 8px var(--c); }
+  .brief-list .tx { font-size: 16px; line-height: 21px; }
+  .brief-list .tx b { font-weight: 600; color: var(--c); }
+  @media (max-width: 599px) { .brief-list .tx { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } }
+  .rail-foot { margin: 8px 12px 0; font: 13px/18px var(--font); color: var(--label-2); }
+  .chev { color: var(--label-3); font-size: 20px; line-height: 21px; margin-left: auto; padding-left: 6px; }
+
+  .stat { display: flex; flex-direction: column; text-align: left; border: none; cursor: pointer; width: 100%; min-height: 44px; transition: transform .35s var(--spring); }
+  .stat:active { transform: scale(.97); }
+  .stat .lbl { display: flex; align-items: center; gap: 7px; font: 600 15px/20px var(--font); color: var(--label-2); }
+  .stat .lbl i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+  .stat .big { font: 600 34px/40px var(--font-d); letter-spacing: -0.01em; margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .stat .chg { font: 600 15px/20px var(--font); font-variant-numeric: tabular-nums; }
+  .stat .note { font: 13px/18px var(--font); color: var(--label-2); margin-top: 8px; }
+  .stat svg.spark { display: block; width: 100%; height: 40px; margin-top: 10px; overflow: visible; }
+
+  .q { border-radius: var(--r-md); padding: 12px; }
+  .q .n { font: 13px/18px var(--font); color: var(--label-2); }
+  .q .p { font: 600 19px/24px var(--font-d); font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .q .d { font: 600 13px/18px var(--font); font-variant-numeric: tabular-nums; }
+  .q svg.spark { display: block; width: 100%; height: 28px; margin-top: 6px; overflow: visible; }
+
+  /* Inset grouped list */
+  .group { border-radius: var(--r-lg); overflow: hidden; }
+  .group ul { list-style: none; margin: 0; padding: 0; }
+  .row { display: flex; gap: 12px; align-items: flex-start; padding: 12px 16px; text-decoration: none; min-height: 44px; position: relative; transition: background .2s; }
+  .row:active { background: rgba(255,255,255,.08); }
+  .group li + li .row::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; border-top: .5px solid var(--sep); }
+  .row .body { flex: 1; min-width: 0; }
+  .row .h { font-size: 17px; line-height: 22px; }
+  .row .m { font-size: 13px; line-height: 18px; color: var(--label-2); margin-top: 3px; }
+  .row .m b { font-weight: 600; color: var(--c, var(--label-2)); }
+  .row .time { flex: 0 0 auto; width: 44px; font-size: 15px; line-height: 22px; color: var(--label-2); font-variant-numeric: tabular-nums; }
+  .row.fresh .time { color: var(--orange); font-weight: 600; }
+  .row .newdot { flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: var(--blue); margin-top: 7px; }
+  .row .newdot.off { background: transparent; }
+
+  /* Agent desk header */
+  .desk-head { display: flex; align-items: center; gap: 16px; margin: 6px 0 14px; }
+  .desk-head .av { --s: 64px; }
+  .desk-head .capsule-status:first-child { margin-top: 0; }
+  .capsule-status { display: inline-flex; align-items: center; gap: 7px; margin-top: 6px; padding: 5px 11px 5px 9px; border-radius: 999px; font: 600 13px/18px var(--font); color: var(--label-2); }
+  .capsule-status i { width: 8px; height: 8px; border-radius: 50%; background: #8e8e93; }
+  .capsule-status i.on, .capsule-status i.live { background: var(--green); } .capsule-status i.warn { background: var(--orange); }
+  .dispatch { font-size: 19px; line-height: 26px; letter-spacing: -0.015em; }
+  .dispatch .soft { color: var(--label-2); }
+  .chart { height: 260px; border-radius: var(--r-lg); padding: 8px; }
+  .hours { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 4px; scrollbar-width: none; }
+  .hours::-webkit-scrollbar { display: none; }
+  .hour { flex: 0 0 62px; text-align: center; padding: 10px 0; border-radius: var(--r-md); font-size: 15px; }
+  .hour .i { font-size: 24px; line-height: 30px; margin: 4px 0; }
+  .hour.wet { box-shadow: var(--edge), inset 0 0 0 1px rgba(100,210,255,.5); }
+  .day { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; position: relative; }
+  .day + .day::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; border-top: .5px solid var(--sep); }
+  .field { display: flex; gap: 8px; }
+  .field input { flex: 1; min-width: 0; min-height: 46px; padding: 0 16px; border-radius: 14px; border: none; font: 17px var(--font); color: var(--label); background: rgba(118,118,128,.24); outline: none; }
+  .field input:focus { box-shadow: 0 0 0 2px var(--blue); }
+  .pill-btn { min-height: 46px; padding: 0 20px; border-radius: 999px; border: none; background: var(--blue); color: #fff; font-weight: 600; cursor: pointer; transition: transform .35s var(--spring); }
+  .pill-btn:active { transform: scale(.95); }
+  .pill-btn.gray { background: rgba(118,118,128,.24); width: 100%; margin-top: 10px; }
+  .hint { color: var(--label-2); font-size: 13px; line-height: 18px; margin: 8px 4px 0; }
+  .empty { color: var(--label-2); font-size: 15px; padding: 16px; margin: 0; }
+
+  footer { margin: 28px 4px 0; color: var(--label-3); font-size: 12px; line-height: 17px; }
+  footer a { color: var(--label-2); }
+  .keys { display: none; } @media (hover: hover) and (pointer: fine) { .keys { display: inline; } }
+
+  /* ================= Sheet (folded) ================= */
+  .scrim { position: fixed; inset: 0; z-index: 20; background: rgba(0,0,0,.42); opacity: 0; pointer-events: none; transition: opacity .4s; }
+  .scrim.open { opacity: 1; pointer-events: auto; }
   .sheet {
-    position: fixed; left: 0; right: 0; bottom: 0; z-index: 11; max-width: 560px; margin: 0 auto;
-    background: #111a2e; border: 1px solid var(--line); border-radius: 26px 26px 0 0;
-    padding: 10px 20px calc(env(safe-area-inset-bottom) + 22px);
-    transform: translateY(105%); visibility: hidden; transition: transform .32s cubic-bezier(.2,.8,.2,1), visibility 0s .32s;
+    position: fixed; z-index: 21; left: 0; right: 0; bottom: 0; top: calc(env(safe-area-inset-top) + 10px);
+    border-radius: var(--r-xl) var(--r-xl) 0 0; overflow: hidden; display: flex; flex-direction: column;
+    background: rgba(28,30,40,.82);
+    transform: translateY(105%); visibility: hidden; transition: transform .5s var(--sheet), visibility 0s .5s;
   }
-  .sheet.open { transform: none; visibility: visible; transition: transform .32s cubic-bezier(.2,.8,.2,1); } .sheet-bg.open { opacity: 1; pointer-events: auto; }
-  .grabber { width: 40px; height: 5px; border-radius: 3px; background: var(--faint); margin: 4px auto 16px; }
-  .sheet h3 { margin: 0 0 10px; font: 600 12px var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
-  .row { display: flex; gap: 8px; }
-  .row input { flex: 1; min-width: 0; }
-  input[type=text] { font: inherit; font-size: 16px; color: var(--text); background: rgba(255,255,255,.07); border: 1px solid var(--line); border-radius: 12px; padding: 11px 12px; outline: none; }
-  .btn { border: none; border-radius: 12px; padding: 11px 16px; font-size: 15px; font-weight: 600; background: #5eead4; color: #042f2a; cursor: pointer; }
-  .btn.ghost { background: rgba(255,255,255,.08); color: var(--text); width: 100%; margin-top: 8px; }
-  .hint { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
-  footer { text-align: center; color: var(--faint); font: 500 11px/1.6 var(--mono); margin-top: 22px; }
-  footer a { color: var(--faint); }
+  .sheet.open { transform: none; visibility: visible; transition: transform .5s var(--sheet); }
+  .sheet.dragging { transition: none; }
+  .sheet-top { flex: 0 0 auto; padding: 6px 12px 0; touch-action: none; }
+  .grabber { width: 36px; height: 5px; border-radius: 3px; background: rgba(235,235,245,.3); margin: 0 auto 4px; }
+  .sheet-bar { display: flex; justify-content: space-between; align-items: center; }
+  .sheet-scroll { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 0 var(--gut) calc(env(safe-area-inset-bottom) + 30px); }
+  .sheet .round { background: rgba(118,118,128,.24); width: 36px; height: 36px; }
+  .sheet .round svg { width: 15px; height: 15px; fill: none; stroke: var(--label-2); stroke-width: 2.6; stroke-linecap: round; }
+  .sheet-pager { display: flex; gap: 6px; }
+  @media (min-width: 600px) { .scrim, .sheet { display: none; } }
+
+  .toast { position: fixed; z-index: 40; left: 50%; top: calc(env(safe-area-inset-top) + 12px); transform: translate(-50%, -160%);
+    display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; font: 600 15px/20px var(--font); white-space: nowrap;
+    transition: transform .5s var(--spring); }
+  .toast.show { transform: translate(-50%, 0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  }
+
+  /* ================= Compact density (Nick: fill the page, smaller text, narrow rail) ================= */
+  body { font-size: 15px; }
+  .large-title { font-size: 28px; line-height: 34px; }
+  .title2 { font-size: 19px; line-height: 24px; }
+  .headline { font-size: 15px; line-height: 20px; }
+  .subhead { font-size: 13px; line-height: 18px; }
+  .navbar { margin: 2px 0 10px; }
+  .navbar .sub { font-size: 13px; line-height: 18px; }
+  .card { padding: 13px 14px; border-radius: 22px; }
+  .card + .card, .grid2 + .card, .card + .grid2, .grid2 + .grid2, .card + .section, .grid2 + .section, .section + .card { margin-top: 10px; }
+  .grid2 { gap: 10px; } .grid4 { gap: 8px; }
+  .section { margin-top: 16px; }
+  .section > h3 { font-size: 17px; line-height: 22px; margin-bottom: 6px; }
+  .agent-line .av { --s: 38px; }
+  .brief-lead { font-size: 15px; line-height: 20px; margin: 10px 0 2px; }
+  .brief-list button { padding: 8px 0; }
+  .brief-list .tx { font-size: 14px; line-height: 19px; }
+  .brief-list .dot { margin-top: 6px; }
+  .stat .lbl { font-size: 13px; line-height: 18px; }
+  .stat .big { font-size: 28px; line-height: 32px; margin-top: 4px; }
+  .stat .chg { font-size: 13px; line-height: 18px; }
+  .stat .note { font-size: 12px; line-height: 16px; margin-top: 6px; }
+  .stat svg.spark { height: 34px; margin-top: 8px; }
+  .q { padding: 10px; }
+  .q .n { font-size: 12px; line-height: 16px; }
+  .q .p { font-size: 16px; line-height: 21px; }
+  .q .d { font-size: 12px; line-height: 16px; }
+  .q svg.spark { height: 24px; }
+  .row { padding: 9px 14px; gap: 10px; }
+  .row .h { font-size: 15px; line-height: 20px; }
+  .row .m { font-size: 12px; line-height: 16px; margin-top: 2px; }
+  .row .time { font-size: 13px; line-height: 20px; width: 40px; }
+  .row .newdot { margin-top: 6px; }
+  .dispatch { font-size: 16px; line-height: 22px; }
+  .desk-head { gap: 12px; margin: 2px 0 10px; }
+  .desk-head .av { --s: 50px; }
+  .hour { flex-basis: 54px; font-size: 13px; padding: 8px 0; }
+  footer { margin-top: 18px; font-size: 11px; }
+
+  @media (min-width: 600px) {
+    /* Slim icon rail */
+    .rail { width: 84px; left: calc(env(safe-area-inset-left) + 8px); top: calc(env(safe-area-inset-top) + 8px); bottom: calc(env(safe-area-inset-bottom) + 8px); padding: 10px 6px 6px; border-radius: 28px; }
+    .rail h2 { font-size: 12px; line-height: 16px; margin: 2px 0 6px; text-align: center; color: var(--label-2); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+    .rail-item { flex-direction: column; justify-content: center; gap: 3px; padding: 7px 2px 6px; min-height: 0; border-radius: 20px; text-align: center; }
+    .rail-item .av { --s: 36px; }
+    .rail-item .t { flex: none; width: 100%; }
+    .rail-item .nm { font-size: 11.5px; line-height: 14px; font-weight: 600; }
+    .rail-item .rl { display: none; }
+    .rail-item .badge { position: absolute; top: 3px; right: 10px; min-width: 17px; height: 17px; font-size: 11px; line-height: 17px; padding: 0 4px; }
+    .rail-foot { display: none; }
+    .sweep-wide { min-height: 44px; border-radius: 20px; padding: 0; }
+    .sweep-wide .sweep-label { display: none; }
+    .pane { margin-left: calc(env(safe-area-inset-left) + 92px); padding-left: 12px; padding-right: calc(env(safe-area-inset-right) + 12px); padding-top: calc(env(safe-area-inset-top) + 8px); }
+    .pane > .view { max-width: none; }
+  }
+  @media (min-width: 1000px) {
+    .rail { width: 200px; padding: 12px 8px 8px; }
+    .rail h2 { text-align: left; margin: 2px 10px 8px; }
+    .rail-item { flex-direction: row; justify-content: flex-start; gap: 10px; padding: 7px 10px 7px 7px; text-align: left; }
+    .rail-item .t { flex: 1; width: auto; }
+    .rail-item .nm { font-size: 14px; line-height: 18px; }
+    .rail-item .rl { display: block; font-size: 12px; line-height: 16px; }
+    .rail-item .badge { position: static; }
+    .rail-foot { display: block; font-size: 12px; }
+    .sweep-wide .sweep-label { display: inline; }
+    .pane { margin-left: calc(env(safe-area-inset-left) + 216px); padding-left: 20px; }
+    .pane > .view { max-width: 1100px; margin: 0; }
+  }
+  .grid2 > .card, .grid4 > .card, .grid2 > *, .grid4 > * { margin-top: 0 !important; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div>
-      <p class="eyebrow">Mission Control</p>
-      <h1 class="clock" id="clock">--:--</h1>
-      <div class="date" id="date"></div>
+<div class="wallpaper" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<div class="shell">
+  <nav class="rail glass" id="rail" aria-label="Your team">
+    <h2>Team</h2>
+    <ul id="railList"></ul>
+    <p class="rail-foot" id="railFoot"></p>
+    <button class="sweep-wide" id="sweepWide" type="button">
+      <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4.5h-4.5"/></svg>
+      <span class="sweep-label">Sweep now</span>
+    </button>
+  </nav>
+
+  <main class="pane" id="pane"></main>
+
+  <nav class="capsule glass" id="capsule" aria-label="Your team"></nav>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet glass" id="sheet" role="dialog" aria-modal="true" aria-label="Agent desk">
+  <div class="sheet-top" id="sheetTop">
+    <div class="grabber"></div>
+    <div class="sheet-bar">
+      <div class="sheet-pager">
+        <button class="round" id="prevBtn" type="button" aria-label="Previous agent"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="round" id="nextBtn" type="button" aria-label="Next agent"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+      <button class="round" id="closeBtn" type="button" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
-    <div class="sweep" id="sweep">Connecting…</div>
-  </header>
-
-  <nav class="roster" id="roster" aria-label="Your team"></nav>
-
-  <main class="grid" id="grid"></main>
-
-  <footer>
-    Agents report from public sources · Markets: Yahoo Finance &amp; <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView</a> ·
-    Weather: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · News: BBC, Google News, The Verge, 9to5Mac
-  </footer>
-</div>
-
-<div class="sheet-bg" id="sheetBg"></div>
-<div class="sheet" id="sheet" role="dialog" aria-label="Weather location">
-  <div class="grabber"></div>
-  <h3>Send Skye somewhere else</h3>
-  <form class="row" id="cityForm" autocomplete="off">
-    <input type="text" id="cityInput" placeholder="Town or city" maxlength="60" enterkeyhint="search">
-    <button class="btn" type="submit">Set</button>
-  </form>
-  <button class="btn ghost" id="geoBtn" type="button">📍 Use my current location</button>
-  <p class="hint" id="cityMsg">Saved only in this browser.</p>
-</div>
-
-<!-- Hidden template for the MSFT mini chart (moved into the Markets card) -->
-<template id="chartTpl">
-  <div class="tradingview-widget-container" style="height:100%;width:100%">
-    <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
   </div>
-</template>
+  <div class="sheet-scroll" id="sheetScroll"></div>
+</div>
+
+<div class="toast glass strong" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 (() => {
+  /* ================= The team (edit roles here) ================= */
+  const ICON = {
+    compass: '<circle cx="12" cy="12" r="8.5"/><path d="M15.2 8.8l-1.9 4.5-4.5 1.9 1.9-4.5z"/>',
+    chart: '<path d="M4 17l5-5 3.2 3.2L19 8.4"/><path d="M14.8 8.2H19v4.2"/>',
+    cloud: '<circle cx="9" cy="8.6" r="3"/><path d="M7.5 19h9.3a3.7 3.7 0 0 0 .4-7.38A5 5 0 0 0 7.6 13.1 3 3 0 0 0 7.5 19z"/>',
+    windows: '<rect x="4.5" y="4.5" width="6.4" height="6.4" rx="1.4"/><rect x="13.1" y="4.5" width="6.4" height="6.4" rx="1.4"/><rect x="4.5" y="13.1" width="6.4" height="6.4" rx="1.4"/><rect x="13.1" y="13.1" width="6.4" height="6.4" rx="1.4"/>',
+    globe: '<circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.8" ry="8.5"/><path d="M3.5 12h17"/>',
+    case: '<rect x="3.5" y="7.5" width="17" height="12" rx="2.6"/><path d="M9 7.5V6a1.6 1.6 0 0 1 1.6-1.6h2.8A1.6 1.6 0 0 1 15 6v1.5M3.5 12.6h17"/>',
+    chip: '<rect x="7" y="7" width="10" height="10" rx="2.2"/><path d="M10 3.5v3M14 3.5v3M10 17.5v3M14 17.5v3M3.5 10h3M3.5 14h3M17.5 10h3M17.5 14h3"/>',
+    phone: '<rect x="7" y="2.8" width="10" height="18.4" rx="2.6"/><path d="M11 18h2"/>',
+  };
+  const TEAM = [
+    { id: 'atlas', name: 'Atlas', role: 'Chief of staff', icon: 'compass', c: '#FF9F0A', kind: 'brief' },
+    { id: 'mara',  name: 'Mara',  role: 'Markets',        icon: 'chart',   c: '#30D158', kind: 'markets' },
+    { id: 'skye',  name: 'Skye',  role: 'Weather',        icon: 'cloud',   c: '#64D2FF', kind: 'weather' },
+    { id: 'rex',   name: 'Rex',   role: 'Microsoft watch', icon: 'windows', c: '#0A84FF', kind: 'news', feed: 'msft' },
+    { id: 'nova',  name: 'Nova',  role: 'World news',     icon: 'globe',   c: '#5E5CE6', kind: 'news', feed: 'top' },
+    { id: 'penny', name: 'Penny', role: 'Business',       icon: 'case',    c: '#E8B10A', kind: 'news', feed: 'markets' },
+    { id: 'tess',  name: 'Tess',  role: 'Tech',           icon: 'chip',    c: '#BF5AF2', kind: 'news', feed: 'tech' },
+    { id: 'pip',   name: 'Pip',   role: 'iPhone scout',   icon: 'phone',   c: '#FF375F', kind: 'news', feed: 'apple' },
+  ];
+  const BY = Object.fromEntries(TEAM.map(a => [a.id, a]));
+  const QUOTE_KEYS = ['MSFT', 'SPX', 'NDX', 'FTSE', 'GBPUSD'];
+
+  /* ================= Utilities ================= */
   const $ = id => document.getElementById(id);
   const el = (tag, props = {}, kids = []) => {
     const n = document.createElement(tag);
     for (const [k, v] of Object.entries(props)) {
-      if (k === 'style' && typeof v === 'object') for (const [sk, sv] of Object.entries(v)) sk.startsWith('--') ? n.style.setProperty(sk, sv) : (n.style[sk] = sv);
-      else if (k.startsWith('data-') || k === 'aria-label') n.setAttribute(k, v);
-      else n[k] = v;
+      if (v == null || v === false) continue;
+      if (k === 'style') for (const [sk, sv] of Object.entries(v)) sk.startsWith('--') ? n.style.setProperty(sk, sv) : (n.style[sk] = sv);
+      else if (k === 'class') n.className = v;
+      else if (k.startsWith('on')) n.addEventListener(k.slice(2), v);
+      else if (k === 'text') n.textContent = v;
+      else if (k in n && typeof n[k] !== 'object') n[k] = v;
+      else n.setAttribute(k, v);
     }
-    kids.forEach(k => k != null && n.append(k));
+    for (const c of [].concat(kids)) if (c != null && c !== false && c !== '') n.append(c);
     return n;
   };
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  const svg = (tag, attrs = {}) => { const n = document.createElementNS(SVGNS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; };
   const store = {
     get(k, d) { try { const v = localStorage.getItem('mc.' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
     set(k, v) { try { localStorage.setItem('mc.' + k, JSON.stringify(v)); } catch {} }
   };
-
-  // ---------- The team ----------
-  const TEAM = {
-    atlas: { name: 'Atlas', role: 'Chief of staff', emoji: '🧭', c: '#a5b4fc' },
-    mara:  { name: 'Mara',  role: 'Markets',        emoji: '📈', c: '#34d399' },
-    rex:   { name: 'Rex',   role: 'Microsoft watch', emoji: '🪟', c: '#38bdf8', feed: 'msft' },
-    skye:  { name: 'Skye',  role: 'Weather',        emoji: '⛅', c: '#5eead4' },
-    nova:  { name: 'Nova',  role: 'World news',     emoji: '🌍', c: '#60a5fa', feed: 'top' },
-    penny: { name: 'Penny', role: 'Business',       emoji: '💼', c: '#fbbf24', feed: 'markets' },
-    tess:  { name: 'Tess',  role: 'Tech',           emoji: '🛰️', c: '#c084fc', feed: 'tech' },
-    pip:   { name: 'Pip',   role: 'iPhone scout',   emoji: '📱', c: '#f472b6', feed: 'apple' },
-  };
-  const ORDER = ['atlas', 'mara', 'skye', 'rex', 'nova', 'penny', 'tess', 'pip'];
-
-  const avatar = (id, status) => el('div', { className: 'av', style: { '--c': TEAM[id].c } },
-    [TEAM[id].emoji, status !== undefined ? el('span', { className: 'st ' + (status || '') }) : null]);
-
-  // Remember when you last looked, so agents can flag what's new
-  const lastVisit = store.get('lastVisit', null);
-  const markVisit = () => store.set('lastVisit', new Date().toISOString());
-  document.addEventListener('visibilitychange', () => { if (document.hidden) markVisit(); });
-  window.addEventListener('pagehide', markVisit);
-  setTimeout(markVisit, 20000);
-
-  // ---------- Helpers ----------
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wide = matchMedia('(min-width: 600px)');
+  const safeHref = u => /^https?:\/\//i.test(u || '') ? u : null;
+  const hhmm = d => d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   const ago = iso => {
     if (!iso) return '';
     const s = (Date.now() - new Date(iso)) / 1000;
     if (s < 60) return 'just now';
-    if (s < 3600) return Math.floor(s / 60) + 'm ago';
-    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
-    return Math.floor(s / 86400) + 'd ago';
+    if (s < 3600) { const m = Math.floor(s / 60); return m + (m === 1 ? ' minute ago' : ' minutes ago'); }
+    if (s < 86400) { const h = Math.floor(s / 3600); return h + (h === 1 ? ' hour ago' : ' hours ago'); }
+    const d = Math.floor(s / 86400); return d + (d === 1 ? ' day ago' : ' days ago');
   };
-  const hhmm = d => d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-  const pctTxt = p => (p > 0 ? '▲ ' : p < 0 ? '▼ ' : '') + Math.abs(p).toFixed(2) + '%';
-  const dirCls = p => p > 0 ? 'up' : p < 0 ? 'down' : '';
+  const agoShort = iso => ago(iso).replace(/ minutes? ago/, 'm ago').replace(/ hours? ago/, 'h ago').replace(/ days? ago/, 'd ago');
   const fmtPrice = (k, v) => k === 'GBPUSD' ? v.toFixed(4) : k === 'MSFT' ? '$' + v.toFixed(2) : v.toLocaleString('en-GB', { maximumFractionDigits: 0 });
-  const isFresh = it => lastVisit && it.date && it.date > lastVisit;
+  const signPct = p => (p > 0 ? '+' : p < 0 ? '−' : '') + Math.abs(p).toFixed(2) + '%';
+  const dir = p => p > 0 ? 'up' : p < 0 ? 'down' : '';
+  const toast = msg => { const t = $('toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 2400); };
 
-  // US market clock (NASDAQ 09:30–16:00 New York; holidays not included)
+  function avatar(a, dot) {
+    const s = svg('svg', { viewBox: '0 0 24 24', 'aria-hidden': 'true' });
+    s.innerHTML = ICON[a.icon]; // static icon markup from this file, never from data
+    return el('span', { class: 'av', style: { '--c': a.c } }, [s, dot !== undefined ? el('span', { class: 'st ' + (dot || '') }) : null]);
+  }
+
+  /* ================= State ================= */
+  let data = { feeds: [], quotes: {}, updated: null };
+  let wx = null;
+  let loc = store.get('loc', { lat: 51.51, lon: -0.13, name: 'London' });
+  const lastVisit = store.get('lastVisit', null);
+  const markVisit = () => store.set('lastVisit', new Date().toISOString());
+  addEventListener('pagehide', markVisit);
+  setTimeout(markVisit, 20000);
+  let sweeping = false;
+  let selected = BY[location.hash.slice(1)] ? location.hash.slice(1) : 'atlas';
+  const feed = id => ((data.feeds || []).find(f => f.id === id) || { items: [] }).items;
+  const isFresh = it => !!(lastVisit && it.date && it.date > lastVisit);
+
+  /* ================= Market clock (NASDAQ 09:30–16:00 New York; holidays not included) ================= */
   const nyParts = t => {
     const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
       .formatToParts(t).map(x => [x.type, x.value]));
@@ -287,7 +494,7 @@
       for (let m = 0; m < 8 * 1440; m++) {
         const t = new Date(start + m * 60e3), p = nyParts(t);
         if (p.day >= 1 && p.day <= 5 && p.mins === 570) {
-          next = (t.toDateString() === now.toDateString() ? '' : t.toLocaleDateString('en-GB', { weekday: 'short' }) + ' ') + hhmm(t);
+          next = (t.toDateString() === now.toDateString() ? 'today at ' : t.toLocaleDateString('en-GB', { weekday: 'long' }) + ' at ') + hhmm(t);
           break;
         }
         if (Math.abs(p.mins - 570) > 30) m += 29;
@@ -296,12 +503,7 @@
     return { open, next, pre: wk && mins >= 240 && mins < 570, post: wk && mins >= 960 && mins < 1200 };
   }
 
-  // ---------- Data ----------
-  let data = { feeds: [], quotes: {}, updated: null };
-  let wx = null;
-  let loc = store.get('loc', { lat: 51.51, lon: -0.13, name: 'London' });
-  const feed = id => (data.feeds.find(f => f.id === id) || { items: [] }).items;
-
+  /* ================= Weather vocabulary ================= */
   const WX = {0:['☀️','clear'],1:['🌤️','mostly clear'],2:['⛅','partly cloudy'],3:['☁️','overcast'],45:['🌫️','foggy'],48:['🌫️','foggy'],
     51:['🌦️','light drizzle'],53:['🌦️','drizzle'],55:['🌧️','heavy drizzle'],56:['🌧️','freezing drizzle'],57:['🌧️','freezing drizzle'],
     61:['🌦️','light rain'],63:['🌧️','rain'],65:['🌧️','heavy rain'],66:['🌧️','freezing rain'],67:['🌧️','freezing rain'],
@@ -309,235 +511,349 @@
     82:['⛈️','heavy showers'],85:['🌨️','snow showers'],86:['🌨️','snow showers'],95:['⛈️','thunderstorms'],96:['⛈️','thunderstorms'],99:['⛈️','thunderstorms']};
   const W = c => WX[c] || ['🌡️', 'unsettled'];
   const wet = c => c >= 51;
+  function nextHours(n = 12) {
+    if (!wx) return [];
+    const from = Date.now() - 3600e3, out = [];
+    wx.hourly.time.forEach((tm, i) => { if (out.length < n && new Date(tm).getTime() >= from) out.push({ tm, t: wx.hourly.temperature_2m[i], c: wx.hourly.weather_code[i] }); });
+    return out;
+  }
 
-  // ---------- Reports (rule-based, written from the data) ----------
-  function marketReport() {
+  /* ================= Agent reports ================= */
+  function reportMarkets() {
     const q = data.quotes || {}, m = market(), msft = q.MSFT;
-    if (!msft || msft.pct == null) return { text: [m.open ? 'Market’s open — I’m watching MSFT live on the chart below.' : 'Market’s closed. Live chart below while I wait for my quote feed.'], status: m.open ? 'live' : '' };
-    const asOf = msft.time ? new Date(msft.time) : null;
-    const dayName = asOf ? asOf.toLocaleDateString('en-GB', { weekday: 'long' }) : '';
-    const mv = msft.pct >= 0 ? 'up' : 'down';
-    const t = [];
+    const status = m.open ? 'Watching the open market' : m.pre ? 'Pre-market, standing by' : m.post ? 'After hours, standing by' : `Standing by until ${m.next}`;
+    const dot = m.open ? 'live' : 'on';
+    if (!msft || msft.pct == null) return { line: m.open ? 'Market is open. Live chart on my desk.' : 'Waiting on my quote feed.', dispatch: ['My quote feed hasn’t come through yet. The live chart on my desk still works.'], status, dot };
+    const mv = msft.pct >= 0 ? 'up' : 'down', size = Math.abs(msft.pct).toFixed(1) + '%';
+    const day = msft.time ? new Date(msft.time).toLocaleDateString('en-GB', { weekday: 'long' }) : '';
+    const d = [];
     if (m.open) {
-      t.push('MSFT is trading at ', el('b', { textContent: fmtPrice('MSFT', msft.price) }), ', ',
-        el('span', { className: dirCls(msft.pct), textContent: `${mv} ${Math.abs(msft.pct).toFixed(1)}%` }), ' today');
-      if (asOf) t.push(el('span', { className: 'q', textContent: ` (as of ${hhmm(asOf)})` }));
-      t.push('.');
+      d.push('Microsoft is trading at ', el('b', { text: fmtPrice('MSFT', msft.price) }), ', ', el('span', { class: dir(msft.pct), text: `${mv} ${size}` }), ' on the day.');
+      if (msft.time) d.push(el('span', { class: 'soft', text: ` That price is from ${hhmm(new Date(msft.time))}; the chart below is live.` }));
     } else {
-      t.push(`Markets are closed. MSFT finished ${dayName ? dayName + ' ' : ''}at `, el('b', { textContent: fmtPrice('MSFT', msft.price) }), ', ',
-        el('span', { className: dirCls(msft.pct), textContent: `${mv} ${Math.abs(msft.pct).toFixed(1)}%` }), '.');
-      if (m.next) t.push(el('span', { className: 'q', textContent: ` Next open ${m.next}.` }));
+      d.push(`Markets are closed. Microsoft finished ${day ? day + ' ' : ''}at `, el('b', { text: fmtPrice('MSFT', msft.price) }), ', ', el('span', { class: dir(msft.pct), text: `${mv} ${size}` }), '.');
+      if (m.next) d.push(el('span', { class: 'soft', text: ` I’m back on watch ${m.next}.` }));
     }
-    const spx = q.SPX, ftse = q.FTSE;
-    if (spx && spx.pct != null) t.push(` S&P 500 `, el('span', { className: dirCls(spx.pct), textContent: (spx.pct >= 0 ? '+' : '') + spx.pct.toFixed(1) + '%' }));
-    if (ftse && ftse.pct != null) t.push(`, FTSE `, el('span', { className: dirCls(ftse.pct), textContent: (ftse.pct >= 0 ? '+' : '') + ftse.pct.toFixed(1) + '%' }));
-    if ((spx && spx.pct != null) || (ftse && ftse.pct != null)) t.push('.');
-    return { text: t, status: m.open ? 'live' : '', short: `MSFT ${m.open ? 'is' : 'closed'} ${mv} ${Math.abs(msft.pct).toFixed(1)}% at ${fmtPrice('MSFT', msft.price)}${m.open ? '' : (m.next ? ` · opens ${m.next}` : '')}.` };
+    const others = ['SPX', 'FTSE'].filter(k => q[k] && q[k].pct != null);
+    if (others.length) {
+      d.push(` The ${q[others[0]].name} moved `, el('span', { class: dir(q[others[0]].pct), text: signPct(q[others[0]].pct) }));
+      if (others[1]) d.push(` and the ${q[others[1]].name} `, el('span', { class: dir(q[others[1]].pct), text: signPct(q[others[1]].pct) }));
+      d.push('.');
+    }
+    return { line: `MSFT ${m.open ? 'is' : 'closed'} ${mv} ${size} at ${fmtPrice('MSFT', msft.price)}.`, dispatch: d, status, dot };
   }
-
-  function weatherReport() {
-    if (!wx) return { text: ['Checking the skies…'] };
+  function reportWeather() {
+    if (!wx) return { line: 'Checking the skies.', dispatch: ['Checking the skies.'], status: 'Checking in', dot: '' };
     const c = wx.current, [, desc] = W(c.weather_code);
-    const t = [`${Math.round(c.temperature_2m)}° and ${desc} in `, el('button', { className: 'linkish', textContent: loc.name, onclick: openSheet }), '. '];
-    // rain watch over next 12h
-    const now = Date.now();
-    let firstWet = null, dryAfter = null, n = 0;
-    wx.hourly.time.forEach((tm, i) => {
-      const ts = new Date(tm).getTime();
-      if (ts < now - 3600e3 || n >= 12) return; n++;
-      if (wet(wx.hourly.weather_code[i]) && !firstWet) firstWet = tm;
-    });
-    let rain;
-    if (wet(c.weather_code)) rain = 'Bring a coat — it’s wet out now.';
-    else if (firstWet) rain = `Rain likely from ${firstWet.slice(11, 16)}.`;
-    else rain = 'Dry for the next 12 hours.';
-    t.push(rain);
-    const d = wx.daily;
-    if (d && d.time[1]) t.push(el('span', { className: 'q', textContent: ` Tomorrow ${Math.round(d.temperature_2m_max[1])}°/${Math.round(d.temperature_2m_min[1])}°, ${W(d.weather_code[1])[1]}.` }));
-    return { text: t, short: `${Math.round(c.temperature_2m)}° and ${desc} in ${loc.name}. ${rain}` };
+    const hrs = nextHours(12), firstWet = hrs.find(h => wet(h.c));
+    const rain = wet(c.weather_code) ? 'It’s wet out now, so take a coat.' : firstWet ? `Rain likely from ${firstWet.tm.slice(11, 16)}.` : 'Dry for the next 12 hours.';
+    const d = [`${Math.round(c.temperature_2m)}° and ${desc} in ${loc.name}, feeling like ${Math.round(c.apparent_temperature)}°. ${rain}`];
+    if (wx.daily && wx.daily.time[1]) d.push(el('span', { class: 'soft', text: ` Tomorrow ${Math.round(wx.daily.temperature_2m_max[1])}° and ${Math.round(wx.daily.temperature_2m_min[1])}°, ${W(wx.daily.weather_code[1])[1]}.` }));
+    return { line: `${Math.round(c.temperature_2m)}° and ${desc}. ${rain}`, rain, desc, dispatch: d, status: `Watching ${loc.name}`, dot: 'on' };
+  }
+  function reportNews(a) {
+    const items = feed(a.feed);
+    if (!items.length) return { line: 'On patrol. First report due shortly.', dispatch: ['I’m out on patrol. My first report is due shortly.'], status: 'Heading out', dot: '', fresh: 0 };
+    const fresh = items.filter(isFresh).length, lead = items[0];
+    const d = [];
+    if (fresh) d.push(`${fresh} new ${fresh === 1 ? 'story' : 'stories'} since you last looked. `);
+    else if (lastVisit) d.push('Nothing new since you last looked. ');
+    d.push('Leading with ', el('b', { text: lead.title }), el('span', { class: 'soft', text: ` from ${lead.source}${lead.date ? ', ' + ago(lead.date) : ''}.` }));
+    const stale = data.updated && (Date.now() - new Date(data.updated)) > 75 * 60e3;
+    return { line: lead.title, dispatch: d, status: `${items.length} stories filed`, dot: stale ? 'warn' : 'on', fresh, lead };
+  }
+  function reports() {
+    const r = {};
+    TEAM.forEach(a => { r[a.id] = a.kind === 'markets' ? reportMarkets() : a.kind === 'weather' ? reportWeather() : a.kind === 'news' ? reportNews(a) : null; });
+    const fresh = Object.values(r).reduce((s, x) => s + ((x && x.fresh) || 0), 0);
+    const h = new Date().getHours(), greet = h < 5 ? 'Evening' : h < 12 ? 'Morning' : h < 18 ? 'Afternoon' : 'Evening';
+    const lead = `${greet}. ` + (fresh ? `The team has filed ${fresh} new ${fresh === 1 ? 'story' : 'stories'} since you last checked in. Here’s what leads.` : 'All quiet since you last checked in. Here’s what leads.');
+    const lines = ['rex', 'nova', 'pip', 'tess'].filter(id => r[id] && r[id].lead).slice(0, 3).map(id => [id, r[id].lead.title]);
+    r.atlas = { lead, lines, status: data.updated ? `Briefing ready, last sweep ${ago(data.updated)}` : 'Gathering reports', dot: data.updated ? 'on' : '', fresh: 0, total: fresh };
+    return r;
   }
 
-  function newsReport(id) {
-    const items = feed(TEAM[id].feed);
-    if (!items.length) return { text: ['Out on patrol — first report coming shortly.'], fresh: 0 };
-    const fresh = items.filter(isFresh).length;
-    const lead = items[0];
-    const t = [];
-    if (fresh) t.push(el('b', { textContent: `${fresh} new since you last looked. ` }));
-    else if (lastVisit) t.push('Nothing new since you last looked. ');
-    t.push('Lead story: ', el('b', { textContent: `“${lead.title}”` }), el('span', { className: 'q', textContent: ` — ${lead.source}${lead.date ? ', ' + ago(lead.date) : ''}` }));
-    return { text: t, fresh, lead };
+  /* ================= Pieces ================= */
+  function sparkline(points, up, w = 160, h = 40) {
+    const s = svg('svg', { class: 'spark', viewBox: `0 0 ${w} ${h}`, preserveAspectRatio: 'none', 'aria-hidden': 'true' });
+    if (!points || points.length < 2) return s;
+    const min = Math.min(...points), max = Math.max(...points), span = max - min || 1;
+    const xy = points.map((v, i) => [i / (points.length - 1) * w, h - 3 - (v - min) / span * (h - 6)]);
+    const d = xy.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+    const col = up ? '#30D158' : '#FF453A', gid = 'g' + Math.random().toString(36).slice(2, 8);
+    const defs = svg('defs'), lg = svg('linearGradient', { id: gid, x1: 0, y1: 0, x2: 0, y2: 1 });
+    lg.append(svg('stop', { offset: '0', 'stop-color': col, 'stop-opacity': '.32' }), svg('stop', { offset: '1', 'stop-color': col, 'stop-opacity': '0' }));
+    defs.append(lg);
+    const last = xy[xy.length - 1];
+    s.append(defs, svg('path', { d: d + ` L${w} ${h} L0 ${h} Z`, fill: `url(#${gid})` }),
+      svg('path', { d, fill: 'none', stroke: col, 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', 'vector-effect': 'non-scaling-stroke' }),
+      svg('circle', { cx: last[0], cy: last[1], r: 3, fill: col }));
+    return s;
+  }
+  const quoteTile = (k, q) => el('div', { class: 'q glass' }, [
+    el('div', { class: 'n', text: q.name }), el('div', { class: 'p', text: fmtPrice(k, q.price) }),
+    el('div', { class: 'd ' + dir(q.pct), text: q.pct != null ? signPct(q.pct) : 'No change data' }), sparkline(q.spark, (q.pct || 0) >= 0, 120, 28)]);
+  const sub = t => el('h3', { text: t });
+
+  function storyGroup(items, agent, max = 20) {
+    return el('div', { class: 'group glass strong', style: { '--c': agent.c } }, [el('ul', {}, items.slice(0, max).map(it => {
+      const href = safeHref(it.link), fresh = isFresh(it);
+      return el('li', {}, [el('a', { class: 'row', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
+        el('span', { class: 'newdot' + (fresh ? '' : ' off'), 'aria-label': fresh ? 'New' : undefined }),
+        el('div', { class: 'body' }, [el('div', { class: 'h', text: it.title }),
+          el('div', { class: 'm' }, [el('b', { text: it.source }), it.date ? '  ' + agoShort(it.date) : ''])])])]);
+    }))]);
   }
 
-  // ---------- Rendering ----------
-  const cards = {};
-  function agentCard(id, extraClass = '') {
-    const a = TEAM[id];
-    const status = el('div', { className: 'a-status' });
-    const badge = el('span', { className: 'badge', style: { display: 'none' } });
-    const report = el('p', { className: 'report' });
-    const body = el('div');
-    const card = el('article', { className: 'agent ' + extraClass, id: 'agent-' + id, style: { '--c': a.c } }, [
-      el('div', { className: 'a-head' }, [avatar(id, 'on'), el('div', { className: 'a-who' }, [
-        el('div', { className: 'a-name' }, [a.name, el('span', { textContent: a.role })]), status]), badge]),
-      report, body
+  function navbar(title, subtitle) {
+    return el('div', { class: 'navbar' }, [
+      el('div', {}, [el('h1', { class: 'large-title', text: title }), subtitle ? el('p', { class: 'sub', text: subtitle }) : null]),
+      el('button', { class: 'round sweep glass', type: 'button', 'aria-label': 'Sweep now: ask every agent to check in', onclick: () => sweep() }, [(() => {
+        const s = svg('svg', { viewBox: '0 0 24 24' }); s.append(svg('path', { d: 'M20 12a8 8 0 1 1-2.34-5.66' }), svg('path', { d: 'M20 4v4.5h-4.5' })); return s; })()])
     ]);
-    cards[id] = { card, status, badge, report, body, dot: card.querySelector('.st') };
-    return card;
-  }
-  function setStatus(id, text, dot) {
-    const c = cards[id]; c.status.textContent = text;
-    c.dot.className = 'st ' + (dot || '');
   }
 
-  function itemList(items, max) {
-    return el('ul', { className: 'items' }, items.slice(0, max).map(it => {
-      const safe = /^https?:\/\//.test(it.link) ? it.link : '#';
-      return el('li', { className: isFresh(it) ? 'fresh' : '' }, [el('a', { href: safe, target: '_blank', rel: 'noopener noreferrer' }, [
-        el('div', { className: 'h', textContent: it.title }),
-        el('div', { className: 'm' }, [el('b', { textContent: it.source }), it.date ? ' · ' + ago(it.date) : ''])
-      ])]);
+  /* ================= Views ================= */
+  let R = {};
+  function commandView() {
+    const A = R.atlas, now = new Date();
+    const q = (data.quotes || {}), msft = q.MSFT, m = market(), S = R.skye;
+    const v = el('div', { class: 'view' });
+    v.append(navbar('Mission Control', `${now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}, ${hhmm(now)}`));
+
+    // Atlas briefing
+    v.append(el('section', { class: 'card glass strong', 'aria-label': 'Briefing from Atlas', style: { '--c': BY.atlas.c } }, [
+      el('div', { class: 'agent-line' }, [avatar(BY.atlas, sweeping ? '' : A.dot), el('div', {}, [
+        el('div', { class: 'headline', text: 'Atlas' }), el('div', { class: 'footnote secondary', text: sweeping ? 'Checking in with the team…' : A.status })])]),
+      el('p', { class: 'brief-lead', text: A.lead }),
+      el('ul', { class: 'brief-list' }, A.lines.map(([id, txt]) => el('li', {}, [el('button', { type: 'button', style: { '--c': BY[id].c }, onclick: () => select(id), 'aria-label': `${BY[id].name}: ${txt}` }, [
+        el('span', { class: 'dot' }), el('span', { class: 'tx' }, [el('b', { text: BY[id].name }), '  ', txt]), el('span', { class: 'chev', 'aria-hidden': 'true', text: '›' })])])))
+    ]));
+
+    // Key numbers: MSFT + weather
+    const msftTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.mara.c }, onclick: () => select('mara'), 'aria-label': 'Open Mara, markets' }, [
+      el('span', { class: 'lbl' }, [el('i'), 'Microsoft']),
+      el('span', { class: 'big', text: msft ? fmtPrice('MSFT', msft.price) : '—' }),
+      el('span', { class: 'chg ' + (msft ? dir(msft.pct) : ''), text: msft && msft.pct != null ? signPct(msft.pct) + (m.open ? ' today' : ' at close') : 'Waiting for prices' }),
+      sparkline(msft && msft.spark, !msft || msft.pct >= 0),
+      el('span', { class: 'note', text: m.open ? 'Market open' : `Opens ${m.next}` })]);
+    const wTile = el('button', { class: 'stat card glass', type: 'button', style: { '--c': BY.skye.c }, onclick: () => select('skye'), 'aria-label': 'Open Skye, weather' }, [
+      el('span', { class: 'lbl' }, [el('i'), loc.name]),
+      el('span', { class: 'big', text: wx ? `${W(wx.current.weather_code)[0]} ${Math.round(wx.current.temperature_2m)}°` : '—' }),
+      el('span', { class: 'chg secondary', text: wx ? S.desc[0].toUpperCase() + S.desc.slice(1) : 'Checking the skies' }),
+      el('span', { class: 'note', text: wx ? S.rain : '' })]);
+    v.append(el('div', { class: 'grid2' }, [msftTile, wTile]));
+
+    // Other markets
+    const keys = ['SPX', 'NDX', 'FTSE', 'GBPUSD'].filter(k => q[k] && q[k].price != null);
+    if (keys.length) v.append(el('section', { class: 'section' }, [sub('Markets'), el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))]));
+
+    // Dispatch log
+    const entries = [];
+    TEAM.filter(a => a.kind === 'news').forEach(a => feed(a.feed).slice(0, 6).forEach(it => {
+      if (it.date && Date.now() - new Date(it.date) < 24 * 3600e3) entries.push({ t: it.date, a, msg: it.title, href: safeHref(it.link), fresh: isFresh(it) });
     }));
+    entries.sort((x, y) => y.t < x.t ? -1 : 1);
+    v.append(el('section', { class: 'section' }, [sub('Dispatches'), entries.length
+      ? el('div', { class: 'group glass strong' }, [el('ul', {}, entries.slice(0, 8).map(e => el('li', {}, [
+          el('a', { class: 'row' + (e.fresh ? ' fresh' : ''), href: e.href || undefined, target: e.href ? '_blank' : undefined, rel: e.href ? 'noopener noreferrer' : undefined, style: { '--c': e.a.c } }, [
+            el('time', { class: 'time', datetime: e.t, text: hhmm(new Date(e.t)) }),
+            el('div', { class: 'body' }, [el('div', { class: 'h', text: e.msg }), el('div', { class: 'm' }, [el('b', { text: e.a.name }), '  ' + e.a.role])])])])))])
+      : el('div', { class: 'group glass strong' }, [el('p', { class: 'empty', text: 'No dispatches in the last 24 hours. Sweep now to check in with the team.' })])]));
+
+    v.append(footer());
+    return v;
   }
 
-  function build() {
-    const grid = $('grid');
-    grid.append(agentCard('atlas', 'chief full'));
-    grid.append(agentCard('mara', 'span2'));
-    grid.append(agentCard('skye'));
-    ['rex', 'nova', 'penny', 'tess', 'pip'].forEach(id => grid.append(agentCard(id)));
+  function footer() {
+    return el('footer', {}, [
+      'Your agents read public sources only: Yahoo Finance and ', el('a', { href: 'https://www.tradingview.com/', target: '_blank', rel: 'noopener', text: 'TradingView' }),
+      ' for markets, ', el('a', { href: 'https://open-meteo.com/', target: '_blank', rel: 'noopener', text: 'Open-Meteo' }), ' for weather, and BBC, Google News, The Verge and 9to5Mac for news.',
+      el('span', { class: 'keys', text: ' Keys: 1 to 8 open an agent, arrow keys move between them, R sweeps, Esc goes back to Atlas.' })]);
+  }
 
-    // Markets: quotes + live MSFT mini chart
-    const quotes = el('div', { className: 'quotes', id: 'quotes' });
-    const chart = el('div', { className: 'chart' });
-    chart.append($('chartTpl').content.cloneNode(true));
+  let tvNode = null;
+  function tvChart() {
+    const box = el('div', { class: 'chart glass' });
+    const c = el('div', { class: 'tradingview-widget-container', style: { height: '100%', width: '100%' } }, [
+      el('div', { class: 'tradingview-widget-container__widget', style: { height: '100%', width: '100%' } })]);
     const s = document.createElement('script');
     s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
     s.async = true;
-    s.textContent = JSON.stringify({ symbol: 'NASDAQ:MSFT', width: '100%', height: '100%', locale: 'en', dateRange: '1D',
-      colorTheme: 'dark', isTransparent: true, autosize: true, trendLineColor: 'rgba(52, 211, 153, 1)',
-      underLineColor: 'rgba(52, 211, 153, 0.25)', underLineBottomColor: 'rgba(52, 211, 153, 0)', largeChartUrl: '' });
-    chart.querySelector('.tradingview-widget-container').append(s);
-    cards.mara.body.append(quotes, chart);
-
-    // Roster
-    $('roster').replaceChildren(...ORDER.map(id => {
-      const b = el('button', { className: 'member', type: 'button', 'aria-label': `${TEAM[id].name}, ${TEAM[id].role}`,
-        onclick: () => $('agent-' + id).scrollIntoView({ behavior: 'smooth', block: 'start' }) },
-        [avatar(id, 'on'), TEAM[id].name]);
-      b.dataset.id = id;
-      return b;
-    }));
+    s.textContent = JSON.stringify({ symbol: 'NASDAQ:MSFT', width: '100%', height: '100%', locale: 'en', dateRange: '1D', colorTheme: 'dark',
+      isTransparent: true, autosize: true, trendLineColor: 'rgba(48, 209, 88, 1)', underLineColor: 'rgba(48, 209, 88, 0.22)', underLineBottomColor: 'rgba(48, 209, 88, 0)', largeChartUrl: '' });
+    c.append(s); box.append(c);
+    return box;
   }
 
-  function renderRoster(statuses) {
-    document.querySelectorAll('.member').forEach(b => {
-      const id = b.dataset.id, s = statuses[id] || {};
-      b.querySelector('.st').className = 'st ' + (s.dot || '');
-      const av = b.querySelector('.av');
-      if (s.fresh) { b.classList.add('new'); av.dataset.n = s.fresh > 9 ? '9+' : s.fresh; } else b.classList.remove('new');
-    });
-  }
+  function deskView(id, inSheet) {
+    const a = BY[id], rep = R[id] || {};
+    const v = el('div', { class: 'view', style: { '--c': a.c } });
+    if (!inSheet) v.append(navbar(a.name, a.role));
+    v.append(el('div', { class: 'desk-head' }, [avatar(a, sweeping ? '' : rep.dot), el('div', {}, [
+      inSheet ? el('h2', { class: 'large-title', text: a.name }) : null,
+      inSheet ? el('div', { class: 'subhead secondary', text: a.role }) : null,
+      el('span', { class: 'capsule-status glass' }, [el('i', { class: sweeping ? '' : rep.dot || '' }), sweeping ? 'Checking in…' : rep.status || ''])])]));
+    v.append(el('div', { class: 'card glass strong' }, [el('p', { class: 'dispatch', style: { margin: 0 } }, rep.dispatch || [])]));
 
-  let briefTyped = false, typing = false, typeTarget = '';
-  function render() {
-    const statuses = {};
-    const sweepAge = data.updated ? (Date.now() - new Date(data.updated)) / 60e3 : null;
-    const newsDot = sweepAge == null ? '' : sweepAge < 75 ? 'on' : 'warn';
-
-    // Header sweep line
-    $('sweep').replaceChildren(
-      el('div', {}, [el('b', { textContent: '8 agents' }), ' on duty']),
-      el('div', { textContent: data.updated ? `Last sweep ${ago(data.updated)}` : 'Waiting for first sweep' }));
-
-    // Mara
-    const mr = marketReport(), m = market();
-    cards.mara.report.replaceChildren(...mr.text);
-    setStatus('mara', m.open ? 'LIVE · watching the open market' : m.pre ? 'Pre-market · standing by' : m.post ? 'After hours · standing by' : `Standing by · market opens ${m.next}`, m.open ? 'live' : '');
-    statuses.mara = { dot: m.open ? 'live' : '' };
-    const q = data.quotes || {};
-    $('quotes').replaceChildren(...['MSFT', 'SPX', 'NDX', 'FTSE', 'GBPUSD'].filter(k => q[k] && q[k].price != null).map(k =>
-      el('div', { className: 'quote' }, [
-        el('div', { className: 'n', textContent: q[k].name.toUpperCase() }),
-        el('div', { className: 'p', textContent: fmtPrice(k, q[k].price) }),
-        el('div', { className: 'd ' + dirCls(q[k].pct), textContent: q[k].pct != null ? pctTxt(q[k].pct) : '—' })
-      ])));
-
-    // Skye
-    const wr = weatherReport();
-    cards.skye.report.replaceChildren(...wr.text);
-    setStatus('skye', wx ? `On watch · ${loc.name} · checked ${ago(wx.fetched)}` : 'Checking…', wx ? 'on' : '');
-    statuses.skye = { dot: wx ? 'on' : '' };
-    if (wx) {
-      const hours = el('div', { className: 'wx-hours' });
-      let n = 0;
-      wx.hourly.time.forEach((tm, i) => {
-        if (n >= 12 || new Date(tm).getTime() < Date.now() - 3600e3) return; n++;
-        hours.append(el('div', { className: 'wx-hour' }, [
-          el('div', { textContent: n === 1 ? 'Now' : tm.slice(11, 13) }),
-          el('div', { textContent: W(wx.hourly.weather_code[i])[0] }),
-          el('div', { textContent: Math.round(wx.hourly.temperature_2m[i]) + '°' })]));
-      });
-      const days = wx.daily.time.map((day, i) => el('div', { className: 'wx-day' }, [
-        el('span', { textContent: `${W(wx.daily.weather_code[i])[0]}  ${i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' })}` }),
-        el('span', { textContent: `${Math.round(wx.daily.temperature_2m_max[i])}° / ${Math.round(wx.daily.temperature_2m_min[i])}°` })]));
-      cards.skye.body.replaceChildren(hours, ...days);
-    }
-
-    // News agents
-    const news = {};
-    ['rex', 'nova', 'penny', 'tess', 'pip'].forEach(id => {
-      const r = news[id] = newsReport(id), items = feed(TEAM[id].feed), c = cards[id];
-      c.report.replaceChildren(...r.text);
-      setStatus(id, items.length ? `On watch · ${items.length} stories filed · ${ago(data.updated)}` : 'Heading out…', items.length ? newsDot : '');
-      statuses[id] = { dot: items.length ? newsDot : '', fresh: r.fresh };
-      if (r.fresh) { c.badge.style.display = ''; c.badge.textContent = `${r.fresh} new`; } else c.badge.style.display = 'none';
-      if (items.length > 1) {
-        const expanded = c.body.dataset.open === '1';
-        const list = itemList(items.slice(1), expanded ? 19 : 3);
-        const btn = el('button', { className: 'more', type: 'button', textContent: expanded ? 'Show less ▴' : `Full report · ${items.length - 4} more ▾`,
-          onclick: () => { c.body.dataset.open = expanded ? '0' : '1'; render(); } });
-        c.body.replaceChildren(list, items.length > 4 ? btn : '');
+    if (a.kind === 'markets') {
+      const q = data.quotes || {}, keys = QUOTE_KEYS.filter(k => q[k] && q[k].price != null);
+      if (keys.length) v.append(el('section', { class: 'section' }, [sub('Prices at last sweep'), el('div', { class: 'grid4' }, keys.map(k => quoteTile(k, q[k])))]));
+      if (!tvNode) tvNode = tvChart();
+      v.append(el('section', { class: 'section' }, [sub('Microsoft, live'), tvNode]));
+      const m = market();
+      v.append(el('p', { class: 'hint', text: m.open ? 'The chart updates live. Written prices refresh with each sweep, roughly every 30 minutes.' : `The US market opens ${m.next} UK time. Prices are from the last close.` }));
+    } else if (a.kind === 'weather') {
+      if (wx) {
+        v.append(el('section', { class: 'section' }, [sub('Next 12 hours'), el('div', { class: 'hours' }, nextHours(12).map((h, i) => el('div', { class: 'hour glass' + (wet(h.c) ? ' wet' : '') }, [
+          el('div', { class: 'secondary', text: i === 0 ? 'Now' : h.tm.slice(11, 16) }), el('div', { class: 'i', text: W(h.c)[0] }), el('div', { class: 'headline num', text: Math.round(h.t) + '°' })])))]));
+        v.append(el('section', { class: 'section' }, [sub('Next few days'), el('div', { class: 'group glass strong' }, wx.daily.time.map((day, i) => el('div', { class: 'day' }, [
+          el('span', { text: `${W(wx.daily.weather_code[i])[0]}  ${i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' })}` }),
+          el('span', { class: 'secondary num', text: `${Math.round(wx.daily.temperature_2m_max[i])}° / ${Math.round(wx.daily.temperature_2m_min[i])}°` })])))]));
       }
-    });
-
-    // Atlas — the briefing
-    const h = new Date().getHours();
-    const greet = h < 5 ? 'Evening' : h < 12 ? 'Morning' : h < 18 ? 'Afternoon' : 'Evening';
-    const totalFresh = Object.values(news).reduce((s, r) => s + (r.fresh || 0), 0);
-    const atlasText = `${greet}. ` + (totalFresh ? `The team has ${totalFresh} new item${totalFresh === 1 ? '' : 's'} since you last checked in. Here’s what matters:` : 'Here’s where things stand:');
-    typeTarget = atlasText;
-    if (!typing) cards.atlas.report.textContent = briefTyped ? atlasText : '';
-    setStatus('atlas', `Briefing ready · ${hhmm(new Date())}`, 'on');
-    statuses.atlas = { dot: 'on' };
-    const lines = [];
-    if (mr.short) lines.push(['mara', mr.short]);
-    if (wr.short) lines.push(['skye', wr.short]);
-    if (news.rex.lead) lines.push(['rex', `Microsoft: ${news.rex.lead.title}`]);
-    if (news.nova.lead) lines.push(['nova', `Top story: ${news.nova.lead.title}`]);
-    if (news.pip.lead) lines.push(['pip', `iPhone: ${news.pip.lead.title}`]);
-    const ul = el('ul', { className: 'brief' }, lines.map(([id, txt], i) =>
-      el('li', { style: { animationDelay: briefTyped ? '0s' : (0.25 + i * 0.18) + 's' } }, [avatar(id), el('span', { textContent: txt })])));
-    cards.atlas.body.replaceChildren(ul);
-    if (!briefTyped && data.updated) {
-      briefTyped = typing = true;
-      const r = cards.atlas.report; let i = 0; r.classList.add('typing');
-      const ti = setInterval(() => {
-        r.textContent = typeTarget.slice(0, ++i);
-        if (i >= typeTarget.length) { clearInterval(ti); typing = false; r.classList.remove('typing'); }
-      }, 14);
+      const msg = el('p', { class: 'hint', text: 'Saved only in this browser.' });
+      const input = el('input', { type: 'text', placeholder: 'Town or city', maxLength: 60, enterKeyHint: 'search', 'aria-label': 'Town or city' });
+      v.append(el('section', { class: 'section' }, [sub('Where Skye watches'),
+        el('form', { class: 'field', autocomplete: 'off', onsubmit: async e => {
+          e.preventDefault(); const qq = input.value.trim(); if (!qq) return;
+          msg.textContent = 'Searching…';
+          try {
+            const res = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&name=${encodeURIComponent(qq)}`);
+            const g = ((await res.json()).results || [])[0];
+            if (!g) { msg.textContent = `No place called “${qq}” found. Try a nearby town.`; return; }
+            setLoc({ lat: +g.latitude.toFixed(2), lon: +g.longitude.toFixed(2), name: g.name }); toast(`Skye is now watching ${g.name}`);
+          } catch { msg.textContent = 'Search didn’t go through. Check your connection and try again.'; }
+        } }, [input, el('button', { class: 'pill-btn', type: 'submit', text: 'Set' })]),
+        el('button', { class: 'pill-btn gray', type: 'button', text: 'Use my current location', onclick: () => {
+          if (!navigator.geolocation) { msg.textContent = 'Location isn’t available in this browser.'; return; }
+          msg.textContent = 'Finding you…';
+          navigator.geolocation.getCurrentPosition(
+            p => { setLoc({ lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'your area' }); toast('Skye is now watching your area'); },
+            () => { msg.textContent = 'Location permission was declined. Type a town instead.'; }, { timeout: 10000, maximumAge: 600000 });
+        } }), msg]));
+    } else if (a.kind === 'news') {
+      const items = feed(a.feed);
+      if (items.length) v.append(el('section', { class: 'section' }, [sub(`All ${items.length} stories`), storyGroup(items, a)]));
     }
-
-    renderRoster(statuses);
+    if (!inSheet) v.append(footer());
+    return v;
   }
 
-  // ---------- Loading ----------
+  /* ================= Team navigation (rail + capsule) ================= */
+  function renderNav() {
+    const prevBadges = new Map([...document.querySelectorAll('[data-badge]')].map(b => [b.dataset.badge, b.textContent]));
+    const badge = (id, cls) => {
+      const n = (R[id] && R[id].fresh) || (id === 'atlas' ? 0 : 0);
+      if (!n) return null;
+      const txt = n > 9 ? '9+' : String(n);
+      const b = el('span', { class: 'badge ' + (cls || ''), text: txt, 'aria-label': `${n} new` });
+      b.dataset.badge = id + (cls || '');
+      if (prevBadges.has(b.dataset.badge) && prevBadges.get(b.dataset.badge) !== txt) b.classList.add('pop');
+      return b;
+    };
+    $('railList').replaceChildren(...TEAM.map(a => {
+      const rep = R[a.id] || {};
+      return el('li', {}, [el('button', { class: 'rail-item' + (a.id === selected ? ' sel' : ''), type: 'button', 'aria-current': a.id === selected ? 'page' : undefined, onclick: () => select(a.id) }, [
+        avatar(a, sweeping ? '' : rep.dot),
+        el('span', { class: 't' }, [el('div', { class: 'nm', text: a.name }), el('div', { class: 'rl', text: sweeping ? 'Checking in…' : a.role })]),
+        badge(a.id)])]);
+    }));
+    const openSheetId = sheetOpen ? selected : 'atlas';
+    $('capsule').replaceChildren(...TEAM.map(a => el('button', { class: 'cap-btn' + (a.id === openSheetId ? ' sel' : ''), type: 'button', 'aria-label': `${a.name}, ${a.role}`, onclick: () => select(a.id) }, [
+      avatar(a, sweeping ? '' : (R[a.id] || {}).dot), badge(a.id, 'cap')])));
+    document.querySelectorAll('.sweep-label').forEach(s => s.textContent = sweeping ? 'Sweeping…' : 'Sweep now');
+    $('railFoot').textContent = sweeping ? 'Every agent is checking in.' : data.updated ? `Last sweep ${ago(data.updated)}. The team checks in every 30 minutes.` : 'Waiting for the first sweep.';
+  }
+
+  /* ================= Rendering & selection ================= */
+  let sheetOpen = false, lastFocus = null;
+  function render() {
+    R = reports();
+    const pane = $('pane'), keep = scrollY;
+    const id = wide.matches ? selected : 'atlas';
+    pane.replaceChildren(id === 'atlas' ? commandView() : deskView(id));
+    pane.querySelectorAll('.view').forEach(v => v.style.animation = 'none');
+    scrollTo(0, keep);
+    if (sheetOpen && !wide.matches) { const sc = $('sheetScroll'), k = sc.scrollTop; sc.replaceChildren(deskView(selected, true)); sc.querySelectorAll('.view').forEach(v => v.style.animation = 'none'); sc.scrollTop = k; }
+    renderNav();
+  }
+  function select(id) {
+    if (!BY[id]) return;
+    const changed = id !== selected;
+    selected = id;
+    try { history.replaceState(null, '', id === 'atlas' ? location.pathname + location.search : '#' + id); } catch {}
+    R = reports();
+    if (wide.matches) {
+      $('pane').replaceChildren(id === 'atlas' ? commandView() : deskView(id));
+      if (changed) scrollTo(0, 0);
+      renderNav();
+    } else if (id === 'atlas') { closeSheet(); scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }); }
+    else openSheet(id);
+  }
+
+  /* ================= Sheet (folded) ================= */
+  function openSheet(id) {
+    if (!sheetOpen) lastFocus = document.activeElement;
+    selected = id; sheetOpen = true;
+    $('sheetScroll').replaceChildren(deskView(id, true)); $('sheetScroll').scrollTop = 0;
+    $('sheet').classList.add('open'); $('scrim').classList.add('open');
+    document.documentElement.style.overflow = 'hidden';
+    const i = TEAM.findIndex(a => a.id === id);
+    $('prevBtn').disabled = i <= 1; $('nextBtn').disabled = i >= TEAM.length - 1;
+    renderNav();
+    setTimeout(() => $('closeBtn').focus({ preventScroll: true }), 60);
+  }
+  function closeSheet() {
+    if (!sheetOpen) return;
+    sheetOpen = false; selected = 'atlas';
+    try { history.replaceState(null, '', location.pathname + location.search); } catch {}
+    $('sheet').classList.remove('open'); $('scrim').classList.remove('open'); $('sheet').style.transform = '';
+    document.documentElement.style.overflow = '';
+    renderNav();
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+  $('closeBtn').onclick = closeSheet; $('scrim').onclick = closeSheet;
+  const step = d => {
+    const i = TEAM.findIndex(a => a.id === selected) + d;
+    if (i < 0 || i >= TEAM.length) return;
+    if (!wide.matches && i === 0) return;
+    select(TEAM[i].id);
+  };
+  $('prevBtn').onclick = () => step(-1); $('nextBtn').onclick = () => step(1);
+
+  // Drag the grabber to dismiss; swipe sideways to move between agents
+  (() => {
+    let y0 = 0, x0 = 0, dy = 0, t0 = 0, dragging = false;
+    const sh = $('sheet');
+    $('sheetTop').addEventListener('touchstart', e => { y0 = e.touches[0].clientY; dy = 0; t0 = Date.now(); dragging = true; sh.classList.add('dragging'); }, { passive: true });
+    $('sheetTop').addEventListener('touchmove', e => { if (!dragging) return; dy = Math.max(0, e.touches[0].clientY - y0); sh.style.transform = `translateY(${dy}px)`; }, { passive: true });
+    $('sheetTop').addEventListener('touchend', () => {
+      dragging = false; sh.classList.remove('dragging');
+      if (dy > 120 || (dy > 40 && Date.now() - t0 < 250)) closeSheet(); else sh.style.transform = '';
+    });
+    $('sheetScroll').addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now(); }, { passive: true });
+    $('sheetScroll').addEventListener('touchend', e => {
+      if (e.target.closest('.hours, .chart, input')) return;
+      const t = e.changedTouches[0], dx = t.clientX - x0, ddy = t.clientY - y0;
+      if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(ddy) * 1.6 && Date.now() - t0 < 600) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
+  })();
+
+  wide.addEventListener('change', () => { if (wide.matches && sheetOpen) { sheetOpen = false; $('sheet').classList.remove('open'); $('scrim').classList.remove('open'); document.documentElement.style.overflow = ''; } render(); });
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (e.target.matches('input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === 'Escape') { e.preventDefault(); select('atlas'); }
+    else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { if (wide.matches || sheetOpen) { e.preventDefault(); step(1); } }
+    else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { if (wide.matches || sheetOpen) { e.preventDefault(); step(-1); } }
+    else if (/^[1-8]$/.test(e.key) && TEAM[+e.key - 1]) { e.preventDefault(); select(TEAM[+e.key - 1].id); }
+    else if (e.key.toLowerCase() === 'r') { e.preventDefault(); sweep(); }
+  });
+
+  /* ================= Data & sweeps ================= */
   async function loadData() {
-    try {
-      const r = await fetch('data/feeds.json?t=' + Date.now(), { cache: 'no-store' });
-      data = await r.json();
-    } catch {}
-    render();
+    try { const r = await fetch('data/feeds.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) data = await r.json(); } catch {}
   }
   async function loadWeather() {
     try {
@@ -547,50 +863,27 @@
       const r = await fetch(url); if (!r.ok) throw 0;
       wx = await r.json(); wx.fetched = new Date().toISOString();
     } catch {}
+  }
+  function setLoc(l) { loc = l; store.set('loc', l); loadWeather().then(render); }
+
+  async function sweep(silent) {
+    if (sweeping) return;
+    sweeping = true;
+    if (!silent) { document.body.classList.add('sweeping'); render(); }
+    const before = data.updated;
+    await Promise.all([loadData(), loadWeather(), new Promise(r => setTimeout(r, silent ? 0 : 1500))]);
+    sweeping = false; document.body.classList.remove('sweeping');
     render();
+    if (!silent) toast(data.updated && data.updated !== before ? 'New reports filed' : 'Team checked in. Nothing new yet');
   }
+  $('sweepWide').onclick = () => sweep();
 
-  // Clock
-  function tick() {
-    const now = new Date();
-    $('clock').textContent = hhmm(now);
-    $('date').textContent = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-  }
-
-  // Weather location sheet
-  function openSheet() { $('sheet').classList.add('open'); $('sheetBg').classList.add('open'); }
-  function closeSheet() { $('sheet').classList.remove('open'); $('sheetBg').classList.remove('open'); }
-  $('sheetBg').onclick = closeSheet;
-  function setLoc(l) { loc = l; store.set('loc', l); wx = null; loadWeather(); setTimeout(closeSheet, 500); }
-  $('cityForm').onsubmit = async e => {
-    e.preventDefault();
-    const q = $('cityInput').value.trim(); if (!q) return;
-    $('cityMsg').textContent = 'Searching…';
-    try {
-      const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&name=${encodeURIComponent(q)}`);
-      const g = ((await r.json()).results || [])[0];
-      if (!g) { $('cityMsg').textContent = 'Couldn’t find that place.'; return; }
-      $('cityMsg').textContent = `Skye’s heading to ${g.name}${g.country ? ', ' + g.country : ''}.`;
-      $('cityInput').value = '';
-      setLoc({ lat: +g.latitude.toFixed(2), lon: +g.longitude.toFixed(2), name: g.name });
-    } catch { $('cityMsg').textContent = 'Search failed — try again.'; }
-  };
-  $('geoBtn').onclick = () => {
-    if (!navigator.geolocation) return;
-    $('cityMsg').textContent = 'Finding you…';
-    navigator.geolocation.getCurrentPosition(
-      p => setLoc({ lat: +p.coords.latitude.toFixed(2), lon: +p.coords.longitude.toFixed(2), name: 'your area' }),
-      () => { $('cityMsg').textContent = 'Permission declined — type a town instead.'; },
-      { timeout: 10000, maximumAge: 600000 });
-  };
-
-  build(); tick(); render();
-  setInterval(tick, 1000);
-  loadData(); loadWeather();
-  setInterval(loadData, 5 * 60e3);
-  setInterval(loadWeather, 15 * 60e3);
-  setInterval(render, 60e3);
-  document.addEventListener('visibilitychange', () => { if (!document.hidden) { loadData(); loadWeather(); } });
+  /* ================= Boot ================= */
+  render();
+  sweep(true).then(() => { if (!wide.matches && selected !== 'atlas') openSheet(selected); });
+  setInterval(() => sweep(true), 5 * 60e3);
+  setInterval(() => { if (!document.hidden) render(); }, 60e3);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) sweep(true); });
 })();
 </script>
 </body>
