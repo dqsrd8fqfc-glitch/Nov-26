@@ -1,1 +1,635 @@
-{"updated": null, "feeds": []}
+{
+ "updated": "2026-11-21T14:04:40.234645Z",
+ "feeds": [
+  {
+   "id": "top",
+   "title": "Top",
+   "items": [
+    {
+     "title": "Scouts say they face £1m tourist tax cost for overnight trips",
+     "link": "https://www.bbc.co.uk/news/articles/cxdd1e9yvlzjo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T13:29:55Z"
+    },
+    {
+     "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+     "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T13:17:38Z"
+    },
+    {
+     "title": "Australia's Chaudhary downs England in tetchy first T20",
+     "link": "https://www.bbc.co.uk/sport/cricket/articles/cme39qlevnrqo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T12:24:33Z"
+    },
+    {
+     "title": "'We're not meant to carry life's challenges alone', Catherine says in first clip",
+     "link": "https://www.bbc.co.uk/news/videos/cwe85gyedjp5o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T12:17:45Z"
+    },
+    {
+     "title": "Catherine talks openly about how cancer changed her in documentary on BBC",
+     "link": "https://www.bbc.co.uk/news/articles/c85y14zvexz9o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T12:00:03Z"
+    },
+    {
+     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+     "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T09:52:11Z"
+    },
+    {
+     "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+     "link": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T09:40:55Z"
+    },
+    {
+     "title": "FBI reportedly investigating apparent hack of its criminal database",
+     "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T09:34:20Z"
+    },
+    {
+     "title": "'Somebody has to stand up to that guy' - Verstappen-Russell rivalry blows up again",
+     "link": "https://www.bbc.co.uk/sport/formula1/articles/c34gnrvl9zvro?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T08:13:58Z"
+    },
+    {
+     "title": "Staff gagging clauses lifted ahead of probe into culture at data watchdog",
+     "link": "https://www.bbc.co.uk/news/articles/cwdr1xyzr5lmo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T06:01:04Z"
+    },
+    {
+     "title": "Man convicted of starting Palisades fire in Los Angeles",
+     "link": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T04:34:00Z"
+    },
+    {
+     "title": "'I was exhausted': Two days in the shoes of a tradwife",
+     "link": "https://www.bbc.co.uk/news/articles/cr0jxwd93y09o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T00:29:00Z"
+    },
+    {
+     "title": "How Phoebe Bridgers banning phones at concerts sparked a wave of fan artwork",
+     "link": "https://www.bbc.co.uk/news/articles/cq7821d0pv49o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T00:08:19Z"
+    },
+    {
+     "title": "Can AI really help spot Black Friday deals? We put it to the test",
+     "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T00:06:11Z"
+    },
+    {
+     "title": "Who will be Robert Pattinson's 'Bond girl' - and does the role need to change?",
+     "link": "https://www.bbc.co.uk/news/articles/cr4g1l7x52jno?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T00:03:16Z"
+    },
+    {
+     "title": "These dead pets were meant to be cremated - then their bodies appeared on a livestream",
+     "link": "https://www.bbc.co.uk/news/articles/cmn502ek17yvo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T23:20:33Z"
+    },
+    {
+     "title": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
+     "link": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T23:08:57Z"
+    },
+    {
+     "title": "Miami or Vice City? Tour the real-world inspiration for GTA 6",
+     "link": "https://www.bbc.co.uk/news/videos/c8wy5d43zp9qo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T18:48:48Z"
+    },
+    {
+     "title": "What is the EU-UK youth experience scheme and when will it start?",
+     "link": "https://www.bbc.co.uk/news/articles/c6jeqv9nv5eqo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T16:07:55Z"
+    },
+    {
+     "title": "Rare rhino's first steps captured on video at zoo",
+     "link": "https://www.bbc.co.uk/news/articles/cmly7dvjqg8xo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T16:28:41Z"
+    }
+   ]
+  },
+  {
+   "id": "msft",
+   "title": "Microsoft",
+   "items": [
+    {
+     "title": "Microsoft fallout, Nvidia security questions and other must-read stories from PCWorld sister sites",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNEg4UUlLM2NmeGZBRC10WkdDWVZ1aDVpLVd6UEdfNjh2RXkwV1hYMlVWdlM4eGZScmdBTVFGZldQM3FLUXJoZnZiV0RIcHVDeWdOOXpBbWRIWkdNVlVCR2lHeUZCOFVBbUNSN0dYMjV3QWpGS2txUUFOc2kwcGJUdzB2aTE2YXR1MUgtdm5zdEdtS2xPN0h5TGc5cnEyUVk2ZmR2c0dXUFNfT0JjWDNhdW5WamR4c3ZIM0ZNZklEUUQ2aDJ6ZUR3QTI5Vk9BVmJScUljdmZnSFd1QQ?oc=5",
+     "source": "PCWorld",
+     "date": "2026-11-21T14:00:50Z"
+    },
+    {
+     "title": "The AI race to fix security flaws could be making tech outages more common",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNEV1UkZkWUk1UlpPVENabkhza2YzcVJEMmFTNk50anhtdnd3S21EWlJxa1EzYUw4R2NrOUtxdGhHUXF0RHo1S3VSazQ5a2Uwb0JxemF4MV9IdVd2WmVnd2g0ZFBBck5yQ2lNeVFtV2tROHBsU1U5R3hoS3htekhtWmM1LTdlN0tPVVRrYzYtUFJOMHVKRGtWS29BNXIzVzhuWlBHRk1PZndneEVIX29xSzIxTkZHV0lOTmc?oc=5",
+     "source": "NBC News",
+     "date": "2026-11-21T14:00:00Z"
+    },
+    {
+     "title": "The site everyone checks when the internet breaks just had its busiest week",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdk9qOENZcWpiYzlaRVR3QUp6RG9wdzNEY2RUdnVtbjRycXRZenRiN1RoTTE1TEllMmpyWUhFdURESDNXR1JpdnZ6UzAwaWFxeVZEN2hKdnJxZWJ5Rjd0aEJhbVo3VENfOG94TDlZbzNVUWVzc0w4akhpeXBleTB4dE1GYUExSU1Md0NFdTlDTFNZVFRUeldYQ0N6STRpTnQ5WVRkTi1XSmVKdl9mMEUyVw?oc=5",
+     "source": "NBC News",
+     "date": "2026-11-21T13:00:00Z"
+    },
+    {
+     "title": "Hackers Using Email Bombing Before Posing as IT Support on Microsoft Teams",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA4TXBRQjdJdVc4UE5maHM4QVB3NS1wc3hSWmJsTGlrWkU3NlFXOTR3dXEtSlQ5Vl9RX1pGeVppQUM1YU5sV0ZmWko3ODh6b0J1akwxbXhaSW42cGxWMzhLa0NkSnk3VnNxVG1ZX0NOZ0FJTzZYb2RFdjVB?oc=5",
+     "source": "Hackread",
+     "date": "2026-11-21T12:56:06Z"
+    },
+    {
+     "title": "Microsoft To Do Apps Will Shut Down in June 2027",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcnBQYS1Xb3ZRT0VPQzhDTGh3OTVndWo3ZFhGOFNYZEh1Wm9HM19nd3ZoTnZCVzFPVVByWnBzS0NLb1E1aTVILWNjR2k0VlQ0OGlSZVBmSXlOZVFVeVRpN0w3blN1SEthYUtOM2kyNURhVlVaQlc4NzdCY3FmZi1BckFXOS1rdw?oc=5",
+     "source": "WinBuzzer",
+     "date": "2026-11-21T12:42:49Z"
+    },
+    {
+     "title": "Microsoft Expands Bing AI Search and Advertising Features",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9uZTNaaEF1TzN5RnVRdFpOdDB3M3VEUXRmNmJwX25pQkxhamhEUkFvSjFOTmxLUnN1Q3J0dHRXZ1cyZUxsYlcyNFREdzlIYVZlOEJwZ3R4RU83TmNDLXNz?oc=5",
+     "source": "cwibc.co.id",
+     "date": "2026-11-21T12:39:58Z"
+    },
+    {
+     "title": "'They're not gods': Microsoft CEO Satya Nadella says founders are not irreplaceable amid Nvidia leadership turmoil",
+     "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPb3FoUUhFdnUwYXIyNTJ1Ul9GRVlvQjM0SlVFa2NpRWU1LWRJcTBvY1BqVUxRVGlZbERaV2lramF1cTdXSi1LbmtZREFsWWFYaUxSdVgzdEZyNGp1V2xrY1dkTE5Jb3ZCN2ZaazhJVm9SYXRCQ1NQTHFsa2tVTUtlV3ZsaWtocFRxcHFmNldfRm4yakUtNnRodVJSYU84THlzWS1CQWVZNzFUaWh6QTkzVnQ2OTllalBUaGtUUHNfU0Jscm0zWjNYUmh1X3dEemVlMXo1bUJRWUlnT0pzeEVzZ25JdEJYSEFyUElvUXhlTUtLZ1FGRVBuOEM4MNIB-wFBVV95cUxPb3FoUUhFdnUwYXIyNTJ1Ul9GRVlvQjM0SlVFa2NpRWU1LWRJcTBvY1BqVUxRVGlZbERaV2lramF1cTdXSi1LbmtZREFsWWFYaUxSdVgzdEZyNGp1V2xrY1dkTE5Jb3ZCN2ZaazhJVm9SYXRCQ1NQTHFsa2tVTUtlV3ZsaWtocFRxcHFmNldfRm4yakUtNnRodVJSYU84THlzWS1CQWVZNzFUaWh6QTkzVnQ2OTllalBUaGtUUHNfU0Jscm0zWjNYUmh1X3dEemVlMXo1bUJRWUlnT0pzeEVzZ25JdEJYSEFyUElvUXhlTUtLZ1FGRVBuOEM4MA?oc=5",
+     "source": "Storyboard18",
+     "date": "2026-11-21T12:31:02Z"
+    },
+    {
+     "title": "Торент — бесплатно скачайте и установите в Windows",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZGgtRlcwVGdiRmE0eE5GOU16WmpWb3JDSnhOandGaXZ0d1ZwTDZGazhUbl9IU3cxR0xwOWVjM01VeHBhYWFzcExsUUFrODQzNndGT0Q0TkZTWG9TRmFFSHZoamdsUlpTbDZfRW13WGo3NXluQ0l6TGE5U3pWTDRGNXdBQVJ3cE5ISHI0?oc=5",
+     "source": "Microsoft",
+     "date": "2026-11-21T12:10:32Z"
+    },
+    {
+     "title": "From Microsoft to Anthropic: This Week's Top Five Stories",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWW1Xb3lfcWFUelZvQkJpdmptSkl5WUsxQXdIM203d3dRc092S2VBdXVTZzduTUpvek9HNldWbU5Ca05NTFc0TEdVZ1FNc0NzZHpPZjJycjlnYldwYU1aaEdaSXI5MGtCTVBGaDBpYWZhT2ZvcnZMb2oxV2FTX0NFemlJcTNFYi1vNnI3Skdvcw?oc=5",
+     "source": "Business Chief",
+     "date": "2026-11-21T12:05:49Z"
+    },
+    {
+     "title": "Todoist launches new import tool to help Microsoft To Do users",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONkpuUU1RQ0gyWU5UdDRBYW5iNUE1ZzE1MUhZNElTRWpLM1oyck5kUDJ1TWdTaG1VbjE3TW9DdFA4cDJ4ak9BX2lRT1RJSF9leDNKeFYzUVFlc2xTZ0RWWk5uazd5SnF0bC1nTm04ZE1RaS12NXVOdThGVFc3Rko1dzhtQlhZQ19NWFRldDRLNkpXZVdyczln?oc=5",
+     "source": "BetaNews",
+     "date": "2026-11-21T12:00:23Z"
+    },
+    {
+     "title": "Microsoft To Do is closing down and personal users are being abandoned",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02OXAxT043Z2otOFdvWEh3Ul84WUJheWI0TXp3QVY0N1ZEcUdCSjltRWl5dk1VN0JSR0VPUzRvRzZSSER1TGdQelV0Z3p4aFFuc2Jtdk5pVTlabFFjeldlUGNQTjQwOVF0ejZKdWxn?oc=5",
+     "source": "BetaNews",
+     "date": "2026-11-21T11:43:09Z"
+    },
+    {
+     "title": "Microsoft raises rewards for top performers, tightens checks on low performers",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOemdRRmg2X20wYXpYSnJCSDItNmdXSnZRb0FCSUJxU05KcmJZOUxZY05jd0ZwUGtfU0ZNbG1FTWQtZVRiM0lSaUhseVpkV09oamR3emw2dXhCT2NEM0hrcjlvUllhWmd4Z1lVUzVrWmlpbUtRTTFsNUl5MzdqRThiQ1hDQXhrMDFvbmt6YlRNOU1zMHp6VFlsc3FNVXJnaENMbkdBQWJqMnZWRnVWQm1wSk5mVFpDbnd4dUpoT2EyNUh6anFIQVk0eDNhek84TVNPMkVSQ3hLLURaXzRT0gHiAUFVX3lxTFBtczlZOWdWdWlDQUpGWkx0dndjZG1YRm9VWGxvOUZoMHNtVDlnYjN1TlZZdlhaZ1pyMHdINWVSUUI4bUhkVFFuU2xfMjdCOGltbHhJUmJ0MnBrRVNBS2ZQZndHWjRzblFOaUNuZ0NSaXlodkEzLXM1SHoxQy1uQ1N2WWdlSVdrMVlZR0piWEE1eXZFOUtnWXBEUUZ3MlBZWk12djF0S3d6blR6d0F0dGstbTRlb2UzNTJsTlBSWElBNm1CaWU3SDZXYjM3SzNJbWdJYmhfZ0xlRGxtaEVZVGV0ZXc?oc=5",
+     "source": "India Today",
+     "date": "2026-11-21T11:09:16Z"
+    },
+    {
+     "title": "Microsoft Surface Laptop Ultra with the Nvidia RTX Spark chip isn't the MacBook Pro killer I hoped for",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd0ZpSXZRMmFKaHVkc1RCVk1fQXhnaHE0SW41cTY3M0g0YnF4ek9jaHdlUzBvNW1GenpiczdhQndfaUxtc1VCa1J4SjFYcklZbTVjNnBlb05hWlM4bTVXQUxCTGVvQUQxd3NvN19tYmdJanRXRk9jc1BLaVYtSWxXM3pNRE9HNVZJSEE?oc=5",
+     "source": "TechRadar",
+     "date": "2026-11-21T11:00:00Z"
+    },
+    {
+     "title": "Get Microsoft Office 2024 Home for $99.97 ahead of Black Friday",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1OamkzTmRLRElBUURxRHJ3ZEU1dUJweGxUS0w5UENLSXlMVmVXLTl2LWs3cGxvbEZDOXJYOEIzQWJjVGNva2p6SkkyRGMwaEdLNWtSMmNaSktKZWRtTzFYa1VQVkhFY3JYSlJtRVg4dUtaQzZTTmVMRmdheWwydw?oc=5",
+     "source": "Mashable",
+     "date": "2026-11-21T10:19:22Z"
+    },
+    {
+     "title": "Man jailed for drowning ex-Microsoft executive in river at members’ club | ITV News",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTDZocFBwWFRNZnl6eFkwOGRVc0tldUlyX1lzTnNJa0hPckpOcUlYUVVWU1NwOGRRdTdoZHpHSURyMHVrUnNIX2FpYlpuX29Va1pTYTYtLXdxRXQ0QTVGR2IwRlZCVDBxcE5JRnR0U1ktSDRCd2NYSkUxTjVHeWJ6elBVbnFkNUxfNndyNWRJTlZyQTdJM1QwUnhpYzQxaEpCZERJazJwQXE5SG1uVWRIRWVXT1k0TFE?oc=5",
+     "source": "ITVX",
+     "date": "2026-11-21T09:56:13Z"
+    },
+    {
+     "title": "Microsoft elevates Bonnie McCracken to VP, Strategy & CTO Communications",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc3Y4WWZnMjFaeURDVVR3S0V4OE4tNW1SX1ItdHdJSHJ0d21hNEZjNmMxcTdiMjhKa21BTUhTWjFFTVhfV3JGUzFfbVBjbklndUlvMWNTRldzeldxQ1N3bjFIZzhSX2hwaC1EUlE5ZkFYQlpJd1hBRjR4Zl9aVWFLbi10bmFRS1FTZjZ3TVFCM2liYzBJUWhfdk9Rc2VLd2U5aGlMc0tzOEEzU0hBU09Ya2FyWnhnUTB3UGI0MS1CYUdzQWxLUEhVcjZTSjZxQQ?oc=5",
+     "source": "Exchange4Media",
+     "date": "2026-11-21T09:53:31Z"
+    },
+    {
+     "title": "As Microsoft shutters To Do, Todoist steps forward with a new task import tool",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdnQ5dEdrVWI4YXFZYkM2dkQxRl9yYWVUWmtQcndadnROUXQ4cTgtSE16Tzc5bklkMVFoMG83YV9GSWtVcVZRQTFmdURqdXB4V3otRzBmUnpNaktTakFHUTJvbWM2QnkwMzJuX0FpTThCc1JoVkVwSTBlelJzR3ptdnZRVmVjSmJURVpMMWNyd0VqYzJfZ2phYXBlWDJZcEpnbUEyMFplYy1TMk5TZnc?oc=5",
+     "source": "XDA",
+     "date": "2026-11-21T08:22:19Z"
+    },
+    {
+     "title": "Microsoft is a macro problem, Milburn Review + why Lula won",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9aYWNDWWdOcEtlQ1p2dzluUm1MUk1tNEtmMGJzV19ESUljSVF3d2kxTFNEWU5meERmcTZmRGdBVkhxajNJU2QwaVF0QzBkVVNnSHpmbFR2anlyS3FzbS1N?oc=5",
+     "source": "openDemocracy",
+     "date": "2026-11-21T07:00:24Z"
+    },
+    {
+     "title": "Trump Has A Message for Big Tech Firms Like Amazon, Google and Microsoft Building Data Centers Abroad: ‘We’re Going to Put A Tremendous Tax On Them’",
+     "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPVkE2bWlBa21YNUJaYjdOcFpCUGpGZVBxTXFacWRwQ0VnQTZRNHRSTGcxOFVEaEdjTS10YXI2ZEhSQ2xWNXpLMlZUam9GZ3ZiT2VyNFNkZkd4R3FTMTBXWkx6cnBXZXpvREhaQzg2RTZjSTJEUVBhZDVfU2VLbW00dGhmZHc3YXhyQTZLdG8zQTFSRHpNVUNyc2NrN2R3TWd3V3RQMUxmLTZ3bFVtREZQZFo2amJqazJzVW9SNDRqdEs5LVpreHEwcUlZTjdmYVczTkNod0llYk0xXzZxXzRfYm1lZXNkZFRVSzFEVlhEcWVkYVFzdnZUTUxjb1hncWhZQnFQaTNoRnkwb2pxNHBOejBHVFNnZjd2akJnbnVjZ1hZaE5ieTNfLWRlaw?oc=5",
+     "source": "TradingView",
+     "date": "2026-11-21T05:35:00Z"
+    },
+    {
+     "title": "Did Microsoft AI Partnership Just Shift Danaher's (DHR) Investment Narrative?",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOX0tWZGtzMkJSYjRucW9iMDR6Z1VIeTZPalBIdkdOb1dMTEphdng4OHJTOEJlcVYzTDFOM0ZOSklURi1CRnFBU3IxWUVMblpVTjRiQlFaUXU1OXZzU2JVQUNpX1N3eFlaa1dlYm1QZlZoYmR0WDZxWU1pcmNnN05jaXJxZVd1ZXFrZFpRR0dmNnkxVHUzSTBXRVFIRFlRdw?oc=5",
+     "source": "Yahoo Finance",
+     "date": "2026-11-21T05:15:00Z"
+    }
+   ]
+  },
+  {
+   "id": "markets",
+   "title": "Business",
+   "items": [
+    {
+     "title": "Sessions offer advice on rising energy costs",
+     "link": "https://www.bbc.co.uk/news/articles/cmy49l3x893jo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T12:09:49Z"
+    },
+    {
+     "title": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
+     "link": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T22:53:24Z"
+    },
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T22:42:47Z"
+    },
+    {
+     "title": "Trump threatens ban on US firms building AI data centres overseas",
+     "link": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T20:54:12Z"
+    },
+    {
+     "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+     "link": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T17:49:48Z"
+    },
+    {
+     "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
+     "link": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T16:41:52Z"
+    },
+    {
+     "title": "Airbnb's divisive new house rules come into force",
+     "link": "https://www.bbc.co.uk/news/articles/cmx278n2genyo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T15:48:35Z"
+    },
+    {
+     "title": "Could you spot a fake banknote?",
+     "link": "https://www.bbc.co.uk/news/videos/c6808y974d13o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T15:40:40Z"
+    },
+    {
+     "title": "The secret cyber scramble to protect UK fridge freezers",
+     "link": "https://www.bbc.co.uk/news/videos/cqpv94x1zj89o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T15:08:16Z"
+    },
+    {
+     "title": "Thousands join cost of living protests across Europe",
+     "link": "https://www.bbc.co.uk/news/videos/c62l5jweqr4ko?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T14:43:39Z"
+    },
+    {
+     "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+     "link": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T09:44:56Z"
+    },
+    {
+     "title": "Should AI be judging our credit worthiness?",
+     "link": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T07:32:19Z"
+    },
+    {
+     "title": "Social poker with £5 stake is booming, says dealer",
+     "link": "https://www.bbc.co.uk/news/articles/cm8947dy3kg9o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T06:19:25Z"
+    },
+    {
+     "title": "Mouldy, infested housing for vulnerable people sold as ethical investments abroad",
+     "link": "https://www.bbc.co.uk/news/articles/c6evre8j12vno?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T06:00:33Z"
+    },
+    {
+     "title": "Fish and eggs al desko? The dos and don'ts of lunch at work",
+     "link": "https://www.bbc.co.uk/news/articles/cwp8g4092zglo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T00:08:37Z"
+    },
+    {
+     "title": "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
+     "link": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T00:02:07Z"
+    },
+    {
+     "title": "How did Anthropic's stock market debut unfold?",
+     "link": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T23:52:25Z"
+    },
+    {
+     "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+     "link": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T23:33:51Z"
+    },
+    {
+     "title": "California targets Nvidia in China AI chip probe",
+     "link": "https://www.bbc.co.uk/news/articles/cqn70vxp5p4no?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T23:04:30Z"
+    },
+    {
+     "title": "Anthropic raises $81bn in record-breaking stock market debut",
+     "link": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T15:58:58Z"
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech",
+   "items": [
+    {
+     "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+     "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+     "source": "The Verge",
+     "date": "2026-11-21T14:00:00Z"
+    },
+    {
+     "title": "The Xiaomi 18 Pro proves two screens aren’t better than one",
+     "link": "https://www.theverge.com/tech/1038562/xiaomi-18-pro-max-review",
+     "source": "The Verge",
+     "date": "2026-11-21T13:00:00Z"
+    },
+    {
+     "title": "The game of the year is finally here",
+     "link": "https://www.theverge.com/tech/1039433/gta-vi-alfred-6-clockwisetv-installer",
+     "source": "The Verge",
+     "date": "2026-11-21T13:00:00Z"
+    },
+    {
+     "title": "Harbinger is building the unsexy EVs that keep the economy moving",
+     "link": "https://www.theverge.com/transportation/1038448/harbinger-ev-startup-240m-series-d-fedex-army-trucks",
+     "source": "The Verge",
+     "date": "2026-11-21T12:00:00Z"
+    },
+    {
+     "title": "Tech Now",
+     "link": "https://www.bbc.co.uk/iplayer/episode/m0034tjc?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T01:00:00Z"
+    },
+    {
+     "title": "Can AI really help spot Black Friday deals? We put it to the test",
+     "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T00:06:11Z"
+    },
+    {
+     "title": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
+     "link": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T23:08:57Z"
+    },
+    {
+     "title": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
+     "link": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T22:53:24Z"
+    },
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T22:42:47Z"
+    },
+    {
+     "title": "Trump threatens ban on US firms building AI data centres overseas",
+     "link": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T20:54:12Z"
+    },
+    {
+     "title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
+     "link": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
+     "source": "The Verge",
+     "date": "2026-11-20T20:43:52Z"
+    },
+    {
+     "title": "Rockstar says GTA VI made $3.79 billion in its first day",
+     "link": "https://www.theverge.com/games/1036279/gta-vi-sales",
+     "source": "The Verge",
+     "date": "2026-11-20T19:35:06Z"
+    },
+    {
+     "title": "Eufy’s Omni C28 is 53 percent off ahead of Black Friday",
+     "link": "https://www.theverge.com/gadgets/1037933/eufy-omni-c28-robot-vacuum-deal-sale",
+     "source": "The Verge",
+     "date": "2026-11-20T19:15:00Z"
+    },
+    {
+     "title": "White House removes cyber-security chief after series of tech outages",
+     "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T19:03:56Z"
+    },
+    {
+     "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+     "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+     "source": "The Verge",
+     "date": "2026-11-20T18:50:19Z"
+    },
+    {
+     "title": "Multiplying your Switch 2’s storage costs less than usual right now",
+     "link": "https://www.theverge.com/gadgets/1037749/microsd-express-card-nintendo-switch-2-black-friday-2026-deal-sale",
+     "source": "The Verge",
+     "date": "2026-11-20T18:15:00Z"
+    },
+    {
+     "title": "Google says it’s going to shut off Google Assistant on smart speakers next year",
+     "link": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
+     "source": "The Verge",
+     "date": "2026-11-20T18:00:00Z"
+    },
+    {
+     "title": "Should AI be judging our credit worthiness?",
+     "link": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T07:32:19Z"
+    },
+    {
+     "title": "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
+     "link": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-20T00:02:07Z"
+    },
+    {
+     "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+     "link": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-19T23:33:51Z"
+    }
+   ]
+  },
+  {
+   "id": "apple",
+   "title": "iPhone",
+   "items": [
+    {
+     "title": "Weekend Black Friday Apple deals: MacBooks from $649, Series 12, AirPods $130 off, new iPad mini, more",
+     "link": "https://9to5mac.com/2026/11/21/official-black-friday-apple-deals-now-live/",
+     "source": "9to5Mac",
+     "date": "2026-11-21T12:59:00Z"
+    },
+    {
+     "title": "ESR Black Friday gift guide: Premium accessories for iPhone Duo, iPhone 18 Pro, iPad, AirPods, and Apple Watch",
+     "link": "https://9to5mac.com/2026/11/20/esr-black-friday-apple-accessories-gift-guide/",
+     "source": "9to5Mac",
+     "date": "2026-11-21T00:00:00Z"
+    },
+    {
+     "title": "9to5Mac Daily: November 20, 2026 – Siri AI limits, HomeView update",
+     "link": "https://9to5mac.com/2026/11/20/daily-november-20-2026/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T23:43:15Z"
+    },
+    {
+     "title": "iOS 27 lets you use two iPhones with the same phone number",
+     "link": "https://9to5mac.com/2026/11/20/ios-27-lets-you-use-two-iphones-with-the-same-phone-number/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T23:06:00Z"
+    },
+    {
+     "title": "9to5Mac Overtime 091: Kicking the tires and seeing what works",
+     "link": "https://9to5mac.com/2026/11/20/9to5mac-overtime-091-kicking-the-tires-and-seeing-what-works/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T21:58:47Z"
+    },
+    {
+     "title": "Apple Watch Series 12: Four standout features make me glad I upgraded",
+     "link": "https://9to5mac.com/2026/11/20/apple-watch-series-12-four-standout-features-glad-i-upgraded/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T20:25:35Z"
+    },
+    {
+     "title": "Apple TV keeps adding fan-favorite movies, here’s what’s new and coming next",
+     "link": "https://9to5mac.com/2026/11/20/apple-tv-keeps-adding-fan-favorite-movies-heres-whats-new-and-coming-next/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T19:52:21Z"
+    },
+    {
+     "title": "AirPods 5 vs AirPods Pro 3: Which should you buy this holiday season?",
+     "link": "https://9to5mac.com/2026/11/20/airpods-5-vs-airpods-pro-3-which-should-you-buy-this-holiday-season/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T19:12:19Z"
+    },
+    {
+     "title": "HomeKit Weekly: Lafaer’s 5-in-1 presence sensor fixes an annoying automation in Apple Home",
+     "link": "https://9to5mac.com/2026/11/20/lafaers-5-in-1-presence-sensor-fixes-the-most-annoying-automation-in-apple-home/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T19:00:00Z"
+    },
+    {
+     "title": "iOS 27 has clever new Messages feature I’ve been using a lot",
+     "link": "https://9to5mac.com/2026/11/20/ios-27-has-clever-new-messages-feature-ive-been-using-a-lot/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T18:50:59Z"
+    },
+    {
+     "title": "Black Friday Week deals: AirPods Max 2 $130 off, AirPods Pro 3, M5 MacBook Air $1,049, iPhone Air up to $799 off, more",
+     "link": "https://9to5mac.com/2026/11/20/black-friday-airpods-max-2-airpods-pro-3-macbook-air/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T16:33:38Z"
+    },
+    {
+     "title": "Signal now blocks screenshots on iPhone to stop Siri AI from seeing chats",
+     "link": "https://9to5mac.com/2026/11/20/signal-now-blocks-screenshots-on-iphone-to-stop-siri-ai-from-seeing-chats/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T16:29:42Z"
+    },
+    {
+     "title": "Car Keys in Apple Wallet coming soon to these popular vehicle brands",
+     "link": "https://9to5mac.com/2026/11/20/car-keys-in-apple-wallet-coming-soon-to-three-popular-vehicle-brands/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T16:11:34Z"
+    },
+    {
+     "title": "Apple Calendar got two feature upgrades it really needed in iOS 27",
+     "link": "https://9to5mac.com/2026/11/20/apple-calendar-got-two-feature-upgrades-it-really-needed-in-ios-27/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T15:52:47Z"
+    },
+    {
+     "title": "Beats Black Friday deals: $100 off new Beats 360, Powerbeats, more up to 53% off",
+     "link": "https://9to5mac.com/2026/11/20/beats-black-friday-deals-100-off-new-beats-360-powerbeats-more-up-to-53-off/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T15:12:00Z"
+    },
+    {
+     "title": "Apple’s ‘just works’ approach is great, but goes a little too far",
+     "link": "https://9to5mac.com/2026/11/20/apples-just-works-approach-is-great-but-goes-a-little-too-far/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T14:45:01Z"
+    },
+    {
+     "title": "Apple TV unveils return of one of its biggest hit series",
+     "link": "https://9to5mac.com/2026/11/20/apple-tv-unveils-return-of-one-of-its-biggest-hit-series/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T14:36:52Z"
+    },
+    {
+     "title": "The water upgrade you’ve been waiting for: Waterdrop Filter’s Black Friday deals",
+     "link": "https://9to5mac.com/2026/11/20/waterdrop-filter-black-friday-deals-2026/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T14:15:00Z"
+    },
+    {
+     "title": "iOS 27.3: New features, release date, more",
+     "link": "https://9to5mac.com/2026/11/20/ios-27-3-new-features-release-date-more/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T13:44:23Z"
+    },
+    {
+     "title": "iPhone Air 2 dummy unit shows off new dual-camera design",
+     "link": "https://9to5mac.com/2026/11/20/iphone-air-2-dual-camera-system/",
+     "source": "9to5Mac",
+     "date": "2026-11-20T12:56:31Z"
+    }
+   ]
+  }
+ ]
+}
