@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-21T16:40:33.541657Z",
+ "updated": "2026-11-21T17:39:01.509371Z",
  "feeds": [
   {
    "id": "top",
    "title": "Top",
    "items": [
     {
-     "title": "FBI reportedly investigating apparent hack of its criminal database",
-     "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T16:35:15Z"
-    },
-    {
-     "title": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+     "title": "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
      "link": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T16:16:29Z"
     },
     {
-     "title": "Rugby union: England run up record win over New Zealand",
+     "title": "British man swims through Strait of Hormuz to highlight environmental impact of war",
+     "link": "https://www.bbc.co.uk/news/articles/c95y1gr27xplo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T16:12:31Z"
+    },
+    {
+     "title": "England run up record win over New Zealand in rugby union's Nations Championship",
      "link": "https://www.bbc.co.uk/sport/rugby-union/articles/cwm2jxd8k15mo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T16:08:59Z"
@@ -102,28 +102,28 @@
      "date": "2026-11-20T23:20:33Z"
     },
     {
-     "title": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
-     "link": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-20T23:08:57Z"
-    },
-    {
      "title": "What is the EU-UK youth experience scheme and when will it start?",
      "link": "https://www.bbc.co.uk/news/articles/c6jeqv9nv5eqo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-20T16:07:55Z"
     },
     {
-     "title": "Rare rhino's first steps captured on video at zoo",
-     "link": "https://www.bbc.co.uk/news/articles/cmly7dvjqg8xo?at_medium=RSS&at_campaign=rss",
+     "title": "I've only sold five copies of GTA 6, says game shop owner",
+     "link": "https://www.bbc.co.uk/news/articles/cmqj5dr01e85o?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
-     "date": "2026-11-19T16:28:41Z"
+     "date": "2026-11-20T11:29:33Z"
     },
     {
      "title": "'Real life' family ghost story inspires 'nightmarish' new TV drama",
      "link": "https://www.bbc.co.uk/news/articles/c6y4j73319dmo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-18T06:10:18Z"
+    },
+    {
+     "title": "Freshers' flu left me deaf in both ears - I'm now helping people like me drive",
+     "link": "https://www.bbc.co.uk/news/articles/cmvg2p5p4jkvo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-17T10:21:07Z"
     }
    ]
   },
@@ -131,6 +131,18 @@
    "id": "msft",
    "title": "Microsoft",
    "items": [
+    {
+     "title": "Microsoft’s final Outlook outage report details testing gaps and safeguards that backfired",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUzVEMnFIMDdJN1RyQl9kaVpBTHBVdnVKZlFaVmV4blRXNWRBNW9FS1dETkF2Q243b3NxR2U0c0FiVXd0Qm9wLXpab1dBQnRVSlNiZzJOMEhYRGlPbklPSWZmNTlLMmZ5RUg4VVRsWG1saW9XZ0FOLWlCaFdHTGdiZ1VDeGtWZGxYaWI4T2xtenpwUzRyU051Y3BCTG1haDd4aHVVQ1Zlc0EyYnNtNVhyQzhvdDdWU3lvbjR2NQ?oc=5",
+     "source": "GeekWire",
+     "date": "2026-11-21T17:31:16Z"
+    },
+    {
+     "title": "Microsoft, Chase, FAA outages: Why did so many systems fail in one week?",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNLXNXTEhENzVtY0dyX1ZiV3JQbmw4REVzcXdQMFY2aUYtVFR1TGhOUnNsLWpib0pBdE9LcnpjYmY5TU9xM1JVTndDZE90aVctdko3WFlFdzg5MUhXR1FGN095Zk9JWXN0TVdNdWVfZ3Y5QTBnS1luZ1JQZUd1YTFCZExORXZTQ1ZFelQ5bTJZTWFvTk9UYWtMV3pwWFRtQjZQbW5CMkVXaUtMX2Y4TTJ5UWdjRWRLbE8y?oc=5",
+     "source": "Click2Houston",
+     "date": "2026-11-21T17:06:23Z"
+    },
     {
      "title": "Microsoft 365 Outage Raises Cloud Reliability Concerns",
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRjBQREZDTE9NQUdSLUMxRzg3b2gxUTNUVVRSZU96SFNwN1R0V0JBbldrdWZUSUx3a2k0b0hDRm9Rc3dXYnVXWEVWRU5RbGVTdjdEWVdEd1JkbzlYOU5JaVYxUnY2RXRXZHdXVVozaVVKM1kta2x6Z1FvS2wwajAzZG1xR0RvdEFtUURKSg?oc=5",
@@ -238,18 +250,6 @@
      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONkpuUU1RQ0gyWU5UdDRBYW5iNUE1ZzE1MUhZNElTRWpLM1oyck5kUDJ1TWdTaG1VbjE3TW9DdFA4cDJ4ak9BX2lRT1RJSF9leDNKeFYzUVFlc2xTZ0RWWk5uazd5SnF0bC1nTm04ZE1RaS12NXVOdThGVFc3Rko1dzhtQlhZQ19NWFRldDRLNkpXZVdyczln?oc=5",
      "source": "BetaNews",
      "date": "2026-11-21T12:00:23Z"
-    },
-    {
-     "title": "Microsoft To Do is closing down and personal users are being abandoned",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02OXAxT043Z2otOFdvWEh3Ul84WUJheWI0TXp3QVY0N1ZEcUdCSjltRWl5dk1VN0JSR0VPUzRvRzZSSER1TGdQelV0Z3p4aFFuc2Jtdk5pVTlabFFjeldlUGNQTjQwOVF0ejZKdWxn?oc=5",
-     "source": "BetaNews",
-     "date": "2026-11-21T11:43:09Z"
-    },
-    {
-     "title": "Microsoft raises rewards for top performers, tightens checks on low performers",
-     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOemdRRmg2X20wYXpYSnJCSDItNmdXSnZRb0FCSUJxU05KcmJZOUxZY05jd0ZwUGtfU0ZNbG1FTWQtZVRiM0lSaUhseVpkV09oamR3emw2dXhCT2NEM0hrcjlvUllhWmd4Z1lVUzVrWmlpbUtRTTFsNUl5MzdqRThiQ1hDQXhrMDFvbmt6YlRNOU1zMHp6VFlsc3FNVXJnaENMbkdBQWJqMnZWRnVWQm1wSk5mVFpDbnd4dUpoT2EyNUh6anFIQVk0eDNhek84TVNPMkVSQ3hLLURaXzRT0gHiAUFVX3lxTFBtczlZOWdWdWlDQUpGWkx0dndjZG1YRm9VWGxvOUZoMHNtVDlnYjN1TlZZdlhaZ1pyMHdINWVSUUI4bUhkVFFuU2xfMjdCOGltbHhJUmJ0MnBrRVNBS2ZQZndHWjRzblFOaUNuZ0NSaXlodkEzLXM1SHoxQy1uQ1N2WWdlSVdrMVlZR0piWEE1eXZFOUtnWXBEUUZ3MlBZWk12djF0S3d6blR6d0F0dGstbTRlb2UzNTJsTlBSWElBNm1CaWU3SDZXYjM3SzNJbWdJYmhfZ0xlRGxtaEVZVGV0ZXc?oc=5",
-     "source": "India Today",
-     "date": "2026-11-21T11:09:16Z"
     }
    ]
   },
@@ -639,6 +639,35 @@
    "change": -13.78,
    "pct": -2.765,
    "currency": "USD",
+   "spark": [
+    496.34,
+    502.21,
+    499.6,
+    497.39,
+    493.88,
+    494.56,
+    494.08,
+    491.69,
+    489.69,
+    489.04,
+    488.955,
+    488.515,
+    487.7929,
+    489.45,
+    488.04,
+    489.26,
+    488.83,
+    490.755,
+    488.645,
+    487.34,
+    488.35,
+    487.23,
+    486.2801,
+    483.84,
+    483.03,
+    485.01,
+    484.52
+   ],
    "time": "2026-11-20T21:00:00Z"
   },
   "SPX": {
@@ -647,6 +676,35 @@
    "change": -265.44,
    "pct": -3.699,
    "currency": "USD",
+   "spark": [
+    7142.3701,
+    7186.52,
+    7154.1802,
+    7120.5698,
+    7096.3701,
+    7091.8398,
+    7099.1299,
+    7071.2998,
+    7042.96,
+    7057.48,
+    7031.6899,
+    7023.4902,
+    7017.0898,
+    7026.1499,
+    7012.1401,
+    7016.3999,
+    7016.0898,
+    7030.6499,
+    6995.0498,
+    6963.7202,
+    6979.2002,
+    6966.75,
+    6950.5601,
+    6942.0098,
+    6915.1401,
+    6918.4502,
+    6910.3901
+   ],
    "time": "2026-11-20T21:35:54Z"
   },
   "NDX": {
@@ -655,6 +713,35 @@
    "change": -1488.118,
    "pct": -5.612,
    "currency": "USD",
+   "spark": [
+    26095.2754,
+    26359.3125,
+    26151.6777,
+    25970.3418,
+    25839.7461,
+    25818.3301,
+    25876.998,
+    25713.5215,
+    25593.0176,
+    25650.5566,
+    25512.5371,
+    25505.9336,
+    25494.1289,
+    25535.2539,
+    25452.627,
+    25495.4961,
+    25471.9062,
+    25555.4961,
+    25377.7734,
+    25265.0,
+    25342.8125,
+    25283.3223,
+    25177.8223,
+    25150.2793,
+    25050.5352,
+    25065.4023,
+    25028.9824
+   ],
    "time": "2026-11-20T22:15:59Z"
   },
   "FTSE": {
@@ -663,6 +750,43 @@
    "change": -106.36,
    "pct": -1.018,
    "currency": "GBP",
+   "spark": [
+    10410.7305,
+    10415.3604,
+    10414.6797,
+    10399.8896,
+    10400.1602,
+    10392.96,
+    10374.6201,
+    10355.7998,
+    10378.3496,
+    10406.2803,
+    10422.3301,
+    10408.6104,
+    10402.4199,
+    10393.4805,
+    10389.8496,
+    10389.1104,
+    10380.8096,
+    10369.9805,
+    10354.3398,
+    10364.6699,
+    10345.8896,
+    10339.7695,
+    10342.8398,
+    10354.7402,
+    10368.7002,
+    10370.46,
+    10389.4404,
+    10415.0703,
+    10405.6104,
+    10373.7598,
+    10362.9502,
+    10365.5898,
+    10373.75,
+    10360.9404,
+    10346.3398
+   ],
    "time": "2026-11-20T16:35:29Z"
   },
   "GBPUSD": {
@@ -671,6 +795,48 @@
    "change": -0.001,
    "pct": -0.076,
    "currency": "USD",
+   "spark": [
+    1.3108,
+    1.311,
+    1.3122,
+    1.3121,
+    1.3118,
+    1.3119,
+    1.3113,
+    1.3113,
+    1.3108,
+    1.3109,
+    1.3116,
+    1.311,
+    1.3118,
+    1.3102,
+    1.3102,
+    1.3099,
+    1.3109,
+    1.3103,
+    1.3102,
+    1.31,
+    1.31,
+    1.3101,
+    1.3097,
+    1.3096,
+    1.3093,
+    1.3095,
+    1.3093,
+    1.3087,
+    1.3093,
+    1.3088,
+    1.3085,
+    1.3086,
+    1.3081,
+    1.3081,
+    1.3078,
+    1.3078,
+    1.3079,
+    1.3086,
+    1.3082,
+    1.3082
+   ],
    "time": "2026-11-21T15:05:48Z"
   }
  }
