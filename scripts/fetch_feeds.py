@@ -149,6 +149,26 @@ def fetch_quote(symbol):
     }
 
 
+LOCATION = {"name": "Rothwell", "lat": 53.75, "lon": -1.48}
+
+
+def fetch_weather():
+    url = ("https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s"
+           "&current=temperature_2m,weather_code,apparent_temperature,wind_speed_10m"
+           "&hourly=temperature_2m,weather_code,precipitation_probability"
+           "&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max"
+           "&timezone=Europe%%2FLondon&forecast_days=7&wind_speed_unit=mph" % (LOCATION["lat"], LOCATION["lon"]))
+    d = json.loads(fetch(url))
+    # keep the next 48 hours only to stay small
+    now = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%dT%H:00")
+    h = d["hourly"]
+    start = next((i for i, t in enumerate(h["time"]) if t >= now[:13] + ":00"), 0)
+    for k in list(h):
+        h[k] = h[k][max(0, start - 1):start + 47]
+    return {"place": LOCATION["name"], "fetched": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "current": d["current"], "hourly": h, "daily": d["daily"]}
+
+
 def main(out_path, previous=None):
     out = {"updated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"), "feeds": [], "quotes": {}}
     prev_quotes = (previous or {}).get("quotes", {})
@@ -159,6 +179,12 @@ def main(out_path, previous=None):
             print(f"warn: quote {symbol}: {e}", file=sys.stderr)
             if key in prev_quotes:
                 out["quotes"][key] = prev_quotes[key]
+    try:
+        out["weather"] = fetch_weather()
+    except Exception as e:
+        print(f"warn: weather: {e}", file=sys.stderr)
+        if (previous or {}).get("weather"):
+            out["weather"] = previous["weather"]
     prev = {f["id"]: f for f in (previous or {}).get("feeds", [])}
     for feed in FEEDS:
         items, ok = [], False
