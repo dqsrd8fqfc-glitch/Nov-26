@@ -35,10 +35,10 @@ FEEDS = [
     ]},
     {"id": "ai", "title": "AI Tools", "sources": [
         ("The Verge", "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"),
-        ("Google News", "https://news.google.com/rss/search?q=%22AI+tools%22+OR+%22AI+assistant%22+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
+        ("Google News", "https://news.google.com/rss/search?q=ChatGPT+OR+Claude+OR+Gemini+OR+Copilot+OR+%22AI+tool%22+when:2d&hl=en-GB&gl=GB&ceid=GB:en"),
     ]},
     {"id": "money", "title": "Money", "sources": [
-        ("Google News", "https://news.google.com/rss/search?q=%22Bank+of+England%22+OR+inflation+OR+%22energy+price+cap%22+OR+%22mortgage+rates%22+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
+        ("Google News", "https://news.google.com/rss/search?q=%22Bank+of+England%22+OR+%22UK+inflation%22+OR+%22energy+price+cap%22+OR+%22UK+mortgage+rates%22+OR+Ofgem+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
     ]},
     {"id": "releases", "title": "Releases", "sources": [
         ("Apple Developer", "https://developer.apple.com/news/releases/rss/releases.rss"),

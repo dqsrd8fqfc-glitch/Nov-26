@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-21",
+  "generated": "2026-11-21T18:05:00Z",
+  "today3": [
+    {
+      "title": "Compare fixed energy deals before Wednesday",
+      "why": "Ofgem announces the January–March cap on 25 November, and forecasts point to a rise. Fixed deals are often repriced around the announcement.",
+      "agent": "money"
+    },
+    {
+      "title": "Add error handling to one Power Automate flow",
+      "why": "Ten minutes with 'Configure run after' means a failed step alerts you instead of failing silently. Steps are in M365 Coach.",
+      "agent": "m365"
+    },
+    {
+      "title": "Try the role–context–format prompt pattern",
+      "why": "Today's lesson: three ingredients that make AI tools give far more useful answers on the first try.",
+      "agent": "lesson"
+    }
+  ],
+  "lesson": {
+    "topic": "AI",
+    "title": "Write prompts like a brief, not a search",
+    "body": [
+      "AI tools respond to the brief you give them. A search-style prompt ('marketing email ideas') gets a generic answer because the tool has to guess who it's for, what good looks like and how you want it laid out.",
+      "Give it three things. Role: who it should act as ('You're a B2B email marketer'). Context: the audience, goal and constraints ('for SharePoint admins, launching a new template, under 120 words, UK English'). Format: exactly what to return ('three subject lines, then one email body, then a one-line CTA').",
+      "Then iterate in the same chat rather than starting again: 'make option 2 punchier', 'cut the jargon'. The tool keeps the context, so each round gets closer. If you find yourself repeating instructions, save the brief as a reusable template."
+    ],
+    "takeaway": "Role + context + format, then refine in the same conversation.",
+    "link": null
+  },
+  "m365": {
+    "title": "Stop flows failing silently with 'Configure run after'",
+    "what": "By default a Power Automate flow just stops when a step fails. 'Configure run after' lets a step run only when the previous one has failed or timed out, so you can catch problems and get told about them.",
+    "try": [
+      "Open a flow you rely on and add a new action after the step most likely to fail, e.g. 'Send an email (V2)' or a Teams 'Post message'.",
+      "On the new action, open the … menu and choose 'Configure run after'.",
+      "Untick 'is successful' and tick 'has failed' and 'has timed out', then save.",
+      "Put the flow name and a link to the run history in the message so you can jump straight to the failure."
+    ],
+    "link": {
+      "title": "What's new in Power Platform: October/November 2026",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/"
+    }
+  },
+  "ai": {
+    "summary": "A quieter day for AI tool launches. The bigger thread is the business side: The Verge's podcast asks whether Anthropic can keep its safety-first approach as AI labs face investor pressure. Power Platform is also pushing further into AI agents that build and maintain apps.",
+    "items": [
+      {
+        "title": "Can Anthropic afford to put safety first?",
+        "why": "Useful context on how the big AI labs are funded and why that shapes the tools you use.",
+        "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+      },
+      {
+        "title": "What's new in Power Platform: October/November 2026",
+        "why": "Microsoft's monthly round-up, increasingly focused on AI agents inside Power Apps, Pages and Automate.",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/"
+      }
+    ]
+  },
+  "explainer": {
+    "story": "The Bank of England raised interest rates to 4%",
+    "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026",
+    "bullets": [
+      "On 5 November the Bank raised Bank Rate from 3.75% to 4%, its first increase since August 2023. Eight of the nine committee members voted for the rise.",
+      "The reason is inflation. Rising energy and fuel prices pushed CPI up to 3.6% in October, and the Bank's forecasts show inflation climbing towards about 5% by the middle of next year.",
+      "Higher rates make borrowing more expensive to cool spending. Tracker and variable mortgages move quickly; fixed deals change when they're renewed. The next decision is on 17 December."
+    ],
+    "why": "It affects mortgage renewals, savings rates and the wider economy heading into 2027."
+  },
+  "term": {
+    "term": "Basis point",
+    "meaning": "One hundredth of a percentage point (0.01%). Markets use it to avoid confusion: '25 basis points' is clearer than 'a quarter of a percent'.",
+    "example": "The Bank of England's rise from 3.75% to 4% was 25 basis points."
+  },
+  "money": {
+    "summary": "Rates went up this month and inflation ticked higher, with the next energy price cap announcement due on Wednesday 25 November.",
+    "figures": [
+      {
+        "label": "Bank Rate",
+        "value": "4.00%",
+        "asOf": "5 Nov 2026",
+        "source": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026"
+      },
+      {
+        "label": "CPI inflation",
+        "value": "3.6%",
+        "asOf": "October 2026 (published 18 Nov)",
+        "source": "ONS",
+        "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukoctober2026"
+      },
+      {
+        "label": "Energy price cap",
+        "value": "£1,723 / yr",
+        "asOf": "Oct–Dec 2026, typical dual fuel, Direct Debit",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/publications/changes-energy-price-cap-between-1-october-and-31-december-2026"
+      },
+      {
+        "label": "Next rate decision",
+        "value": "17 Dec",
+        "asOf": "Bank of England MPC",
+        "source": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026"
+      }
+    ],
+    "tip": "Ofgem confirms the January cap on 25 November. Suppliers' forecasts suggest a rise, so it can be worth comparing fixed tariffs now — check exit fees and whether the fix is actually below the expected cap."
+  },
+  "releases": {
+    "summary": "Apple pushed a second iOS 27.3 beta and a HomeView update this week. No new public iOS release yet, so there's nothing you need to install today.",
+    "items": [
+      {
+        "name": "iOS 27.3",
+        "version": "beta 2 v2 (24C5049f)",
+        "note": "Developer beta. Wait for the public release unless you test apps.",
+        "url": "https://developer.apple.com/news/releases/?id=11192026a"
+      },
+      {
+        "name": "HomeView Software",
+        "version": "27.2.1 (24V553)",
+        "note": "Bug-fix update.",
+        "url": "https://developer.apple.com/news/releases/?id=11182026a"
+      }
+    ]
+  },
+  "review": null,
+  "trends": {
+    "note": "Outages are this week's big tech story: Microsoft, Chase bank and the US aviation authority (FAA) all had failures, and reports are now asking why so many hit at once."
+  }
+}
