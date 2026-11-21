@@ -1,10 +1,34 @@
 {
- "updated": "2026-11-21T14:04:40.234645Z",
+ "updated": "2026-11-21T16:40:33.541657Z",
  "feeds": [
   {
    "id": "top",
    "title": "Top",
    "items": [
+    {
+     "title": "FBI reportedly investigating apparent hack of its criminal database",
+     "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T16:35:15Z"
+    },
+    {
+     "title": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+     "link": "https://www.bbc.co.uk/news/videos/cqevrddp91z8o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T16:16:29Z"
+    },
+    {
+     "title": "Rugby union: England run up record win over New Zealand",
+     "link": "https://www.bbc.co.uk/sport/rugby-union/articles/cwm2jxd8k15mo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T16:08:59Z"
+    },
+    {
+     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+     "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-21T14:54:24Z"
+    },
     {
      "title": "Scouts say they face £1m tourist tax cost for overnight trips",
      "link": "https://www.bbc.co.uk/news/articles/cxdd1e9yvlzjo?at_medium=RSS&at_campaign=rss",
@@ -16,12 +40,6 @@
      "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T13:17:38Z"
-    },
-    {
-     "title": "Australia's Chaudhary downs England in tetchy first T20",
-     "link": "https://www.bbc.co.uk/sport/cricket/articles/cme39qlevnrqo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T12:24:33Z"
     },
     {
      "title": "'We're not meant to carry life's challenges alone', Catherine says in first clip",
@@ -36,28 +54,10 @@
      "date": "2026-11-21T12:00:03Z"
     },
     {
-     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-     "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T09:52:11Z"
-    },
-    {
      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
      "link": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-21T09:40:55Z"
-    },
-    {
-     "title": "FBI reportedly investigating apparent hack of its criminal database",
-     "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T09:34:20Z"
-    },
-    {
-     "title": "'Somebody has to stand up to that guy' - Verstappen-Russell rivalry blows up again",
-     "link": "https://www.bbc.co.uk/sport/formula1/articles/c34gnrvl9zvro?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-21T08:13:58Z"
     },
     {
      "title": "Staff gagging clauses lifted ahead of probe into culture at data watchdog",
@@ -108,12 +108,6 @@
      "date": "2026-11-20T23:08:57Z"
     },
     {
-     "title": "Miami or Vice City? Tour the real-world inspiration for GTA 6",
-     "link": "https://www.bbc.co.uk/news/videos/c8wy5d43zp9qo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-20T18:48:48Z"
-    },
-    {
      "title": "What is the EU-UK youth experience scheme and when will it start?",
      "link": "https://www.bbc.co.uk/news/articles/c6jeqv9nv5eqo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
@@ -124,6 +118,12 @@
      "link": "https://www.bbc.co.uk/news/articles/cmly7dvjqg8xo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-19T16:28:41Z"
+    },
+    {
+     "title": "'Real life' family ghost story inspires 'nightmarish' new TV drama",
+     "link": "https://www.bbc.co.uk/news/articles/c6y4j73319dmo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-18T06:10:18Z"
     }
    ]
   },
@@ -131,6 +131,36 @@
    "id": "msft",
    "title": "Microsoft",
    "items": [
+    {
+     "title": "Microsoft 365 Outage Raises Cloud Reliability Concerns",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRjBQREZDTE9NQUdSLUMxRzg3b2gxUTNUVVRSZU96SFNwN1R0V0JBbldrdWZUSUx3a2k0b0hDRm9Rc3dXYnVXWEVWRU5RbGVTdjdEWVdEd1JkbzlYOU5JaVYxUnY2RXRXZHdXVVozaVVKM1kta2x6Z1FvS2wwajAzZG1xR0RvdEFtUURKSg?oc=5",
+     "source": "varindia",
+     "date": "2026-11-21T16:38:01Z"
+    },
+    {
+     "title": "Microsoft To Do shuts in 2027 with no replacement for personal users",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3RvQVBuNjI3SURVZlhCcUxsa2ktWFN1bGhSOW1JdlJjdC03T2t5UEhJcy1ZYmRyd3R2cEU4SzNuWGZnbHN3T3ZLbUx5SFloZnNUdXN1akV2OUE5Yy1yaVp5UGNobUJoQ2FJYmhscFdGU3p4NmFfWGpYckNNcEVqV1BTbWNxRERmRlU1ZE1oQkNZRjQ?oc=5",
+     "source": "The Next Web",
+     "date": "2026-11-21T16:32:13Z"
+    },
+    {
+     "title": "Microsoft Was The Only Big AI Buyer Paying Down Debt. How Much More Can It Spend?",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZjYtaGk1clZsZE55Qmo5eE5GNzdxemVuTGtWVnNKY0RUSHhLYVg4T0dJbER2WUU2cnROc1F4X0FhWFdNZVh4cVNhcS1XWThRSnBMcEowandGcTg4VkFlblB4NlR0eUNVYlZsSG5yc3BLcXloTW5WNWR6QlpUN21MVGZxR0tWWmN3T3VMQVJKejFTeGFLRlFTWGF3al9iQnkydHg5T0x1M0p0T1NnVW1VUjhxWUhNU3JBcjl4YzdiVF9ZX2dBdXByVHJDT3AzOE1md196TzBycw?oc=5",
+     "source": "Trefis",
+     "date": "2026-11-21T14:30:00Z"
+    },
+    {
+     "title": "Today in Apple history: Apple signs damaging deal with Microsoft",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbVVRYWpDelJ6cnNvb3hWZ202bzF1SzNvZjdOY2VLMjVXNVZDLTM3anVVVkoxN2VUdVNiOHJtc1o0RU9WUHVzTlA0YzVlQ2xxVTJzU0lBUGhpVENXNU1FWE5ZaTlzLVZINlA1cWhnNTBvc0tfZG5TeWVPdy1VRHVOd1FjSDhuM3pxSVc0Wl9tYw?oc=5",
+     "source": "Yahoo Tech",
+     "date": "2026-11-21T14:25:34Z"
+    },
+    {
+     "title": "Microsoft’s CFO admits she joined the tech giant without even knowing her salary—and then missed her first day of work",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUZyeEEwS2VjTlFuaURmS1MxeHc1TnExMlA5a2RhZGpyeUw4M3VTazBodm1UMXdFUGE4YmxpZWxXZjgwem1xWjNkRzlMUkhrMWlDWnVzNHVpQlJpV3BPYTA2NlQzaVRhVUNWN3hSV3BObUhmQzRGQVRvRjB6VDlHTWlHSHVNOHJmQnRSUXA5YnF0N09mOHdicndZY3FMbEpkdHVYU2ZhcVkzN0pv?oc=5",
+     "source": "Fortune",
+     "date": "2026-11-21T14:21:00Z"
+    },
     {
      "title": "Microsoft fallout, Nvidia security questions and other must-read stories from PCWorld sister sites",
      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNEg4UUlLM2NmeGZBRC10WkdDWVZ1aDVpLVd6UEdfNjh2RXkwV1hYMlVWdlM4eGZScmdBTVFGZldQM3FLUXJoZnZiV0RIcHVDeWdOOXpBbWRIWkdNVlVCR2lHeUZCOFVBbUNSN0dYMjV3QWpGS2txUUFOc2kwcGJUdzB2aTE2YXR1MUgtdm5zdEdtS2xPN0h5TGc5cnEyUVk2ZmR2c0dXUFNfT0JjWDNhdW5WamR4c3ZIM0ZNZklEUUQ2aDJ6ZUR3QTI5Vk9BVmJScUljdmZnSFd1QQ?oc=5",
@@ -141,13 +171,31 @@
      "title": "The AI race to fix security flaws could be making tech outages more common",
      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNEV1UkZkWUk1UlpPVENabkhza2YzcVJEMmFTNk50anhtdnd3S21EWlJxa1EzYUw4R2NrOUtxdGhHUXF0RHo1S3VSazQ5a2Uwb0JxemF4MV9IdVd2WmVnd2g0ZFBBck5yQ2lNeVFtV2tROHBsU1U5R3hoS3htekhtWmM1LTdlN0tPVVRrYzYtUFJOMHVKRGtWS29BNXIzVzhuWlBHRk1PZndneEVIX29xSzIxTkZHV0lOTmc?oc=5",
      "source": "NBC News",
-     "date": "2026-11-21T14:00:00Z"
+     "date": "2026-11-21T14:00:41Z"
+    },
+    {
+     "title": "Microsoft is making Copilot more useful by helping you manage files and PC problems",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ0ZvRkNtbWxUaWliY3F1cnB6bzhFRHRvLU5zbVB3LVBUTG5IdEtKY3R1Z0lTV0JQanpZN3Q1RHJrWGlMQVVNTUpUdXREWGtGaVNULThYdHRVOFVYazJxeUFBaTFOS0JMM1Z3Z0FqeTJNNVBlMTA1WTBENEo3dUFFXzlnU3NRblJsd09PV1JqNkZpMmZheWJNTnlB?oc=5",
+     "source": "Yahoo Tech",
+     "date": "2026-11-21T13:30:06Z"
+    },
+    {
+     "title": "Microsoft could soon let your use your Android phone as a second display for Windows",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVVdHWWJtYVV1NS1hU3NHY2RqZGJLOVVNSnUwUmxvX0QtZklBOXAzMTdQczFPcW9RZC1YeExXNDV2RDBrTVVNbkFfUy11elM2Qnh5UkhKbXhncEg0alUtSXhVZXZUU19ZRFRQajNMRlBhM1pqYmEzWjdSSkMzV0FvWUJn?oc=5",
+     "source": "BetaNews",
+     "date": "2026-11-21T13:10:17Z"
+    },
+    {
+     "title": "Microsoft outage was largest of 2026, report says",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLWUhCMk96bVJoQUhfcVdmc0k0UTJtTENtM2hiUDM3djdEbnVtRmlyUmtRQkotNnFxQ0xneFBfX204TmFyLUttZ09iU3ZXSC1UMG5JRDd2eE5yVnlxOXF3Y0ZnVVh5Y3JjRWFYU1Zid0xqOUE?oc=5",
+     "source": "Mashable",
+     "date": "2026-11-21T13:06:29Z"
     },
     {
      "title": "The site everyone checks when the internet breaks just had its busiest week",
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdk9qOENZcWpiYzlaRVR3QUp6RG9wdzNEY2RUdnVtbjRycXRZenRiN1RoTTE1TEllMmpyWUhFdURESDNXR1JpdnZ6UzAwaWFxeVZEN2hKdnJxZWJ5Rjd0aEJhbVo3VENfOG94TDlZbzNVUWVzc0w4akhpeXBleTB4dE1GYUExSU1Md0NFdTlDTFNZVFRUeldYQ0N6STRpTnQ5WVRkTi1XSmVKdl9mMEUyVw?oc=5",
      "source": "NBC News",
-     "date": "2026-11-21T13:00:00Z"
+     "date": "2026-11-21T13:00:40Z"
     },
     {
      "title": "Hackers Using Email Bombing Before Posing as IT Support on Microsoft Teams",
@@ -174,10 +222,10 @@
      "date": "2026-11-21T12:31:02Z"
     },
     {
-     "title": "Торент — бесплатно скачайте и установите в Windows",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZGgtRlcwVGdiRmE0eE5GOU16WmpWb3JDSnhOandGaXZ0d1ZwTDZGazhUbl9IU3cxR0xwOWVjM01VeHBhYWFzcExsUUFrODQzNndGT0Q0TkZTWG9TRmFFSHZoamdsUlpTbDZfRW13WGo3NXluQ0l6TGE5U3pWTDRGNXdBQVJ3cE5ISHI0?oc=5",
-     "source": "Microsoft",
-     "date": "2026-11-21T12:10:32Z"
+     "title": "Microsoft Breakup Failed, Google Cases Follow: 23-Page Plan",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeDNDT00zTkEtMzg4NkFvZlpCdzNUMWxDdjBmYXItWjJzRlhsM1RTdnA1SzVzQS1xS3JYMmh6M294SVdzbnVyZjg0ZnBLa29xVmJwVDkyaW13a0tHa3JXY2NjYUpnWGlpbnVkcFgzbVU3MHc4VWlXeVZoRnhHTEJ1YWdMeFZDUk5UTGluS1hjOWZwVmM?oc=5",
+     "source": "shattered.io",
+     "date": "2026-11-21T12:09:22Z"
     },
     {
      "title": "From Microsoft to Anthropic: This Week's Top Five Stories",
@@ -202,54 +250,6 @@
      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOemdRRmg2X20wYXpYSnJCSDItNmdXSnZRb0FCSUJxU05KcmJZOUxZY05jd0ZwUGtfU0ZNbG1FTWQtZVRiM0lSaUhseVpkV09oamR3emw2dXhCT2NEM0hrcjlvUllhWmd4Z1lVUzVrWmlpbUtRTTFsNUl5MzdqRThiQ1hDQXhrMDFvbmt6YlRNOU1zMHp6VFlsc3FNVXJnaENMbkdBQWJqMnZWRnVWQm1wSk5mVFpDbnd4dUpoT2EyNUh6anFIQVk0eDNhek84TVNPMkVSQ3hLLURaXzRT0gHiAUFVX3lxTFBtczlZOWdWdWlDQUpGWkx0dndjZG1YRm9VWGxvOUZoMHNtVDlnYjN1TlZZdlhaZ1pyMHdINWVSUUI4bUhkVFFuU2xfMjdCOGltbHhJUmJ0MnBrRVNBS2ZQZndHWjRzblFOaUNuZ0NSaXlodkEzLXM1SHoxQy1uQ1N2WWdlSVdrMVlZR0piWEE1eXZFOUtnWXBEUUZ3MlBZWk12djF0S3d6blR6d0F0dGstbTRlb2UzNTJsTlBSWElBNm1CaWU3SDZXYjM3SzNJbWdJYmhfZ0xlRGxtaEVZVGV0ZXc?oc=5",
      "source": "India Today",
      "date": "2026-11-21T11:09:16Z"
-    },
-    {
-     "title": "Microsoft Surface Laptop Ultra with the Nvidia RTX Spark chip isn't the MacBook Pro killer I hoped for",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd0ZpSXZRMmFKaHVkc1RCVk1fQXhnaHE0SW41cTY3M0g0YnF4ek9jaHdlUzBvNW1GenpiczdhQndfaUxtc1VCa1J4SjFYcklZbTVjNnBlb05hWlM4bTVXQUxCTGVvQUQxd3NvN19tYmdJanRXRk9jc1BLaVYtSWxXM3pNRE9HNVZJSEE?oc=5",
-     "source": "TechRadar",
-     "date": "2026-11-21T11:00:00Z"
-    },
-    {
-     "title": "Get Microsoft Office 2024 Home for $99.97 ahead of Black Friday",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1OamkzTmRLRElBUURxRHJ3ZEU1dUJweGxUS0w5UENLSXlMVmVXLTl2LWs3cGxvbEZDOXJYOEIzQWJjVGNva2p6SkkyRGMwaEdLNWtSMmNaSktKZWRtTzFYa1VQVkhFY3JYSlJtRVg4dUtaQzZTTmVMRmdheWwydw?oc=5",
-     "source": "Mashable",
-     "date": "2026-11-21T10:19:22Z"
-    },
-    {
-     "title": "Man jailed for drowning ex-Microsoft executive in river at members’ club | ITV News",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTDZocFBwWFRNZnl6eFkwOGRVc0tldUlyX1lzTnNJa0hPckpOcUlYUVVWU1NwOGRRdTdoZHpHSURyMHVrUnNIX2FpYlpuX29Va1pTYTYtLXdxRXQ0QTVGR2IwRlZCVDBxcE5JRnR0U1ktSDRCd2NYSkUxTjVHeWJ6elBVbnFkNUxfNndyNWRJTlZyQTdJM1QwUnhpYzQxaEpCZERJazJwQXE5SG1uVWRIRWVXT1k0TFE?oc=5",
-     "source": "ITVX",
-     "date": "2026-11-21T09:56:13Z"
-    },
-    {
-     "title": "Microsoft elevates Bonnie McCracken to VP, Strategy & CTO Communications",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc3Y4WWZnMjFaeURDVVR3S0V4OE4tNW1SX1ItdHdJSHJ0d21hNEZjNmMxcTdiMjhKa21BTUhTWjFFTVhfV3JGUzFfbVBjbklndUlvMWNTRldzeldxQ1N3bjFIZzhSX2hwaC1EUlE5ZkFYQlpJd1hBRjR4Zl9aVWFLbi10bmFRS1FTZjZ3TVFCM2liYzBJUWhfdk9Rc2VLd2U5aGlMc0tzOEEzU0hBU09Ya2FyWnhnUTB3UGI0MS1CYUdzQWxLUEhVcjZTSjZxQQ?oc=5",
-     "source": "Exchange4Media",
-     "date": "2026-11-21T09:53:31Z"
-    },
-    {
-     "title": "As Microsoft shutters To Do, Todoist steps forward with a new task import tool",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdnQ5dEdrVWI4YXFZYkM2dkQxRl9yYWVUWmtQcndadnROUXQ4cTgtSE16Tzc5bklkMVFoMG83YV9GSWtVcVZRQTFmdURqdXB4V3otRzBmUnpNaktTakFHUTJvbWM2QnkwMzJuX0FpTThCc1JoVkVwSTBlelJzR3ptdnZRVmVjSmJURVpMMWNyd0VqYzJfZ2phYXBlWDJZcEpnbUEyMFplYy1TMk5TZnc?oc=5",
-     "source": "XDA",
-     "date": "2026-11-21T08:22:19Z"
-    },
-    {
-     "title": "Microsoft is a macro problem, Milburn Review + why Lula won",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9aYWNDWWdOcEtlQ1p2dzluUm1MUk1tNEtmMGJzV19ESUljSVF3d2kxTFNEWU5meERmcTZmRGdBVkhxajNJU2QwaVF0QzBkVVNnSHpmbFR2anlyS3FzbS1N?oc=5",
-     "source": "openDemocracy",
-     "date": "2026-11-21T07:00:24Z"
-    },
-    {
-     "title": "Trump Has A Message for Big Tech Firms Like Amazon, Google and Microsoft Building Data Centers Abroad: ‘We’re Going to Put A Tremendous Tax On Them’",
-     "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPVkE2bWlBa21YNUJaYjdOcFpCUGpGZVBxTXFacWRwQ0VnQTZRNHRSTGcxOFVEaEdjTS10YXI2ZEhSQ2xWNXpLMlZUam9GZ3ZiT2VyNFNkZkd4R3FTMTBXWkx6cnBXZXpvREhaQzg2RTZjSTJEUVBhZDVfU2VLbW00dGhmZHc3YXhyQTZLdG8zQTFSRHpNVUNyc2NrN2R3TWd3V3RQMUxmLTZ3bFVtREZQZFo2amJqazJzVW9SNDRqdEs5LVpreHEwcUlZTjdmYVczTkNod0llYk0xXzZxXzRfYm1lZXNkZFRVSzFEVlhEcWVkYVFzdnZUTUxjb1hncWhZQnFQaTNoRnkwb2pxNHBOejBHVFNnZjd2akJnbnVjZ1hZaE5ieTNfLWRlaw?oc=5",
-     "source": "TradingView",
-     "date": "2026-11-21T05:35:00Z"
-    },
-    {
-     "title": "Did Microsoft AI Partnership Just Shift Danaher's (DHR) Investment Narrative?",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOX0tWZGtzMkJSYjRucW9iMDR6Z1VIeTZPalBIdkdOb1dMTEphdng4OHJTOEJlcVYzTDFOM0ZOSklURi1CRnFBU3IxWUVMblpVTjRiQlFaUXU1OXZzU2JVQUNpX1N3eFlaa1dlYm1QZlZoYmR0WDZxWU1pcmNnN05jaXJxZVd1ZXFrZFpRR0dmNnkxVHUzSTBXRVFIRFlRdw?oc=5",
-     "source": "Yahoo Finance",
-     "date": "2026-11-21T05:15:00Z"
     }
    ]
   },
@@ -384,6 +384,30 @@
    "title": "Tech",
    "items": [
     {
+     "title": "John Roberts, the voice of Linda Belcher, is just happy to finish a thing",
+     "link": "https://www.theverge.com/report/1038463/john-roberts-linda-belcher-bobs-burgers-interview",
+     "source": "The Verge",
+     "date": "2026-11-21T16:00:00Z"
+    },
+    {
+     "title": "Amazon’s first digital photo frame is up to 50 percent off for Black Friday",
+     "link": "https://www.theverge.com/gadgets/1038762/amazon-alexa-photo-frame-black-friday-2026-deal-sale",
+     "source": "The Verge",
+     "date": "2026-11-21T16:00:00Z"
+    },
+    {
+     "title": "Can Anthropic afford to put safety first?",
+     "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+     "source": "The Verge",
+     "date": "2026-11-21T15:00:00Z"
+    },
+    {
+     "title": "Our go-to earbuds for taking calls have fallen to their lowest price to date",
+     "link": "https://www.theverge.com/gadgets/1039160/anker-soundcore-liberty-5-pro-black-friday-2026-deal-sale",
+     "source": "The Verge",
+     "date": "2026-11-21T14:55:28Z"
+    },
+    {
      "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
      "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
      "source": "The Verge",
@@ -456,34 +480,10 @@
      "date": "2026-11-20T19:35:06Z"
     },
     {
-     "title": "Eufy’s Omni C28 is 53 percent off ahead of Black Friday",
-     "link": "https://www.theverge.com/gadgets/1037933/eufy-omni-c28-robot-vacuum-deal-sale",
-     "source": "The Verge",
-     "date": "2026-11-20T19:15:00Z"
-    },
-    {
      "title": "White House removes cyber-security chief after series of tech outages",
      "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-20T19:03:56Z"
-    },
-    {
-     "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-     "link": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-     "source": "The Verge",
-     "date": "2026-11-20T18:50:19Z"
-    },
-    {
-     "title": "Multiplying your Switch 2’s storage costs less than usual right now",
-     "link": "https://www.theverge.com/gadgets/1037749/microsd-express-card-nintendo-switch-2-black-friday-2026-deal-sale",
-     "source": "The Verge",
-     "date": "2026-11-20T18:15:00Z"
-    },
-    {
-     "title": "Google says it’s going to shut off Google Assistant on smart speakers next year",
-     "link": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
-     "source": "The Verge",
-     "date": "2026-11-20T18:00:00Z"
     },
     {
      "title": "Should AI be judging our credit worthiness?",
@@ -509,6 +509,12 @@
    "id": "apple",
    "title": "iPhone",
    "items": [
+    {
+     "title": "Apple @ Work: Workbrew 2.0 is an inventory for the development software your employees installed without asking",
+     "link": "https://9to5mac.com/2026/11/21/apple-work/",
+     "source": "9to5Mac",
+     "date": "2026-11-21T14:00:00Z"
+    },
     {
      "title": "Weekend Black Friday Apple deals: MacBooks from $649, Series 12, AirPods $130 off, new iPad mini, more",
      "link": "https://9to5mac.com/2026/11/21/official-black-friday-apple-deals-now-live/",
@@ -622,14 +628,50 @@
      "link": "https://9to5mac.com/2026/11/20/ios-27-3-new-features-release-date-more/",
      "source": "9to5Mac",
      "date": "2026-11-20T13:44:23Z"
-    },
-    {
-     "title": "iPhone Air 2 dummy unit shows off new dual-camera design",
-     "link": "https://9to5mac.com/2026/11/20/iphone-air-2-dual-camera-system/",
-     "source": "9to5Mac",
-     "date": "2026-11-20T12:56:31Z"
     }
    ]
   }
- ]
+ ],
+ "quotes": {
+  "MSFT": {
+   "name": "Microsoft",
+   "price": 484.52,
+   "change": -13.78,
+   "pct": -2.765,
+   "currency": "USD",
+   "time": "2026-11-20T21:00:00Z"
+  },
+  "SPX": {
+   "name": "S&P 500",
+   "price": 6910.39,
+   "change": -265.44,
+   "pct": -3.699,
+   "currency": "USD",
+   "time": "2026-11-20T21:35:54Z"
+  },
+  "NDX": {
+   "name": "Nasdaq 100",
+   "price": 25028.982,
+   "change": -1488.118,
+   "pct": -5.612,
+   "currency": "USD",
+   "time": "2026-11-20T22:15:59Z"
+  },
+  "FTSE": {
+   "name": "FTSE 100",
+   "price": 10346.34,
+   "change": -106.36,
+   "pct": -1.018,
+   "currency": "GBP",
+   "time": "2026-11-20T16:35:29Z"
+  },
+  "GBPUSD": {
+   "name": "GBP/USD",
+   "price": 1.3082,
+   "change": -0.001,
+   "pct": -0.076,
+   "currency": "USD",
+   "time": "2026-11-21T15:05:48Z"
+  }
+ }
 }
