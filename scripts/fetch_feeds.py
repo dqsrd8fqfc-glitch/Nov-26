@@ -89,8 +89,42 @@ def fetch(url):
         return r.read()
 
 
+QUOTES = [
+    ("MSFT", "Microsoft", "MSFT"),
+    ("SPX", "S&P 500", "^GSPC"),
+    ("NDX", "Nasdaq 100", "^NDX"),
+    ("FTSE", "FTSE 100", "^FTSE"),
+    ("GBPUSD", "GBP/USD", "GBPUSD=X"),
+]
+
+
+def fetch_quote(symbol):
+    url = ("https://query1.finance.yahoo.com/v8/finance/chart/"
+           + urllib.request.quote(symbol) + "?range=1d&interval=1d")
+    meta = json.loads(fetch(url))["chart"]["result"][0]["meta"]
+    price = meta["regularMarketPrice"]
+    prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+    change = price - prev if prev else None
+    t = meta.get("regularMarketTime")
+    return {
+        "price": round(price, 4),
+        "change": round(change, 4) if change is not None else None,
+        "pct": round(change / prev * 100, 3) if change is not None and prev else None,
+        "currency": meta.get("currency"),
+        "time": datetime.fromtimestamp(t, timezone.utc).isoformat().replace("+00:00", "Z") if t else None,
+    }
+
+
 def main(out_path, previous=None):
-    out = {"updated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"), "feeds": []}
+    out = {"updated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"), "feeds": [], "quotes": {}}
+    prev_quotes = (previous or {}).get("quotes", {})
+    for key, name, symbol in QUOTES:
+        try:
+            out["quotes"][key] = {"name": name, **fetch_quote(symbol)}
+        except Exception as e:
+            print(f"warn: quote {symbol}: {e}", file=sys.stderr)
+            if key in prev_quotes:
+                out["quotes"][key] = prev_quotes[key]
     prev = {f["id"]: f for f in (previous or {}).get("feeds", [])}
     for feed in FEEDS:
         items, ok = [], False
