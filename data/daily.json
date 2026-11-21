@@ -13,9 +13,9 @@
       "agent": "m365"
     },
     {
-      "title": "Try the role–context–format prompt pattern",
-      "why": "Today's lesson: three ingredients that make AI tools give far more useful answers on the first try.",
-      "agent": "lesson"
+      "title": "Pencil in Rothwell's switch-on next Saturday",
+      "why": "Carnival, craft fair and fireworks on Commercial Street, with the lights going on at 5pm on 28 November.",
+      "agent": "weather"
     }
   ],
   "lesson": {
@@ -127,5 +127,39 @@
   "review": null,
   "trends": {
     "note": "Outages are this week's big tech story: Microsoft, Chase bank and the US aviation authority (FAA) all had failures, and reports are now asking why so many hit at once."
+  },
+  "local": {
+    "summary": "Christmas is getting going around Rothwell and Leeds: the city centre markets are open, and Rothwell's own carnival and lights switch-on is next Saturday.",
+    "events": [
+      {
+        "title": "Rothwell Christmas Carnival and Craft Fair",
+        "when": "Sat 28 Nov",
+        "where": "Blackburn Hall and Commercial Street, Rothwell",
+        "note": "Fayre and Santa's grotto from 10am, street stalls from 11am, fireworks and lights switch-on at 5pm.",
+        "url": "https://northleeds.mumbler.co.uk/rothwell-christmas-carnival-and-craft-fair/"
+      },
+      {
+        "title": "Tingley Garden Centre Christmas Light Trail",
+        "when": "Open now",
+        "where": "Tingley, south Leeds",
+        "note": "Free to visit: an animated alpine Christmas village with over 600 moving pieces.",
+        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/tingley-garden-centre-christmas-light-trail-leeds-opening-9349129"
+      },
+      {
+        "title": "Leeds Christmas Market",
+        "when": "Until 23 Dec",
+        "where": "City Square and Victoria Gardens, Leeds",
+        "note": "Free entry. Yorkshire makers, local food and around 200 Christmas trees in City Square.",
+        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-christmas-market-ice-cube-dates-city-square-2026-9171053"
+      },
+      {
+        "title": "Ice Cube at Christmas",
+        "when": "Until 31 Dec",
+        "where": "Millennium Square, Leeds",
+        "note": "Covered ice rink plus rides including the Starflyer. Skating is ticketed; book ahead for weekends.",
+        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-christmas-market-ice-cube-dates-city-square-2026-9171053"
+      }
+    ],
+    "tip": "Saturday 28th is a good one for Rothwell: craft fair in the day, fireworks at 5pm. Check the forecast here on Friday."
   }
 }

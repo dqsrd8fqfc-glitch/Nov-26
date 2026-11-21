@@ -40,6 +40,10 @@ FEEDS = [
     {"id": "money", "title": "Money", "sources": [
         ("Google News", "https://news.google.com/rss/search?q=%22Bank+of+England%22+OR+%22UK+inflation%22+OR+%22energy+price+cap%22+OR+%22UK+mortgage+rates%22+OR+Ofgem+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
     ]},
+    {"id": "local", "title": "Local", "sources": [
+        ("Google News", "https://news.google.com/rss/search?q=Rothwell+Leeds+OR+%22Leeds+City+Council%22+OR+%22in+Leeds%22+when:3d&hl=en-GB&gl=GB&ceid=GB:en"),
+        ("BBC Leeds & West Yorkshire", "https://feeds.bbci.co.uk/news/england/leeds_and_west_yorkshire/rss.xml"),
+    ]},
     {"id": "releases", "title": "Releases", "sources": [
         ("Apple Developer", "https://developer.apple.com/news/releases/rss/releases.rss"),
     ]},

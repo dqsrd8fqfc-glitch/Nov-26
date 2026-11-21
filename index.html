@@ -494,7 +494,7 @@
   const TEAM = [
     { id: 'briefing',  name: 'Briefing',       short: 'Briefing', role: 'Your day at a glance',        icon: 'compass',  c: '#FF9F0A', kind: 'brief' },
     { id: 'markets',   name: 'Markets',        short: 'Markets',  role: 'Microsoft and the indices',   icon: 'chart',    c: '#30D158', kind: 'markets' },
-    { id: 'weather',   name: 'Weather',        short: 'Weather',  role: 'Forecast and daylight',       icon: 'cloud',    c: '#64D2FF', kind: 'weather' },
+    { id: 'weather',   name: 'Local',          short: 'Local',    role: 'Weather and what’s on locally',       icon: 'cloud',    c: '#64D2FF', kind: 'weather' },
     { id: 'lesson',    name: 'Daily Lesson',   short: 'Lesson',   role: 'Two minutes of learning',     icon: 'book',     c: '#5E5CE6', kind: 'lesson' },
     { id: 'm365',      name: 'M365 Coach',     short: 'M365',     role: 'SharePoint, Power Automate, Copilot', icon: 'windows', c: '#0A84FF', kind: 'm365', feed: 'm365' },
     { id: 'ai',        name: 'AI Tools',       short: 'AI Tools', role: 'What’s new in AI',            icon: 'sparkle',  c: '#BF5AF2', kind: 'ai', feed: 'ai' },
@@ -567,7 +567,7 @@
   let data = { feeds: [], quotes: {}, updated: null };
   let daily = null;
   let wx = null;
-  let loc = store.get('loc', { lat: 51.51, lon: -0.13, name: 'London' });
+  let loc = store.get('loc', { lat: 53.75, lon: -1.48, name: 'Rothwell' });
   const lastVisit = store.get('lastVisit', null);
   const markVisit = () => store.set('lastVisit', new Date().toISOString());
   addEventListener('pagehide', markVisit);
@@ -708,7 +708,9 @@
     const rain = wet(c.weather_code) ? 'It’s wet out now, so take a coat.' : firstWet ? `Rain likely from ${firstWet.tm.slice(11, 16)}.` : 'Dry for the next 12 hours.';
     const d = [`${Math.round(c.temperature_2m)}° and ${desc} in ${loc.name}, feeling like ${Math.round(c.apparent_temperature)}°. ${rain}`];
     if (wx.daily && wx.daily.time[1]) d.push(el('span', { class: 'soft', text: ` Tomorrow ${Math.round(wx.daily.temperature_2m_max[1])}° and ${Math.round(wx.daily.temperature_2m_min[1])}°, ${W(wx.daily.weather_code[1])[1]}.` }));
-    return { line: `${Math.round(c.temperature_2m)}° and ${desc}. ${rain}`, rain, desc, dispatch: d, status: `Watching ${loc.name}`, dot: 'on' };
+    const ev = arr(daily && daily.local && daily.local.events).length;
+    if (ev) d.push(el('span', { class: 'soft', text: ` ${ev} thing${ev === 1 ? '' : 's'} on nearby.` }));
+    return { line: `${Math.round(c.temperature_2m)}° and ${desc}. ${rain}${ev ? ` ${ev} thing${ev === 1 ? '' : 's'} on nearby.` : ''}`, rain, desc, dispatch: d, status: `Watching ${loc.name}`, dot: 'on', fresh: feedFresh('local') };
   }
   function reportLesson() {
     const L = daily && daily.lesson, s = dailyStatus('lesson');
@@ -929,7 +931,7 @@
       const m = market();
       v.append(el('p', { class: 'hint', text: m.open ? 'The chart updates live. Written prices refresh with each sweep, roughly every 30 minutes.' : `The US market opens ${m.next} UK time. Prices are from the last close.` }));
     },
-    weather(v) {
+    weather(v, a) {
       if (wx) {
         v.append(section('Next 12 hours', el('div', { class: 'hours' }, nextHours(12).map((h, i) => el('div', { class: 'hour glass' + (wet(h.c) ? ' wet' : '') }, [
           el('div', { class: 'secondary', text: i === 0 ? 'Now' : h.tm.slice(11, 16) }), el('div', { class: 'i', text: W(h.c)[0] }), el('div', { class: 'headline num', text: Math.round(h.t) + '°' })])))));
@@ -945,6 +947,19 @@
           el('span', { text: `${W(wx.daily.weather_code[i])[0]}  ${i === 0 ? 'Today' : new Date(day + 'T12:00').toLocaleDateString('en-GB', { weekday: 'long' })}` }),
           el('span', { class: 'secondary num', text: `${Math.round(wx.daily.temperature_2m_max[i])}° / ${Math.round(wx.daily.temperature_2m_min[i])}°` })])))));
       }
+      const Lc = daily && daily.local;
+      if (Lc && Lc.summary) v.append(el('div', { class: 'card glass strong', style: { '--c': a.c, marginTop: '10px' } }, [staleTag(), el('p', { class: 'dispatch', style: { margin: 0 }, text: str(Lc.summary) })]));
+      if (Lc && arr(Lc.events).length) v.append(section('What’s on nearby', el('div', { class: 'group glass strong', style: { '--c': a.c } }, [el('ul', {}, arr(Lc.events).map(ev => {
+        const href = safeHref(ev.url);
+        return el('li', {}, [el(href ? 'a' : 'div', { class: 'row', href: href || undefined, target: href ? '_blank' : undefined, rel: href ? 'noopener noreferrer' : undefined }, [
+          el('div', { class: 'body' }, [el('div', { class: 'h', text: str(ev.title) }),
+            el('div', { class: 'm' }, [ev.when ? el('b', { text: str(ev.when) }) : null, ev.where ? (ev.when ? ' · ' : '') + str(ev.where) : '']),
+            ev.note ? el('div', { class: 'm', text: str(ev.note) }) : null])])]);
+      }))])));
+      else v.append(section('What’s on nearby', empty('Local events arrive with the morning update around 06:00.')));
+      if (Lc && Lc.tip) v.append(el('div', { style: { '--c': a.c, marginTop: '10px' } }, [el('div', { class: 'callout glass', style: { marginTop: 0 } }, [el('div', { class: 'k', text: 'Idea' }), el('div', { class: 'v', text: str(Lc.tip) })])]));
+      const lf = feed('local');
+      if (lf.length) v.append(section('Local news', storyGroup(lf, a)));
       const msg = el('p', { class: 'hint', text: 'Saved only in this browser.' });
       const input = el('input', { type: 'text', placeholder: 'Town or city', maxLength: 60, enterKeyHint: 'search', 'aria-label': 'Town or city' });
       v.append(section('Change location',
