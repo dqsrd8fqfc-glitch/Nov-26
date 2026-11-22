@@ -1,165 +1,223 @@
 {
-  "date": "2026-11-21",
-  "generated": "2026-11-21T18:05:00Z",
+  "date": "2026-11-22",
+  "generated": "2026-11-22T06:06:13Z",
   "today3": [
     {
-      "title": "Compare fixed energy deals before Wednesday",
-      "why": "Ofgem announces the January–March cap on 25 November, and forecasts point to a rise. Fixed deals are often repriced around the announcement.",
+      "title": "Get ready for Wednesday's energy price cap news",
+      "why": "Ofgem announces the January–March 2027 cap on 25 November. Note your current tariff and meter readings today so you can compare deals quickly once the figure is out.",
       "agent": "money"
     },
     {
-      "title": "Add error handling to one Power Automate flow",
-      "why": "Ten minutes with 'Configure run after' means a failed step alerts you instead of failing silently. Steps are in M365 Coach.",
+      "title": "Keep your key work files available offline",
+      "why": "This month's near-24-hour Microsoft 365 outage showed how cloud-only files can leave you stuck. Two minutes in OneDrive fixes that. Steps in M365 Coach.",
       "agent": "m365"
     },
     {
-      "title": "Pencil in Rothwell's switch-on next Saturday",
-      "why": "Carnival, craft fair and fireworks on Commercial Street, with the lights going on at 5pm on 28 November.",
+      "title": "Browse the Christmas Craft & Flea Market today",
+      "why": "Left Bank Leeds, 11am–4pm. Today is the driest day of the week (0% chance of rain, high of 7°C), so a good one for getting out.",
       "agent": "weather"
     }
   ],
   "lesson": {
-    "topic": "AI",
-    "title": "Write prompts like a brief, not a search",
+    "topic": "Marketing",
+    "title": "Why 'was £80, now £40' works: price anchoring",
     "body": [
-      "AI tools respond to the brief you give them. A search-style prompt ('marketing email ideas') gets a generic answer because the tool has to guess who it's for, what good looks like and how you want it laid out.",
-      "Give it three things. Role: who it should act as ('You're a B2B email marketer'). Context: the audience, goal and constraints ('for SharePoint admins, launching a new template, under 120 words, UK English'). Format: exactly what to return ('three subject lines, then one email body, then a one-line CTA').",
-      "Then iterate in the same chat rather than starting again: 'make option 2 punchier', 'cut the jargon'. The tool keeps the context, so each round gets closer. If you find yourself repeating instructions, save the brief as a reusable template."
+      "The first number we see sets a reference point, and we judge everything after it against that. Marketers call this anchoring. A crossed-out 'was' price makes the 'now' price feel like a win, even if you'd never have paid the higher one.",
+      "Black Friday runs on it. You'll also see it in three-tier pricing, where a pricey 'premium' option makes the middle one look sensible, and in 'worth £200' bundles.",
+      "Used honestly, anchoring helps customers understand value. Used badly it backfires: UK rules on misleading prices mean a 'was' price should be one the item was genuinely sold at. As a shopper, ignore the anchor and compare the actual price elsewhere."
     ],
-    "takeaway": "Role + context + format, then refine in the same conversation.",
-    "link": null
+    "takeaway": "Customers judge a price against the first number they see, so choose that number carefully and keep it honest.",
+    "link": {
+      "title": "BBC: Can AI really help spot Black Friday deals?",
+      "url": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss"
+    }
   },
   "m365": {
-    "title": "Stop flows failing silently with 'Configure run after'",
-    "what": "By default a Power Automate flow just stops when a step fails. 'Configure run after' lets a step run only when the previous one has failed or timed out, so you can catch problems and get told about them.",
+    "title": "Keep important files on your device with OneDrive",
+    "what": "Files On-Demand only shows most OneDrive and SharePoint files as online until you open them. If Microsoft 365 goes down, as it did on 12–13 November, you can't open them. Marking key folders 'Always keep on this device' keeps a full local copy that still syncs when the service is back.",
     "try": [
-      "Open a flow you rely on and add a new action after the step most likely to fail, e.g. 'Send an email (V2)' or a Teams 'Post message'.",
-      "On the new action, open the … menu and choose 'Configure run after'.",
-      "Untick 'is successful' and tick 'has failed' and 'has timed out', then save.",
-      "Put the flow name and a link to the run history in the message so you can jump straight to the failure."
+      "On Windows, open File Explorer and go to your OneDrive folder (or a SharePoint library you've synced).",
+      "Right-click the folder you'd need during an outage, e.g. current projects, and choose 'Always keep on this device'.",
+      "Wait for the status icon to turn into a solid green circle with a white tick. That means the files are stored locally.",
+      "Save desktop copies of Word, Excel and PowerPoint files you use every day. They open offline and changes sync later.",
+      "Don't do this for huge folders on a small drive. To reverse it, right-click and choose 'Free up space'."
     ],
     "link": {
-      "title": "What's new in Power Platform: October/November 2026",
-      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/"
+      "title": "BleepingComputer: Months-old bug caused global Microsoft 365 outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/"
     }
   },
   "ai": {
-    "summary": "A quieter day for AI tool launches. The bigger thread is the business side: The Verge's podcast asks whether Anthropic can keep its safety-first approach as AI labs face investor pressure. Power Platform is also pushing further into AI agents that build and maintain apps.",
+    "summary": "Model news is mostly about Microsoft: it's reportedly putting OpenAI's GPT-6.2 Sol into Copilot worldwide, and its AI chief has warned about AI that improves AI. Separately, there are bold claims about an AI-assisted maths proof that experts are still checking.",
     "items": [
       {
-        "title": "Can Anthropic afford to put safety first?",
-        "why": "Useful context on how the big AI labs are funded and why that shapes the tools you use.",
-        "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+        "title": "Microsoft puts OpenAI's GPT-6.2 Sol in Copilot worldwide",
+        "why": "If you use Copilot at work, the model behind it may change, so answers and quality could shift. Watch for admin or release notes.",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU3lkS2VOWU1vclhfMk44Smk4QlotQUxDaUZxWW9JRkNtS0FIUC1rWnZuSXFqdktMaXROMjVxRWM1UkVMY0Nfbjk5YmhMQTR4LTFrUU5xUEFYdDZPQnU4UGR0YjhERnRVWXd2RGwya05ZSGotdDFPN0RfWDhrZFhzRVN6bWdIdjVrRC1reWlISVUtaGdQanRBTVh3ZlBhVVlLSGd2WlI0SQ?oc=5"
       },
       {
-        "title": "What's new in Power Platform: October/November 2026",
-        "why": "Microsoft's monthly round-up, increasingly focused on AI agents inside Power Apps, Pages and Automate.",
-        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/"
+        "title": "Microsoft's AI CEO is 'really, really nervous' about AI improving AI",
+        "why": "He said this as Microsoft brings AI agents to Windows 11 PCs. Agents that act for you need care with permissions.",
+        "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNTTkxd01aZ0JmRENIWlI3WmF4S0VXY2lQcXJsZHhYYnNNcFlGRFVOOFpyTVdSSzA0OG1BbnNoRnFXaUVuTFR0NnRucGhScVozRFdfRjQ5bHNuQXpXdVdqeFFndzFfWmJtQzlpOTBFNnVvUFBxUEtxYlVvMlh5cW9IVmFfdnRWYi0zc3FTVXZSMVdLTGVTLWltaFRGWjVvSUV5WmpMY2NJaUwzekZxYmtVSkdsdV9PNFFidmdDeG8yRHlpaGdINFBxc0ZUU2t0NFJ0Tm9na3g4cFF2VWVzUW5xYkp5TTFZZHhRd1FtV1RUTExvSVRwUllLLUtqRVlmYmRpMm1kR0szeGY3ZnlvbVh6MWd3cjlfX1U2eVFWUmlEZTVwVUdfLUJCNzMwTQ?oc=5"
+      },
+      {
+        "title": "Can AI really help spot Black Friday deals?",
+        "why": "BBC tested AI shopping assistants. Useful before this week's sales. Double-check prices yourself rather than trusting a chatbot.",
+        "url": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Claims of a Claude-assisted Riemann hypothesis breakthrough",
+        "why": "Lots of headlines, but these are early reports from smaller outlets. Treat them as unconfirmed until mathematicians publish a checked proof.",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZE4zV080Q0Z4aklfdk1BSnZOVG5uNjRRQTI1eHQ4aFlGZmQ1Uy00WGlPanFDcUtCeE1nWm00R1B5Y1pPVlIzYTR0a2dPbnpyUUZSZ0J0eGZtQmM1aEpLVzlYUzIyNTJrWmtFVFpkMlVWNkhaaERjSjRfNG13cE16ZUZKclVqLWpzV051cFJxRXRRSjUtX3otczZTN09SUmhUU2t0NFJ0Tm9na3g4cFF2VWVzUW5xYkp5TTFZZHhRd1FtV1RUTExvSVRwUllLLUtqRVlmYmRpMm1kR0szeGY3ZnlvbVh6MWd3cjlfX1U2eVFWUmlEZTVwVUdfLUJCNzMwTQ?oc=5"
       }
     ]
   },
   "explainer": {
-    "story": "The Bank of England raised interest rates to 4%",
-    "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026",
+    "story": "Why Microsoft 365 went down for almost a day",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
     "bullets": [
-      "On 5 November the Bank raised Bank Rate from 3.75% to 4%, its first increase since August 2023. Eight of the nine committee members voted for the rise.",
-      "The reason is inflation. Rising energy and fuel prices pushed CPI up to 3.6% in October, and the Bank's forecasts show inflation climbing towards about 5% by the middle of next year.",
-      "Higher rates make borrowing more expensive to cool spending. Tracker and variable mortgages move quickly; fixed deals change when they're renewed. The next decision is on 17 December."
+      "On 12 November Outlook and Exchange Online stopped working worldwide for nearly 24 hours, and Teams and Copilot were partly hit. Microsoft confirmed full recovery at about 4pm UK time on 13 November.",
+      "Microsoft says a bug added in July to its networking gateway servers sat unnoticed for over three months. Lab load tests didn't catch it because they used less powerful hardware than the live servers.",
+      "Extra traffic from a Teams failover, plus about 14% of servers already offline, triggered the bug. More than 80% of servers stopped responding, and safeguards between regions also failed. Microsoft has added capacity, improved monitoring and added safeguards."
     ],
-    "why": "It affects mortgage renewals, savings rates and the wider economy heading into 2027."
+    "why": "Much of UK work depends on Microsoft 365. One hidden bug can still take everything down, so it's worth having an offline plan."
   },
   "term": {
-    "term": "Basis point",
-    "meaning": "One hundredth of a percentage point (0.01%). Markets use it to avoid confusion: '25 basis points' is clearer than 'a quarter of a percent'.",
-    "example": "The Bank of England's rise from 3.75% to 4% was 25 basis points."
+    "term": "Cascading failure",
+    "meaning": "When one part of a system fails, its work moves to other parts. They get overloaded and fail too, so a small fault spreads into a big outage.",
+    "example": "In this month's Microsoft 365 outage, traffic from failing servers was redirected to others, which then also failed. At the worst point, more than 80% of servers were unresponsive."
   },
   "money": {
-    "summary": "Rates went up this month and inflation ticked higher, with the next energy price cap announcement due on Wednesday 25 November.",
+    "summary": "Bank Rate is 4% after November's rise, inflation is at a 12-month high of 3.6%, and Ofgem announces the January cap this Wednesday.",
     "figures": [
       {
         "label": "Bank Rate",
         "value": "4.00%",
-        "asOf": "5 Nov 2026",
+        "asOf": "Raised 5 Nov 2026 (8–1 vote)",
         "source": "Bank of England",
-        "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026"
+        "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       },
       {
         "label": "CPI inflation",
         "value": "3.6%",
-        "asOf": "October 2026 (published 18 Nov)",
-        "source": "ONS",
-        "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukoctober2026"
+        "asOf": "October 2026 (published 18 Nov; Sept 3.5%)",
+        "source": "ONS via Moneyfacts",
+        "url": "https://moneyfactscompare.co.uk/news/money/uk-inflation-october-2026/"
       },
       {
         "label": "Energy price cap",
         "value": "£1,723 / yr",
-        "asOf": "Oct–Dec 2026, typical dual fuel, Direct Debit",
+        "asOf": "1 Oct–31 Dec 2026, typical dual fuel, Direct Debit",
         "source": "Ofgem",
-        "url": "https://www.ofgem.gov.uk/publications/changes-energy-price-cap-between-1-october-and-31-december-2026"
+        "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-4-october-2026"
+      },
+      {
+        "label": "Next cap announcement",
+        "value": "25 Nov",
+        "asOf": "Covers 1 Jan–31 Mar 2027",
+        "source": "Ofgem",
+        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026"
       },
       {
         "label": "Next rate decision",
         "value": "17 Dec",
         "asOf": "Bank of England MPC",
         "source": "Bank of England",
-        "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/November-2026"
+        "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       }
     ],
-    "tip": "Ofgem confirms the January cap on 25 November. Suppliers' forecasts suggest a rise, so it can be worth comparing fixed tariffs now — check exit fees and whether the fix is actually below the expected cap."
+    "tip": "The price cap limits unit rates and standing charges, not your total bill. What you pay still depends on how much you use. Submitting a meter reading before a price change means you're billed at the right rate for energy already used."
   },
   "releases": {
-    "summary": "Apple pushed a second iOS 27.3 beta and a HomeView update this week. No new public iOS release yet, so there's nothing you need to install today.",
+    "summary": "Nothing new this weekend. The latest public iPhone update is iOS 27.2.1 (9 Nov). Install it from Settings > General > Software Update if you haven't already. iOS 27.3 is still in developer beta.",
     "items": [
+      {
+        "name": "iOS 27.2.1",
+        "version": "24B91034",
+        "note": "Current public release. Install if you're not on it yet.",
+        "url": "https://developer.apple.com/news/releases/?id=11092026a"
+      },
       {
         "name": "iOS 27.3",
         "version": "beta 2 v2 (24C5049f)",
-        "note": "Developer beta. Wait for the public release unless you test apps.",
+        "note": "Developer beta only. Wait for the public release.",
         "url": "https://developer.apple.com/news/releases/?id=11192026a"
       },
       {
         "name": "HomeView Software",
         "version": "27.2.1 (24V553)",
-        "note": "Bug-fix update.",
+        "note": "Bug-fix update. It installs automatically.",
         "url": "https://developer.apple.com/news/releases/?id=11182026a"
       }
     ]
   },
-  "review": null,
-  "trends": {
-    "note": "Outages are this week's big tech story: Microsoft, Chase bank and the US aviation authority (FAA) all had failures, and reports are now asking why so many hit at once."
-  },
   "local": {
-    "summary": "Christmas is getting going around Rothwell and Leeds: the city centre markets are open, and Rothwell's own carnival and lights switch-on is next Saturday.",
+    "summary": "Christmas lights switch-ons around south Leeds this week, the city centre markets are open, and Leeds United are at home on Saturday. Garden bin collections end for winter after Saturday.",
     "events": [
       {
-        "title": "Rothwell Christmas Carnival and Craft Fair",
-        "when": "Sat 28 Nov",
-        "where": "Blackburn Hall and Commercial Street, Rothwell",
-        "note": "Fayre and Santa's grotto from 10am, street stalls from 11am, fireworks and lights switch-on at 5pm.",
-        "url": "https://northleeds.mumbler.co.uk/rothwell-christmas-carnival-and-craft-fair/"
+        "title": "Leeds Christmas Craft & Flea Market",
+        "when": "Today 11am–4pm",
+        "where": "Left Bank Leeds",
+        "note": "Local makers and vintage stalls. Good for early gift shopping.",
+        "url": "https://www.leftbankleeds.org.uk/events/leeds-christmas-craft-flea-market"
       },
       {
-        "title": "Tingley Garden Centre Christmas Light Trail",
-        "when": "Open now",
-        "where": "Tingley, south Leeds",
-        "note": "Free to visit: an animated alpine Christmas village with over 600 moving pieces.",
-        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/tingley-garden-centre-christmas-light-trail-leeds-opening-9349129"
+        "title": "Belle Isle Christmas lights switch-on",
+        "when": "Mon 23 Nov 6:30pm",
+        "where": "Belle Isle Parade, south Leeds",
+        "note": "Family fun, with pop-up market stalls from 5pm.",
+        "url": "https://southleedslife.com/whats-on-roundup-21-27-november-2026/"
+      },
+      {
+        "title": "Beeston Christmas lights switch-on",
+        "when": "Thu 26 Nov from 6pm",
+        "where": "Town Street, Beeston",
+        "note": "Carols from the Salvation Army band, then free hot food at the Parish Centre.",
+        "url": "https://southleedslife.com/whats-on-roundup-21-27-november-2026/"
+      },
+      {
+        "title": "Leeds United v Coventry",
+        "when": "Sat 28 Nov 3pm",
+        "where": "Elland Road, Leeds",
+        "note": "Premier League home game. Expect busy roads and buses around Elland Road.",
+        "url": "https://www.skysports.com/football/news/13555664/leeds-premier-league-2026-27-fixtures-and-schedule"
+      },
+      {
+        "title": "Last brown bin collections before winter",
+        "when": "Until Sat 28 Nov",
+        "where": "Across Leeds",
+        "note": "The final round started on 16 Nov. Garden waste collections stop after 28 Nov and restart in spring.",
+        "url": "https://southleedslife.com/brown-bin-collections-set-to-pause-for-winter-break/"
       },
       {
         "title": "Leeds Christmas Market",
         "when": "Until 23 Dec",
-        "where": "City Square and Victoria Gardens, Leeds",
-        "note": "Free entry. Yorkshire makers, local food and around 200 Christmas trees in City Square.",
-        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-christmas-market-ice-cube-dates-city-square-2026-9171053"
-      },
-      {
-        "title": "Ice Cube at Christmas",
-        "when": "Until 31 Dec",
-        "where": "Millennium Square, Leeds",
-        "note": "Covered ice rink plus rides including the Starflyer. Skating is ticketed; book ahead for weekends.",
-        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-christmas-market-ice-cube-dates-city-square-2026-9171053"
+        "where": "City Square, Leeds",
+        "note": "Free entry. 60+ stalls and street food.",
+        "url": "https://www.leedschristmas.co.uk/"
       }
     ],
-    "tip": "Saturday 28th is a good one for Rothwell: craft fair in the day, fireworks at 5pm. Check the forecast here on Friday."
+    "tip": "Today is the dry pick of the week (cold start, around 7°C later), so it's good for the city centre markets. Tuesday looks wet. Saturday is around 6°C with a chance of drizzle, so if you're going to the match, wrap up and allow extra travel time."
+  },
+  "review": {
+    "week": "16–22 November",
+    "changed": [
+      "UK inflation rose to 3.6% in October, a 12-month high and the fourth monthly rise in a row (ONS, 18 Nov).",
+      "Microsoft blamed its 12–13 Nov global outage on a bug that went unnoticed for months, and added capacity and safeguards.",
+      "Tech stocks sold off. The latest quotes show the S&P 500 down about 3.7% and the Nasdaq 100 about 5.6%, with Anthropic shares sliding.",
+      "GTA 6 launched and took $3.8bn in a single day, the biggest entertainment launch ever (BBC).",
+      "The UK and EU agreed a cost-cutting deal. Andy Burnham says the UK will explore even closer ties (BBC).",
+      "Apple released a second iOS 27.3 developer beta. No new public iPhone update."
+    ],
+    "coming": [
+      "Wed 25 Nov: Ofgem announces the energy price cap for 1 Jan–31 Mar 2027.",
+      "Fri 27 Nov: Black Friday. Check prices on comparison sites before buying.",
+      "Mon 23 and Thu 26 Nov: Christmas lights switch-ons in Belle Isle and Beeston.",
+      "Sat 28 Nov: Leeds United v Coventry at Elland Road (3pm), and the last brown bin collections of the year.",
+      "Bank of England's next rate decision is on 17 December."
+    ]
+  },
+  "trends": {
+    "note": "Fragile tech is this week's theme: the Microsoft 365 outage, other high-profile failures and a sharp tech share sell-off all point to how much depends on a few big tech firms."
   }
 }
