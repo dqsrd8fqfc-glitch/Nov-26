@@ -1,11 +1,14 @@
 {
   "lessons": [
-    "Why 'was £80, now £40' works: price anchoring"
+    "Why 'was £80, now £40' works: price anchoring",
+    "Chatbot, copilot, agent: what's the difference?"
   ],
   "terms": [
-    "Cascading failure"
+    "Cascading failure",
+    "Standing charge"
   ],
   "m365": [
-    "Keep important files on your device with OneDrive"
+    "Keep important files on your device with OneDrive",
+    "Get an email when a Power Automate flow fails"
   ]
 }

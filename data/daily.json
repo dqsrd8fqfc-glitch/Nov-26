@@ -1,122 +1,129 @@
 {
-  "date": "2026-11-22",
-  "generated": "2026-11-22T06:06:13Z",
+  "date": "2026-11-23",
+  "generated": "2026-11-23T06:06:30Z",
   "today3": [
     {
-      "title": "Get ready for Wednesday's energy price cap news",
-      "why": "Ofgem announces the January–March 2027 cap on 25 November. Note your current tariff and meter readings today so you can compare deals quickly once the figure is out.",
+      "title": "Get ready for Wednesday's price cap announcement",
+      "why": "Ofgem confirms the January–March cap on Wed 25 Nov. Cornwall Insight forecasts a 26% rise to about £2,166 a year. Note your tariff and end date now so you can act quickly.",
       "agent": "money"
     },
     {
-      "title": "Keep your key work files available offline",
-      "why": "This month's near-24-hour Microsoft 365 outage showed how cloud-only files can leave you stuck. Two minutes in OneDrive fixes that. Steps in M365 Coach.",
+      "title": "Set up a failure alert on one important flow",
+      "why": "A 5-minute 'run after' step emails you when a Power Automate flow fails, instead of finding out days later. Steps in M365 Coach.",
       "agent": "m365"
     },
     {
-      "title": "Browse the Christmas Craft & Flea Market today",
-      "why": "Left Bank Leeds, 11am–4pm. Today is the driest day of the week (0% chance of rain, high of 7°C), so a good one for getting out.",
+      "title": "Book a weekend Christmas outing early",
+      "why": "Saturday looks cold (around 1°C) with a chance of drizzle. Tingley's Light Trail is timed-entry and pre-booked, and Leeds United are at home at 3pm, so plan travel round the match.",
       "agent": "weather"
     }
   ],
   "lesson": {
-    "topic": "Marketing",
-    "title": "Why 'was £80, now £40' works: price anchoring",
+    "topic": "AI",
+    "title": "Chatbot, copilot, agent: what's the difference?",
     "body": [
-      "The first number we see sets a reference point, and we judge everything after it against that. Marketers call this anchoring. A crossed-out 'was' price makes the 'now' price feel like a win, even if you'd never have paid the higher one.",
-      "Black Friday runs on it. You'll also see it in three-tier pricing, where a pricey 'premium' option makes the middle one look sensible, and in 'worth £200' bundles.",
-      "Used honestly, anchoring helps customers understand value. Used badly it backfires: UK rules on misleading prices mean a 'was' price should be one the item was genuinely sold at. As a shopper, ignore the anchor and compare the actual price elsewhere."
+      "A chatbot answers when you ask. You type a question, it replies, and nothing happens until you ask again.",
+      "An agent is given a goal and works towards it in steps: it can open files, search, use apps and come back with a finished result. Microsoft's new Copilot Autopilot is described as an always-on agent you give a name, role and goal, which runs in the cloud and can be mentioned in Teams and Outlook.",
+      "More independence means more to check. An agent can act on your behalf, so be clear what it may touch, start it on low-risk tasks, and review its work before anything goes out."
     ],
-    "takeaway": "Customers judge a price against the first number they see, so choose that number carefully and keep it honest.",
+    "takeaway": "Chatbots answer; agents act. The more an AI tool can do on its own, the clearer your instructions and checks need to be.",
     "link": {
-      "title": "BBC: Can AI really help spot Black Friday deals?",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss"
+      "title": "Microsoft: Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
     }
   },
   "m365": {
-    "title": "Keep important files on your device with OneDrive",
-    "what": "Files On-Demand only shows most OneDrive and SharePoint files as online until you open them. If Microsoft 365 goes down, as it did on 12–13 November, you can't open them. Marking key folders 'Always keep on this device' keeps a full local copy that still syncs when the service is back.",
+    "title": "Get an email when a Power Automate flow fails",
+    "what": "Microsoft has been adding faster alerts for critical flows, apps and agents. You can already build your own: a 'Run after' setting makes an action run only when an earlier step fails, so you hear about problems straight away.",
     "try": [
-      "On Windows, open File Explorer and go to your OneDrive folder (or a SharePoint library you've synced).",
-      "Right-click the folder you'd need during an outage, e.g. current projects, and choose 'Always keep on this device'.",
-      "Wait for the status icon to turn into a solid green circle with a white tick. That means the files are stored locally.",
-      "Save desktop copies of Word, Excel and PowerPoint files you use every day. They open offline and changes sync later.",
-      "Don't do this for huge folders on a small drive. To reverse it, right-click and choose 'Free up space'."
+      "Open the flow in Power Automate and choose Edit.",
+      "Add a new action at the end, such as 'Send an email (V2)' from Office 365 Outlook, addressed to yourself, with the flow name in the subject.",
+      "Select the new action, open its Settings and find 'Run after'.",
+      "Tick 'has failed' and 'has timed out', untick 'is successful', then save.",
+      "Test it by making a step fail on purpose (e.g. a wrong file path), check the email arrives, then put the step back."
     ],
     "link": {
-      "title": "BleepingComputer: Months-old bug caused global Microsoft 365 outage",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/"
+      "title": "Power Platform Blog: Hourly alerts for your critical flows, apps and agents",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/11/act-faster-hourly-alerts-for-your-critical-flows-apps-and-agents/"
     }
   },
   "ai": {
-    "summary": "Model news is mostly about Microsoft: it's reportedly putting OpenAI's GPT-6.2 Sol into Copilot worldwide, and its AI chief has warned about AI that improves AI. Separately, there are bold claims about an AI-assisted maths proof that experts are still checking.",
+    "summary": "Microsoft is pushing Copilot from chat towards agents that do work for you, while warnings grow about AI-driven security fixes and an AI stock bubble.",
     "items": [
       {
-        "title": "Microsoft puts OpenAI's GPT-6.2 Sol in Copilot worldwide",
-        "why": "If you use Copilot at work, the model behind it may change, so answers and quality could shift. Watch for admin or release notes.",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU3lkS2VOWU1vclhfMk44Smk4QlotQUxDaUZxWW9JRkNtS0FIUC1rWnZuSXFqdktMaXROMjVxRWM1UkVMY0Nfbjk5YmhMQTR4LTFrUU5xUEFYdDZPQnU4UGR0YjhERnRVWXd2RGwya05ZSGotdDFPN0RfWDhrZFhzRVN6bWdIdjVrRC1reWlISVUtaGdQanRBTVh3ZlBhVVlLSGd2WlI0SQ?oc=5"
+        "title": "Microsoft's new Copilot: Home, Code and Autopilot",
+        "why": "Copilot can now build apps from a plain-English description (Code) and run tasks on its own (Autopilot). Agent features are billed by usage, so costs need watching.",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
       },
       {
-        "title": "Microsoft's AI CEO is 'really, really nervous' about AI improving AI",
-        "why": "He said this as Microsoft brings AI agents to Windows 11 PCs. Agents that act for you need care with permissions.",
-        "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNTTkxd01aZ0JmRENIWlI3WmF4S0VXY2lQcXJsZHhYYnNNcFlGRFVOOFpyTVdSSzA0OG1BbnNoRnFXaUVuTFR0NnRucGhScVozRFdfRjQ5bHNuQXpXdVdqeFFndzFfWmJtQzlpOTBFNnVvUFBxUEtxYlVvMlh5cW9IVmFfdnRWYi0zc3FTVXZSMVdLTGVTLWltaFRGWjVvSUV5WmpMY2NJaUwzekZxYmtVSkdsdV9PNFFidmdDeG8yRHlpaGdINFBxc0ZUU2t0NFJ0Tm9na3g4cFF2VWVzUW5xYkp5TTFZZHhRd1FtV1RUTExvSVRwUllLLUtqRVlmYmRpMm1kR0szeGY3ZnlvbVh6MWd3cjlfX1U2eVFWUmlEZTVwVUdfLUJCNzMwTQ?oc=5"
+        "title": "NHS launches world's largest trial of AI in breast cancer screening",
+        "why": "A real-world test of whether AI can help spot cancer earlier. Results will shape how far the NHS uses AI in screening.",
+        "url": "https://www.bbc.co.uk/news/articles/cmpdwnw3nvzjo?at_medium=RSS&at_campaign=rss"
       },
       {
-        "title": "Can AI really help spot Black Friday deals?",
-        "why": "BBC tested AI shopping assistants. Useful before this week's sales. Double-check prices yourself rather than trusting a chatbot.",
-        "url": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss"
+        "title": "Microsoft warns racing to fix AI-found security flaws risks more outages",
+        "why": "AI is finding software bugs faster than they can be safely patched, so expect more rushed updates and occasional disruption.",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdWxzb09GaGowLUxfeXFJbFZtZERpNVVvX2V2NkE4S2hKenhLZUJrbDBXMEpLVGdHNUJ2dzBXX3JhTmZDWVNMQkxRLWVFMXVNUzFKa1ZZNXo2aGFFSWlxSkhmSERiUnRHVjhkcFgwWG9BZ3RDa09PS3dqWHZsdGdsRGdBMTdRTld2ODR0RDFyM09uNDZPTUpBODcyTE9aSlpl?oc=5"
       },
       {
-        "title": "Claims of a Claude-assisted Riemann hypothesis breakthrough",
-        "why": "Lots of headlines, but these are early reports from smaller outlets. Treat them as unconfirmed until mathematicians publish a checked proof.",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZE4zV080Q0Z4aklfdk1BSnZOVG5uNjRRQTI1eHQ4aFlGZmQ1Uy00WGlPanFDcUtCeE1nWm00R1B5Y1pPVlIzYTR0a2dPbnpyUUZSZ0J0eGZtQmM1aEpLVzlYUzIyNTJrWmtFVFpkMlVWNkhaaERjSjRfNG13cE16ZUZKclVqLWpzV051cFJxRXRRSjUtX3otczZTN09SUmhUU2t0NFJ0Tm9na3g4cFF2VWVzUW5xYkp5TTFZZHhRd1FtV1RUTExvSVRwUllLLUtqRVlmYmRpMm1kR0szeGY3ZnlvbVh6MWd3cjlfX1U2eVFWUmlEZTVwVUdfLUJCNzMwTQ?oc=5"
+        "title": "San Francisco's AI boom brings growing crash worries",
+        "why": "Follows last week's tech sell-off. A sign investors are questioning how fast AI spending will pay off.",
+        "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss"
       }
     ]
   },
   "explainer": {
-    "story": "Why Microsoft 365 went down for almost a day",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+    "story": "Energy bills set to jump in January",
+    "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
     "bullets": [
-      "On 12 November Outlook and Exchange Online stopped working worldwide for nearly 24 hours, and Teams and Copilot were partly hit. Microsoft confirmed full recovery at about 4pm UK time on 13 November.",
-      "Microsoft says a bug added in July to its networking gateway servers sat unnoticed for over three months. Lab load tests didn't catch it because they used less powerful hardware than the live servers.",
-      "Extra traffic from a Teams failover, plus about 14% of servers already offline, triggered the bug. More than 80% of servers stopped responding, and safeguards between regions also failed. Microsoft has added capacity, improved monitoring and added safeguards."
+      "Ofgem confirms the 1 Jan–31 Mar 2027 price cap on Wed 25 Nov. Cornwall Insight's final forecast is about £2,166 a year for a typical dual fuel home, up £443 (26%) from today's £1,723.",
+      "The cause is high, volatile wholesale gas prices: the Middle East conflict has disrupted gas exports and European gas storage is at record lows going into winter.",
+      "Energy is already pushing up prices generally. UK inflation rose to 3.6% in October, and the Bank of England raised Bank Rate to 4% on 5 Nov."
     ],
-    "why": "Much of UK work depends on Microsoft 365. One hidden bug can still take everything down, so it's worth having an offline plan."
+    "why": "It's the biggest single hit to household budgets this winter and will likely keep inflation, and possibly interest rates, higher for longer."
   },
   "term": {
-    "term": "Cascading failure",
-    "meaning": "When one part of a system fails, its work moves to other parts. They get overloaded and fail too, so a small fault spreads into a big outage.",
-    "example": "In this month's Microsoft 365 outage, traffic from failing servers was redirected to others, which then also failed. At the worst point, more than 80% of servers were unresponsive."
+    "term": "Standing charge",
+    "meaning": "A fixed daily amount you pay for your gas or electricity supply, whatever you use. It covers costs like network upkeep and is capped by Ofgem alongside unit rates.",
+    "example": "Ofgem has been asked to remove gas standing charges in 2027 or soon after, though timing isn't confirmed."
   },
   "money": {
-    "summary": "Bank Rate is 4% after November's rise, inflation is at a 12-month high of 3.6%, and Ofgem announces the January cap this Wednesday.",
+    "summary": "Bank Rate is 4% and inflation 3.6%. Ofgem confirms January's energy price cap this Wednesday, with a rise of around 26% forecast.",
     "figures": [
       {
         "label": "Bank Rate",
         "value": "4.00%",
-        "asOf": "Raised 5 Nov 2026 (8–1 vote)",
+        "asOf": "Raised 5 Nov 2026",
         "source": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       },
       {
         "label": "CPI inflation",
         "value": "3.6%",
-        "asOf": "October 2026 (published 18 Nov; Sept 3.5%)",
-        "source": "ONS via Moneyfacts",
-        "url": "https://moneyfactscompare.co.uk/news/money/uk-inflation-october-2026/"
+        "asOf": "October 2026 (published 18 Nov)",
+        "source": "ONS via ITV News",
+        "url": "https://www.itv.com/news/2026-11-18/uk-inflation-rises-to-36-and-britain-faces-another-squeeze-on-living-standard"
       },
       {
         "label": "Energy price cap",
         "value": "£1,723 / yr",
         "asOf": "1 Oct–31 Dec 2026, typical dual fuel, Direct Debit",
-        "source": "Ofgem",
-        "url": "https://www.ofgem.gov.uk/press-release/energy-price-cap-will-rise-4-october-2026"
+        "source": "Ofgem via Cornwall Insight",
+        "url": "https://www.cornwall-insight.com/predictions-and-insights-into-the-default-tariff-cap/"
+      },
+      {
+        "label": "Jan–Mar cap forecast",
+        "value": "£2,166 / yr (+26%)",
+        "asOf": "Cornwall Insight final forecast, 18 Nov",
+        "source": "Selectra",
+        "url": "https://selectra.co.uk/energy/news/energy-price-cap-january-2027-cornwall-forecast"
       },
       {
         "label": "Next cap announcement",
-        "value": "25 Nov",
+        "value": "Wed 25 Nov",
         "asOf": "Covers 1 Jan–31 Mar 2027",
-        "source": "Ofgem",
-        "url": "https://www.ofgem.gov.uk/news/changes-energy-price-cap-between-1-october-and-31-december-2026"
+        "source": "Selectra",
+        "url": "https://selectra.co.uk/energy/news/energy-price-cap-january-2027-cornwall-forecast"
       },
       {
         "label": "Next rate decision",
@@ -126,78 +133,84 @@
         "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       }
     ],
-    "tip": "The price cap limits unit rates and standing charges, not your total bill. What you pay still depends on how much you use. Submitting a meter reading before a price change means you're billed at the right rate for energy already used."
+    "tip": "The price cap limits unit rates and standing charges, not your total bill. Taking a meter reading close to 1 January and submitting it to your supplier helps make sure usage before the change is billed at the old, lower rates."
   },
   "releases": {
-    "summary": "Nothing new this weekend. The latest public iPhone update is iOS 27.2.1 (9 Nov). Install it from Settings > General > Software Update if you haven't already. iOS 27.3 is still in developer beta.",
+    "summary": "Nothing new to install. The latest public iPhone update listed is iOS 27.2.1 (9 Nov). iOS 27.3 is still in developer beta.",
     "items": [
       {
-        "name": "iOS 27.2.1",
-        "version": "24B91034",
-        "note": "Current public release. Install if you're not on it yet.",
-        "url": "https://developer.apple.com/news/releases/?id=11092026a"
-      },
-      {
-        "name": "iOS 27.3",
-        "version": "beta 2 v2 (24C5049f)",
-        "note": "Developer beta only. Wait for the public release.",
+        "name": "iOS 27.3 beta 2 v2",
+        "version": "24C5049f",
+        "note": "Developer beta only (19 Nov). Not for everyday phones.",
         "url": "https://developer.apple.com/news/releases/?id=11192026a"
       },
       {
-        "name": "HomeView Software",
-        "version": "27.2.1 (24V553)",
-        "note": "Bug-fix update. It installs automatically.",
+        "name": "iOS 27.2.1",
+        "version": "24B91034",
+        "note": "Latest public release (9 Nov). Install if you haven't: Settings > General > Software Update.",
+        "url": "https://developer.apple.com/news/releases/?id=11092026a"
+      },
+      {
+        "name": "HomeView Software 27.2.1",
+        "version": "24V553",
+        "note": "Released 18 Nov. Updates install automatically.",
         "url": "https://developer.apple.com/news/releases/?id=11182026a"
+      },
+      {
+        "name": "iOS 27 Wi-Fi tip",
+        "version": "iOS 27",
+        "note": "9to5Mac explains an iOS 27 fix for unreliable Wi-Fi connections. No install needed.",
+        "url": "https://9to5mac.com/2026/11/22/ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections/"
       }
     ]
   },
   "local": {
-    "summary": "Christmas lights switch-ons around south Leeds this week, the city centre markets are open, and Leeds United are at home on Saturday. Garden bin collections end for winter after Saturday.",
+    "summary": "Christmas is in full swing: Leeds Christmas Market is open in City Square, pantos and Christmas shows are starting, and Leeds United are at home on Saturday.",
     "events": [
       {
-        "title": "Leeds Christmas Craft & Flea Market",
-        "when": "Today 11am–4pm",
-        "where": "Left Bank Leeds",
-        "note": "Local makers and vintage stalls. Good for early gift shopping.",
-        "url": "https://www.leftbankleeds.org.uk/events/leeds-christmas-craft-flea-market"
+        "title": "Leeds Christmas Market",
+        "when": "Open now (from 19 Nov)",
+        "where": "City Square, Leeds",
+        "note": "Back with a new look this year. Free entry.",
+        "url": "https://news.leeds.gov.uk/news/christmas-with-a-twist-gives-a-proper-taste-of-yorkshire"
       },
       {
-        "title": "Belle Isle Christmas lights switch-on",
-        "when": "Mon 23 Nov 6:30pm",
-        "where": "Belle Isle Parade, south Leeds",
-        "note": "Family fun, with pop-up market stalls from 5pm.",
-        "url": "https://southleedslife.com/whats-on-roundup-21-27-november-2026/"
+        "title": "Tingley Garden Centre Light Trail",
+        "when": "Open now; Santa's trail from Sat 28 Nov",
+        "where": "Tingley Garden Centre, off M62 J28",
+        "note": "Timed entry, book online. From £9.95 adults, £4.95 children 3–12, under-3s free.",
+        "url": "https://www.yorkshireeveningpost.co.uk/whats-on/tingley-garden-centre-christmas-light-trail-leeds-opening-9349129"
       },
       {
-        "title": "Beeston Christmas lights switch-on",
-        "when": "Thu 26 Nov from 6pm",
-        "where": "Town Street, Beeston",
-        "note": "Carols from the Salvation Army band, then free hot food at the Parish Centre.",
-        "url": "https://southleedslife.com/whats-on-roundup-21-27-november-2026/"
-      },
-      {
-        "title": "Leeds United v Coventry",
+        "title": "Leeds United v Coventry City",
         "when": "Sat 28 Nov 3pm",
         "where": "Elland Road, Leeds",
         "note": "Premier League home game. Expect busy roads and buses around Elland Road.",
-        "url": "https://www.skysports.com/football/news/13555664/leeds-premier-league-2026-27-fixtures-and-schedule"
+        "url": "https://www.rateyourseats.com/tickets/events/leeds-united-vs-coventry-city-tickets-elland-road-november-28-2026-7188629"
       },
       {
-        "title": "Last brown bin collections before winter",
-        "when": "Until Sat 28 Nov",
-        "where": "Across Leeds",
-        "note": "The final round started on 16 Nov. Garden waste collections stop after 28 Nov and restart in spring.",
-        "url": "https://southleedslife.com/brown-bin-collections-set-to-pause-for-winter-break/"
+        "title": "Rapunzel: The Rock 'n' Roll Panto",
+        "when": "From Fri 27 Nov",
+        "where": "City Varieties Music Hall, Leeds",
+        "note": "Ticketed. Runs until 10 Jan.",
+        "url": "https://leedsheritagetheatres.com/whats-on/the-rock-n-roll-panto-2026-27/"
       },
       {
-        "title": "Leeds Christmas Market",
-        "when": "Until 23 Dec",
-        "where": "City Square, Leeds",
-        "note": "Free entry. 60+ stalls and street food.",
-        "url": "https://www.leedschristmas.co.uk/"
+        "title": "Mrs Doubtfire",
+        "when": "Until Sun 29 Nov",
+        "where": "Leeds Grand Theatre",
+        "note": "Last week of the run. Ticketed.",
+        "url": "https://leedsheritagetheatres.com/whats-on/mrs-doubtfire-2026/"
+      },
+      {
+        "title": "The Elf Adventure (Fidget Theatre)",
+        "when": "From Sat 28 Nov",
+        "where": "Leeds City Library",
+        "note": "Christmas show for families, until 24 Dec. Booking needed.",
+        "url": "https://www.ticketsource.com/whats-on?q=fidget+theatre+presents...+the+elf+adventure"
       }
     ],
-    "tip": "Today is the dry pick of the week (cold start, around 7°C later), so it's good for the city centre markets. Tuesday looks wet. Saturday is around 6°C with a chance of drizzle, so if you're going to the match, wrap up and allow extra travel time."
+    "tip": "Today is the driest day this week (frosty start, about 4°C). Saturday is the coldest at around 1°C with a chance of drizzle, so it suits an evening at the Tingley Light Trail more than a long walk. If you're driving past Elland Road, avoid 1–6pm."
   },
   "review": {
     "week": "16–22 November",
@@ -218,6 +231,6 @@
     ]
   },
   "trends": {
-    "note": "Fragile tech is this week's theme: the Microsoft 365 outage, other high-profile failures and a sharp tech share sell-off all point to how much depends on a few big tech firms."
+    "note": "Rising energy costs dominated the week, alongside worries about tech outages and whether the AI boom is overheating."
   }
 }
