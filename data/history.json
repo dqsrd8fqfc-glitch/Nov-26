@@ -1,14 +1,17 @@
 {
   "lessons": [
     "Why 'was £80, now £40' works: price anchoring",
-    "Chatbot, copilot, agent: what's the difference?"
+    "Chatbot, copilot, agent: what's the difference?",
+    "Scarcity and urgency: why 'only 2 left' works"
   ],
   "terms": [
     "Cascading failure",
-    "Standing charge"
+    "Standing charge",
+    "Market capitalisation"
   ],
   "m365": [
     "Keep important files on your device with OneDrive",
-    "Get an email when a Power Automate flow fails"
+    "Get an email when a Power Automate flow fails",
+    "Schedule a Teams chat message to send later"
   ]
 }
