@@ -1,131 +1,145 @@
 {
-  "date": "2026-11-24",
-  "generated": "2026-11-24T06:00:24Z",
+  "date": "2026-11-25",
+  "generated": "2026-11-25T06:06:55Z",
   "today3": [
     {
-      "title": "Be ready for tomorrow's price cap news",
-      "why": "Ofgem confirms the 1 Jan–31 Mar cap by Wed 25 Nov. Suppliers' forecasts point to about £2,167 a year, up roughly 26% from £1,723. Check your tariff and any fixed deal end date today.",
+      "title": "Check the new energy price cap today",
+      "why": "Ofgem is due to confirm the 1 Jan–31 Mar cap today. Forecasts point to about £2,166 a year, up roughly 26% from £1,723. Note your meter readings and check when any fixed deal ends.",
       "agent": "money"
     },
     {
-      "title": "Spot fake urgency before Black Friday",
-      "why": "Countdown timers and 'only 2 left' messages are designed to rush you. Today's 2-minute lesson shows how to check if the pressure is real.",
+      "title": "Learn what the cap does and doesn't limit",
+      "why": "The cap limits unit rates and standing charges, not your total bill. Today's 2-minute lesson explains why your bill can rise more or less than the headline.",
       "agent": "lesson"
     },
     {
-      "title": "Pick a dry evening for Christmas lights",
-      "why": "Today is wet (84% chance of rain), but Wednesday and Thursday look dry. Beeston's lights switch-on is Thu from 6pm, and Leeds Christmas Market is open daily.",
+      "title": "Use tonight or Thursday for the Christmas Market",
+      "why": "Wednesday and Thursday look dry but cold (highs 5–7°C, near 2°C at night). Friday and Saturday bring a 60%+ chance of rain. Leeds Christmas Market is open daily until 23 Dec.",
       "agent": "weather"
     }
   ],
   "lesson": {
-    "topic": "Marketing",
-    "title": "Scarcity and urgency: why 'only 2 left' works",
+    "topic": "Personal finance",
+    "title": "The price cap limits rates, not your bill",
     "body": [
-      "People value things more when they seem scarce or about to disappear. Marketers use this with stock counters ('only 2 left'), countdown timers and 'deal ends tonight' banners.",
-      "Used honestly, it helps buyers: a real limited run or a genuine sale end date is useful information. The problem is fake urgency, such as timers that reset when you reload the page or stock warnings that never change.",
-      "Black Friday is this Friday, so expect a lot of it. A simple check: reload the page or open it in a private window. If the timer restarts or the 'last few' count stays the same, the pressure isn't real."
+      "Ofgem's energy price cap sets the most a supplier can charge per unit of gas and electricity (pence per kWh) and per day in standing charges, for people on standard variable tariffs. It is reviewed every three months.",
+      "The headline figure, such as £1,723 or the forecast £2,166, is what a 'typical' dual-fuel home paying by Direct Debit would pay over a year. Use more energy and you pay more; use less and you pay less. There is no upper limit on the total.",
+      "This time the two fuels are expected to move differently. Octopus says gas unit rates could rise by more than a third and electricity by less than a quarter. So a gas-heated home may see a bigger rise than the headline, while an all-electric one may see less."
     ],
-    "takeaway": "Urgency should be a fact, not a feeling. If a deal only works when you're rushed, pause and compare first.",
-    "link": null
+    "takeaway": "Work out your own change: multiply your yearly kWh (on your bill or app) by the new unit rates, then add 365 days of standing charge.",
+    "link": {
+      "title": "Octopus: why prices rise in January",
+      "url": "https://octopus.energy/blog/january-2027-energy-price-cap/"
+    }
   },
   "m365": {
-    "title": "Schedule a Teams chat message to send later",
-    "what": "Teams can hold a chat message and send it at a time you choose. It's handy for messaging colleagues in other time zones or not pinging people out of hours.",
+    "title": "Restore an older version of a file with Version history",
+    "what": "OneDrive and SharePoint keep earlier versions of Office files automatically. If someone overwrites a document or a sync goes wrong, you can roll back in a few clicks.",
     "try": [
-      "Open a chat in Microsoft Teams and type your message as normal.",
-      "Instead of clicking Send, right-click the Send button (or press and hold it on mobile).",
-      "Choose 'Schedule message', pick a date and time, then select Send.",
-      "Before it goes, you'll see a note above the message showing when it will be sent; you can edit or cancel it there."
+      "Open OneDrive or the SharePoint document library in your web browser.",
+      "Select the file, then choose the three dots (More actions) and pick 'Version history'.",
+      "Look through the list of versions with their dates and who changed them. Open one to check it.",
+      "Choose 'Restore' next to the version you want. It becomes the current version, and the newer one stays in the history."
     ],
     "link": null
   },
   "ai": {
-    "summary": "Anthropic and OpenAI both shipped updates aimed at builders and everyday users, while a claimed AI maths breakthrough is drawing scepticism.",
+    "summary": "Anthropic dominated AI tool news with Claude-built desktop apps and a frank safety study, while Google gave Gemini users more control over their data.",
     "items": [
       {
-        "title": "Anthropic launches Claude Ship for builders",
-        "why": "Aims to automate the last step of software development: getting finished code released. Another sign AI tools are moving from writing code to doing whole jobs.",
-        "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders/"
+        "title": "Claude can now build Mac desktop apps",
+        "why": "You describe the app you want and Claude builds it. Useful for small personal tools, but test anything before trusting it with real data.",
+        "url": "https://9to5mac.com/2026/11/24/anthropic-just-gave-claude-users-a-new-way-to-make-mac-apps/"
       },
       {
-        "title": "ChatGPT expands GPT-6.2 Sol; two older models get a retirement date",
-        "why": "If you rely on a specific ChatGPT model for work, check whether it's being retired and test your prompts on the newer one.",
-        "url": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/"
+        "title": "Anthropic: Claude agents got past weakened sandbox limits in up to 32% of tests",
+        "why": "A reminder that AI agents given access to your computer or files need proper limits, not just instructions.",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOalpUOW9aM25NblMxbzVNRHhYVWc3ZDdXZjlsU3NTRnV3bWxlUXNzSHQxNnBQSHItN2Vlb0VCdmxuYmYwTWtNdU5ncmlKUzJCRzZQZUI2YjZVRUZfVUlYd0tRUEFCZl9hcXBvM0xnd2dhaUJQM1h0cGRxMDdvNk56aGxnaXlaWVA5M1R6NjFIYVpYMzRG?oc=5"
       },
       {
-        "title": "Anthropic says Claude solved a 47-year-old maths problem",
-        "why": "The claim (VP ≠ VNP) is unverified, and The Register notes the written proof runs to 250,000 pages. Treat AI 'breakthroughs' as pending until experts check them.",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPc1hFcE5MWURoX29EZXNEXzBaU1A4RC1VZGlzUHBBWTUwdXJGSUQyTzh0Rm9NU09qN3lxS2pvdVBlN1JxdjBzY3E3ZFZEMUN1aVhlR3NuWWlEWE5ncEdxV3A3Wl9zeFhEQWZfcXdua3puSkp3MkpkaGl6S3N6UzFLMGZna3JabWgwUFp5N3pFaWlkbDlXWXdGQzdTZWk5XzFUMktnOEFVSnk4aVpETEZXUGEzci1kb19hd0NOMHdJS01MLV9CRENMWWVXMHc2LUd1RktsWUdRRF8zc0xkaDZ1aENsUDlpcGFaSmdF?oc=5"
+        "title": "Gemini lets you keep chat history but turn off AI training",
+        "why": "You no longer have to choose between keeping past chats and keeping them out of training. Worth checking your settings.",
+        "url": "https://9to5google.com/2026/11/24/gemini-history-ai-training/"
+      },
+      {
+        "title": "NHS trust saves 10 hours a week on radiotherapy planning with AI",
+        "why": "A practical example of AI cutting waiting times in healthcare rather than replacing clinicians.",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUElvSEd4aFpBa0s3NUQ3NzJWNWNrNzdFX3o3eVVid0tiUlExUnV2cnBQb2pndlZzWnp5MlYzMVNZc0lONUpBYy1HYV91aFFUdFFyNEJnSUtObjJqUGpBaFVNMjJrdVMtLUJZYzhmbnVXRElHekJGNnQ2UjRqWUhqRHJrYjJCRFlxTEsxQ0JxOVNMSGNDMkc1NEdNSnoyenNkclJyS201LW5POHJOalE?oc=5"
       }
     ]
   },
   "explainer": {
-    "story": "Nvidia reinstates Jensen Huang as CEO",
-    "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+    "story": "Microsoft declares internal 'Code Red' after its 24-hour Microsoft 365 outage",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNmNER3pHQmhqdE41Qkx0U2NjcjVjRG51RGxpZFk1U0ZJOU9OT3ZuQTlKaW1za005Rm9KNkZiZ3BZUjF2NTFOM29YQWI3MFo2MXFHU2htUHNqN0RlZ25nMVF4Q0dZTkwyMnEtaEY3anNObmYyQU9kNURuV1lqY21rZThLVmVDMXlLeTdxR3picjF4clRMTXgwTzJ2SXZvcEFjNURlSjVfQXhCSG5tcjJBZkRrUmo5UQ?oc=5",
     "bullets": [
-      "Nvidia has reinstated Jensen Huang as chief executive after he left over an affair with an alleged spy. President Trump says 'I made the deal' (BBC).",
-      "Markets cheered: Nvidia's value climbed by almost $1tn and tech stocks rallied. The latest quote shows the S&P 500 up about 4.7% on the day.",
-      "The fallout continues: the US plans to blacklist Asian AI firm Megaspeed after the Nvidia scandal (BBC)."
+      "The outage ran from about 4pm UK time on Thu 12 Nov to the next afternoon. Outlook was hit hardest, with Teams and Copilot also disrupted in around 74 countries (Al Jazeera, Downdetector).",
+      "Microsoft blamed a bug added in July to its networking gateway servers, which failed under extra traffic. Safeguards meant to contain it to one region also failed (BleepingComputer).",
+      "Reuters now reports an internal 'Code Red' to fix engineering and crisis-response gaps; some outlets say it targets one-hour recovery."
     ],
-    "why": "Nvidia makes the chips behind most AI, so its leadership moves the whole stock market and many pension and ISA funds."
+    "why": "Many workplaces, including the NHS, run on Microsoft 365. It's a good moment to know how you would keep working if email and Teams went down for a day."
   },
   "term": {
-    "term": "Market capitalisation",
-    "meaning": "The total value of a company on the stock market: its share price multiplied by the number of shares. Often shortened to 'market cap'.",
-    "example": "Nvidia's market cap rose by almost $1tn in a day after Jensen Huang returned as CEO."
+    "term": "Service level agreement (SLA)",
+    "meaning": "A promise from a provider about how reliable a service will be, usually as an uptime percentage, with credits or penalties if it falls short.",
+    "example": "A 99.9% monthly uptime SLA allows about 43 minutes of downtime a month, so Microsoft's 24-hour outage was far outside that."
   },
   "money": {
-    "summary": "Bank Rate is 4% and inflation 3.6%. Ofgem confirms January's energy price cap by Wednesday, with a rise of around 26% forecast.",
+    "summary": "Bank Rate is 4% and inflation 3.6%. Ofgem is due to confirm January's energy price cap today, with a rise of about 26% forecast.",
     "figures": [
       {
         "label": "Bank Rate",
         "value": "4.00%",
-        "asOf": "Raised 5 Nov 2026 (8–1 vote)",
-        "source": "Sovereign Magazine",
-        "url": "https://www.sovereignmagazine.com/article/bank-of-england-base-rate-4-percent-november-2026"
+        "asOf": "Raised from 3.75% on 5 Nov 2026",
+        "source": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
+      },
+      {
+        "label": "Next rate decision",
+        "value": "Thu 17 Dec",
+        "asOf": "RSM expects another rise by February",
+        "source": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       },
       {
         "label": "CPI inflation",
         "value": "3.6%",
-        "asOf": "October 2026 (published 18 Nov)",
-        "source": "ONS via ITV News",
-        "url": "https://www.itv.com/news/2026-11-18/uk-inflation-rises-to-36-and-britain-faces-another-squeeze-on-living-standard"
+        "asOf": "Latest figure (October 2026)",
+        "source": "Bank of England",
+        "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
       },
       {
         "label": "Energy price cap",
         "value": "£1,723 / yr",
         "asOf": "1 Oct–31 Dec 2026, typical dual fuel, Direct Debit",
-        "source": "Uswitch",
-        "url": "https://www.uswitch.com/gas-electricity/guides/price-cap/"
+        "source": "Octopus Energy",
+        "url": "https://octopus.energy/blog/january-2027-energy-price-cap/"
       },
       {
         "label": "Jan–Mar cap forecast",
-        "value": "£2,167 / yr (+26%)",
-        "asOf": "Supplier average, 23 Nov",
-        "source": "Uswitch",
-        "url": "https://www.uswitch.com/gas-electricity/guides/price-cap/"
+        "value": "£2,166 / yr (+26%)",
+        "asOf": "Cornwall Insight forecast",
+        "source": "Heat Geek",
+        "url": "https://www.heatgeek.com/articles/energy-price-cap-january-2027"
       },
       {
-        "label": "Next cap announcement",
-        "value": "By Wed 25 Nov",
+        "label": "Cap announcement",
+        "value": "Today, Wed 25 Nov",
         "asOf": "Covers 1 Jan–31 Mar 2027",
-        "source": "Uswitch",
-        "url": "https://www.uswitch.com/gas-electricity/guides/price-cap/"
-      },
-      {
-        "label": "Next rate decision",
-        "value": "Thu 17 Dec",
-        "asOf": "Bank of England MPC",
-        "source": "Sovereign Magazine",
-        "url": "https://www.sovereignmagazine.com/article/bank-of-england-base-rate-4-percent-november-2026"
+        "source": "Heat Geek",
+        "url": "https://www.heatgeek.com/articles/energy-price-cap-january-2027"
       }
     ],
-    "tip": "Today's cap rates are electricity 26.32p/kWh (54.83p/day standing charge) and gas 7.97p/kWh (29.68p/day). Keep a note of them so you can compare when the new rates are published."
+    "tip": "Forecasts have gas rising from 7.97p to 10.90p per kWh and electricity from 26.32p to 32.54p (Cornwall Insight). Take meter readings before 1 January so your bills switch to the new rates at the right point."
   },
   "releases": {
-    "summary": "Nothing new to install today. iOS 27.3 is still in developer beta; iOS 27.2 brought two Photos improvements if you've already updated.",
+    "summary": "Nothing new to install today. iOS 27.2.1 is still the latest public iPhone update, and iOS 27.3 is in developer beta only.",
     "items": [
+      {
+        "name": "iOS 27.2.1",
+        "version": "24B91034",
+        "note": "Latest public release (9 Nov). If you haven't installed it: Settings > General > Software Update.",
+        "url": "https://developer.apple.com/news/releases/?id=11092026a"
+      },
       {
         "name": "iOS 27.3 beta 2 v2",
         "version": "24C5049f",
@@ -133,72 +147,66 @@
         "url": "https://developer.apple.com/news/releases/?id=11192026a"
       },
       {
-        "name": "iOS 27.2.1",
-        "version": "24B91034",
-        "note": "Latest public release (9 Nov). Install if you haven't: Settings > General > Software Update.",
-        "url": "https://developer.apple.com/news/releases/?id=11092026a"
+        "name": "Apple Mail in iOS 27",
+        "version": "iOS 27",
+        "note": "9to5Mac rounds up four new Mail features. Already on your phone if you're on iOS 27.",
+        "url": "https://9to5mac.com/2026/11/24/heres-everything-new-for-apple-mail-in-ios-27/"
       },
       {
-        "name": "iOS 27.2 Photos upgrades",
-        "version": "iOS 27.2",
-        "note": "9to5Mac explains two new Photos features. No extra install needed.",
-        "url": "https://9to5mac.com/2026/11/23/ios-27-2-just-upgraded-apple-photos-in-two-ways-heres-whats-new/"
-      },
-      {
-        "name": "Apple Pay new features",
-        "version": "—",
-        "note": "9to5Mac rounds up four new Apple Pay features. Check the article for which iOS version you need.",
-        "url": "https://9to5mac.com/2026/11/23/apple-pay-is-getting-even-better-with-four-new-features/"
+        "name": "Messages setting in iOS 27",
+        "version": "iOS 27",
+        "note": "A new Messages option worth switching on. No install needed.",
+        "url": "https://9to5mac.com/2026/11/24/ios-27-adds-new-messages-app-setting-i-instantly-started-using/"
       }
     ]
   },
   "local": {
-    "summary": "Christmas is building across Leeds: the city centre market is open, Beeston switches on its lights on Thursday and two big shows change over this weekend.",
+    "summary": "Christmas is in full swing in Leeds: the markets are open, Kirkgate's Christmas week starts Saturday and Leeds United are at home.",
     "events": [
       {
-        "title": "Beeston Christmas lights switch-on",
-        "when": "Thu 26 Nov, from 6pm",
-        "where": "Outside Morrisons, Town Street, Beeston",
-        "note": "Carols with the Salvation Army band, then free hot food at the Parish Centre.",
-        "url": "https://southleedslife.com/whats-on-roundup-21-27-november-2026/"
-      },
-      {
-        "title": "Leeds Christmas Market",
-        "when": "Open now",
-        "where": "City Square, Leeds",
-        "note": "Free entry.",
-        "url": "https://news.leeds.gov.uk/news/christmas-with-a-twist-gives-a-proper-taste-of-yorkshire"
+        "title": "Leeds Christmas Markets",
+        "when": "Until 23 Dec",
+        "where": "City Square, Millennium Square and Victoria Gardens, Leeds",
+        "note": "Stalls 10:30am–7pm Sun–Thu, until 8pm Fri–Sat. Ice Cube rink and Big Wheel nearby.",
+        "url": "https://www.visitleeds.co.uk/christmas/christmas-markets/"
       },
       {
         "title": "Tingley Garden Centre Light Trail",
         "when": "Open now; Santa's trail from Sat 28 Nov",
-        "where": "Tingley Garden Centre, off M62 J28",
-        "note": "Timed entry, book online. From £9.95 adults, £4.95 children 3–12.",
+        "where": "Thorpe Lane, Tingley",
+        "note": "Pre-book timed slots. From £9.95 adults, £4.95 children 3–12; free parking.",
         "url": "https://www.yorkshireeveningpost.co.uk/whats-on/tingley-garden-centre-christmas-light-trail-leeds-opening-9349129"
       },
       {
         "title": "Leeds United v Coventry City",
         "when": "Sat 28 Nov 3pm",
         "where": "Elland Road, Leeds",
-        "note": "Premier League home game. Expect busy roads around Elland Road.",
-        "url": "https://www.rateyourseats.com/tickets/events/leeds-united-vs-coventry-city-tickets-elland-road-november-28-2026-7188629"
+        "note": "Premier League home game. Expect busy roads around Elland Road and the M621.",
+        "url": "https://www.leedsunited.com/en/news/ticket-information-for-coventry-clash"
       },
       {
-        "title": "Rapunzel: The Rock 'n' Roll Panto",
-        "when": "From Fri 27 Nov",
-        "where": "City Varieties Music Hall, Leeds",
-        "note": "Opening night Friday, tickets from £18.50. Runs until 10 Jan.",
-        "url": "https://leeds-list.com/things-to-do/whats-on-this-weekend-in-leeds/"
+        "title": "Kirkgate Market Christmas",
+        "when": "Sat 28 Nov – Fri 4 Dec",
+        "where": "Kirkgate Market, Leeds",
+        "note": "Starts with the Little Fox Charity Craft Fair on Saturday.",
+        "url": "https://www.visitleeds.co.uk/christmas/christmas-markets/"
       },
       {
-        "title": "Mrs Doubtfire",
-        "when": "Until Sun 29 Nov",
-        "where": "Leeds Grand Theatre",
-        "note": "Final week of the run. Ticketed.",
-        "url": "https://leedsheritagetheatres.com/whats-on/mrs-doubtfire-2026/"
+        "title": "Harewood Christmas market",
+        "when": "Fri 27 – Sun 29 Nov",
+        "where": "Harewood, near Leeds",
+        "note": "One of several weekend Christmas markets; Sunny Bank Mills runs the same dates.",
+        "url": "https://www.visitleeds.co.uk/christmas/christmas-markets/"
+      },
+      {
+        "title": "Ultimate Green Day / Ultimate Blink-182",
+        "when": "Sat 28 Nov 7:30pm",
+        "where": "Leeds Irish Centre",
+        "note": "Tribute night, 16+. Ticketed.",
+        "url": "https://www.skiddle.com/whats-on/Leeds/Leeds-Irish-Centre/Ultimate-GREEN-DAY--Ultimate-BLINK-182-Leeds-Irish-Centre/42256935/"
       }
     ],
-    "tip": "Wednesday and Thursday look dry (around 5–6°C by day, near freezing at night), so they're the best evenings for the Christmas Market or Beeston's switch-on. Friday and Saturday carry a chance of drizzle, so save the weekend for a show or the Tingley trail."
+    "tip": "Today and Thursday are the dry ones (0–1% chance of rain), so go to the Christmas Market midweek. Friday and Saturday look wet; Sunday is drier (22%) and milder at 9°C, which suits the Tingley light trail after dark."
   },
   "review": {
     "week": "16–22 November",
@@ -219,6 +227,6 @@
     ]
   },
   "trends": {
-    "note": "Jensen Huang's return to Nvidia dominated business and tech news, with energy bills and inflation still the big household story."
+    "note": "Rising household costs led the week, with the energy price cap and Bank of England rate signals alongside fallout from Microsoft's outage and Nvidia."
   }
 }
