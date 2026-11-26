@@ -1,20 +1,23 @@
 {
-  "lessons": [
-    "Why 'was £80, now £40' works: price anchoring",
-    "Chatbot, copilot, agent: what's the difference?",
-    "Scarcity and urgency: why 'only 2 left' works",
-    "The price cap limits rates, not your bill"
-  ],
-  "terms": [
-    "Cascading failure",
-    "Standing charge",
-    "Market capitalisation",
-    "Service level agreement (SLA)"
-  ],
-  "m365": [
-    "Keep important files on your device with OneDrive",
-    "Get an email when a Power Automate flow fails",
-    "Schedule a Teams chat message to send later",
-    "Restore an older version of a file with Version history"
-  ]
+ "lessons": [
+  "Why 'was £80, now £40' works: price anchoring",
+  "Chatbot, copilot, agent: what's the difference?",
+  "Scarcity and urgency: why 'only 2 left' works",
+  "The price cap limits rates, not your bill",
+  "Leaked email, safe password: what a data breach means for you"
+ ],
+ "terms": [
+  "Cascading failure",
+  "Standing charge",
+  "Market capitalisation",
+  "Service level agreement (SLA)",
+  "Administration"
+ ],
+ "m365": [
+  "Keep important files on your device with OneDrive",
+  "Get an email when a Power Automate flow fails",
+  "Schedule a Teams chat message to send later",
+  "Restore an older version of a file with Version history",
+  "Assign a task with an @mention in a Word comment"
+ ]
 }
