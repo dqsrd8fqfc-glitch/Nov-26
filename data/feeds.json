@@ -1,10 +1,106 @@
 {
- "updated": "2026-11-26T00:27:52.730106Z",
+ "updated": "2026-11-26T08:55:52.512471Z",
  "feeds": [
   {
    "id": "top",
    "title": "Top",
    "items": [
+    {
+     "title": "BBC Radio 1's Big Weekend 2027 heads to Brighton",
+     "link": "https://www.bbc.co.uk/news/articles/cr1ewjpgd2llo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T08:43:06Z"
+    },
+    {
+     "title": "Poundland collapses putting 11,000 jobs at risk",
+     "link": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T08:24:29Z"
+    },
+    {
+     "title": "Government preparing to publish more Mandelson papers",
+     "link": "https://www.bbc.co.uk/news/articles/c3qj5yl7vj2xo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T08:06:32Z"
+    },
+    {
+     "title": "Four-time MVP Rodgers released and may have played last NFL game",
+     "link": "https://www.bbc.co.uk/sport/american-football/articles/c64gn8ryp7jno?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T07:51:10Z"
+    },
+    {
+     "title": "Constitutional experts challenge PM's rejection of more Welsh powers",
+     "link": "https://www.bbc.co.uk/news/articles/c6wy4kld882zo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T07:42:52Z"
+    },
+    {
+     "title": "New UK-EU treaty has 10-year termination clause, BBC understands",
+     "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T07:40:04Z"
+    },
+    {
+     "title": "Thirteen dead as mine disaster highlights illegal hunt for gold",
+     "link": "https://www.bbc.co.uk/news/articles/cmde1zr0nlyro?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T07:31:24Z"
+    },
+    {
+     "title": "'Laughing gas has ended careers' - so how common is it in football?",
+     "link": "https://www.bbc.co.uk/sport/football/articles/c6kgdrj9nxgdo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T06:18:30Z"
+    },
+    {
+     "title": "Desperate appeals from women on death row in Iran after protests",
+     "link": "https://www.bbc.co.uk/news/articles/cm8x0ve4yd7wo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T06:01:58Z"
+    },
+    {
+     "title": "Government set to double spending on social media unit to £25m",
+     "link": "https://www.bbc.co.uk/news/articles/c62l5j02lj0go?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:58:36Z"
+    },
+    {
+     "title": "I regret surviving the e-bike fire that killed my family",
+     "link": "https://www.bbc.co.uk/news/articles/c9n73yp1g057o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:47:25Z"
+    },
+    {
+     "title": "Duran Duran guitarist Andy Taylor dies aged 65",
+     "link": "https://www.bbc.co.uk/news/articles/cmp3vk6vr44po?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:19:35Z"
+    },
+    {
+     "title": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+     "link": "https://www.bbc.co.uk/news/articles/cmj4reknwv9eo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:17:12Z"
+    },
+    {
+     "title": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+     "link": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:00:27Z"
+    },
+    {
+     "title": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
+     "link": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T05:00:24Z"
+    },
+    {
+     "title": "More ref frustration as Pochettino's chaotic start at Man Utd continues",
+     "link": "https://www.bbc.co.uk/sport/football/articles/c6vg24l724l4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T00:24:48Z"
+    },
     {
      "title": "The US pastor who wants to see women's right to vote overturned",
      "link": "https://www.bbc.co.uk/news/articles/cwe89jyz4012o?at_medium=RSS&at_campaign=rss",
@@ -28,102 +124,6 @@
      "link": "https://www.bbc.co.uk/news/articles/ckjrel5vdj9zo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-26T00:12:37Z"
-    },
-    {
-     "title": "Expect fewer frosts and more hot days as UK seasons shift, says Met Office",
-     "link": "https://www.bbc.co.uk/weather/articles/cr3eg1py3gv5o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-26T00:08:07Z"
-    },
-    {
-     "title": "Stalking law simplified to become one offence",
-     "link": "https://www.bbc.co.uk/news/articles/c8lydnlkq7xno?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-26T00:02:50Z"
-    },
-    {
-     "title": "Motorcycle rider who took stunning cricket catch found",
-     "link": "https://www.bbc.co.uk/sport/cricket/articles/ckwy8gj013elo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T23:50:02Z"
-    },
-    {
-     "title": "A renovation to upgrade these Hong Kong homes ended in an inferno that killed 168",
-     "link": "https://www.bbc.co.uk/news/articles/cqx2wrkyrdn8o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T23:26:50Z"
-    },
-    {
-     "title": "'All coming together' - Isak repaying Liverpool faith",
-     "link": "https://www.bbc.co.uk/sport/football/articles/cqm2l0gelkzxo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T23:25:30Z"
-    },
-    {
-     "title": "Lammens howler denies Man Utd victory against Sporting in incident-packed game",
-     "link": "https://www.bbc.co.uk/sport/football/videos/c6ly5145gg1do?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T22:32:51Z"
-    },
-    {
-     "title": "Duran Duran guitarist Andy Taylor dies aged 65",
-     "link": "https://www.bbc.co.uk/news/articles/cmp3vk6vr44po?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T22:19:38Z"
-    },
-    {
-     "title": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-     "link": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T22:18:06Z"
-    },
-    {
-     "title": "Andy Taylor: Duran Duran's livewire guitarist who was a true Wild Boy",
-     "link": "https://www.bbc.co.uk/news/articles/c0666rn4l5vo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T22:16:14Z"
-    },
-    {
-     "title": "Isak scores twice as clinical Liverpool beat Brugge",
-     "link": "https://www.bbc.co.uk/sport/football/videos/cqvg28l0z8mro?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T22:12:19Z"
-    },
-    {
-     "title": "Poundland collapses putting 11,000 jobs at risk",
-     "link": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T21:31:10Z"
-    },
-    {
-     "title": "Hotels need 'minimum standards' to keep women safe",
-     "link": "https://www.bbc.co.uk/news/articles/crgj3gnjeqe0o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T20:45:18Z"
-    },
-    {
-     "title": "Israeli judges recommend dropping most serious charges against Netanyahu",
-     "link": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T19:47:39Z"
-    },
-    {
-     "title": "MP calls for action after her likeness used for AI porn deepfakes",
-     "link": "https://www.bbc.co.uk/news/articles/cr742z9gx894o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T19:01:59Z"
-    },
-    {
-     "title": "Glasner criticises Forest players yet to learn English",
-     "link": "https://www.bbc.co.uk/sport/football/articles/cw20xr4d7x55o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T18:32:55Z"
-    },
-    {
-     "title": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
-     "link": "https://www.bbc.co.uk/news/articles/cjr4gw100d52o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T17:48:28Z"
     }
    ]
   },
@@ -132,124 +132,124 @@
    "title": "Microsoft",
    "items": [
     {
-     "title": "Microsoft 365 Backup offers recovery windows up to 10 years for OneDrive and SharePoint, The Register reports",
-     "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9UelZwWTU4bWo4OU10Yi1NdmdTNUlMb0IxV21KMVJScVItZkdNUVFQLVQ3bFVlWFdBS3NuSlM3WGsxM1dH?oc=5",
-     "source": "Digg",
-     "date": "2026-11-25T23:27:21Z"
+     "title": "Making the most of Microsoft - the art of software spend optimisation",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaHc1bFFScjJNd0JoaC1ZUXlCb0M5TlUxemhNNENVUndBcGM5X0VrcDBaVS1WUUxYbnNtbTNZNlB1Um9kNUlTYVZua1RZaEhWWVdCcGVHV0JmNkR1X2FERXJkT1p5bEpPOWgwUmY5OVpHYzBXaGlnUmJyT3NEbDItRkNsT1NfSVAzM3FKalFXNEJ1aFdCNDdtTHU0bw?oc=5",
+     "source": "IT Brief UK",
+     "date": "2026-11-26T08:40:00Z"
     },
     {
-     "title": "Get 6 Microsoft Office apps for life for $15",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTlVrbS1DXzJQZzUtbmM5aGRGRjNySkZMcGtOY1k2UktJd3FGdDJBUkhTV1VqLU9wT2E3eUZVMDZoX25tb0lya1dGbHY3MldKUDVLRUJtZEE3TV92WnUyVVBfRXRtZFJCSTRiRkVXS1NELWZtWUVUTHpzT0NaXzJDTXdTb2tkeXFWLTRyOA?oc=5",
-     "source": "Mashable",
-     "date": "2026-11-25T23:14:51Z"
+     "title": "More apps, more ways to create: Adobe and Microsoft expand possibilities on Windows",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONXBwWHJnNm1aVS05N0o1VlJrbV9jSVlNSTNOdG80bzBvY3BRalNOdE4yRkhMMUFodmFVZ1BtV2QwMVdlNGN3NEpiWkxqMEIzYTVMTHhXLXpEeDNsU1luSndOcUVyS3ZpRG9rWHhfWC1rV2xuYW85dktQR0tJR2QwYmNXSzZRTHZ0RlZHRWNndzdqR0ZjRWs1VXh1TXpFanB6VS1vZHBMS2pPRkZHY28xRkhKd3dxT0hPWnc?oc=5",
+     "source": "CXOToday.com",
+     "date": "2026-11-26T08:36:27Z"
     },
     {
-     "title": "Microsoft Office 2021 ownership is just $23 in this early Black Friday offer",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSGVaQmJwclB5NHlJNlJUNVpBR2hvSi00aVdPczlPdVVzNEYxa2E5UTJnVGZRamxnLTBxQmk0bjhCMGFmd25SRzlDb09KbUFiRVkxSFN2VUl4SF9GSmx3aDZNZ0ktS1Q0VkJ5bFZFUHhMQ3EtamVDazVoM1lMZlFFaUJQLU82cFA3ZjJWRGhEZ3NPTDFzWGttTjQ0dHU?oc=5",
-     "source": "Mashable",
-     "date": "2026-11-25T23:03:45Z"
+     "title": "Microsoft Launches ‘Code Red’ After 24-Hour Outage, Wants Critical Fixes Deployed Worldwide in Just 1 Hou",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOLWhYTExjWkRqOG5pSnNlNEZfbmZ3U0E4U01tQTRMZTAxcWdQRmkyVzJ6YXU2bTFiLUxHWTFuQjl4aWVCNE5yNkhxT081ZHJpeTdKUDNOaFhBdUhfV3QtMElhbFo5RjRRbjRrdVRIOG9WVFk3R2l2cGFILThFeDFhVjgtaXRyTXI4a2wtTmhxbExlaEVwUlU1MVBtZTZtYkxpbXF5T1BNREkydnBFUnE1R1VFWWhjNjFyb1JGVzI1WUR3U2J5NEl1SUREUi00bVlJUTNQZlh3VjhodExMUE5yN3M0dkRnYzdLaWJDTVF6WTNNSFFieFE?oc=5",
+     "source": "Benzinga",
+     "date": "2026-11-26T08:30:00Z"
     },
     {
-     "title": "\"A lot of memory and issues\": Microsoft reveals why its force-installed, Copilot-filled Microsoft 365 apps are being removed from Windows 11, saying they \"came at a very high cost\"",
-     "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQdFZmZjF0Wm5fU3lsT1BGdFVkSFJ2LXZtZWV4WEhhZ1htRjJEakUzSzdZR1Z5WTZ5Y0gwMFExU1pCcFR4T2dRcGIwbndybWVfMUlnQ2F6WE5RckY3bGMtZ3NEN2ZHdzAtMXFwcjc3UXZ5Mm9POVFTNmF0RWVvOHh4SXJIaUpfM21ZQXVxQ2d4bEVxcUJhMTZXYVlrV3dVWkx5OUNndU5Xeng0cnVwQ24xRlo5dzJFY0JuNWtOdE9tM3BWd1lCd0RvYVJWblRpdWQ0MnZwYm91TERLa1F0U3gzdWZNb0JjYm44cUtTeVd6aldBQWxBTWtnc21KaWhBUEMzSTFrOTBaV3Y1RFpXNU5qVkh6cjZycF9OWEpKcW1aSW9UX3JEazVmb3RySi1KR1ptbTZITGFsRi1jWjA?oc=5",
-     "source": "Windows Latest",
-     "date": "2026-11-25T22:20:21Z"
+     "title": "Ditch the Microsoft 365 bill and own an Office Pro 2021 license for $22.97 ahead of Black Friday",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTEhpd1B5WXVnLVA5UUtUaDhNVVhFQktrcGJobUxUUjlEakFqZkRyaU95QkpaRW03MWRXV3pEU2xXaTFSNmstNjdXT3FZcDNOR3ZITGRqYWJJNDV2MDhSWlJLMmRFQ0hDSkNGUU1hSlhkU1FORVliNXBrUG1PZ0xDRFE2SnZJQjJydnFxa195cjFuWVMtVGZMMVk4Z2RlWVdmZ3RpdFB2bzNCTTJOUVNPcE80SGFFbk1LbVkyYUhodHBoUVRvZl9lS3l5WkRqenRiNzV3b05pWQ?oc=5",
+     "source": "PCWorld",
+     "date": "2026-11-26T08:05:59Z"
     },
     {
-     "title": "BC @ Work, November 2026: Visual Resource Scheduling in Microsoft Dynamics 365 Business Central",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcDB6SXpxQXhaYmFUOERTQ0N1YjVUNGdiRGwxTU1jSHF1djZ0Q3RKNkFHbG00THV2Q3YxS3MzMTlpZG8xcW5aV1NFMklCVzBLQXktNFZnREl4S3hnNEItT2NVTXB0R19fVGxtUUhTVi1SZzBsYTNNTzZDTVlQdlg4bHFyMzdMalJxYXpXLUFPc0ZJMGktejYyNHpFV09EZ3JvLU9ORXJDSTloQ2pwU3poRjVnRER5Y19zLXhLNlRtcw?oc=5",
-     "source": "MSDynamicsWorld.com",
-     "date": "2026-11-25T21:57:52Z"
+     "title": "From wasp nests to unsafe poles: How AI is helping BT Group’s Openreach engineers in the field",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNXNhSlQxTEFRNWZ4UWpXaDltYi0zcEVKZV9rQVVlOC1JZUlwblZqZTJSYUdzLTZzRUItME10OFNnQ1RHRU1jRnpQU2wxZVJOd3l0aFBhLXhkdDJZNnl2blFGTjBCeU5vb1l2M1BYWHBYcGFDcVpmZVpPd0YxWjVfWjJEUUVRbTV4WXlBSlZTa2x0Rnl0djNQTDFXeUVWRVN0TDZF?oc=5",
+     "source": "Microsoft UK Stories",
+     "date": "2026-11-26T07:57:35Z"
     },
     {
-     "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5fTzRPVmxMSk9Ua2tyb2s0a05sVVJuS280ZDU0dkZOVnFIbm91TkNaT0NvSHAxRHdlUGFENlI3bGRsbHNQSVQ0U0FRQm1mU0NpejlQcFJWd2hmWUVmaTVMdm9nTmg5Z3lyTkxzSF81aWh3cjdjRHFsY0hGTVU?oc=5",
-     "source": "The Record from Recorded Future News",
-     "date": "2026-11-25T21:35:35Z"
+     "title": "SevenC and Microsoft show how to turn Copilot pilots into business value",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa0lWUmtmUVc0ZXUweDhTdnhPNElKMXBzd2huRkhqVVNid29MUTJRVlJ4OWpFcFdKVEtFV0dTNlp4TmpTSjdYcHAxSmxLRURRTEI1RF9UWmhUeDgyLTdmNTZQa19hbURDM1NSVFZUenFBUmxiQ0J0ejhiSy1XTjF4V2tuYkRsZnc?oc=5",
+     "source": "TechCentral",
+     "date": "2026-11-26T07:31:26Z"
     },
     {
-     "title": "New To-Do List Item: Find Replacement for Microsoft To Do",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNHBVWGQ1Z2VvX2o2OV9la3hROFdXTHIxV1JkZUpXMGRkWHNVUU9OSllrUXRZLUFZWm1KekxEei1ZV0pfZWwzbmpSbGdoVGZNVE5JMFNUNjNZcEhKWDBsY1UxekZ1TVF5anhJbHVOQzl3ZEJUeU01RE0yYkwzM1BHcDVLTC1vSUpIc3Zsamdn?oc=5",
-     "source": "CNET",
-     "date": "2026-11-25T21:30:21Z"
+     "title": "More than a third of NI workers reconsidering career paths because of AI, Microsoft study finds",
+     "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZWc3UlVPdTR3dXI4NEFka01qM2dwRmZiTzhpSDIzY3BUbWh3VXdoc3gtR2Z6Qnptd3h3dVJiWldwUVFCeUZjNlpYTEtYR1hwREpuSGtyZUdvNUp3elRWaFVMbmtNX05FQkdQYXBGVGdjM25zdzlCcDlqOTlmYmNGSzFXXzJPLWEyQUFnRnpyci1KdkxVTXBzckNGbWlUSWRWcGxuemU1Q1NER1l3dHg2QTRtSkF0ejlNTlQ2QUQ0c3VSeXE2Nm9KajhiSlQtdFNkdTBoQlFpNURrYko1ckMtcnVVVDc2dw?oc=5",
+     "source": "Belfast Telegraph",
+     "date": "2026-11-26T07:05:10Z"
     },
     {
-     "title": "BNY and Microsoft Let AI Agents Haggle Over Treasurys",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSXV6amZUeHdPN1VEYWlWSEpxV1FzNWVSMGM2eWhXVWlCSGlRSzlQTWVmMUNOQ01vYmNwY1R1RlNmLUlub0lDUUVEOVZiWHRNN2NPb24zbHJudmIxMy1WNldNWmxvOXBnVkJzTTV6ZTl5ZFlZVDBjUnVicHlWZ1B2UEtwMU5vS3JrNmJrcERzMnhQR0lMa3FtOVNyN0RzVkltVFFoZDV2WWY1VFN1SXhGQw?oc=5",
-     "source": "PYMNTS.com",
-     "date": "2026-11-25T21:01:04Z"
+     "title": "Recap of Microsoft Ignite 2026: Copilot as the Work OS and Agent Governance",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBINUc1Y3YwdmhMSjNmZHBJYWhLeGtiNXNIdHFJSXdlOHdxbjNqbzVadHdOMHdnVnlIN0FGbG1kUDhVNXVHTnRCWTNUWTRMRXREdXRWSkc5X0VKY191SVNlZjNEUDc0NS1LenMybWNjVlg?oc=5",
+     "source": "infoq.com",
+     "date": "2026-11-26T06:45:15Z"
     },
     {
-     "title": "Microsoft Entra Connect Health Flaw Exposed Admin Emails, Tenant Data",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeEZsbjdKS1hUWGY1UVpuRkZORmkyM0k3d1BiZVp0a19TblFqck9zOExDZlMwQzc5R0N6MDFqWUxXeW1ab0Y0SWNiUGVXUENDUTZWcll5am5IQldzTmZtRGR6Z04wekszZGh2TVlJMVpvTTl5N3pfdFY3bklBbi1pNi1xSE1sMkpXY0VmOXpPWWpkSElhUldqWkRoSkhTQ0VmQV9TX0JRVVR6OVQ2MFJ4cFZaS0h0X3h4MTFoVw?oc=5",
-     "source": "Forbes",
-     "date": "2026-11-25T20:45:18Z"
+     "title": "Microsoft 365 Bug Prevents Users From Accessing Word, Excel, and Outlook Apps",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWE5QQzRQY2lPZHlQVTV2ajJ1YTFCVlBSVG1FcE5XQ2k3YTVSV213eFFfcVB2TTc4d3Y0eTBMMlh4bl9HVUY3bGpsbmhqRm1FQTJNcUZXRkJCVzBKN0pXUzFRRXM4bk9FWExpemo1TUtkOEtfSUx3LW1Ca1RHNzVhWtIBhgFBVV95cUxONHRKVmtFTmF6aFo5YVR6MTRjaWF2VWZrbjN1WUlreHR0ZUtvWkN3dGVaS0tIY3RUNTNSTmZtRG40VTllZmVLVFJMQnkxZGhiWFBtelQ2VkJfckNTNk9nNjZJUWRVcThTS3duUUFLRkRfX1hyLWpVZ2NIMy1zMk5TeUotc3F3UQ?oc=5",
+     "source": "GBHackers News",
+     "date": "2026-11-26T06:11:02Z"
     },
     {
-     "title": "Microsoft trades lower after heightened inflation fears, proposed tariffs and major cloud service disruption unsettle investors",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZTUwZTFuU3lTZGM5eXhSN2ozZmM0RVVYc1ZIR0FxRXpuX0pWTnlzbWU2UmMwS09XRWIyaTV5dVBzc29weXZUaDRBb2Itb1dPQ18xOC1rRjVKYVhoNUlOZ2JUbmQ4cEl4cXVTejJsQjk1MWFBU1hVLWZrZ2tXN1k0c3EzcDBFbkpBVk9QZjA3MjA?oc=5",
-     "source": "Traders Union",
-     "date": "2026-11-25T19:42:29Z"
+     "title": "Microsoft president warns AI could trigger more tech outages as developers rush to patch security flaws",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQVNSTDBSUzIybl9xelFrZTVKclFudkdCNDFtYTc2U1A2dGJpRTU1VW00OHNPbHo5bXJ4eXFYSFlpbUg1SDlZN251SGJtc20wdXBYdzNXWlFKVXU5cTl2a216NWhmS2VqOVZGTTZma25qTWl6V1FuaHRvVnE5UDlHMjFNSjRBUndUeUJmLXVOWjRacGNoakhpLXBQUU51cXN5Zl80QV9rbUZka1YzY21DTzd2OGktd0hZSEF1X2ZmTVJkWGNlSEZucktBNmN2aVJqQXhaYWd5V09SbEp2bWVLWXlZMXpVSWc?oc=5",
+     "source": "TweakTown",
+     "date": "2026-11-26T05:37:02Z"
     },
     {
-     "title": "Forget Windows 12 for now, Microsoft wants Windows 11 to be rock-solid first",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9IMkI5Vmp2WTVhUmp6bDZiM2xBRzNXTldkYkNIZlRrQk41WmhkNjhzWnhaa2o2blEwU0E2bzJPZ2lYTjVPaUpjeVA0YzJFU1JSZ3FQV252ZjRpU1pFN01CcEtpM3VnLTQ2U3lUQVRfMGU5NG5hWnJv?oc=5",
-     "source": "MakeUseOf",
-     "date": "2026-11-25T19:32:49Z"
+     "title": "Could you survive without Microsoft? Inside the costs of digital dependence",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUGxvbl9SV2l5czlUN1lVZnpkMllvakxFMG9pZVNsWFNFNWJ4ajlpdzlXZ3FsVWRuZFZsdTg3SjNzMUpRX1Y5UzZ3WjV4dWJyZ1Q4TFRMVzdkUmtrWUl2VEhKTWNhNmNZc0lvN2dKNk03ek9pSGRKWTFlNXgxWVE1SzNoMEFENWxGai05aHh0eldsQ3l3d0VtUGpoVlY2WEEtcEF6NjNnbnhFbS1MY2c?oc=5",
+     "source": "Asociación Almendrón",
+     "date": "2026-11-26T05:10:38Z"
     },
     {
-     "title": "Microsoft 365 outage report: email and recovery",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcHRfNlF6cGpDdDNWZ0g3YS1OcjFmZ2VzdkJyYS1PYnVZc2dSV0JId0gyeF9wYWo0b3BYdzVWODR0OWZmZlhoRnNWWi1qWGVNeGhYcEdrWUdkaWwxaWhscU9WMVVPaElyMHZoVnN5WWpOUGM0S18xOEdZdU1oam1kaXV3RUhRNWJWRmFoNXYzMk1rdUdRak1v?oc=5",
-     "source": "NeoTeo",
-     "date": "2026-11-25T19:31:30Z"
+     "title": "11,000+ messages, across 11 Teams chats and a decade of ‘acceptable failures’: How the 24-hour outage that Microsoft says had the biggest customer impact in Exchange Online history has triggered ‘Code Red’ inside the company",
+     "link": "https://news.google.com/rss/articles/CBMiqwNBVV95cUxOdFpkQXhGRXBzZC13dzdfTXBEYkJ5Q1pybzJNM1c1SVJUbUEtVjNTM0djWTdFczBFUXNIMy1XSm9MRlROSFQzN3l1SlJPOTE1MW5zdDN4b0RVa2s3SmtjY3E5ejRPdUVPZGp0YjNDWl9UQWlRUm4waWlrMGQ5bXQ4cTlfNUczUEpoLTZrX1FnNlJCUmtqdlJxSTZJUzY3UTV5M3huZWllY1VTSms0RVVlRm53MW5MZm5DY19nQlJlRGVxZVRORElIbDlYZGtucjhPLXJVd2dHVzJvaHg4aWw5aExTV1gyX3Q5RFhEWWNLd01oaU5SY0pnajBqRlN6NWo5SXJjdEVxY2tJZDBEVjc3eTdEN1dlS2tzd3FmdjBocmk2UUJIMjk0M0laNXZuak5mRDVjUUlXbUgtNVdZTWZiT0tJTlBZVlNaYWhtVGJIZW9CbG5BY2pIOEQySHdlVXlfYkpXdnpaS0FjNXU0M3NBY0swanhlV0lUZ0Z2U0V3dXpRY2ZnZGpXZ1o0TEM1YU0ySmNFLUpVZzJTeWtxbWhKdU1MWjNMNGRXc0Fv?oc=5",
+     "source": "The Times of India",
+     "date": "2026-11-26T04:36:00Z"
     },
     {
-     "title": "Report: Microsoft Declared \"Code Red\" Alert After Historic Service Outage",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaS01eE1kODAtQl94M0RlY2FES3FoaDNTSV9zMTNXSVFYaWZVWUQzWEIzSTlaWU1uTW9FTHFkVl91RW1BNURUd1JpQktuNXhBUW5GM2VEcFBDck9mdUp6Ums0dmNKZzBzYlRjbGh6b0V6UHpOU1pqWTNwSVVNOEw1YjA5SE5JSWlmUUJWREVXUk9MZThaM2pTSVpWajB6M0ZRUGdUUnlMd1hUNERTLTV1emV3?oc=5",
-     "source": "Thurrott.com",
-     "date": "2026-11-25T18:44:47Z"
+     "title": "Your Favorite Windows Apps Might Soon Refuse to Run on Your PC",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUNmTEZtNktaX2JRSXE0R3FITXdKNlJDN3FONERTSzVkRi1OSWFRVk1RaS1MRG5jVVBRblZPRUoxTDFES3FRbTZ5RjVyclIzMEVkMlpYWlg5TGloMDNST053ZjhGVkdMbmJOVEpMQUVMSDlTOThCRkFzQzlVZWxWcllTaERaUU5RRE9FT2tDRHJOYTFXWG41SFlqWGlwLTJncm5NOHh6dlk0VmVvYVlJdTBBYzJQUFJJZXc?oc=5",
+     "source": "PCMag Middle East",
+     "date": "2026-11-26T03:25:47Z"
     },
     {
-     "title": "Microsoft faces further downside risks as security failures and competition weigh on shares",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZ0JUcTVtR0NmZ20taWVOZTlEeVB1dU4taElwQlBKN2hoOG5rWWFaSmhsNG45ZU9fS3BiaXozTXI1RE1oam5hWm1IN2ZVMFc4S2pORVJCS2VpNDNMbFIyNDl0dVhJdnRkaXlvcVIyWGd1dm1MTHdkXzFuRDRfa2VHSFhUNjcwX0tVWnZISFptaTcwanc?oc=5",
-     "source": "Traders Union",
-     "date": "2026-11-25T18:31:11Z"
+     "title": "Nvidia Slips Below Microsoft as Valuation Retreats From $5.77 Trillion Peak",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBIY29mQ181M1JvWGNHaldUdXJmODRrODJXaHZkWW5pQXFOLWtwdTlwa09DQVkwVFE1MEgwU1hPcWVET3oxRXlBQzdyVXhMZ2h3VERYbW05ZVlBMUUxaEdoRTU0ajVMOV9EZXh2SGxQdzZPZDNNRXc?oc=5",
+     "source": "BigGo Finance",
+     "date": "2026-11-26T03:07:48Z"
     },
     {
-     "title": "AI agents promise to transform work. Big Tech wants to collect the tolls.",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObVliT05sekNtYS1adENYOHZ2N0ctVFdDV3FSRGpfZl8ySUJXQnJnVHRuUjd3dXl0ZkZ1bDF0dVp1anlwc2JRSmo1Smo4U1hGNXFFcm1GY3FQYnV0QmxkekY4UDBfbmVTU0dGaTg5NWp2ZE5LR216TXYycnNmTlQzVDE4NGJXQzh5dlVRRmdZLTQzZy1tbHRPOTk2cU44MVVCdl9JRWlpVQ?oc=5",
-     "source": "Business Insider",
-     "date": "2026-11-25T18:13:00Z"
+     "title": "Microsoft Launches Red Alert as Cloud Service Outage Tests Platform Integration Value",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT282N1FxWFVydGhXdi1nTG9EQkctYnBKYmFNTEZwQ1dHaHp3WjA3TEZMdkJDc2pweldyZm01U3R3T1JmREV6VjVRUnctQ1lCRW9jQVJpV01QOUJ0RnFVZWQxbFZFak5WU2VrRjAzUUxJNEE1NjZkX2ZpQ2NqMzdjOVJOLW52bF9sWU5mLXNVRlM5R0d3Q21kdHBHQlJfdlNsbF9rc21yc2JobGN4R2Z1QjFvYzNCbmdkWEE?oc=5",
+     "source": "NAI500",
+     "date": "2026-11-26T03:07:37Z"
     },
     {
-     "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
-     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVzh4enZzVDh3MXNzbnkzNUxyYWZTUkItNmtxbS0xQlNqNERIYVNvYlU5U2ViSmgza2JIbXJDclBWamczdDVNNnBuc25NMWVhQUNNMUFYbFhNTTFiVy1DcTl4X2M0dnJvbE8xajQ5bld5VjF2UTRqcDZxQUFyWEcyZW9TQmhsSi1naDBlU3doX2l6dEpuSGV1Q0lFSEVucEY2RFlHdVhKcnZsd0NPaWo0S1pBeW5NQk56bFFxWHVGbFU3ZlQ5QWoyLUZjT2I?oc=5",
-     "source": "Microsoft",
-     "date": "2026-11-25T18:09:06Z"
+     "title": "Nvidia’s Market Cap Falls Below Microsoft’s: Analyst Flags Five Overhangs For NVDA Stock",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYkwwaEEtY3lVNTJENlZ1NVNGMFZrSTlxYU5tMXFGMnVGdk1fYXo0a2pUTy1NRVBOWGhfSEo4UTNXNlFBY285b016NnVJNHgyZWwzbWpZcHM1NENDekdoUE9DMTFpbXBEcDRTZVZrZll6cm5wSXRlV3FCMXZFczRpUGFleVR6MVlNcnlzN0pvWmV4eEFPQ1NjVzBR?oc=5",
+     "source": "Yahoo Finance",
+     "date": "2026-11-26T02:39:00Z"
     },
     {
-     "title": "Microsoft declares ‘Code Red’ following 24-hour outage: Here’s what that means - National",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxZDhHUmFZMTU1LTBXSzNnaW1JYW4tSDFqQUVVVzhZWk9ib0xWaU5LZGhlX0tSbHh2b2FVV2o0cmRwUFk2VkMzNWRINHdfbzE0ckRfaEhpS1FvSjRCdVdoM0pRdVUzZw?oc=5",
-     "source": "Global News",
-     "date": "2026-11-25T17:51:35Z"
+     "title": "Remedy says Microsoft decides whether Quantum Break gets a sequel",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWGdVajZMMDRIVW9hTU0yeUFka1RTYlRxREt4OXlLbERTRlNCX0FJSnN0c1A4NWFld21yMlhqdmNzVjViU2NROHhQNkdEN0JJMXRnc2JBb0FVczhhb3VxYUJsV3VlRW5LR1NFekxnRXRDQkp1LU45WjAyaWdLOHQydExBWVpmdlk?oc=5",
+     "source": "Mezha.net",
+     "date": "2026-11-26T02:06:02Z"
     },
     {
-     "title": "Microsoft Plans to Remove Two More Windows Features: Here’s What’s Changing",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbzI1dzhMRVpqVTJtbVg3TnNzd0hIWXRiaWN5QUtlYVUyUmxGY0Etc05QejhUcHVacmZKSDdVZUhCTkFTckk0Vi1zLXVXY3ZhZ09CZGZtRml4NlpJUk0tYlZrQ0swTnRnU0tIQlBNSmlVdVA4Tm5rRlNab2wtVThJaGY2MWR1VjRuczdRc1RBSGZTd2Zl?oc=5",
-     "source": "TechRepublic",
-     "date": "2026-11-25T17:47:27Z"
+     "title": "Microsoft Analysis: Only 0.5% of Vulnerabilities Are Exploited; \"Takeover-Type\" Flaws Should Be Prioritized",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxTUhvbGRqb3FxdzVnWU5WRjRIS3hXRTQyQm4wU2tzdWd4a0tjSkE2WVhSWE5jSjlZeWNLY19yY1c2VWhFeXZJZllYTWtnRmZFNWJfZ3AyXzRCUC1iQVA2WHMwY25oemhveER3SWdCekFjaEhTZ1E?oc=5",
+     "source": "BigGo Finance",
+     "date": "2026-11-26T02:06:00Z"
     },
     {
      "title": "Microsoft outage puts observability in focus",
      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNazBGY19oLXM1XzdVTUh1cV92MFQ3ZnJZOU1BaFNYZ1gyN0xHTy10d1RfckE2VEd4QThTanpFSVRNZWp1Z3JEdmdVNHFMNzlzX0pQNE8xYVVmZ2xuY2llb05KakNMb2JYeV8weVhFSkZFcFJHRUxVUkkzZGwxUXJRak1FX3hSVE5R?oc=5",
      "source": "CIO Dive",
-     "date": "2026-11-25T17:37:12Z"
+     "date": "2026-11-26T02:00:48Z"
     },
     {
-     "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWUJESTVQb3lZV3kxdGl5ckNDVUpEbVJvVW01Tm04QVdDUUI1LXdoRnUzVU1kVGFlOEd6WmE2NVRGUVdqcm1NYlZaT2x6cG1PQUNTRGNVQjVDdE1abkNycmhyTE1SX0lzUjk2N3BmRTgyOVhPZ0hNd19Ia0ZxUnMzZ3UySTEzU0hIbnR5WUJGWmgtQzBoSTBvakd5aDJWcXBDZTFVM29UVnhCODI5UUVoc2Y3VkpYbHZ5RWpkTFhMWEZ3Zk44aFVISW5wVVdfT0dLS2c?oc=5",
-     "source": "Microsoft",
-     "date": "2026-11-25T17:15:00Z"
+     "title": "Remedy comments on Quantum Break '2' requests — Xbox's most underrated game",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2k3ZmRuUWtwU1ZIRDJDNHZtTHlET0NiNE4tWVpiNDhnbWltcURIX29RdzlZZ0pQTTk0LWE2UFV6THlReUptUlNKTHhkWi11M1RWTDI0QVFOWGVOX051V1BIaERCLUpXWWF5bEZSakpkZmVhaVpUdGJQTEQyc0tUNXVaSEZCd0Z3aGNTVmoxZzhQVFU1WGZOWHhtU2lWMXBDcGJOWUUwU0h1b0ZyMTBBOUo3LUZwOXVIRy1LNWRXM1I?oc=5",
+     "source": "Windows Central",
+     "date": "2026-11-26T01:56:46Z"
     }
    ]
   },
@@ -257,6 +257,30 @@
    "id": "markets",
    "title": "Business",
    "items": [
+    {
+     "title": "Poundland collapses putting 11,000 jobs at risk",
+     "link": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T08:24:29Z"
+    },
+    {
+     "title": "New UK-EU treaty has 10-year termination clause, BBC understands",
+     "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T07:40:04Z"
+    },
+    {
+     "title": "Parents cutting basics at Christmas, charity warns",
+     "link": "https://www.bbc.co.uk/news/articles/cq1k98gpzmy4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T06:13:47Z"
+    },
+    {
+     "title": "US announces new tariffs on host of countries including China",
+     "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC",
+     "date": "2026-11-26T04:10:58Z"
+    },
     {
      "title": "US approves SpaceX plan to send a million data satellites to space",
      "link": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
@@ -274,12 +298,6 @@
      "link": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-25T21:43:18Z"
-    },
-    {
-     "title": "Poundland collapses putting 11,000 jobs at risk",
-     "link": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T21:31:10Z"
     },
     {
      "title": "What we know about Trump's Thanksgiving tariffs",
@@ -324,12 +342,6 @@
      "date": "2026-11-25T16:24:30Z"
     },
     {
-     "title": "US announces new tariffs on host of countries including China",
-     "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T16:21:34Z"
-    },
-    {
      "title": "Fuel price hike will make life 'almost impossible'",
      "link": "https://www.bbc.co.uk/news/articles/c6rrgqknw0jlo?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
@@ -364,18 +376,6 @@
      "link": "https://www.bbc.co.uk/news/videos/c6x29vne7lnko?at_medium=RSS&at_campaign=rss",
      "source": "BBC",
      "date": "2026-11-25T09:56:33Z"
-    },
-    {
-     "title": "What will the energy cap changes mean for my bills?",
-     "link": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T09:54:32Z"
-    },
-    {
-     "title": "US attorney general dodges questions about Nvidia investigation",
-     "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC",
-     "date": "2026-11-25T03:44:07Z"
     }
    ]
   },
@@ -510,6 +510,18 @@
    "title": "iPhone",
    "items": [
     {
+     "title": "Apple pulls popular Chinese AI chatbot from the App Store amid child safety concerns",
+     "link": "https://9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns/",
+     "source": "9to5Mac",
+     "date": "2026-11-26T02:12:24Z"
+    },
+    {
+     "title": "Wispr Flow improves dictation accuracy with new Canto-2 speech-to-text model",
+     "link": "https://9to5mac.com/2026/11/25/wispr-flow-improves-dictation-accuracy-with-new-canto-2-speech-to-text-model/",
+     "source": "9to5Mac",
+     "date": "2026-11-26T00:35:52Z"
+    },
+    {
      "title": "9to5Mac Daily: November 25, 2026 – CarPlay Ultra update, iPad rumors",
      "link": "https://9to5mac.com/2026/11/25/daily-november-25-2026/",
      "source": "9to5Mac",
@@ -616,18 +628,6 @@
      "link": "https://9to5mac.com/2026/11/25/apple-has-ipads-running-macos-already-but-dont-get-too-excited/",
      "source": "9to5Mac",
      "date": "2026-11-25T13:40:50Z"
-    },
-    {
-     "title": "Apple accessory Black Friday deals: AirTag 2, Apple Pencil, CarPlay gear, more from $7",
-     "link": "https://9to5mac.com/2026/11/25/best-apple-accessory-black-friday-deals/",
-     "source": "9to5Mac",
-     "date": "2026-11-25T13:33:51Z"
-    },
-    {
-     "title": "WhatsApp testing stickers with audio, including make-your-own option",
-     "link": "https://9to5mac.com/2026/11/25/whatsapp-testing-stickers-with-audio-including-make-your-own-option/",
-     "source": "9to5Mac",
-     "date": "2026-11-25T13:16:25Z"
     }
    ]
   },
@@ -762,124 +762,124 @@
    "title": "AI Tools",
    "items": [
     {
-     "title": "New AI tool assesses potential investment deals",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbGtJSmhvZGhhVWY1Y3NpMzJMZ1JaRWoyaE5tUUZ2U1E5RkVRMlZHYjdNSkZEcUpCaExYNGdUSmdkY0QwMFUwT3lLQ3NaREY5LTlHUTBKSmFycHQ2eW5BQ1B2LXpETFZYWG16SGtNakdRbEdDRlpCdy1LREJfY2RseE9ua1NCTzRsV2g5RG5iM2lEZDJnMWF2a0d3THJlTmhDSm1xZXhOUGNOQWRQU1FR?oc=5",
-     "source": "Property Investor Today",
-     "date": "2026-11-26T00:06:45Z"
+     "title": "Sync AI Matchmaker launches ChatGPT Plugin, so the AI People Already Use Can Find Them a Date",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTzRKUm0wTmExWUItUUdvOG9xbE9WdGFSRURtdENmeGRXeVlPcWctVklydk5RS21fc2ZUa1Rkdzk0U21WaHhEclBVdmQxTTFjYWg0eGROaVI1aXVhVVFyVzMtWTJZOU52R2ZlbUhpclVJSzZNaThQQ29hMzZ2b3F4UkNNaGlZVnRQSUdfYzRpWE4xeHFpSEhpNUpfd1BCOHVXU1lmZ3JGWWdIQjBuOHozNHBlSlAwMV9jaEpDRktKT3FiWVNyb1JHdjJRT0MwZ1JpeUIzRFhn?oc=5",
+     "source": "EIN Presswire",
+     "date": "2026-11-26T08:36:00Z"
     },
     {
-     "title": "Gemini Horoscope for November 26, 2026",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTUZ0MkZLYVdQbGpndC1RR3RjVWhSSFJaanNGUFN4UHJmaFdSYTFjcVFNUTJEN3F5NXRZNlRrNWdEbDBmZllreE16b1R5VGg2QU9hX1R2ZkxsYU9iVzE1X0x0ZGxMbFNuM0wxTWRMaHVMOC1Tb0xvZEtpOGI5U0dwY0hsM0JtRk8wRnNHVVJhc1FhdlU?oc=5",
-     "source": "Yahoo",
-     "date": "2026-11-26T00:00:00Z"
+     "title": "New AI tool will give you a motor insurance quote 85% faster than doing it over the phone",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wUFh5QlpGekIyQVU5aUNreVRxQW9FRlJ0N29pSWk2S3FQcExxaUZUTUhVUFpHMjNDWE9Yay1PTmlYRUhEcTUzMFJMcjY3QWZCVE9oVG5KQmlFNDg5blRBQWxFeklGbEhPdXc?oc=5",
+     "source": "The Journal",
+     "date": "2026-11-26T08:00:06Z"
     },
     {
-     "title": "Anthropic Tests Claude Opus 5.6 With Advanced Coding Features",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFByeWw0eGZhS0hOYUFybmQ2QzJ1Wm54V21VTlpDSlphekxCT0UxWFlPRnpNV3JmM2tnQ1dId0hxck5jZU9kalhFR09qWTk3bm5JaENFWHktVXhwUzJFWWNzQzByVTktZw?oc=5",
-     "source": "cwibc.co.id",
-     "date": "2026-11-25T23:22:00Z"
+     "title": "ChatGPT users hit limits up to 40% sooner after OpenAI billing fix",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWnpVR0R5b3lrLVlpZkx4cE1VLTh3SThLWS1wZ1NaOG5RN0trSlRTSGZqVzI1djhvNVZlOVA2SmNHV3g5c25sTENfUGJpV0tCcDJjUDNzbm9SeElyRG9YN2RMLUEzVHVtN2ZmQ3lpbzlJdVNKT1lIbmJrY1dDRFFkZl93?oc=5",
+     "source": "Mezha.net",
+     "date": "2026-11-26T07:58:04Z"
     },
     {
-     "title": "ChatGPT ad reports add 9 metrics built on how many people see the ads",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd0tZSU55QWRRQk5XNnBpNnY1SWhCaldjWmxnV0pXNDk2cmsyVFNNLVVINkwwRzFMYUdkMHRkVzRUYUJ6S1lpVkQ3TUJpYzAzVGVjSGxBODdTRlNMbTRpUTVoM2RVVXR2a3NVUV9oZDhmcXlveXJJUnlnVTdFLXJscG9mRktOaTFPakF2T3BlYlE?oc=5",
-     "source": "PPC Land",
-     "date": "2026-11-25T23:15:45Z"
+     "title": "From wasp nests to unsafe poles: How AI is helping BT Group’s Openreach engineers in the field",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNXNhSlQxTEFRNWZ4UWpXaDltYi0zcEVKZV9rQVVlOC1JZUlwblZqZTJSYUdzLTZzRUItME10OFNnQ1RHRU1jRnpQU2wxZVJOd3l0aFBhLXhkdDJZNnl2blFGTjBCeU5vb1l2M1BYWHBYcGFDcVpmZVpPd0YxWjVfWjJEUUVRbTV4WXlBSlZTa2x0Rnl0djNQTDFXeUVWRVN0TDZF?oc=5",
+     "source": "Microsoft UK Stories",
+     "date": "2026-11-26T07:57:35Z"
     },
     {
-     "title": "CryptoQuant now offers 8,000 data endpoints within Claude, Ki Young Ju states",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSW9YVWNIZ3NkeVl5MWhOQmZDdU16YXo0dVhNZzBLUG9lOVhQaWFLR05SM1V5U0MydGx0NWk0OVB6eDA4OXN3azlydjV6ejNYZXlFQTNkVnBDeXRHcDlUaGw0dHA4QVRNb0k0YmFISjR2S093X0EwWnlzVFhwcjdJWmFieHpRbXRrOE0wVHhKS2d2Zm0tOFFkdQ?oc=5",
-     "source": "Traders Union",
-     "date": "2026-11-25T23:10:08Z"
+     "title": "ChatGPT users hit limits up to 40% sooner after OpenAI billing fix",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMTh2UzA1UkwxNzJzWGxTS0Mxd1pxd01uUHZhV3R1bExSNE95ZjNFNEJqbWFxemZDWDBMN3JYYnE1NFE1dHNuVjE5Vk0zUWhFUDRNWWFrcHZGSTBsemRVT1FLOE5sc2VOemdNanJ5QUs0M0tZdmNQVnJodEcxYVpNSnAyZU16eTFzaldyWDhka0Fkb1J6SnRWVzdjb1ZCckVlV1otMWJKbV9XMV9rMGo0?oc=5",
+     "source": "Notebookcheck",
+     "date": "2026-11-26T07:43:00Z"
     },
     {
-     "title": "Anthropic brings Skills over MCP to Claude and Claude Code in public beta",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VTFhNSWpCLW5XUVZCTkhwZ0RwRndGUVNWeXhIbUVhX2hMOWhBazFlZlQ4SXRFTkFJNElubTBvMXBtVFJUSV9zcmN0TlZWM0V4bWJhNG9DQzRpMFdSTU5vUXZIc1NvR1FtZ2NKYV9aNExveHM?oc=5",
-     "source": "Crypto Briefing",
-     "date": "2026-11-25T23:08:49Z"
+     "title": "Google says Gemini’s Chrome RAM-hogging issue is finally resolved",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYXFaMnBVQU9aQW9ka1FzVGVBdkdzazlFMmxRekRrYzJZVWhSalZ3d3FCWTNlc01ITEZDRWF1VDhSQzJzME16X0x5S0g1enFLRV9wU1NNUlIxdG1Sanl6dDJfOXVCN2Zic2lLelFOZkhsYjVUaURjYXhnRnh3eUh4TTJFUk1HUEY5THYtQ1Zrbw?oc=5",
+     "source": "Android Authority",
+     "date": "2026-11-26T07:41:00Z"
     },
     {
-     "title": "Android Auto got a lot more fun the day I told Gemini Live to stop agreeing with me",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBLOUVtd3dEYUNzSHFzU1kzdUZqMURCQ3JKa1d2NGVudk9yV2VPZWZNX1BlWFJIWkQ4R1MyYVNmcE1kaFNqRXhHSEY5bXk1Y1VsSEVtaTE3Nk5iWlVxU1NKQW9MRDBiWjcyY2hQekdZZw?oc=5",
-     "source": "Android Police",
-     "date": "2026-11-25T23:01:10Z"
+     "title": "Can’t Afford an Expensive GPU? Now Rent One Through ChatGPT and Claude",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdXBwZGdwc3l4dTRWaXBCXzN2YVJGbkZhRUNsaVUxaEFxTGVGajhDWk96QVpZS1VnZHlERTUtUVRGZmI3cFlFd245T3hUSm9aMm5ia2tvU2FySGozb3JxWWs2eld5bVlZQjJPOWFFWkMxaGpKVW9RM1haX0Z5QjBXM3pfZlFlSkJnTU9vS2FmZ0tVYWl4WHVuaEZDcDhDN2RCdzJnOGZR?oc=5",
+     "source": "Sify News",
+     "date": "2026-11-26T07:37:38Z"
     },
     {
-     "title": "iOS Gemini Live Guided Vision Rollout Started",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ST2NQc1U4NU5jUWFxLVdEdjVyX2FKdlFhQkFucGtNQVdjMVJlXzYtTm5GX3ZxLUhhemFmS1F5UDQ0Zk0wbmszNFdLQjJXRGFoQ3EtNmRJOTktemlxVEN0M3FvZ3hzNTN6aXM0eVp2VV9kUQ?oc=5",
-     "source": "jetstream.blog",
-     "date": "2026-11-25T22:54:53Z"
+     "title": "SevenC and Microsoft show how to turn Copilot pilots into business value",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa0lWUmtmUVc0ZXUweDhTdnhPNElKMXBzd2huRkhqVVNid29MUTJRVlJ4OWpFcFdKVEtFV0dTNlp4TmpTSjdYcHAxSmxLRURRTEI1RF9UWmhUeDgyLTdmNTZQa19hbURDM1NSVFZUenFBUmxiQ0J0ejhiSy1XTjF4V2tuYkRsZnc?oc=5",
+     "source": "TechCentral",
+     "date": "2026-11-26T07:31:26Z"
     },
     {
-     "title": "ChatGPT Ads New Call-To-Actions, Business Agents Beyond US, More Audience Metrics & More",
-     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBGRzJHR3JmYjkwazY5VW9jaDZjdVA0S3FMUkc1QkwxZFlXVU9tQlVxZUg0ejZlXzVwM1B3SE1WeXg3ZVdPMzAxclFEbjBXMGhad0o2aUFPclZZQjNVcW9KZUF3X0xEMWJPNDlv?oc=5",
-     "source": "Search Engine Roundtable",
-     "date": "2026-11-25T22:40:00Z"
+     "title": "They were in high school when ChatGPT arrived and in college when their friends got accused of cheating. Now their AI software polices 40 colleges",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRTRQNlRwMXlicElYVUliYTctX3hJaEZVVVAwTkkxNDF0X2xudm1XRXduUVNqOWpBdHpIcnVkZVVuNWprcjBpUDFfZEVSQ1lmd3VCbzhJQ19QWHZ4QmJuTVJDYUtDQXNZclBhZWs2SlN3YlZuVktJbzRjRUpTZktNT1dCT3FrSXlaUndDMlM2Ty01MzI0MUNyUE9aVmdlalNG?oc=5",
+     "source": "Fortune",
+     "date": "2026-11-26T07:30:00Z"
     },
     {
-     "title": "Gemini Files Registration Statement for Gemini Premium Yield Notes",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUnpQY1dxbFZDc1VDelRPN2o3M3VxV1hNU0FQTkxSWXIzXzNRQ3B5bG5pQVI1MFQzdWJnV3BWVThDdTlyakIyUlo3SjBILWtPajJDTkxMRUFxWkgyYk5sUDgxc1EzdHNHUzk1WWZGMENDWmxzS3FocnZoMkhsRnhvM0pjTXBDWGtNU2NUNHZGZkVvUXdUbFVubGl0eU5oYXh2ZHp3RTVBOG9rSVZXb3d0TzVLYmhTYlBURS0w?oc=5",
-     "source": "www.marketscreener.com",
-     "date": "2026-11-25T22:38:04Z"
+     "title": "ChatGPT Users Now Hit Usage Limits Up to 40% Faster",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE14T19QbzV1X2toeWFaaUNJQ2otcHpTV25PY0ZYS0RSVWRtbnQyWG4tMGlaZzh4c3Z4U0YwVU9Bbk5CSWRxbk5seERIMzZRWW1acUU4eWZ4cENlUXFBdDJvX0hoQ0xkRDFiNlllUldXM1hSN0Z1NGtCMQ?oc=5",
+     "source": "www.trendingtopics.eu",
+     "date": "2026-11-26T07:26:00Z"
     },
     {
-     "title": "Claude Artifacts Now Install as Mac and Windows Desktop Apps",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQY0UtSFJMSzRfelFIb3o5bHJ3N2JqNjd2V3IxdG5ZRjZfbEZhdEM3bGZ0LWVfRTFRVHMzUVk1My11M1kzYjBJa2FuMFFMOEdsTS1vLW1iRGZlOFY4VUN2eTJPcklISjd3aWhjUmdXOE9odw?oc=5",
-     "source": "Techloy",
-     "date": "2026-11-25T22:36:15Z"
+     "title": "ERNIE 5.5 Flash Preview vs Gemini 3.8 Flash: Two 1M Windows",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpSWprbDEyaFZkby1vNVFyc2RMa1FXbjJzZFZ3LW0xYnBySHdra3kyRUk0ZFdmNVk0TmVJWklOZWNxS3kyVDJBaXlMS3B1TzRxV2hvQ0Q3cHZ5eS1GQzZ5eTM3V0Y5UnFQMUhOMWRDNXItRzZVMXk4OEU5a3Aza28?oc=5",
+     "source": "OrcaRouter",
+     "date": "2026-11-26T07:12:45Z"
     },
     {
-     "title": "\"A lot of memory and issues\": Microsoft reveals why its force-installed, Copilot-filled Microsoft 365 apps are being removed from Windows 11, saying they \"came at a very high cost\"",
-     "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQdFZmZjF0Wm5fU3lsT1BGdFVkSFJ2LXZtZWV4WEhhZ1htRjJEakUzSzdZR1Z5WTZ5Y0gwMFExU1pCcFR4T2dRcGIwbndybWVfMUlnQ2F6WE5RckY3bGMtZ3NEN2ZHdzAtMXFwcjc3UXZ5Mm9POVFTNmF0RWVvOHh4SXJIaUpfM21ZQXVxQ2d4bEVxcUJhMTZXYVlrV3dVWkx5OUNndU5Xeng0cnVwQ24xRlo5dzJFY0JuNWtOdE9tM3BWd1lCd0RvYVJWblRpdWQ0MnZwYm91TERLa1F0U3gzdWZNb0JjYm44cUtTeVd6aldBQWxBTWtnc21KaWhBUEMzSTFrOTBaV3Y1RFpXNU5qVkh6cjZycF9OWEpKcW1aSW9UX3JEazVmb3RySi1KR1ptbTZITGFsRi1jWjA?oc=5",
-     "source": "Windows Latest",
-     "date": "2026-11-25T22:20:21Z"
+     "title": "Qwen-Audio-3.1 vs Gemini 3.8 Live: Two Full-Duplex Voices, One Price Gap",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNd0xXLWpVM054X2NXZHNsaWJBTWFXMElOQVcxdGFleDBVU3JST2l0STJDU08tdkc0TUMzbXUzdVY3c1lhd3ltQnpqVWdRdk1ESEREeHdWZDRqSHdFcXFwNjFWeVM0QUJlTVl5UUxYVW5odw?oc=5",
+     "source": "OrcaRouter",
+     "date": "2026-11-26T07:12:45Z"
     },
     {
-     "title": "Copilot code review billing will default to the organization",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM0lqY2tUbnh1cXNPTUxOWVVGLU1vckN4YkVselhYVllyM0c2U1FFVDdidl96dGtyemFKTlE3NV8tWVpHcFMwSVpIM3NNa0RpdlJ0Y2xGMXFDWFF4OTY4aks3RkJUMTRLOWtDemtpY2lKWlZQRzVsMXd4Y25kcG9GVEtxRVpCWVo4dG4xb0Q3Nnl0bWRkb1JOWTZqemtkR0dZa2xsVw?oc=5",
-     "source": "The GitHub Blog",
-     "date": "2026-11-25T22:18:03Z"
+     "title": "Anthropic loses another Claude Code engineer to OpenAI, and the internet is asking why everyone is leaving",
+     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNX18xOGNMeDc3UkQ3TGI5OWtlVGwtdHRrbmVKZ1BnUFJySF9FR2VfU0VOam5FQ2FQaTg1b1lrdEVlbEM1b2VPbzc2UnlWWHNhQ3pSVzRwNkNQaEd6UlB5NERQbGFJU1I5M2o1LVh2WXhRZ3FwSEpmVkFQbk81ZnRZQmFybE5VS3RQVUV3R0RqdTZsbThzVzY3UllwaHc0Qmc5cDJHaWdMSm9FU0Flal95bnkwV1QwUjdGZk5lNjY1WkhvaWpxMVlUVUVKVW96WUhMSFpaRDVXWDM2M2dkU1FJbXViSlVGY1VfUXFBOE9yc2NsN21sdWtCeGxqX25ZMVV3dUHSAYcCQVVfeXFMTXd2eXVrQm9VT0tSZkpMWG45MmJOZTFDSjRWb29SXy15VC1BelY5aDZwcVNxLWxNcjRjNHJpaE1SbEx4NTRlWjRPMVdOSWdiczNrSjh6UTRSWFZWME1qOHBRSEh2QUFiOUx5anQtZHFqX1otRDJvc2UxZ0xoUTVyMThkYVpHaDFIVFpWSHJxMGdXUURPZ0FhV0E5YU9ZWDhNOWkxTVZmWnpJM0wza0RmN1Q0UzdOUlhQOVB3UlA0Nzd4Y1lHVFFDN3hMM3FIZ2JjR2FQbTdLZEs1VGtPM0lJQ3RkV2xPeDRVYjhtM09OMzNROHVmd3hnaW8xQzV6c1kwQTBtTkpzLVE?oc=5",
+     "source": "India Today",
+     "date": "2026-11-26T07:05:39Z"
     },
     {
-     "title": "Universities get new AI tool to make sense of student feedback",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZzhIWUMweWJleDNTTEtvWUlHNXdLOElZX0xtaXlhOHplMzFQd2pCdUJTMDRDa1AzcjBSR2VZRlF4TDc4eE9LQUhNbHJ0cFlNOEkzY1BUNzNJVzNWcjBGbEhVVEpOM2xvWmVoblZ2ZHh0SEU4Unk5UlZJUVpiQnpFMXJrVlAtcFdBMVBxWUh0bTN4dw?oc=5",
-     "source": "The Koala News",
-     "date": "2026-11-25T22:00:25Z"
+     "title": "Estate agents require most Google reviews for ChatGPT listing",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZVF5bm8xbkZSNWJ2QXk3VllDdDZuN29naG1KU0tKem5OdU9IdUN3YlZud29McUxkWTQ1Y0dZcnVKZDVtNV9xbzB1SFhDRUg4TU5NYlJ5Y0VLU1lSUnlUT2dScndNXzN4dllZRGcwVXhydzRqUUF1NjB5blVKT2NVVWZfa2piWE5pUkdXVXItbXJkaHN1Z0ZsMjlMNkZTVmIwSFlzb3BUVQ?oc=5",
+     "source": "PropertyWire",
+     "date": "2026-11-26T07:04:15Z"
     },
     {
-     "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-     "link": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-     "source": "The Verge",
-     "date": "2026-11-25T21:51:26Z"
+     "title": "Agents need lots of Google reviews to be recommended by ChatGPT",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSWlFYU1WOVBuWW95X1lOQUZ1M0dSNkhFQ2hzT085eGl6YnJ0czhnenV6UTVOMXJkRDVBOXIzYlpSOWhhdGFYaDJnanBrbDc1ZWZvMm1pdHJJX2hUUXRocE1QelpPdVRZS0hOT3h3OS00NWVEREF2OUdiWjh0OGFfbkhxek9sR3NxclhuUzR4ajRXZFdFeFJzWDVRNGY?oc=5",
+     "source": "Property Industry Eye",
+     "date": "2026-11-26T06:54:56Z"
     },
     {
-     "title": "Google Home gets another big update with these new app, Nest Cam, and Gemini features",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc2NVdnVUYjBKMzJhSzk2VXZFLW9tRVE5RU5GSHJ5a1o4d0ZJN0tOdTJ2c3NkMUVFc1Z5LWQzUWQ5bW9FeVp2eFJ2OXM0LV9WS2plMWtYYkVLTWdqWDVKN2IzZ05STXRTZ0ctU2ltSzlycS1oZWN0S0VGM3JaYXJwNlFkT2dPYTBzZmtGZGZmTGNIOW8?oc=5",
-     "source": "9to5Google",
-     "date": "2026-11-25T21:50:00Z"
+     "title": "Recap of Microsoft Ignite 2026: Copilot as the Work OS and Agent Governance",
+     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBINUc1Y3YwdmhMSjNmZHBJYWhLeGtiNXNIdHFJSXdlOHdxbjNqbzVadHdOMHdnVnlIN0FGbG1kUDhVNXVHTnRCWTNUWTRMRXREdXRWSkc5X0VKY191SVNlZjNEUDc0NS1LenMybWNjVlg?oc=5",
+     "source": "infoq.com",
+     "date": "2026-11-26T06:45:15Z"
     },
     {
-     "title": "Agnic.AI Reports Live ChatGPT Purchase Paid in Bitcoin",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZWsxVEx0azh0eTNYa0VvVEQ3TXJxQ1BnM180Y0dDRjQ4RHJyYURvcDVlYWVSa0JacklwOVNpb3FzU1lkWWN1al9iM1c0SG5DbDRXenZfZnhDN0dPRFRzalRiSTAtQmtycUFXQnkwTlI2c2JkeWtpYzQ4eHN0M2poWklBZVUycDdmMUlXS0pSNU1MWU9ZQjV4VEtUeVE0SUJLbmE2cXNaN2tQcHVZUVFiTDRlWUMzUkU?oc=5",
-     "source": "TradingView",
-     "date": "2026-11-25T21:48:24Z"
+     "title": "Claude Ship PR approvals depend on team policy",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQTBPNWUzZnJ1aThKMmd4R0t2Ti1PdVlqTDcyR1NjcW94QmxBX2wzMlNoLS0wa2xRRHVpSVE2SjF0MVp4YUx3N05tbHlEb3RyQm51UnJvLURVVm5xLUV4YWpNcXdBc2JZVVI4ems5R3ZBb29aUFlObGJyQzNYWVc0RTN1V1FpNDFCbTlR?oc=5",
+     "source": "NeoTeo",
+     "date": "2026-11-26T06:42:20Z"
     },
     {
-     "title": "Claude’s desktop app can now make and install apps (not on Linux yet)",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3cXo3LWNxNjkzcHpiUUpfY1pMYTFJSTY3aDJmZGRkeDBIcE9kT0JkU3MzbHEtSjVQUTdIZXQ2bWUwV3lFcGtoN3czdkRoaWdVN3NyLS1sYXY2amtHb1k5Qm1rRWNUT1djMnRMdHowZk5UZ0xocXE4WEktZnFZZ9IBgwFBVV95cUxOYmV4ZzBrUS1ZNjlIcTBsUHY0ckJ2YnVvX3pPRC0zb1dxalVXWjBuNW9QRzVpMUYzMWhKV214cWszT2hDVFN0Y3FQaVJkampzTEoyNkV3ZzVWNnRBNjVXUTRGaFBvYVVNTWY2VXhJTTZfN3dJeU5CemUzaHNHbnBSZGF1dw?oc=5",
-     "source": "OMG! Ubuntu",
-     "date": "2026-11-25T21:43:14Z"
+     "title": "Anthropic API Rust Migration: 70% Less CPU (Nov 2026)",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObGkwWlhtVHBucU1CNDROeURlVngxS21FM2tqNjVSVjA0YlFNcGdrMnZ3YTJnZnR5bTNpSlJDRmszS3R5UUVwTEhCNF9qcmltbUgxVEFObHV6bDRDbnQyQ21BZnRMMzlFcm9vY1hqMDlaVERkNzNzRTdZMUN5VU13cEZnWTR1Q2d5S210bDhQZnZndnJn?oc=5",
+     "source": "explainx.ai",
+     "date": "2026-11-26T06:16:15Z"
     },
     {
-     "title": "Sam Altman’s ChatGPT AI Predicts a Monster Quant Crypto Move",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSnNMM1REa1RQd2VlVHlGLUszZjdiN0dHNUIzTzhCaE51YVFkSGdVQWhZcGtuYVZIakFGOGR1cDdLM1BKblkzOG9xbF9PalFCVGNQdmdQMTNvaDVxbnE2R2hDRXplMzFYNGkzUHhsakpCa2xMcDRxLVBKUTYycE5mZmhRenBYQWpHbHZtVk0xaw?oc=5",
-     "source": "Cryptonews",
-     "date": "2026-11-25T21:40:00Z"
+     "title": "Claude just got a major update that lets you build your own desktop apps — no coding required",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTllHY3hURGNxT05YUEptekFBSjl4MXVtcVpJOWxBUWdFMmlidXRFWHl5VEVRanVLRHRQOEQ3TWFZRXBxODNUbnBPOWtGdlRDMFBVeWFYRFJ2YV9HNXhuQVlwVTB0N1o4c1FzZHBDQi16YmtIdXhmWVdqU2NjNTV6YjZ1ekVlQ2VDWVZLT1RsNXdRSUxHNVBRUlJ5aVktRHBrRTFZSGEwRFBJbDhzUXEyWGVSNHVjVm43aHd6SndFSF9iOXEtakE?oc=5",
+     "source": "Tom's Guide",
+     "date": "2026-11-26T06:12:40Z"
     },
     {
-     "title": "When will Claude Opus 5.6 come out? Anthropic has set no date; here's what its past launches show",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSF9uZmdpQmRaUmlvb0xXdDVNOFFhZXVoN3A1eUI5Q2pqcVFSRDI1TThTWXZXSVRGV0pxUE05WFpIeHVGZ25JOWF4WUhPa3A4WUx4bHlnWld3dDZJbVFRbW1uS0NEam9tV2dKbEhnOWVuc1FHNVRNZlNvVXJIWFZSUVFjTnFaWW4tcG1KRS05Yk01S29UZVR2SkdqaDY0LVlYXzhYSFNlQ1JTRU0yX0E?oc=5",
-     "source": "Nacionale",
-     "date": "2026-11-25T21:32:12Z"
+     "title": "AI Gift Ideas: We Gave ChatGPT, Gemini and Claude the Same Brief and Checked All 24 Picks",
+     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54OWoyOXZCT19rZm4tRWpueWJlY29iZWQ3ejIxOFkwV0hsb19MS3hrODFKbW1EbHdUdXRuZkY1WG1jTlF2aEVpN0xR?oc=5",
+     "source": "Fello AI",
+     "date": "2026-11-26T06:06:13Z"
     }
    ]
   },
@@ -888,34 +888,46 @@
    "title": "Money",
    "items": [
     {
-     "title": "Energy bills to rise by huge 26% for millions of UK homes from January 1, Ofgem confirms",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YQlpVWlRNU1UtVUhtUHBCejd2cFhWQXVWQ1BTTDFXbG5VYm4wak1NSDlianpLTzNtWkk1Z2RCNXN6VksyOUVLaVNsN0Q2bm5nY2xQYTV6OGdmak9KRkNxYmM3R2hfbnF3ZTFFTzRvN09YcWxyT3ItVjB0ZFBXM2M?oc=5",
-     "source": "NewsCord",
-     "date": "2026-11-25T21:54:23Z"
+     "title": "All the financial help available this winter as energy price cap to rise by £443",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTGkySVAyVm9kcF9ra3VqRWthTzBoSjlLN0pNX1FsaC0tSG11aGJ1akNUZmotbS1qYkEzMzlLQ1gxVGtjWk80Vnc0XzJFcmxNQnFMa29PRW1mOWZWVlRydWloc2F3bFRVUzZlMS1YaHl1S1AtZkN1djQxTnBOa1hIdmFJQ1gyMXFDVXl4LTNfdkFZdXk3eGZZTw?oc=5",
+     "source": "The Independent",
+     "date": "2026-11-26T08:03:55Z"
     },
     {
-     "title": "Energy bills to soar to £2,166 a year as energy price cap rises again",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5nWkk4OEw4S3JVcmZ4TW9ZQW5kU1NadGlTeWFCdzc0TVVNRVI0VUFUbDJkTDVfSGQ2endfSlBhYWlZWFM1WmhyQjRmblVrSFJjZUJUZFhPb1luZGFhc3BacnZGNU5JSnFoU2lDbjFrTm9lWVpLZzlPVlMwTXJUMTA?oc=5",
-     "source": "NewsCord",
-     "date": "2026-11-25T21:52:19Z"
+     "title": "The Bank of England is making people poorer on purpose",
+     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTjI1NjkxSVpxMGRua2plTjJ3SC1pZmtIUVZVNUVINEozUloxTnNocDI5RHh1UWgyVXU3alVseTFPNmpiVm8yanB5X09qZ05hQzJhRTRzVmhYUWJiSFVKdGNsSTVaYlNNTXBYdk9XRnhlZWlfWThjY0dXdHluYlMwbnJHd1VnWi1oM3Q5ZjIzRlp6RUMwVnItYk05RnBydDhJRDNKdQ?oc=5",
+     "source": "Funding the Future",
+     "date": "2026-11-26T07:04:19Z"
+    },
+    {
+     "title": "Suffolk bakery owner fears for future of high streets as energy price cap rises 26%",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSi1ra0RjR0otREZoS2Y4SUhzWWVvby1qWFZaZHY1M0JtM3VTcDJXdWJoRlhLeHZSRWExWnhPQWRiYVdGamRfemhIWldWNzRXRDNmck9JNS1FTllVVTgtaHJPMFdrb3djYkdqQ21keGpBU1JjZW5sQ19iQXZsbnFHMDFleUVTTTR6NXB1UU40S19zOGZ1YjFZTkZiT2llaS0zbmtzTjZvYw?oc=5",
+     "source": "Rayo",
+     "date": "2026-11-26T05:49:16Z"
+    },
+    {
+     "title": "Dorset MP warns £443 energy bill rise will push more families into fuel poverty",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQenpLeVN2TkpTbEh1MHBVcUEwMHZrdzFXRDl2anlhaUt2NzR3X21BOXViYWxmYTB2aWdmV2hQYnpoSlNQaE5oeERrMGRVdUNnV0djSWIzeVdTTEVtb1B2SXdlRHpTOUlEV0xhU2Vja0lkT1lYSTRDMFNRRUgwb0JTWVpySVpTQmJqTWgxYnNYRlUwclg1UGVrY2hWZnc5Rldv?oc=5",
+     "source": "Bournemouth Echo",
+     "date": "2026-11-26T05:00:00Z"
+    },
+    {
+     "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdkZKRW1BZDJ1X2RCT1hOVGN4SFN5NzBneU1VZFc2SEdEdnJJZTBlVGJzTDVoc1ltMWp1T2lCZHJtSGNOVEVnMzl4VlFKU0ZSVXp1M2pUejVlVTh6RHJZSGhodFhSQmNYeDRHZjlyLWNpX0xmcVJSaURYU2g4Y2FqbEg0RFJfakRsX3FWWUdwVmQza25vdTA0LTVmME4yVmEwUThRU0dZY1JOc2x6Z0VjbU1GSmF2OGhmc0FBT0lB?oc=5",
+     "source": "WSJ",
+     "date": "2026-11-26T02:52:53Z"
+    },
+    {
+     "title": "Octopus Energy CEO says Scottish consumers should receive free electricity",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN3djRVpEa2FSdFppYlhSMTV0SGxLdnFQcy0wWUNPZTJ3VDd1SXRzQ3JWTURkRjdWRFR5cUpnTWU4TDdmVGY3c3gybDluOEN6ZnFGeG1CRzNXYmZ2TGtvNV94dEZDOGhhV1Q2YXZZVGtxdkM5dmdaNmFjdnZTcWxMMzJKc3B6RmtuU0FRQlZIVFVlM3JGZFJFY0pxamp1WGhhSzNob3ExbW0xRUNy?oc=5",
+     "source": "The National Scot",
+     "date": "2026-11-26T00:10:15Z"
     },
     {
      "title": "John Swinney slams 'injustice' of soaring bills in energy-rich Scotland",
      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYUtZSTh1MkV1U1Rldzl4a1lBc0ZjX3ZSSGhoNmZlYWJucDRaYmo3cEtWaXkwSWRZd2hDT1ZocThKVENiZHpacndkQ05qZGZ5eEw5SDBrdE5yc25PQ0RYX3U4S2lvYkhMSXJ2MmhfU0hNYlU1bFM2Z0dUamZxbTVZbjFLeC1hZ1lmWG01LWRST3A0bjNXQ2ROM1pla3Y?oc=5",
      "source": "The National Scot",
-     "date": "2026-11-25T21:33:21Z"
-    },
-    {
-     "title": "Bank of England's Carney speaks following rates decision",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQU2hlMGQwOVl0Rm5DSWF1T1IwMmhKdy1iWmdXVlpCVERUYXo1VGpuQkFzVDFaZWRQdHpBYjNzdHhaLUpEcHh4MlYzcE96YmdfZ29LYjZrN3pic25HeFZUYXJvQVFhd1FLYjluaWprRWlGS190RVpMV0Y2bGc4N0xzbHVXV1VPTTFTSkFnSVB1LUhzdjRIbVlKdWdWNXE?oc=5",
-     "source": "Yeni Safak English",
-     "date": "2026-11-25T21:19:21Z"
-    },
-    {
-     "title": "Energy bills in Great Britain to rise 26% in January, lifting annual bills over £2,000",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeTZHTXpyS1pnWWg3QXdBYlNfTmlTYjctQkxoUU1PSUNrU3NhdUplTjZXNjBobE1sOElJVmdURGxLQWRTeEFGcFdUNHdUdmNXc2tLMWpZdGtfeV9WM1BiMlBCemxyQ3JMbzlhRm5xQkw3akFtWk1iRllNWnNKd3dvbXRMel9OVEpONnFuR2xGNWlSQ1l2VkNzNkQ2dE1kdnY5?oc=5",
-     "source": "The Guardian",
-     "date": "2026-11-25T20:21:00Z"
+     "date": "2026-11-25T22:49:40Z"
     },
     {
      "title": "Bailey’s latest comments: good news for mortgage rates?",
@@ -930,12 +942,6 @@
      "date": "2026-11-25T19:38:35Z"
     },
     {
-     "title": "Burnham vows to ‘do more next year’ on energy bills as price cap rises",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQS2x0UnJHNWhnbUpDZEcyenJVdzlVVndXQlU3SDVMSTljRjE3Z3pKdXZZR2JJU0VheW92MTVtU3lBSTZZbnlXOW9uWW14bjV3aHpJMW5MbXg0RTdaZ1gyb1psRGN2Tm9yNktwZjEtWlRPU2lDdHZWYlBpekxLZEVabGVkUGl2aXl3R3dBZXJfTldnSC1hOXdZbU9iS2p1dDdTeGhLZE5JUmZmSTJKR0pUQ0MxRjRYRWM1Znk0eEJBSzZyRVNCS1JGQk5HRERUSkxDY2lsaTFXZGVjOFZsTjdHRQ?oc=5",
-     "source": "The Scotsman",
-     "date": "2026-11-25T19:24:00Z"
-    },
-    {
      "title": "Inflation may not be as high as predicted, says Bank of England",
      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdHRzdUdwZ25rb0pJUk1fWWtuR2RpR0M3SFJBYTl3c2lZaXQyS1ZWbVJ0N0hBbEw5bVlVWGR5Rkp4OHFwenVXZnJNTGdLVG0taWxNaHQwWTBGcUdsQzhEeWdQMnVUSU94U2sxT0xFaTRzajZoNWpHYUZPYktwRnBITkJVQnMxaDdKdHVqLTFSb1RRa1FZcnk4Q3otWQ?oc=5",
      "source": "The Times",
@@ -948,22 +954,10 @@
      "date": "2026-11-25T19:13:00Z"
     },
     {
-     "title": "Octopus Energy CEO says Scottish consumers should receive free electricity",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN3djRVpEa2FSdFppYlhSMTV0SGxLdnFQcy0wWUNPZTJ3VDd1SXRzQ3JWTURkRjdWRFR5cUpnTWU4TDdmVGY3c3gybDluOEN6ZnFGeG1CRzNXYmZ2TGtvNV94dEZDOGhhV1Q2YXZZVGtxdkM5dmdaNmFjdnZTcWxMMzJKc3B6RmtuU0FRQlZIVFVlM3JGZFJFY0pxamp1WGhhSzNob3ExbW0xRUNy?oc=5",
-     "source": "The National Scot",
-     "date": "2026-11-25T18:30:11Z"
-    },
-    {
      "title": "How much will YOUR energy bills rise? Use our energy price cap calculator - and find out how to cut your costs",
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnRpWldtTkVGc2haSjlwRmtrWkl6bWt2Yko5cnV3bjZReTh4dF96ejB3dTZtTVlSNE1nME12NkF3cUJnZTY5VG9xTjdLM2FRR2k2ZGlkNjItVENBRTZOZktocW1falJPUE11QjkyUDRqT2J3QnViYkNxM0ZQQU9Ua3BjOGpxYVZ6QUtiaVBvX1JjME9aOE5EWnJwMGNLUEdwTmhSZ19ZajFJZ0QxZzVQZFY3S1lsZ9IBuwFBVV95cUxOWHZLYk1wYm14OTZ1TkNDajJZZk1sa0FKZ0gyUXlLLVh2WGV5VGszb29tdXQtNjVpX1QzdGx5WC1EZHJiRDVPandSRTNDTGRVSHp6aGVxUTFuZ3ZoS09SbjMwVm5adW0zckJFZVJqUGFySThzbVJCMmlWOXhrUWdkXzI5V3JwekhfY0JmYzZXaTBUS1RxZ1BPZmhUbzkxakJpQ2FodzVpeV9McFdyZVBIUHZOWG5Ld2pBRHNr?oc=5",
      "source": "This is Money",
      "date": "2026-11-25T18:13:34Z"
-    },
-    {
-     "title": "Ofgem is ‘buying far too much’ LDES ‘far too fast’",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5na0lPc0tRUDdfYW1ZVFJkWkdQY3pFaTBKbzk4QWFockdlNDRjRzhKbmZqamIybVJlYlJIcmpUaDJ5cHEzcTJpVWQ2aDRGTlpqXzV5RnV1a3Q1c1JEZkxscWpjcENweFhLaDJHWVVWUy1iTHZ1cDE1bEdzV0k2UdIBigFBVV95cUxPdnppY1J1VXhIRVhkb1FMdlFhSnZaX3hqQzdUZ2NaVWtRUy1ieVpmSTY2ZzkwM01YSlRQTlB2NGI5dHdXX1FrYW9NclFGSXM2dzk2cHVjYlpSamFQX2t6UEtaYTA3YlQ1dUstbGViN0F0TXdGenEtUW1Oc1hvVDAta1ZTa1Q5dDAzNWc?oc=5",
-     "source": "Utility Week",
-     "date": "2026-11-25T18:02:47Z"
     },
     {
      "title": "UK inflation may peak at lower rate than BoE forecast, says governor",
@@ -978,20 +972,8 @@
      "date": "2026-11-25T17:16:08Z"
     },
     {
-     "title": "Energy prices to rise by 26%: 7 ways to cut the cost of your bill",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTnBsemM1RWlzRFM2N3Q3Sm9xdWEzLWN4Rkh3MjhzSXpIdXZfLTNPd29ZWWs3TlIwMVl6c3pLT1VLUUZJRzgwS0QwaVdmelNyc3JuOFltWjZwbG11TnVUMjhkd1J1Nk9TVG1lZGd2ZFpwZEtrclhrVWdXWU1nNVRQVjN3VktSNTdGSUNmSzBBWGRBZTgyNXNOalc2Z3JlVjRxazdxNi1DbHVBUGc2X093?oc=5",
-     "source": "The Money Pages",
-     "date": "2026-11-25T16:52:28Z"
-    },
-    {
      "title": "Bank of England Rate-Setters Leave December Hike on the Table",
      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdWVoNk5lWFNOQzk4R0QwR0JNc2NPTlhEd1FqT29pRGVYZVRoSFoxdkFTRWJkcnhSOWZ3RnJDTDE3T3JGd3pDUDFrdlpwVDdaVnFNSzhHQml0VEh2ek55XzVvdEZHWHJ4OEI3dTRvR3RGQkFSNmpMbjZGMGo2NzhZOFNvNDRhc09oWEdLcHpjd3FkSWJodEg4S1ppR3NLdVpiQTRTSy1YVlZ3a2VlYlBFcFdn?oc=5",
-     "source": "Bloomberg",
-     "date": "2026-11-25T16:49:25Z"
-    },
-    {
-     "title": "Bank of England Rate-Setters Leave December Hike on the Table",
-     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNjFwUWFVRFlXWUlFLXowVThrd1B6TVJQem9jdmxLTk5jV28xUEFDVXlQQ3ZWcHRaR2lUMVFEWlM1d1lxMFFWV0hpXzhyT3ZLVXJhSHlSYWZxaEVNMUxQRUFUQ2FHZlRNZnFyZVM4ZkZLaDZMY0l2Y2FhN2ZxZnFjVzRxQzdISXhTQ214bWJ1SDFRYzRrY0pxNkVNZ2J4dmgtbWF4cGtaS0NqZmdmQTd2ZlEtSlQ0VFh6dE1LS3pFSUNDOGpiTGc?oc=5",
      "source": "Bloomberg.com",
      "date": "2026-11-25T16:49:25Z"
     },
@@ -1002,10 +984,28 @@
      "date": "2026-11-25T16:49:00Z"
     },
     {
-     "title": "Energy bills set to soar by 26 in January as Scottish households urged to seek help",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc3lFMnhJTGh2b3J6cFJOQkRkQ0V3OEppOXkyTEk5TnlDVXFKYU5OXzE4aFhlWk9qR2taQ09EM1kwOXNWZ2pDbUJMQWFZSzl2R1puNVMtQnNYZ0RiaGZrbUFWM0VfT0tSUmxnblBvcEd6M08wazM4S2dDMEQwNkx0SWwzZlEwenBxYlY4d2ZVWFZqSDU5Q2c?oc=5",
-     "source": "www.eastkilbridetoday.co.uk",
-     "date": "2026-11-25T16:37:58Z"
+     "title": "Octopus Energy boss says price cap surge ‘heavy blow’ for struggling families",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaUc5VWVRSjB2WEItUWxpMG1VUC1veU1ZUWhIaEs0ME1qV05VLXBfdF9lVUpIeDJXT1FSdkthTHdQdVBkc0xtTWxNZlRKNmVfRlNwaEhJZjd6T2UyX2tGa1VkQXFFQUtzTjZmTTRFSUdrU1h1VlU5UUZycUoydGF3NUhlNjhxVGxVRnhSV2gtb1Y2NzJjYTVJ?oc=5",
+     "source": "The Independent",
+     "date": "2026-11-25T16:25:00Z"
+    },
+    {
+     "title": "BoE's Bailey sees lower inflation peak if energy prices stabilise",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTmItUFQ0TDJDczBHR3RFWDhnTWd1MkVMcjcwOVAwSmxxYTNqcWlqUEpYY21kZXFnUWtBMndyWW9JeUtHdVB1dV9hVUtMQUtVcDVFTk9XLW5McVNxcnNCdGpOd3oyTDBlbnJpQndONWpFNVRSYk40R2gycHVIQ0p1blVGWmFDeS1CdUxEZ3FvcThZZHZmWENsODYzY1M4UklWVU5SLWI2NGwyLVhFSGc?oc=5",
+     "source": "Reuters",
+     "date": "2026-11-25T16:20:48Z"
+    },
+    {
+     "title": "Higher economic activity and stronger labour market pushed Bank of England to hike rates",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbExnQTFlS0Z5LXQtZ1FlblJZQWFLamU2bkl3MTJLUVRKTWZTdlpna2Y5UlZYbVhIdVVrSTl2RHhVUDk2STRIX0piM01KcEYwLWVySDhWc3IzNTRFQlJkR2Ewb0RYM01iUzFTSE5CNmRHZXgza2l3SGtDRHpMdEpCaGpuRC1EQXZjNmxORG12NUQwZlFaR042OGZiOEE2UFpkZDRWRnhaY0dxMC1iTmJNcHpER1Npblpv?oc=5",
+     "source": "Investment Week",
+     "date": "2026-11-25T16:15:02Z"
+    },
+    {
+     "title": "RenewableUK comment on energy price cap announcement",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQUF5U3lKT0ZEUGtPTndQWEdvMkw0RDFEamR3UWJNNFB6QVNkTzhFc3N1dFdXUHFvV2ZHX2VhTko1T0RmbzhRLTlCaFQ4M3JTRW91V2ZKUkZ3UGR0TEZOSWpoWVFsbU1RVDQ2angzd1NWRElkb29uOVJWR1VGZFlJcUNMbVUzeWJxZi1WVWFHaHQ3OXQ5V1VvdnlIS0JXUEZxWHlwNWlrZzgwRl9feDNuRkdZRmpZQQ?oc=5",
+     "source": "RenewableUK",
+     "date": "2026-11-25T16:07:33Z"
     }
    ]
   },
@@ -1013,6 +1013,48 @@
    "id": "local",
    "title": "Local",
    "items": [
+    {
+     "title": "DJ gets lucky after finding lost Daft Punk mixtape",
+     "link": "https://www.bbc.co.uk/news/articles/cqevr08r9yljo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T07:20:57Z"
+    },
+    {
+     "title": "Children in Need red sofa push raises £200,000",
+     "link": "https://www.bbc.co.uk/news/articles/cm62pg08746qo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:25:00Z"
+    },
+    {
+     "title": "Crime gang's 30 skips of waste cleared from street",
+     "link": "https://www.bbc.co.uk/news/articles/c85y1pzx5nz4o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:22:09Z"
+    },
+    {
+     "title": "Mosque conversion appeal dismissed over parking",
+     "link": "https://www.bbc.co.uk/news/articles/cq4gn84zv3xro?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:20:34Z"
+    },
+    {
+     "title": "Reform UK councillor claims 'grass does not grow'",
+     "link": "https://www.bbc.co.uk/news/articles/c61k98lggwgmo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:18:28Z"
+    },
+    {
+     "title": "BBC Introducing Live showcases up-and-coming talent",
+     "link": "https://www.bbc.co.uk/news/articles/cxyvdjggp7m6o?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:16:10Z"
+    },
+    {
+     "title": "New football pitches could preserve mining history",
+     "link": "https://www.bbc.co.uk/news/articles/cv0l34jn50dxo?at_medium=RSS&at_campaign=rss",
+     "source": "BBC Leeds & West Yorkshire",
+     "date": "2026-11-26T06:14:07Z"
+    },
     {
      "title": "Bradford, Huddersfield & Leeds U21s drawn in EFL Trophy last 32",
      "link": "https://www.bbc.co.uk/sport/football/articles/ckzd9vqed5d7o?at_medium=RSS&at_campaign=rss",
@@ -1068,12 +1110,6 @@
      "date": "2026-11-25T06:24:32Z"
     },
     {
-     "title": "Cats found living under hospital generator rescued",
-     "link": "https://www.bbc.co.uk/news/articles/crly513yd21lo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-25T06:23:19Z"
-    },
-    {
      "title": "Incontinence, nappies, pain and surgery - inside the reality of ketamine addiction",
      "link": "https://www.bbc.co.uk/news/articles/c6kgr74mgz8lo?at_medium=RSS&at_campaign=rss",
      "source": "BBC Leeds & West Yorkshire",
@@ -1086,52 +1122,16 @@
      "date": "2026-11-24T21:40:58Z"
     },
     {
-     "title": "Pip claimants call for fair changes to assessment process",
-     "link": "https://www.bbc.co.uk/news/articles/cm04wewvwlw9o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-24T18:02:28Z"
-    },
-    {
      "title": "Rapist who fled UK in 2020 jailed for 24 years",
      "link": "https://www.bbc.co.uk/news/articles/c6z74lj8dre5o?at_medium=RSS&at_campaign=rss",
      "source": "BBC Leeds & West Yorkshire",
      "date": "2026-11-24T17:47:34Z"
     },
     {
-     "title": "Rat-infested Indian restaurant fined £30,000",
-     "link": "https://www.bbc.co.uk/news/articles/cqwy4nwzl8ygo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-24T17:21:55Z"
-    },
-    {
-     "title": "Teacher banned over sexual Snapchat texts to peer",
-     "link": "https://www.bbc.co.uk/news/articles/cqp8658pwk3po?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-24T16:50:52Z"
-    },
-    {
      "title": "Undercover: The dark truth behind the puppy trade",
      "link": "https://www.bbc.co.uk/sounds/play/p0ppnm2h?at_medium=RSS&at_campaign=rss",
      "source": "BBC Leeds & West Yorkshire",
      "date": "2026-11-24T15:56:59Z"
-    },
-    {
-     "title": "Error may cost council tax payers £10m, report says",
-     "link": "https://www.bbc.co.uk/news/articles/cqdj1913ewgwo?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-24T12:32:57Z"
-    },
-    {
-     "title": "Council faces £500k shopping centre roof fix bill",
-     "link": "https://www.bbc.co.uk/news/articles/c6ge3gl52ey1o?at_medium=RSS&at_campaign=rss",
-     "source": "BBC Leeds & West Yorkshire",
-     "date": "2026-11-24T12:15:53Z"
-    },
-    {
-     "title": "Leeds drivers face ‘severe’ delays of 50 minutes after crash on the M62",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTWdVM1AxUkRRSXNlSDdrT0RMbi0waTgwVGg2YS1feTFiMjJZaU9WdGJxMWRBaUhIODREeHZyQk1pbVJRTXBnS1BQSFR4alJPTUlwYjllM0c4OUdWUGUwbWFVUE9rWjNUekdKSGcxVm9ocmZXdGR2QmNmY3c4aUNIejVGckIwdUFRRDFBY3N6dm9aQm91UTVwNm9BS0Y4MW1WTDVwVFdpV2d6MmNudWlMTll2bGd5dTQ?oc=5",
-     "source": "Yorkshire Evening Post",
-     "date": "2026-11-24T08:50:00Z"
     }
    ]
   },
@@ -1376,48 +1376,17 @@
   },
   "FTSE": {
    "name": "FTSE 100",
-   "price": 10426.94,
-   "change": -40.13,
-   "pct": -0.383,
+   "price": 10572.0,
+   "change": 145.06,
+   "pct": 1.391,
    "currency": "GBP",
    "spark": [
-    10517.2803,
-    10523.25,
-    10537.8096,
-    10526.1699,
-    10515.8799,
-    10499.21,
-    10498.4902,
-    10506.7002,
-    10507.96,
-    10505.0596,
-    10514.3701,
-    10516.4697,
-    10500.5596,
-    10494.6201,
-    10485.0596,
-    10469.6299,
-    10464.1201,
-    10460.0498,
-    10456.7598,
-    10468.3701,
-    10476.8096,
-    10470.2305,
-    10459.6104,
-    10474.4805,
-    10469.3896,
-    10465.7305,
-    10429.6602,
-    10473.2695,
-    10471.04,
-    10443.4697,
-    10442.4502,
-    10449.1504,
-    10439.6504,
-    10433.6602,
-    10426.9404
+    10560.9697,
+    10560.5303,
+    10573.5303,
+    10572.0
    ],
-   "time": "2026-11-25T16:35:30Z"
+   "time": "2026-11-26T08:40:52Z"
   },
   "GBPUSD": {
    "name": "GBP/USD",
@@ -1427,41 +1396,59 @@
    "currency": "USD",
    "spark": [
     1.3113,
-    1.3111,
+    1.3112,
+    1.3113,
+    1.3119,
+    1.3116,
+    1.3112,
+    1.3108,
+    1.311,
+    1.3113,
+    1.3115,
+    1.3115,
+    1.3109,
+    1.3104,
+    1.3102,
+    1.3098,
+    1.31,
+    1.3102,
+    1.3102,
+    1.3104,
+    1.3102,
+    1.3102,
+    1.3102,
+    1.3099,
+    1.3102,
+    1.3104,
+    1.3102,
+    1.31,
+    1.3101,
+    1.3105,
+    1.3109,
+    1.3113,
+    1.3106,
+    1.3108,
+    1.3107,
+    1.3108,
+    1.311,
     1.3111
    ],
-   "time": "2026-11-26T00:27:46Z"
+   "time": "2026-11-26T08:55:46Z"
   }
  },
  "weather": {
   "place": "Rothwell",
-  "fetched": "2026-11-25T16:09:11.434802Z",
+  "fetched": "2026-11-26T08:55:53.399090Z",
   "current": {
-   "time": "2026-11-25T16:00",
+   "time": "2026-11-26T08:45",
    "interval": 900,
-   "temperature_2m": 4.9,
+   "temperature_2m": 4.0,
    "weather_code": 3,
-   "apparent_temperature": 1.6,
-   "wind_speed_10m": 5.8
+   "apparent_temperature": 0.5,
+   "wind_speed_10m": 6.3
   },
   "hourly": {
    "time": [
-    "2026-11-25T15:00",
-    "2026-11-25T16:00",
-    "2026-11-25T17:00",
-    "2026-11-25T18:00",
-    "2026-11-25T19:00",
-    "2026-11-25T20:00",
-    "2026-11-25T21:00",
-    "2026-11-25T22:00",
-    "2026-11-25T23:00",
-    "2026-11-26T00:00",
-    "2026-11-26T01:00",
-    "2026-11-26T02:00",
-    "2026-11-26T03:00",
-    "2026-11-26T04:00",
-    "2026-11-26T05:00",
-    "2026-11-26T06:00",
     "2026-11-26T07:00",
     "2026-11-26T08:00",
     "2026-11-26T09:00",
@@ -1493,78 +1480,76 @@
     "2026-11-27T11:00",
     "2026-11-27T12:00",
     "2026-11-27T13:00",
-    "2026-11-27T14:00"
+    "2026-11-27T14:00",
+    "2026-11-27T15:00",
+    "2026-11-27T16:00",
+    "2026-11-27T17:00",
+    "2026-11-27T18:00",
+    "2026-11-27T19:00",
+    "2026-11-27T20:00",
+    "2026-11-27T21:00",
+    "2026-11-27T22:00",
+    "2026-11-27T23:00",
+    "2026-11-28T00:00",
+    "2026-11-28T01:00",
+    "2026-11-28T02:00",
+    "2026-11-28T03:00",
+    "2026-11-28T04:00",
+    "2026-11-28T05:00",
+    "2026-11-28T06:00"
    ],
    "temperature_2m": [
-    6.0,
-    4.9,
-    4.7,
-    4.3,
-    4.2,
-    4.2,
     4.1,
     4.0,
-    3.9,
-    3.3,
-    3.7,
-    2.4,
-    2.7,
-    1.7,
-    1.7,
-    0.9,
-    1.0,
-    1.4,
-    1.7,
-    2.6,
-    3.5,
     4.1,
-    4.7,
+    4.4,
     4.6,
-    4.5,
-    3.4,
-    2.7,
-    2.6,
-    2.7,
-    2.6,
-    2.6,
-    2.4,
-    2.2,
-    1.9,
-    2.1,
-    2.2,
-    2.2,
-    2.3,
-    2.3,
-    2.2,
-    2.1,
-    2.1,
-    2.2,
-    2.3,
-    2.6,
-    2.8,
+    4.8,
+    5.0,
+    4.8,
+    4.6,
+    3.9,
+    3.7,
+    3.7,
+    3.5,
+    3.2,
     3.0,
-    2.7
+    2.7,
+    2.5,
+    2.2,
+    2.1,
+    2.2,
+    2.4,
+    2.4,
+    2.3,
+    2.2,
+    2.2,
+    2.1,
+    2.2,
+    2.5,
+    2.7,
+    3.0,
+    3.1,
+    3.1,
+    3.1,
+    3.0,
+    3.1,
+    3.1,
+    3.1,
+    3.0,
+    3.0,
+    3.1,
+    3.1,
+    3.3,
+    3.3,
+    3.3,
+    3.2,
+    3.0,
+    3.0,
+    3.0
    ],
    "weather_code": [
-    2,
     3,
-    3,
-    3,
-    3,
-    3,
-    3,
-    3,
-    3,
-    3,
-    3,
-    2,
-    2,
-    0,
-    0,
-    0,
-    1,
-    1,
-    2,
     3,
     3,
     3,
@@ -1589,11 +1574,29 @@
     3,
     3,
     51,
+    51,
+    51,
+    51,
+    53,
+    61,
+    55,
     53,
     53,
     51,
     51,
-    51
+    3,
+    3,
+    53,
+    61,
+    61,
+    55,
+    53,
+    51,
+    3,
+    3,
+    3,
+    3,
+    3
    ],
    "precipitation_probability": [
     0,
@@ -1617,98 +1620,98 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    4,
-    8,
+    6,
     14,
-    22,
-    34,
-    47,
-    59,
+    24,
+    38,
+    53,
     67,
-    74,
-    78,
-    80,
-    81
+    77,
+    85,
+    90,
+    92,
+    92,
+    92,
+    92,
+    91,
+    90,
+    88,
+    87,
+    84,
+    81,
+    76,
+    73,
+    70,
+    69,
+    67,
+    66,
+    65,
+    65
    ]
   },
   "daily": {
    "time": [
-    "2026-11-25",
     "2026-11-26",
     "2026-11-27",
     "2026-11-28",
     "2026-11-29",
     "2026-11-30",
-    "2026-12-01"
+    "2026-12-01",
+    "2026-12-02"
    ],
    "weather_code": [
     3,
-    3,
-    53,
     61,
+    63,
     3,
     3,
+    55,
     51
    ],
    "temperature_2m_max": [
-    6.6,
-    4.7,
-    3.0,
+    5.0,
+    3.3,
     7.8,
-    8.6,
-    10.3,
-    10.6
+    8.4,
+    10.4,
+    11.1,
+    14.0
    ],
    "temperature_2m_min": [
-    2.9,
-    0.9,
-    1.8,
-    1.7,
-    5.2,
-    7.6,
-    8.5
+    2.2,
+    2.1,
+    2.2,
+    4.8,
+    6.4,
+    8.5,
+    2.7
    ],
    "sunrise": [
-    "2026-11-25T07:50",
     "2026-11-26T07:51",
     "2026-11-27T07:53",
     "2026-11-28T07:55",
     "2026-11-29T07:56",
     "2026-11-30T07:58",
-    "2026-12-01T08:00"
+    "2026-12-01T08:00",
+    "2026-12-02T08:01"
    ],
    "sunset": [
-    "2026-11-25T15:55",
     "2026-11-26T15:53",
     "2026-11-27T15:52",
     "2026-11-28T15:52",
     "2026-11-29T15:51",
     "2026-11-30T15:50",
-    "2026-12-01T15:49"
+    "2026-12-01T15:49",
+    "2026-12-02T15:48"
    ],
    "precipitation_probability_max": [
     0,
-    0,
-    81,
-    64,
-    18,
-    43,
-    52
+    92,
+    73,
+    25,
+    73,
+    63,
+    61
    ]
   }
  }
