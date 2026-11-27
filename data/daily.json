@@ -1,92 +1,91 @@
 {
- "date": "2026-11-26",
- "generated": "2026-11-26T06:10:00Z",
+ "date": "2026-11-27",
+ "generated": "2026-11-27T06:06:39Z",
  "today3": [
   {
-   "title": "Take a meter reading before 1 January",
-   "why": "Ofgem has confirmed the price cap rises 26% from 1 Jan. An accurate reading on or near the day helps make sure December's use is billed at today's lower rates.",
+   "title": "Check when your mortgage fix ends",
+   "why": "The Bank of England says about 6.5 million mortgages are set to see higher payments by the end of 2029, typically around £100 a month more. Knowing your end date gives you time to compare deals before you roll onto a standard rate.",
    "agent": "money"
   },
   {
-   "title": "Be extra wary of 'security' emails this week",
-   "why": "1Password confirmed a breach of customer names and emails (not passwords). Leaked email lists often lead to convincing phishing. Go to apps and sites directly, not via links.",
-   "agent": "lesson"
+   "title": "Turn flagged emails into a to-do list",
+   "why": "Two minutes in Microsoft To Do makes every email you flag in Outlook show up as a task, so Black Friday and pre-Christmas admin doesn't get lost in your inbox.",
+   "agent": "m365"
   },
   {
-   "title": "Do the Christmas Market tonight while it's dry",
-   "why": "Today is the dry day (0% chance of rain, max 5°C). Friday and Saturday look wet; stalls in Leeds city centre are open until 7pm tonight.",
+   "title": "Save the markets or light trail for Sunday",
+   "why": "Today brings sleet then rain and Saturday is wet (86%). Sunday is the dry day (25%, about 9°C), so it suits the Leeds Christmas Markets or Tingley's light trail after dark.",
    "agent": "weather"
   }
  ],
  "lesson": {
-  "topic": "Tech",
-  "title": "Leaked email, safe password: what a data breach means for you",
+  "topic": "Microsoft 365 / Power Automate",
+  "title": "Triggers and actions: how every Power Automate flow works",
   "body": [
-   "1Password confirmed a security incident this week. The Verge reports customer names and email addresses leaked, but not passwords. That sounds harmless, but it isn't nothing.",
-   "A list of real names and emails, all known to use a password manager, is ideal material for phishing. Expect emails that look like they come from the company, warning you to 'verify your vault' or 'reset your account' via a link.",
-   "The defence is simple: never act on a link in a security email. Open the app or type the website address yourself. If there's a genuine problem, you'll see it there. Turning on two-factor authentication on your main email account adds a second lock if anything does get through.",
-   "You can check whether your email has appeared in known breaches with free services such as Have I Been Pwned, and change any password you've reused elsewhere."
+   "Every Power Automate flow has the same shape: one trigger, then one or more actions. The trigger is the 'when' (an email arrives, a file is added, it's 9am on Monday). The actions are the 'then' (save the attachment, post in Teams, send an approval).",
+   "There are three main kinds of flow. Automated flows start on their own when something happens. Instant flows start when you press a button, in the app or on your phone. Scheduled flows run at set times, like a weekly reminder.",
+   "Most problems with flows come from the trigger. If it's too broad (every email, every file), the flow runs far more often than you meant. Add conditions or trigger settings so it only fires for the items you care about, such as emails from one sender or with an attachment."
   ],
-  "takeaway": "After a breach, the leak is rarely the danger. The follow-up phishing email is. Go direct, don't click.",
+  "takeaway": "Before building a flow, finish this sentence: 'When ___ happens, do ___.' The first blank is your trigger; get that right and the rest is easy.",
   "link": {
-   "title": "1Password confirms security incident, here's what you need to know (9to5Mac)",
-   "url": "https://9to5mac.com/2026/11/25/1password-confirms-security-incident-heres-what-you-need-to-know/"
+   "title": "What's new in Power Platform: October/November 2026",
+   "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-october-2026-feature-update/"
   }
  },
  "m365": {
-  "title": "Assign a task with an @mention in a Word comment",
-  "what": "Instead of emailing 'can you check paragraph 3?', assign it inside the document. The person is notified by email and the comment shows who owns it.",
+  "title": "Show flagged Outlook emails as tasks in Microsoft To Do",
+  "what": "Microsoft To Do can pull every email you flag in Outlook into its own 'Flagged email' list, so emails that need action sit alongside your other tasks.",
   "try": [
-   "Open a document saved in OneDrive or SharePoint in Word for the web or the Microsoft 365 desktop app.",
-   "Select the text you want looked at, then choose Review > New Comment.",
-   "Type @ followed by the person's name and pick them from the list.",
-   "Tick the 'Assign to' box that appears under the comment, then post it.",
-   "When it's done, they (or you) can resolve the comment so the task closes."
+   "Open Microsoft To Do (web, desktop or phone) signed in with the same account as Outlook.",
+   "Go to Settings and, under Connected apps, turn on Flagged email.",
+   "In Outlook, flag an email that needs a reply or action.",
+   "In To Do, open the Flagged email list and add a due date or reminder to it.",
+   "When you're done, tick it off in To Do or clear the flag in Outlook; the two stay in step."
   ],
   "link": null
  },
  "ai": {
-  "summary": "Assistants are moving onto desktops and phones, and ChatGPT's ads business is growing up.",
+  "summary": "AI coding tools are moving from suggesting to approving code, while the Bank of England warns about how much the AI build-out is being funded by debt.",
   "items": [
    {
-    "title": "Anthropic brings Skills over MCP to Claude and Claude Code (public beta)",
-    "why": "Reusable 'skills' can now be shared through MCP connectors, so the same know-how works across tools.",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1VTFhNSWpCLW5XUVZCTkhwZ0RwRndGUVNWeXhIbUVhX2hMOWhBazFlZlQ4SXRFTkFJNElubTBvMXBtVFJUSV9zcmN0TlZWM0V4bWJhNG9DQzRpMFdSTU5vUXZIc1NvR1FtZ2NKYV9aNExveHM?oc=5"
+    "title": "Anthropic adds automated review, fixes and approvals to Claude Code",
+    "why": "TechRepublic reports a tool that reviews, fixes and approves GitHub pull requests. Useful for small teams, but someone still needs to own what gets merged.",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbzZmVHNueXZlYVlWR3kySVdJTkptRkVsTDR2dmxGV3l4ejdpbjBlLVR1cTVkS1RVbXhQSEVyX3NFX0ZkYmU1Y2VTQ1lCYXlYTU5LaVZlUmxZcmVlZ3p0N0FZY2Z1RzdfY1J6Y3MxODg1eVBTN09QUnUtTHNXLU5pTl9xVkZJWXZYMk13bFd3?oc=5"
    },
    {
-    "title": "Claude Artifacts now install as Mac and Windows desktop apps",
-    "why": "Small tools built in a chat can live on your desktop like normal apps.",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQY0UtSFJMSzRfelFIb3o5bHJ3N2JqNjd2V3IxdG5ZRjZfbEZhdEM3bGZ0LWVfRTFRVHMzUVk1My11M1kzYjBJa2FuMFFMOEdsTS1vLW1iRGZlOFY4VUN2eTJPcklISjd3aWhjUmdXOE9odw?oc=5"
+    "title": "OpenAI says GPT-6.2 Astra users will hit limits faster",
+    "why": "BleepingComputer reports usage limits will be reached about 40% faster after a bug fix. Worth knowing if you rely on it for heavy work.",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQMXM1ZXk4VnpPczZTcHh1WTNzbzktVFdCLWt3eEtlcVJlbU52ZzhRNnNNdnV1Vzk3ajhIc1hjN3JSYlJxQmJNb0NxLWlRbm9rSllvVlk3a2VscXdqVGV0ZUc4RDM2SU43NXRuMlBsak9GcEJaN0d6Q3JSS2hEZndsMzlTLUtZVlhfdTdiNUVQWV9VdXhBRVVhRHRZTXBtZy1tMWpheVg3a1YzUmNndWs5ajljMVRpYUdRQ2Q0WFpCTWlJQVl5YUdOU25oNVppdFN6OURVZ051c1BYeVZHNHZqQ1ZxajZmYURaVGF30gHrAUFVX3lxTFAxczVleThWek9zNlNweHVZM3NvOS1UV0Ita3d4S2VxUmVtTnZnOFE2c012dXVXOTdqOEhzWGM3clJiUnFCYk1vQ3EtaVFub2tKWW9WWTdrZWxxd2pUZXRlRzhEMzZJTjc1dG4yUGxqT0ZwQlo3R3pDclJLaERmd2wzOVMtS1lWWF91N2I1RVBZX1V1eEFFVWFEdFlNcG1nLW0xamF5WDdrVjNSY2d1azlqOWMxVGlhR1FDZDRYWkJNaUlBWXlhR05Tbmg1Wml0U3o5RFVnTnVzUFh5Vkc0dmpDVnFqNmZhRFpUYXc?oc=5"
    },
    {
-    "title": "Gemini Live Guided Vision starts rolling out on iOS",
-    "why": "Point your iPhone camera at something and get step-by-step spoken help.",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ST2NQc1U4NU5jUWFxLVdEdjVyX2FKdlFhQkFucGtNQVdjMVJlXzYtTm5GX3ZxLUhhemFmS1F5UDQ0Zk0wbmszNFdLQjJXRGFoQ3EtNmRJOTktemlxVEN0M3FvZ3hzNTN6aXM0eVp2VV9kUQ?oc=5"
+    "title": "Data leak found in websites built with ChatGPT",
+    "why": "Pluto Security research, reported by FF News, says AI-built sites exposed data. If you publish an AI-built page or app, check what it stores and who can see it.",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOM2M5ZG9HY3o1ellSZl81andhZnQxMFRMNHZlY1BlTjV3M2lKVkFYMjkxYWhMWVBNM3RBS0tKN0xzdzdmTW5ZRDUwTjFGUHBxVFluLVlwWUplc1RqS2NoWU9RNUIwU2x1cVJISy1MSXNlOTIySUhKdTVuRU5LUndqdHlwTm9aTV9ab1lBNUx6MTBScjFCLTVacjQ1WXBUa0tqZHhFNlpDdTRBellHN0s0OURTbw?oc=5"
    },
    {
-    "title": "ChatGPT ad reports add 9 new metrics",
-    "why": "A sign that advertising inside ChatGPT is becoming a serious channel for marketers.",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd0tZSU55QWRRQk5XNnBpNnY1SWhCaldjWmxnV0pXNDk2cmsyVFNNLVVINkwwRzFMYUdkMHRkVzRUYUJ6S1lpVkQ3TUJpYzAzVGVjSGxBODdTRlNMbTRpUTVoM2RVVXR2a3NVUV9oZDhmcXlveXJJUnlnVTdFLXJscG9mRktOaTFPakF2T3BlYlE?oc=5"
+    "title": "Bank of England flags surge in AI borrowing",
+    "why": "Big tech 'hyperscalers' are set to issue more than $305bn of bonds this year. A sharp AI slowdown could hit lenders and markets, not just tech firms.",
+    "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026"
    }
   ]
  },
  "explainer": {
-  "story": "Energy bills to rise by 26% from January after gas prices surge",
-  "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
+  "story": "Bank of England: 6.5 million mortgages face higher payments",
+  "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
   "bullets": [
-   "Ofgem's cap for a typical dual-fuel household on Direct Debit goes from £1,723 a year to about £2,166 for 1 January to 31 March 2027, a 26% jump.",
-   "The BBC says the rise follows a surge in wholesale gas prices. Ofgem resets the cap every three months to reflect those costs.",
-   "The cap limits unit rates and daily standing charges, not your total bill. Today's Direct Debit rates are 26.32p/kWh for electricity and 7.97p/kWh for gas."
+   "The Bank's Financial Stability Report (26 Nov) projects about 6.5 million owner-occupier mortgages will see higher payments as fixed deals end between mid-2026 and end-2029, up from about 6 million in July.",
+   "The typical rise is around £100 a month, roughly double the July estimate, after Bank Rate went up to 4% on 5 November and gilt yields climbed.",
+   "It also flagged risks from heavy AI-related borrowing, and said it will cut capital requirements for major UK banks by about 0.5 percentage points while keeping them 'well capitalised'."
   ],
-  "why": "Most households on standard tariffs will pay more from New Year. It also adds to the inflation pressure the Bank of England is weighing before its 17 December decision."
+  "why": "Rising mortgage costs squeeze household budgets well into 2027, on top of January's energy cap rise, and shape what the Bank does with rates on 17 December."
  },
  "term": {
-  "term": "Administration",
-  "meaning": "A legal process where a struggling company is handed to licensed insolvency practitioners (administrators), who try to rescue it, sell it or wind it up while creditors are kept at bay.",
-  "example": "After Poundland's collapse put 11,000 jobs at risk, the key questions are whether buyers can be found for any shops and what happens to gift cards and staff pay."
+  "term": "Hyperscaler",
+  "meaning": "A company that runs cloud computing and data centres at enormous scale, such as Microsoft, Amazon and Google. They are spending heavily on AI data centres, increasingly funded by borrowing.",
+  "example": "The Bank of England says hyperscaler bond issuance is set to top $305bn in 2026, about 8% of global investment-grade bonds."
  },
  "money": {
-  "summary": "Bank Rate is 4% and CPI inflation 3.6%. Ofgem has confirmed a 26% rise in the energy price cap from 1 January; the Bank's governor says inflation may peak lower than forecast.",
+  "summary": "Bank Rate is 4% and CPI inflation 3.6%. The energy cap rises 26% on 1 January, and the Bank of England warns millions of mortgage payments will rise over the next few years.",
   "figures": [
    {
     "label": "Bank Rate",
@@ -98,21 +97,21 @@
    {
     "label": "CPI inflation",
     "value": "3.6%",
-    "asOf": "Latest figure (October 2026)",
-    "source": "Bank of England",
-    "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
+    "asOf": "October 2026 (released 18 Nov); next figure 16 Dec",
+    "source": "Bank of England / ONS",
+    "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukoctober2026"
    },
    {
     "label": "Energy price cap now",
     "value": "£1,723 / yr",
-    "asOf": "1 Oct–31 Dec 2026, typical dual fuel, Direct Debit",
-    "source": "Ofgem",
-    "url": "https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges"
+    "asOf": "Until 31 Dec 2026, typical dual fuel, Direct Debit",
+    "source": "Ofgem, reported by City AM",
+    "url": "https://www.cityam.com/?p=2479542"
    },
    {
     "label": "Cap from 1 Jan",
     "value": "£2,166 / yr (+26%)",
-    "asOf": "1 Jan–31 Mar 2027, confirmed 25 Nov",
+    "asOf": "1 Jan–31 Mar 2027, a £443 rise",
     "source": "Ofgem, reported by BBC",
     "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss"
    },
@@ -124,15 +123,15 @@
     "url": "https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate"
    }
   ],
-  "tip": "Fixed energy deals aren't covered by the cap. If you're comparing one, look at the total yearly cost at your own usage (on your bill) against the new cap rates, and check for exit fees before switching."
+  "tip": "The energy price cap limits unit rates and standing charges, not your total bill. Taking a meter reading on or close to 1 January helps make sure December's use is charged at the current, lower rates."
  },
  "releases": {
-  "summary": "Nothing to install today. iOS 27.2.1 is still the latest public iPhone update; iOS 27.3 remains in developer beta.",
+  "summary": "Nothing to install today. iOS 27.2.1 is still the latest public iPhone update; iOS 27.3 is in developer beta and there's no new iPhone Duo software.",
   "items": [
    {
     "name": "iOS 27.2.1",
     "version": "24B91034",
-    "note": "Latest public release (9 Nov). If you haven't installed it: Settings > General > Software Update.",
+    "note": "Latest public release (9 Nov). If you haven't got it: Settings > General > Software Update.",
     "url": "https://developer.apple.com/news/releases/?id=11092026a"
    },
    {
@@ -142,34 +141,28 @@
     "url": "https://developer.apple.com/news/releases/?id=11192026a"
    },
    {
-    "name": "iOS 27.3 release timing",
-    "version": "iOS 27.3",
-    "note": "9to5Mac's guide to when the public release is likely. Nothing to do yet.",
-    "url": "https://9to5mac.com/2026/11/25/ios-27-3-release-date-heres-when-to-expect-new-iphone-features/"
-   },
-   {
-    "name": "Screens for iPhone Duo",
-    "version": "App update",
-    "note": "Lets iPhone Duo act like a small MacBook. Optional App Store app, not a system update.",
-    "url": "https://9to5mac.com/2026/11/25/screens-can-now-turn-iphone-duo-into-a-tiny-macbook/"
+    "name": "iOS 28",
+    "version": "Rumour",
+    "note": "9to5Mac reports a notifications revamp is planned for next year's update. Nothing to do now.",
+    "url": "https://9to5mac.com/2026/11/26/ios-28-to-revamp-iphone-notifications-per-report/"
    }
   ]
  },
  "local": {
-  "summary": "Christmas is under way in Leeds: markets open daily, Tingley's Santa trail starts Saturday and Leeds United are at home.",
+  "summary": "A wet start to the weekend, but the Christmas markets, Tingley's Santa trail and Leeds United at home give plenty to do, with Sunday the best day out.",
   "events": [
    {
     "title": "Leeds Christmas Markets",
     "when": "Until 23 Dec",
     "where": "City Square, Millennium Square and Victoria Gardens, Leeds",
-    "note": "Free entry. Stalls 10:30am–7pm Sun–Thu, until 8pm Fri–Sat. Ice Cube rink and rides are paid.",
-    "url": "https://www.visitleeds.co.uk/christmas/christmas-markets/"
+    "note": "Free entry. Stalls 10:30am–7pm Sun–Thu, until 8pm Fri–Sat. Ice Cube rink is paid.",
+    "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-christmas-markets-2026-dates-opening-times-vendors-city-square-9322840"
    },
    {
     "title": "Tingley Garden Centre Light Trail",
     "when": "Open now; Santa's trail from Sat 28 Nov",
-    "where": "Thorpe Lane, Tingley",
-    "note": "Pre-book timed slots. Light trail from £9.95 adults, £4.95 children 3–12. Free miniature village display.",
+    "where": "Tingley",
+    "note": "Pre-book timed slots. Light trail from £9.95 adults, £4.95 children 3–12. Santa's trail runs on selected dates to 23 Dec. Free parking.",
     "url": "https://www.yorkshireeveningpost.co.uk/whats-on/tingley-garden-centre-christmas-light-trail-leeds-opening-9349129"
    },
    {
@@ -180,28 +173,28 @@
     "url": "https://www.leedsunited.com/en/news/ticket-information-for-coventry-clash"
    },
    {
-    "title": "Kirkgate Market Christmas",
-    "when": "Sat 28 Nov – Fri 4 Dec",
-    "where": "Kirkgate Market, Leeds",
-    "note": "Opens with the Little Fox Charity Craft Fair on Saturday.",
-    "url": "https://www.visitleeds.co.uk/christmas/christmas-markets/"
-   },
-   {
-    "title": "Bill Bailey: Vaudevillean",
-    "when": "Sat 28 Nov",
-    "where": "First Direct Arena, Leeds",
-    "note": "Comedy and music. Ticketed.",
-    "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-events-guide-november-2026-gigs-theatre-comedy-9322935?page=8"
-   },
-   {
     "title": "CBeebies Panto: Treasure Island",
     "when": "Fri 27 – Sun 29 Nov",
     "where": "Hyde Park Picture House, Leeds",
     "note": "Family screening. Check times and book with the venue.",
     "url": "https://www.yorkshireeveningpost.co.uk/whats-on/leeds-events-guide-november-2026-gigs-theatre-comedy-9322935?page=8"
+   },
+   {
+    "title": "Bill Bailey: Vaudevillean",
+    "when": "Sat 28 Nov",
+    "where": "First Direct Bank Arena, Leeds",
+    "note": "Comedy and music. Ticketed.",
+    "url": "https://www.firstdirectbankarena.com/events/detail/bill-bailey-2026"
+   },
+   {
+    "title": "Blossoms",
+    "when": "Thu 3 Dec",
+    "where": "First Direct Bank Arena, Leeds",
+    "note": "With The Royston Club and Arkayla. Ticketed.",
+    "url": "https://www.firstdirectbankarena.com/events/detail/blossoms-leeds"
    }
   ],
-  "tip": "Today is the dry one, so go to the city centre markets tonight. Friday (81%) and Saturday (64%) look wet; Sunday is drier (18%) and milder at about 9°C, which suits the Tingley light trail after dark (sunset 3:51pm)."
+  "tip": "Sunday is the one to plan around: mostly dry (25% chance of rain) and mild at about 9°C. Head to the city centre markets in the afternoon, or book a Tingley light trail slot after sunset (3:51pm). Avoid Elland Road and the M621 around Saturday's 3pm kick-off."
  },
  "review": {
   "week": "16–22 November",
@@ -222,6 +215,6 @@
   ]
  },
  "trends": {
-  "note": "AI dominated the week, from Nvidia's reinstatement of Jensen Huang to US stocks falling on AI fears, while at home the 26% energy cap rise put the cost of living back in the headlines."
+  "note": "The cost of borrowing dominated the week: a rate rise feeding through to mortgages, a 26% energy cap rise, and the Bank of England warning about debt-fuelled AI spending."
  }
 }

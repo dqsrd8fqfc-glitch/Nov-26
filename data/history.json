@@ -4,20 +4,23 @@
   "Chatbot, copilot, agent: what's the difference?",
   "Scarcity and urgency: why 'only 2 left' works",
   "The price cap limits rates, not your bill",
-  "Leaked email, safe password: what a data breach means for you"
+  "Leaked email, safe password: what a data breach means for you",
+  "Triggers and actions: how every Power Automate flow works"
  ],
  "terms": [
   "Cascading failure",
   "Standing charge",
   "Market capitalisation",
   "Service level agreement (SLA)",
-  "Administration"
+  "Administration",
+  "Hyperscaler"
  ],
  "m365": [
   "Keep important files on your device with OneDrive",
   "Get an email when a Power Automate flow fails",
   "Schedule a Teams chat message to send later",
   "Restore an older version of a file with Version history",
-  "Assign a task with an @mention in a Word comment"
+  "Assign a task with an @mention in a Word comment",
+  "Show flagged Outlook emails as tasks in Microsoft To Do"
  ]
 }
