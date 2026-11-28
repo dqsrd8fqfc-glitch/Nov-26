@@ -5,7 +5,8 @@
   "Scarcity and urgency: why 'only 2 left' works",
   "The price cap limits rates, not your bill",
   "Leaked email, safe password: what a data breach means for you",
-  "Triggers and actions: how every Power Automate flow works"
+  "Triggers and actions: how every Power Automate flow works",
+  "Why AI chatbots sometimes make things up"
  ],
  "terms": [
   "Cascading failure",
@@ -13,7 +14,8 @@
   "Market capitalisation",
   "Service level agreement (SLA)",
   "Administration",
-  "Hyperscaler"
+  "Hyperscaler",
+  "Load shedding"
  ],
  "m365": [
   "Keep important files on your device with OneDrive",
@@ -21,6 +23,7 @@
   "Schedule a Teams chat message to send later",
   "Restore an older version of a file with Version history",
   "Assign a task with an @mention in a Word comment",
-  "Show flagged Outlook emails as tasks in Microsoft To Do"
+  "Show flagged Outlook emails as tasks in Microsoft To Do",
+  "Pin your most-used chats to the top in Teams"
  ]
 }
